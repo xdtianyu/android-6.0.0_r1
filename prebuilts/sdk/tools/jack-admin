@@ -1,0 +1,169 @@
+#!/bin/bash
+#
+# Copyright (C) 2015 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
+# Version: 1.1-mr2
+#
+set -o nounset
+umask 077
+
+#
+# Settings
+#
+LOCAL_SETTING="$HOME/.jack"
+TMPDIR=${TMPDIR:=/tmp}
+SERVER_DIR=$TMPDIR/jack-$USER
+
+#
+# Load local settings
+#
+source "$LOCAL_SETTING" 2>/dev/null
+
+#
+# Create or update local settings if needed
+#
+if [[ ! -f "$LOCAL_SETTING" || $SETTING_VERSION -lt 2 ]]; then
+  echo "Writing local settings in" $LOCAL_SETTING
+  cat >"$LOCAL_SETTING.$$" <<-EOT
+	# Server settings
+	SERVER=${SERVER:=true}
+	SERVER_PORT_SERVICE=${SERVER_PORT_SERVICE:=8072}
+	SERVER_PORT_ADMIN=${SERVER_PORT_ADMIN:=8073}
+	SERVER_COUNT=${SERVER_COUNT:=1}
+	SERVER_NB_COMPILE=${SERVER_NB_COMPILE:=4}
+	SERVER_TIMEOUT=${SERVER_TIMEOUT:=60}
+	SERVER_LOG=\${SERVER_LOG:=\$SERVER_DIR/jack-\$SERVER_PORT_SERVICE.log}
+	JACK_VM_COMMAND=\${JACK_VM_COMMAND:=java}
+	# Internal, do not touch
+	SETTING_VERSION=2
+EOT
+  ln -f "$LOCAL_SETTING.$$" "$LOCAL_SETTING"
+  rm "$LOCAL_SETTING.$$"
+  source "$LOCAL_SETTING"
+fi
+
+#
+# Static setting
+#
+mkdir "$SERVER_DIR" 2>/dev/null
+
+#
+# Decoding argument
+#
+
+if [ $# -ne 1 ]
+then
+        echo "Usage : $0 [ start-server | stop-server | kill-server | list-server | server-log | server-stat ]"
+        exit 255
+fi
+
+case $1 in
+  stop-server)
+    echo "Stopping background server"
+    CMD="stop" ;;
+  server-stat)
+    echo "Getting statistic from background server"
+    CMD="stat" ;;
+  server-log)
+    echo "Log location of background server:"
+    echo $SERVER_LOG
+    exit 0 ;;
+  kill-server)
+    echo "Killing background server"
+    kill $(ps aux | grep JackSimpleServer | grep -v grep | awk '{print $2}') 2>/dev/null
+    if [ $? -ne 0 ]; then
+      echo "ERROR: No Jack server to kill" >&2
+      exit 2
+    else
+      exit 0 
+    fi ;;
+  list-server)
+    ps aux | grep JackSimpleServer | grep -v grep
+    exit $? ;;
+  start-server)
+    SERVER_PRG="$JACK_VM_COMMAND -cp $JACK_JAR com.android.jack.server.JackSimpleServer"
+    echo "Launching Jack server" $SERVER_PRG
+    $SERVER_PRG $SERVER_PORT_SERVICE $SERVER_PORT_ADMIN $SERVER_COUNT $SERVER_NB_COMPILE $SERVER_TIMEOUT >>$SERVER_LOG 2>&1 &
+    exit 0 ;;
+  *)
+    echo "Usage : $0 [ start-server | stop-server | kill-server | list-server | server-log | server-stat ]"
+    exit 255 ;;
+esac
+
+#
+# Send command
+#
+
+set +o errexit
+
+# Try to cleanup if interrupted
+# Cleanup
+JACK_EXIT="$SERVER_DIR/admin-$$"
+trap 'rm -f "$JACK_EXIT" 2>/dev/null;' EXIT
+
+RETRY_SESSION=3
+DELAY_CONNECT=3
+
+
+# Send command to Jack server
+DATE_CONNECT=$(date +%s)
+while true; do
+  HTTP_CODE=$(curl --fail --silent --output $JACK_EXIT --write-out %{http_code} --connect-timeout 5 --no-proxy 127.0.0.1:$SERVER_PORT_ADMIN http://127.0.0.1:$SERVER_PORT_ADMIN/$CMD)
+  CURL_CODE=$?
+  if [ $CURL_CODE -eq 0 ]; then
+    # No problem, let's go
+    break;
+  elif [ $CURL_CODE -eq 7 ]; then
+    # Failed to connect
+    if [ $(date +%s) -ge $DATE_CONNECT ]; then
+        echo "ERROR: No Jack server running"
+        exit 255
+    else
+      sleep 0.2 2>/dev/null
+    fi
+    # Trying with a new connection, let's retry session 3 times max
+    RETRY_SESSION=3
+  elif  [ $CURL_CODE -eq 22 ]; then
+    # Http code not OK, let's decode and abort
+    if [ $HTTP_CODE -eq 401 ]; then
+      # 401: Unauthorized
+      echo "ERROR: Security problem, see Jack server log" >&2
+      exit 255
+    elif [ $HTTP_CODE -eq 400 ]; then
+      # 400: Bad request
+      echo "ERROR: Bad request, see Jack server log" >&2
+      exit 255
+    else
+      # Other
+      echo "ERROR: Internal unknown error ($HTTP_CODE), try other ports in ~/.jack, or see Jack server log" >&2
+      exit 255
+    fi
+  else
+    # In case of partial, timeout, empty respond, network error, let's retry
+    if [ $RETRY_SESSION -eq 0 ]; then
+      echo "ERROR: Communication error with Jack server ($CURL_CODE)" >&2
+      exit 255
+    else
+      let RETRY_SESSION=RETRY_SESSION-1
+    fi
+  fi
+done
+
+# Exit
+if [ -r $JACK_EXIT ]; then
+  cat <$JACK_EXIT 2>/dev/null
+fi
+
+exit 0

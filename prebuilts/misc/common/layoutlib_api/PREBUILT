@@ -1,0 +1,4 @@
+The object in this prebuilt directory can be rebuilt from
+	platform/tools/base/layoutlib_api/
+
+From: https://android.googlesource.com/platform/tools/base/+/2a761beb9b60acc57968555169a30200843e5e26

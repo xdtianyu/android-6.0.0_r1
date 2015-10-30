@@ -1,0 +1,184 @@
+#!/bin/bash
+#
+# Copyright (C) 2015 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
+# Version: 1.1-mr2
+#
+set -o nounset
+umask 077
+
+#
+# Settings
+#
+LOCAL_SETTING="$HOME/.jack"
+TMPDIR=${TMPDIR:=/tmp}
+SERVER_DIR=$TMPDIR/jack-$USER
+
+#
+# Load local settings
+#
+source "$LOCAL_SETTING" 2>/dev/null
+
+#
+# Create or update local settings if needed
+#
+if [[ ! -f "$LOCAL_SETTING" || $SETTING_VERSION -lt 2 ]]; then
+  echo "Writing local settings in" $LOCAL_SETTING
+  cat >"$LOCAL_SETTING.$$" <<-EOT
+	# Server settings
+	SERVER=${SERVER:=true}
+	SERVER_PORT_SERVICE=${SERVER_PORT_SERVICE:=8072}
+	SERVER_PORT_ADMIN=${SERVER_PORT_ADMIN:=8073}
+	SERVER_COUNT=${SERVER_COUNT:=1}
+	SERVER_NB_COMPILE=${SERVER_NB_COMPILE:=4}
+	SERVER_TIMEOUT=${SERVER_TIMEOUT:=60}
+	SERVER_LOG=\${SERVER_LOG:=\$SERVER_DIR/jack-\$SERVER_PORT_SERVICE.log}
+	JACK_VM_COMMAND=\${JACK_VM_COMMAND:=java}
+	# Internal, do not touch
+	SETTING_VERSION=2
+EOT
+  ln -f "$LOCAL_SETTING.$$" "$LOCAL_SETTING"
+  rm "$LOCAL_SETTING.$$"
+  source "$LOCAL_SETTING"
+fi
+
+#
+# If not in server mode, exec jack
+#
+if [ "$SERVER" != "true" ]; then
+  exec $JACK_VM_COMMAND -cp $JACK_JAR com.android.jack.Main "$@"
+  echo "ERROR: Cannot succeed to launch Jack without Jack server" >&2
+  exit 255
+fi
+
+#
+# Static setting
+#
+SERVER_PRG="$JACK_VM_COMMAND -cp $JACK_JAR com.android.jack.server.JackSimpleServer"
+
+#
+# Prepare compilation
+#
+JACK_DIR="$SERVER_DIR/jack-task-$$/"
+JACK_OUT="$JACK_DIR/out"
+JACK_ERR="$JACK_DIR/err"
+JACK_CLI="$JACK_DIR/cli"
+JACK_EXIT="$JACK_DIR/exit"
+JACK_PWD="$PWD"
+
+mkdir "$SERVER_DIR" 2>/dev/null
+
+# Cleanup
+trap 'rm -f "$JACK_OUT" "$JACK_ERR" "$JACK_CLI" "$JACK_EXIT" 2>>$SERVER_LOG; rmdir "$JACK_DIR" 2>>$SERVER_LOG' EXIT
+
+set -o errexit
+
+# Create fifos and files for a task
+rm -rf "$JACK_DIR"
+mkdir  "$JACK_DIR"
+mkfifo "$JACK_OUT"
+mkfifo "$JACK_ERR"
+touch  "$JACK_CLI" "$JACK_EXIT"
+
+# Try to cleanup if interrupted
+abort () { echo $(uptime) >>$SERVER_LOG; kill -9 $PID_OUT $PID_ERR 2>>$SERVER_LOG; wait $PID_OUT $PID_ERR 2>>$SERVER_LOG; exit 255; }
+trap 'abort' SIGHUP SIGINT SIGQUIT SIGTERM ERR
+
+# Redirect output and error
+cat <"$JACK_OUT" >&1 &
+PID_OUT=$!
+cat <"$JACK_ERR" >&2 &
+PID_ERR=$!
+
+# Prepare the working directory and command line
+echo -n \"$PWD\" "" >"$JACK_CLI"
+for i in "$@"; do
+  echo -n \"$i\" "" >>"$JACK_CLI"
+done
+echo >>"$JACK_CLI"
+
+#
+# Launch the compilation
+#
+
+set +o errexit
+trap ERR
+
+RETRY_LAUNCH=1
+RETRY_SESSION=3
+DELAY_CONNECT=30
+
+
+# Launch compilation
+DATE_CONNECT=$(date +%s)
+while true; do
+  CURL_TIME=$(date +%H:%M:%S)
+  HTTP_CODE=$(curl --fail --silent --data @- --output "$JACK_EXIT" --write-out %{http_code} --connect-timeout 10 --no-proxy 127.0.0.1:$SERVER_PORT_SERVICE http://127.0.0.1:$SERVER_PORT_SERVICE/jack <<< "+ $JACK_OUT $JACK_ERR $JACK_CLI")
+  CURL_CODE=$?
+  JACK_CODE=$(cat "$JACK_EXIT")
+  echo "CURL: $$ - $CURL_TIME - $CURL_CODE - $HTTP_CODE - $JACK_CODE" >>$SERVER_LOG
+  if [ $CURL_CODE -eq 0 ]; then
+    # No problem, let's go
+    break;
+  elif [ $CURL_CODE -eq 7 ]; then
+    # Failed to connect
+    if [ $(date +%s) -ge $DATE_CONNECT ]; then
+      if [ $RETRY_LAUNCH -eq 0 ]; then
+        echo "ERROR: Cannot launch Jack server" >&2
+        abort
+      else
+        let RETRY_LAUNCH=RETRY_LAUNCH-1
+        echo "Launching background server" $SERVER_PRG
+        $SERVER_PRG $SERVER_PORT_SERVICE $SERVER_PORT_ADMIN $SERVER_COUNT $SERVER_NB_COMPILE $SERVER_TIMEOUT >>$SERVER_LOG 2>&1 &
+        # New server, let's try a bit to connect
+        let DATE_CONNECT=$(date +%s)+$DELAY_CONNECT;
+      fi
+    else
+      sleep 0.2 2>/dev/null
+    fi
+    # Trying with a new connection, let's retry session 3 times max
+    RETRY_SESSION=3
+  elif  [ $CURL_CODE -eq 22 ]; then
+    # Http code not OK, let's decode and abort
+    if [ $HTTP_CODE -eq 401 ]; then
+      # 401: Unauthorized
+      echo "ERROR: Security problem, see Jack server log ($SERVER_LOG)" >&2
+      abort
+    elif [ $HTTP_CODE -eq 400 ]; then
+      # 400: Bad request
+      echo "ERROR: Bad request, see Jack server log ($SERVER_LOG)" >&2
+      abort
+    else
+      # Other
+      echo "ERROR: Internal unknown error ($HTTP_CODE), try other ports in ~/.jack, or see Jack server log ($SERVER_LOG)" >&2
+      abort
+    fi
+  else
+    # In case of partial, timeout, empty respond, network error, let's retry
+    if [ $RETRY_SESSION -eq 0 ]; then
+      echo "ERROR: Communication error with Jack server ($CURL_CODE)" >&2
+      abort
+    else
+      let RETRY_SESSION=RETRY_SESSION-1
+    fi
+  fi
+done
+
+# Wait for termination
+wait $PID_OUT
+wait $PID_ERR
+
+# Exit
+exit $JACK_CODE
