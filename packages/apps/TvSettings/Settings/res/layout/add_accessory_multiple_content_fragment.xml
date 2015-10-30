@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2014 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/multiple_title"
+        style="@style/SettingsStyle.TextAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="50dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:text="@string/accessories_add_title_multiple" />
+
+    <ImageView
+        android:id="@+id/back_panel_image"
+        android:src="@drawable/pairing_button_animation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/multiple_title"
+        android:layout_alignStart="@id/multiple_title"
+        android:layout_marginBottom="16dp"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:id="@+id/multiple_instructions"
+        android:textSize="16dp"
+        android:fontFamily="sans-serif-thin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/multiple_title"
+        android:layout_alignStart="@id/multiple_title"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:text="@string/accessories_add_multiple" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="@android:style/Widget.Material.ProgressBar.Horizontal"
+        android:layout_below="@id/multiple_instructions"
+        android:layout_alignStart="@id/multiple_title"
+        android:layout_width="600dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:indeterminate="true"
+        android:indeterminateOnly="true"
+        />
+
+    <TextView
+        android:id="@+id/select_instructions"
+        android:textSize="16dp"
+        android:fontFamily="sans-serif-thin"
+        android:textColor="@color/add_accessory_hint_text_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progress_bar"
+        android:layout_alignStart="@id/multiple_title"
+        android:layout_marginEnd="60dp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:text="@string/accessories_add_multiple_select" />
+
+</RelativeLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+/**
+ * Copyright (C) 2014 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="provisioning_error_title" msgid="6320515739861578118">"Lo!"</string>
+    <string name="setup_work_profile" msgid="9164519662954159586">"Weka wasifu wako"</string>
+    <string name="company_controls_workspace" msgid="2808025277267917221">"Shirika lako linadhibiti kifaa chako na kukiweka salama. Unadhibiti vitu vingine vyote kwenye kifaa chako."</string>
+    <string name="company_controls_device" msgid="8230957518758871390">"Shirika lako litadhibiti kifaa hiki na kukiweka salama."</string>
+    <string name="the_following_is_your_mdm" msgid="6613658218262376404">"Programu ifuatayo itahitaji kufikia wasifu huu:"</string>
+    <string name="the_following_is_your_mdm_for_device" msgid="6717973404364414816">"Programu zifuatazo zitadhibiti kifaa chako:"</string>
+    <string name="set_up" msgid="7012862095553564169">"Sanidi"</string>
+    <string name="setting_up_workspace" msgid="4517537806569988620">"Inaweka mipangilio ya wasifu wako wa kazi..."</string>
+    <string name="admin_has_ability_to_monitor_profile" msgid="4568398182707822770">"Msimamizi wako ana uwezo wa kufuatilia na kudhibiti mipangilio, ufikiaji wa kampuni, programu na data inayohusiana na wasifu huu, ikiwa ni pamoja na shughuli kwenye mtandao na maelezo kuhusu mahali kilipo kifaa chako."</string>
+    <string name="admin_has_ability_to_monitor_device" msgid="246829528286153147">"Msimamizi wako ana uwezo wa kufuatilia na kudhibiti mipangilio, idhini ya kufikia ya kampuni, programu, ruhusa, na data zinazohusiana na kifaa hiki, ikiwa ni pamoja na shughuli za mtandao na maelezo ya mahali kilipo kifaa chako."</string>
+    <string name="theft_protection_disabled_warning" msgid="8132394739905501698">"Ukiendelea, vipengele vya ulinzi dhidi ya wizi havitawashwa. Ili kuwasha vipengee vya ulinzi dhidi ya wizi, ghairi sasa na ukipange kama kifaa cha binafsi."</string>
+    <string name="contact_your_admin_for_more_info" msgid="6870084889394621288">"Wasiliana na msimamizi wako kwa maelezo zaidi, ikiwa ni pamoja na sera za faragha za shirika lako."</string>
+    <string name="learn_more_link" msgid="3012495805919550043">"Pata maelezo zaidi"</string>
+    <string name="cancel_setup" msgid="3295266841772028057">"GHAIRI"</string>
+    <string name="ok_setup" msgid="5148111905838329307">"SAWA"</string>
+    <string name="default_managed_profile_name" msgid="5370257687074907055">"Wasifu wa kazini"</string>
+    <string name="delete_profile_title" msgid="3097803266123463699">"Ungependa kuondoa wasifu wa kazini?"</string>
+    <string name="opening_paragraph_delete_profile_unknown_company" msgid="2139238673477554356">"Wasifu wa kazi tayari upo na unasimamiwa na:"</string>
+    <string name="opening_paragraph_delete_profile_known_company" msgid="3126629826260821264">"Wasifu huu wa kazini unasimamiwa kwa niaba ya %s kwa kutumia:"</string>
+    <string name="read_more_delete_profile" msgid="7789171620401666343">"Kabla ya kuendelea, "<a href="#read_this_link">"soma hapa"</a>"."</string>
+    <string name="sure_you_want_to_delete_profile" msgid="1336653819166266605">"Programu zote na data katika wasifu huu zitafutwa ukiendelea."</string>
+    <string name="delete_profile" msgid="8384444459432563649">"FUTA"</string>
+    <string name="cancel_delete_profile" msgid="5500786140389799348">"GHAIRI"</string>
+    <string name="encrypt_device_text_for_profile_owner_setup" msgid="4325067657681168120">"Ili uendelee kusanidi wasifu wako wa kazini, utahitaji kusimba kifaa chako kwa njia fiche. Hatua hii inaweza kuchukua muda."</string>
+    <string name="encrypt_device_text_for_device_owner_setup" msgid="9206667711446040692">"Ili uweze kuendelea kupanga kifaa chako, utalazimika ukisimbe kwa njia fiche. Hatua hii inaweza kuchukua muda."</string>
+    <string name="encrypt_device_cancel" msgid="5989855177432338238">"GHAIRI"</string>
+    <string name="encrypt_device_launch_settings" msgid="5421412897999811117">"SIMBA KWA NJIA FICHE"</string>
+    <string name="continue_provisioning_notify_title" msgid="5191449100153186648">"Usimbaji fiche umekamilika"</string>
+    <string name="continue_provisioning_notify_text" msgid="3027317630111909095">"Gusa ili uendelee kusanidi wasifu wako wa kazini"</string>
+    <string name="managed_provisioning_error_text" msgid="7063621174570680890">"Haikuweza kusanidi wasifu wako wa kazi. Wasiliana na idara yako ya Teknolojia ya Habari au ujaribu tena baadaye."</string>
+    <string name="managed_provisioning_not_supported" msgid="6582227325719911795">"Kifaa chako hakitumii wasifu wa kazini"</string>
+    <string name="user_is_not_owner" msgid="6193230832887977927">"Wasifu wa kazini unafaa uwekwe na mtumiaji msingi wa kifaa"</string>
+    <string name="device_owner_exists" msgid="8020080296133337023">"Wasifu wa kazini hauwezi kusanidiwa kwenye kifaa kinachosimamiwa"</string>
+    <string name="maximum_user_limit_reached" msgid="4821228722266114449">"Wasifu wa kazi haukuweza kuundwa kwa sababu umefikia idadi ya juu ya watumiaji kwenye kifaa chako. Ondoa angalau mtumiaji moja na ujaribu tena."</string>
+    <string name="managed_provisioning_not_supported_by_launcher" msgid="8710138269807942163">"Wasifu wako wa kazini hauwezi kutumiwa na kifungua programu hiki. Itabidi ubadili hadi kifungua programu kinachooana."</string>
+    <string name="cancel_provisioning" msgid="3753408161948407036">"GHAIRI"</string>
+    <string name="pick_launcher" msgid="4811489057826175648">"SAWA"</string>
+    <string name="default_owned_device_username" msgid="3915120202811807955">"Mtumiaji wa kifaa cha kazini"</string>
+    <string name="setup_work_device" msgid="3028145936574439146">"Sanidi kifaa chako"</string>
+    <string name="progress_data_process" msgid="1707745321954672971">"Inachakata data ya kuweka mipangilio..."</string>
+    <string name="progress_connect_to_wifi" msgid="472251154628863539">"Inaunganisha kwenye Wi-Fi..."</string>
+    <string name="progress_download" msgid="3522436271691064624">"Inapakua programu ya msimamizi..."</string>
+    <string name="progress_install" msgid="2258045670385866183">"Inasakinisha programu ya msimamizi..."</string>
+    <string name="progress_set_owner" msgid="8214062820093757961">"Inaweka mipangilio ya mmiliki wa kifaa..."</string>
+    <string name="device_owner_cancel_message" msgid="2529288571742712065">"Je, ungependa kuacha kusanidi na ufute data iliyomo kwenye kifaa chako?"</string>
+    <string name="device_owner_cancel_cancel" msgid="1398290143405142587">"GHAIRI"</string>
+    <string name="device_owner_error_ok" msgid="2556654993515978854">"SAWA"</string>
+    <string name="device_owner_error_reset" msgid="5278392395769857412">"WEKA UPYA"</string>
+    <string name="device_owner_error_general" msgid="5962462955470123776">"Haikuweza kusanidi kifaa chako. Wasiliana na idara yako ya Teknolojia ya Habari."</string>
+    <string name="device_owner_error_already_provisioned" msgid="49944866843771627">"Kifaa hiki tayari kimesanidiwa."</string>
+    <string name="device_owner_error_already_provisioned_user" msgid="5861348691161504683">"Kifaa hiki tayari kimesanidiwa mtumiaji huyu."</string>
+    <string name="device_owner_error_wifi" msgid="4256310285761332378">"Haikuweza kuunganisha kwenye Wi-Fi"</string>
+    <string name="device_owner_error_frp" msgid="7053630342416280252">"Kifaa hiki kimefungwa kwa ulinzi dhidi ya kurejesha katika hali kilichotoka nayo kiwandani. Wasiliana na idara yako ya Teknolojia ya Habari."</string>
+    <string name="frp_clear_progress_title" msgid="8628074089458234965">"Inafuta"</string>
+    <string name="frp_clear_progress_text" msgid="1740164332830598827">"Tafadhali subiri..."</string>
+    <string name="device_owner_error_hash_mismatch" msgid="184518450016295596">"Haikuweza kutumia programu ya msimazi kutokana na hitilafu ya checksum. Wasiliana na idara yako ya Teknolojia ya Habari."</string>
+    <string name="device_owner_error_download_failed" msgid="4520111971592657116">"Haikuweza kupakua programu ya msimamizi"</string>
+    <string name="device_owner_error_package_invalid" msgid="3816725179069202140">"Haiwezi kutumia programu ya msimamizi. Inakosa vipengele au ina hitilafu. Wasiliana na idara yako ya Teknolojia ya Habari."</string>
+    <string name="device_owner_error_package_name_invalid" msgid="5161432357348636936">"Haiwezi kusakinisha programu ya msimamizi. Jina la kifurushi si sahihi. Wasiliana na idara yako ya Teknolojia ya Habari."</string>
+    <string name="device_owner_error_installation_failed" msgid="684566845601079360">"Haikuweza kusakinisha programu ya msimamizi"</string>
+    <string name="device_owner_error_package_not_installed" msgid="6095079346537408556">"Programu ya msimamizi haijasakinishwa kwenye kifaa chako"</string>
+    <string name="profile_owner_cancel_message" msgid="6868736915633023477">"Ungependa kuacha kusanidi?"</string>
+    <string name="profile_owner_cancel_cancel" msgid="1035206963979858009">"HAPANA"</string>
+    <string name="profile_owner_cancel_ok" msgid="4915817426681209592">"NDIYO"</string>
+    <string name="profile_owner_cancelling" msgid="5679573829145112822">"Inaghairi…"</string>
+    <string name="work_profile_setup_later_title" msgid="9069148190226279892">"Je, ungependa kuacha kuweka mipangilio ya kifaa chako?"</string>
+    <string name="work_profile_setup_later_message" msgid="2446733709871989895">"Unaweza kuweka mipangilio ya wasifu wako baadaye kutoka programu ya udhibiti wa kifaa inayotumiwa na shirika lako."</string>
+    <string name="work_profile_setup_continue" msgid="44459981285359765">"ENDELEA"</string>
+    <string name="work_profile_setup_stop" msgid="5739020120488653974">"ACHA"</string>
+    <string name="provisioning" msgid="4512493827019163451">"Inaandaa"</string>
+    <string name="copying_certs" msgid="5697938664953550881">"Inasanidi vyeti vya CA"</string>
+    <string name="setup_profile_start_setup" msgid="6793984532953528297">"Weka mipangilio ya wasifu wako. Anza kuweka mipangilio"</string>
+    <string name="setup_profile_encryption" msgid="5241291404536277038">"Weka mipangilio ya wasifu wako. Usimbaji fiche"</string>
+    <string name="setup_profile_progress" msgid="7742718527853325656">"Weka mipangilio ya wasifu wako. Inaonyesha maendeleo"</string>
+    <string name="setup_device_start_setup" msgid="4351340224000741826">"Weka mipangilio ya kifaa chako. Anza kuweka mipangilio"</string>
+    <string name="setup_device_encryption" msgid="7852944465414197103">"Weka mipangilio ya kifaa chako. Usimbaji fiche"</string>
+    <string name="setup_device_progress" msgid="7035335208571175393">"Weka mipangilio ya kifaa chako. Inaonyesha maendeleo"</string>
+    <string name="learn_more_label" msgid="2723716758654655009">"Kitufe cha pata maelezo zaidi"</string>
+    <string name="mdm_icon_label" msgid="3399134595549660561">"Aikoni ya <xliff:g id="ICON_LABEL">%1$s</xliff:g>"</string>
+</resources>

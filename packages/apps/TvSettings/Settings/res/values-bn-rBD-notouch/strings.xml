@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2014 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="wifi_setup_input_password" msgid="4324884380214448502">"<xliff:g id="SSID">%1$s</xliff:g> এর জন্য পাসওয়ার্ড দিন"</string>
+    <string name="wifi_setup_waiting_for_join" msgid="42826539810553389">"^1 যোগদান করছে"</string>
+    <string name="wifi_setup_connection_success" msgid="3362351168182711828">"সফলভাবে সংযুক্ত হয়েছে!"</string>
+    <string name="wifi_setup_save_success" msgid="2001513015933996675">"সফলভাবে সংরক্ষিত হয়েছে!"</string>
+    <string name="device_apps_app_management_version" msgid="6315648665194084382">"সংস্করণ <xliff:g id="APP_VERSION">%1$s</xliff:g>"</string>
+    <string name="device_apps_app_management_open" msgid="3326361233913951387">"খুলুন"</string>
+    <string name="device_apps_app_management_force_stop" msgid="1803832648099079651">"জোর করে বন্ধ করুন"</string>
+    <string name="device_apps_app_management_force_stop_desc" msgid="221435219644064243">"আপনি কোনো অ্যাপ্লিকেশানকে জোর করে বন্ধ করলে, তা অস্বাভাবিক ব্যবহার করতে পারে।"</string>
+    <string name="device_apps_app_management_uninstall" msgid="6054050725055974790">"আনইনস্টল করুন"</string>
+    <string name="device_apps_app_management_uninstall_desc" msgid="3542570994262234511">"আপনি কি এই অ্যাপ্লিকেশানটিকে আনইনস্টল করতে চান?"</string>
+    <string name="device_apps_app_management_disable" msgid="1461984395121717076">"অক্ষম করুন"</string>
+    <string name="device_apps_app_management_disable_desc" msgid="1362228583828208991">"আপনি কি এই অ্যাপ্লিকেশানটিকে অক্ষম করতে চান?"</string>
+    <string name="device_apps_app_management_enable" msgid="8794752872502256633">"সক্রিয় করুন"</string>
+    <string name="device_apps_app_management_enable_desc" msgid="6449017972628203288">"আপনি কি এই অ্যাপ্লিকেশানটিকে সক্রিয় করতে চান?"</string>
+    <string name="device_apps_app_management_clear_data" msgid="8288695583331012586">"ডেটা সাফ করুন"</string>
+    <string name="device_apps_app_management_clear_data_desc" msgid="2197842469669426232">"এই অ্যাপ্লিকেশানের সব ডেটা স্থায়ীভাবে মুছে ফেলা হবে।"</string>
+    <string name="device_apps_app_management_clear_data_what" msgid="376666756087041021">"এর মধ্যে সব ফাইল, সেটিংস, অ্যাকাউন্ট, ডেটাবেস ইত্যাদি অন্তর্ভুক্ত।"</string>
+    <string name="device_apps_app_management_clear_default" msgid="6654723680469212060">"ডিফল্টগুলি সাফ করুন"</string>
+    <string name="device_apps_app_management_clear_default_set" msgid="6233682647156684225">"কিছু ক্রিয়ার জন্য এই অ্যাপ্লিকেশানটি লঞ্চ করতে সেট করুন"</string>
+    <string name="device_apps_app_management_clear_default_none" msgid="6312021202504995474">"কোনো ডিফল্ট সেট করা নেই"</string>
+    <string name="device_apps_app_management_clear_cache" msgid="7878530504449821203">"ক্যাশে সাফ করুন"</string>
+    <string name="device_apps_app_management_notifications" msgid="7069935222112158478">"বিজ্ঞপ্তিগুলি"</string>
+    <string name="device_apps_app_management_permissions" msgid="5758303833496289673">"অনুমতিগুলি"</string>
+    <string name="settings_ok" msgid="5501301223475616254">"ঠিক আছে"</string>
+    <string name="settings_cancel" msgid="1649053173330804917">"বাতিল করুন"</string>
+    <string name="settings_on" msgid="1295064657786011878">"চালু করুন"</string>
+    <string name="settings_off" msgid="4439170658516725721">"বন্ধ করুন"</string>
+    <string name="device_daydreams_none" msgid="5310233518671772034">"কোনো কিছুই নয়"</string>
+    <string name="device_daydreams_select" msgid="1754678562660674925">"স্ক্রিনসেভার"</string>
+    <string name="device_daydreams_test" msgid="7442554912076991502">"এখন শুরু করুন"</string>
+    <string name="device_daydreams_sleep" msgid="5263432145910468025">"কখন দিবাস্বপ্নে যাবে"</string>
+    <string name="device_daydreams_sleep_description" msgid="8438730889852772376">"এত সময় ধরে নিষ্ক্রিয় থাকার পরে স্ক্রিনসেভার শুরু হয়। কোনো স্ক্রিনসেভার নির্বাচিত না করা থাকলে প্রদর্শন বন্ধ হয়ে যাবে।"</string>
+    <string name="device_daydreams_sleep_summary" msgid="4442691086777437088">"<xliff:g id="SLEEP_DESCRIPTION">%1$s</xliff:g> নিষ্ক্রিয়তার পরে"</string>
+    <string name="device_daydreams_screen_off" msgid="1846621864054404830">"কখন ঘুমাতে যাবে"</string>
+    <string name="device_daydreams_screen_off_description" msgid="7699124270812914310">"এই সময়সীমা পর্যন্ত নিষ্ক্রিয় অবস্থায় থাকলে স্ক্রীন বন্ধ হয়ে যাবে৷"</string>
+    <string name="device_daydreams_screen_off_summary" msgid="6350806465141059041">"দিবাস্বপ্নের পরে <xliff:g id="SLEEP_DESCRIPTION">%1$s</xliff:g>"</string>
+    <string name="backup_configure_account_default_summary" msgid="2013649183664358673">"বর্তমানে কোনো অ্যাকাউন্টই ব্যাক আপ করা ডেটা সংরক্ষণ করছে না"</string>
+    <string name="backup_erase_dialog_title" msgid="8900389956460363471"></string>
+    <string name="backup_erase_dialog_message" msgid="448169495686297910">"আপনার Wi-Fi পাসওয়ার্ড, বুকমার্ক, অন্যান্য সেটিংস, এবং অ্যাপ্লিকেশান ডেটা ব্যাক আপ করা বন্ধ করে Google সার্ভারে থাকা সব অনুলিপি মুছে ফেলবেন?"</string>
+    <string name="privacy_backup_data" msgid="3652306596140877278">"আমার ডেটার ব্যাকআপ রাখুন"</string>
+    <string name="privacy_backup_account" msgid="6127132568071889274">"ব্যাকআপ অ্যাকাউন্ট"</string>
+    <string name="privacy_automatic_restore" msgid="8896792578363571896">"স্বয়ংক্রিয় পুনরুদ্ধার"</string>
+    <string name="factory_reset_device" msgid="7615350252195583106">"ডিভাইসটি পুনরায় সেট করুন"</string>
+    <string name="factory_reset_description" msgid="6709336495536583649">"এটি আপনার ডিভাইসের অভ্যন্তরীণ সঞ্চয়স্থান থেকে সব ডেটা মুছে ফেলবে। আপনার Google অ্যাকাউন্ট, সিস্টেম ও অ্যাপ্লিকেশানের ডেটা ও সেটিংস এবং ডাউনলোড করা অ্যাপ্লিকেশান এসব ডেটার অন্তর্ভুক্ত।"</string>
+    <string name="confirm_factory_reset_description" msgid="5710644039419606428">"আপনার সমস্ত ব্যক্তিগত ডেটা এবং ডাউনলোড করা অ্যাপ্লিকেশান মুছে দিতে চান? আপনি পদক্ষেপটি আর বাতিল করতে পারবেন না!"</string>
+    <string name="confirm_factory_reset_device" msgid="519046408823105666">"সবকিছু মুছে দিন"</string>
+    <string name="dismiss_all_notifications" msgid="3350731990365092847">"সব খারিজ করুন"</string>
+    <string name="no_notifications" msgid="3241328952121767751">"একটিও নেই"</string>
+    <string name="do_not_disturb_title" msgid="1050245577355301376">"বিরক্ত করবেন না"</string>
+    <string name="do_not_disturb_desc" msgid="3186041965642361597">"সক্ষম করা হলে, নতুন বিজ্ঞপ্তিগুলি শুধুমাত্র সেটিংসে দেখা যাবে"</string>
+    <string name="select_title" msgid="2657901623249723536">"আপনার ^1 এর জন্য একটি নাম চয়ন করুন"</string>
+    <string name="select_description" msgid="4080602542483519716">"আপনার ফোন, ট্যাবলেট বা কম্পিউটারের মতো অন্য কোনো ডিভাইস থেকে যখন ^1 এ অ্যাক্সেস করবেন তখন এর নাম এটিকে সনাক্ত করতে সহায়তা করবে৷"</string>
+  <string-array name="rooms">
+    <item msgid="2748008285322003570">"লিভিং রুম"</item>
+    <item msgid="7887185726776968055">"মিডিয়া রুম"</item>
+    <item msgid="372573326176756144">"ফ্যামিলি রুম"</item>
+    <item msgid="8112576067079559786">"খাবার ঘর"</item>
+    <item msgid="2891751328917513846">"কুঠরি"</item>
+    <item msgid="7390608863950443962">"শোওয়ার ঘর"</item>
+    <item msgid="682313511953895794">"রান্নাঘর"</item>
+  </string-array>
+    <string name="custom_room" msgid="5972936200641815527">"কাস্টম নাম লিখুন..."</string>
+    <string name="settings_status_title" msgid="3280459921834269206">"এই ^1 এর নাম দেওয়া হয়েছে"</string>
+    <string name="settings_status_description" msgid="4892610880616296037">"এই ^2 এর নাম \"^1\"৷ আপনি কি এর পরিবর্তন করতে চান?"</string>
+    <string name="change_setting" msgid="199354038426145612">"পরিবর্তন করুন"</string>
+    <string name="keep_settings" msgid="549230720820096102">"পরিবর্তন করবেন না"</string>
+    <string name="menu_help" msgid="2164687828212723531">"সহায়তা"</string>
+    <string name="setup_failure_title" msgid="4408868360762577232">"একটি ত্রুটি ঘটেছে"</string>
+    <string name="setup_failure_button_retry" msgid="4917381906591779977">"পুনরায় চেষ্টা করুন"</string>
+</resources>

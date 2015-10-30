@@ -1,0 +1,142 @@
+
+buildscript {
+    ext.rootFolder = project.projectDir
+    apply from: 'propLoader.gradle'
+    ext.addRepos(repositories)
+    if (ext.config.addRemoteRepos) {
+        dependencies {
+            classpath "com.android.databinding:localizemaven:${config.extraPluginsVersion}"
+        }
+    }
+}
+subprojects {
+    apply plugin: 'maven'
+    if (config.addRemoteRepos) {
+        apply plugin: 'com.android.databinding.localizemaven'
+    }
+
+    group = config.group
+    version = config.version
+    uploadArchives {
+        repositories {
+            mavenDeployer {
+                repository(url: "file://${config.mavenRepoDir}")
+            }
+        }
+    }
+    buildscript {
+        addRepos(repositories)
+        dependencies {
+            classpath "com.android.databinding:bintray:${config.extraPluginsVersion}"
+        }
+    }
+}
+
+if (config.addRemoteRepos) {
+    localizeMaven {
+        localRepoDir = file(config.megaRepoDir)
+        otherRepoDirs = config.localRepositories
+    }
+}
+
+task deleteRepo(type: Delete) {
+    delete "${config.mavenRepoDir}/${config.group.replace('.', '/')}"
+}
+
+task deletePrebuildFolder(type: Delete) {
+    delete "${config.prebuildFolder}"
+}
+
+task deleteEap(type: Delete) {
+    delete "${config.eapOutDir}"
+}
+
+
+def buildExtensionsTask = project.tasks.create "buildExtensionsTask", Exec
+buildExtensionsTask.workingDir file('extensions').getAbsolutePath()
+buildExtensionsTask.commandLine './gradlew'
+buildExtensionsTask.args 'clean', 'uploadArchives', '--info', '--stacktrace'
+buildExtensionsTask.dependsOn subprojects.uploadArchives
+
+def prepareExtensionPrebuilds = project.tasks.create "prepareExtensionPrebuilds", Exec
+prepareExtensionPrebuilds.workingDir file('extensions').getAbsolutePath()
+prepareExtensionPrebuilds.commandLine './gradlew'
+prepareExtensionPrebuilds.args 'clean', 'preparePrebuilds', '--info', '--stacktrace'
+prepareExtensionPrebuilds.dependsOn subprojects.uploadArchives
+
+file('integration-tests').listFiles().findAll { it.isDirectory() }.each {
+    println("Creating run test task for  ${it.getAbsolutePath()}.")
+    def testTask = project.tasks.create "runTestsOf${it.getName().capitalize()}", Exec
+    testTask.workingDir it.getAbsolutePath()
+    //on linux
+    testTask.commandLine './gradlew'
+    testTask.args 'clean', 'connectedCheck', '--info', '--stacktrace'
+    testTask.dependsOn subprojects.uploadArchives
+    testTask.dependsOn buildExtensionsTask
+}
+
+task runIntegrationTests {
+    dependsOn tasks.findAll { task -> task.name.startsWith('runTestsOf') }
+}
+
+task runAllTests {
+    dependsOn runIntegrationTests
+}
+
+task preparePrebuilds() {
+    dependsOn deletePrebuildFolder
+    dependsOn prepareExtensionPrebuilds
+}
+
+allprojects {
+    afterEvaluate { project ->
+        runAllTests.dependsOn project.tasks.findAll {task -> task.name.equals('test')}
+        runAllTests.dependsOn project.tasks.findAll {task -> task.name.equals('connectedCheck')}
+        preparePrebuilds.dependsOn project.tasks.findAll {task -> task.name.startsWith('prebuild')}
+    }
+}
+
+subprojects.uploadArchives.each { it.shouldRunAfter deleteRepo  }
+subprojects.uploadArchives.each { it.shouldRunAfter deletePrebuildFolder  }
+buildExtensionsTask.shouldRunAfter deleteRepo
+tasks['runTestsOfMultiModuleTestApp'].dependsOn tasks['runTestsOfIndependentLibrary']
+
+
+task rebuildRepo() {
+    dependsOn deleteRepo
+    dependsOn subprojects.uploadArchives
+    dependsOn buildExtensionsTask
+}
+
+task copySamplesToEap(type : Copy) {
+    mustRunAfter deleteEap
+    from ("$projectDir/samples") {
+        exclude "**/build"
+        exclude "**/local.properties"
+    }
+    into "${config.eapOutDir}/samples"
+}
+
+
+task copyMavenRepoToEap(type : Copy) {
+    mustRunAfter deleteEap
+    dependsOn rebuildRepo
+    from(config.mavenRepoDir)
+    into "${config.eapOutDir}/${config.mavenRepoName}"
+}
+
+tasks.create(name : 'createEapConfigFile') << {
+    def propsFile = new File("${config.eapOutDir}/databinding.properties")
+    Properties props = new Properties()
+    props.setProperty('version', config.version)
+    props.setProperty('mavenRepoName', config.mavenRepoName)
+    props.store(propsFile.newWriter(), null)
+}
+
+
+task batchEAP() {
+    dependsOn deleteEap
+    dependsOn copyMavenRepoToEap
+    dependsOn copySamplesToEap
+    dependsOn createEapConfigFile
+}

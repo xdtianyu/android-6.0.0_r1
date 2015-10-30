@@ -1,0 +1,14 @@
+ext.rootFolder = "${project.projectDir}/.."
+apply from: '../propLoader.gradle'
+subprojects {
+    apply plugin: 'maven'
+    group = config.group
+    version = config.extraPluginsVersion
+    uploadArchives {
+        repositories {
+            mavenDeployer {
+                repository(url: "file://${config.extraPluginsRepoDir}")
+            }
+        }
+    }
+}

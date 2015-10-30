@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2014 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="wifi_setup_input_password" msgid="4324884380214448502">"Entrez le mot de passe associé au réseau <xliff:g id="SSID">%1$s</xliff:g>"</string>
+    <string name="wifi_setup_waiting_for_join" msgid="42826539810553389">"Connexion à ^1…"</string>
+    <string name="wifi_setup_connection_success" msgid="3362351168182711828">"Vous êtes bien connecté!"</string>
+    <string name="wifi_setup_save_success" msgid="2001513015933996675">"La configuration a bien été enregistrée."</string>
+    <string name="device_apps_app_management_version" msgid="6315648665194084382">"version <xliff:g id="APP_VERSION">%1$s</xliff:g>"</string>
+    <string name="device_apps_app_management_open" msgid="3326361233913951387">"Ouvrir"</string>
+    <string name="device_apps_app_management_force_stop" msgid="1803832648099079651">"Forcer l\'arrêt"</string>
+    <string name="device_apps_app_management_force_stop_desc" msgid="221435219644064243">"Si vous forcez l\'arrêt d\'une application, cela peut provoquer son dysfonctionnement."</string>
+    <string name="device_apps_app_management_uninstall" msgid="6054050725055974790">"Désinstaller"</string>
+    <string name="device_apps_app_management_uninstall_desc" msgid="3542570994262234511">"Voulez-vous désinstaller cette application?"</string>
+    <string name="device_apps_app_management_disable" msgid="1461984395121717076">"Désactiver"</string>
+    <string name="device_apps_app_management_disable_desc" msgid="1362228583828208991">"Voulez-vous désactiver cette application?"</string>
+    <string name="device_apps_app_management_enable" msgid="8794752872502256633">"Activer"</string>
+    <string name="device_apps_app_management_enable_desc" msgid="6449017972628203288">"Voulez-vous activer cette application?"</string>
+    <string name="device_apps_app_management_clear_data" msgid="8288695583331012586">"Effacer les données"</string>
+    <string name="device_apps_app_management_clear_data_desc" msgid="2197842469669426232">"Toutes les données de cette application vont être supprimées définitivement."</string>
+    <string name="device_apps_app_management_clear_data_what" msgid="376666756087041021">"Cela inclut l\'ensemble des fichiers, des paramètres, des comptes, des bases de données, etc."</string>
+    <string name="device_apps_app_management_clear_default" msgid="6654723680469212060">"Effacer les actions par défaut"</string>
+    <string name="device_apps_app_management_clear_default_set" msgid="6233682647156684225">"Cette appli sera util. pour cert. actions"</string>
+    <string name="device_apps_app_management_clear_default_none" msgid="6312021202504995474">"Aucune action par défaut définie"</string>
+    <string name="device_apps_app_management_clear_cache" msgid="7878530504449821203">"Vider le cache"</string>
+    <string name="device_apps_app_management_notifications" msgid="7069935222112158478">"Notifications"</string>
+    <string name="device_apps_app_management_permissions" msgid="5758303833496289673">"Autorisations"</string>
+    <string name="settings_ok" msgid="5501301223475616254">"OK"</string>
+    <string name="settings_cancel" msgid="1649053173330804917">"Annuler"</string>
+    <string name="settings_on" msgid="1295064657786011878">"Activé"</string>
+    <string name="settings_off" msgid="4439170658516725721">"Désactivé"</string>
+    <string name="device_daydreams_none" msgid="5310233518671772034">"Aucun"</string>
+    <string name="device_daydreams_select" msgid="1754678562660674925">"Écran de veille interactif"</string>
+    <string name="device_daydreams_test" msgid="7442554912076991502">"Lancer"</string>
+    <string name="device_daydreams_sleep" msgid="5263432145910468025">"Quand passer en mode Veille"</string>
+    <string name="device_daydreams_sleep_description" msgid="8438730889852772376">"L\'écran de veille interactif s\'active après cette période d\'inactivité. Si aucun écran de veille n\'est sélectionné, l\'écran s\'éteint."</string>
+    <string name="device_daydreams_sleep_summary" msgid="4442691086777437088">"Après <xliff:g id="SLEEP_DESCRIPTION">%1$s</xliff:g> d\'inactivité"</string>
+    <string name="device_daydreams_screen_off" msgid="1846621864054404830">"Activer l\'écran de veille interactif"</string>
+    <string name="device_daydreams_screen_off_description" msgid="7699124270812914310">"L\'écran s\'éteint après cette période d\'inactivité."</string>
+    <string name="device_daydreams_screen_off_summary" msgid="6350806465141059041">"<xliff:g id="SLEEP_DESCRIPTION">%1$s</xliff:g> après l\'activation de l\'écran de veille interactif"</string>
+    <string name="backup_configure_account_default_summary" msgid="2013649183664358673">"Actuellement, aucun compte n\'enregistre de données de sauvegarde"</string>
+    <string name="backup_erase_dialog_title" msgid="8900389956460363471"></string>
+    <string name="backup_erase_dialog_message" msgid="448169495686297910">"Arrêter de sauvegarder vos mots de passe Wi-Fi, vos favoris ainsi que d\'autres paramètres et données d\'applications, et en effacer toutes les copies des serveurs Google?"</string>
+    <string name="privacy_backup_data" msgid="3652306596140877278">"Sauvegarder mes données"</string>
+    <string name="privacy_backup_account" msgid="6127132568071889274">"Sauvegarder le compte"</string>
+    <string name="privacy_automatic_restore" msgid="8896792578363571896">"Restauration automatique"</string>
+    <string name="factory_reset_device" msgid="7615350252195583106">"Réinitialiser l\'appareil"</string>
+    <string name="factory_reset_description" msgid="6709336495536583649">"Toutes les données de votre mémoire de stockage interne seront effacées, y compris les paramètres et les données de votre compte Google, de votre système et de vos applications, ainsi que les applications que vous aviez téléchargées."</string>
+    <string name="confirm_factory_reset_description" msgid="5710644039419606428">"Effacer toutes vos données personnelles et les applications téléchargées? Cette action est irréversible."</string>
+    <string name="confirm_factory_reset_device" msgid="519046408823105666">"Tout effacer"</string>
+    <string name="dismiss_all_notifications" msgid="3350731990365092847">"Tout ignorer"</string>
+    <string name="no_notifications" msgid="3241328952121767751">"Aucune"</string>
+    <string name="do_not_disturb_title" msgid="1050245577355301376">"Ne pas déranger"</string>
+    <string name="do_not_disturb_desc" msgid="3186041965642361597">"Si activé, nouv. notif. affichées uniq. dans Paramètres"</string>
+    <string name="select_title" msgid="2657901623249723536">"Sélectionner un nom pour votre ^1"</string>
+    <string name="select_description" msgid="4080602542483519716">"Donner un nom à votre ^1 vous permettra de l\'identifier plus facilement lorsque vous y accéderez à partir d\'autres appareils, tels que votre téléphone, votre tablette ou votre ordinateur."</string>
+  <string-array name="rooms">
+    <item msgid="2748008285322003570">"Salon"</item>
+    <item msgid="7887185726776968055">"Salle multimédia"</item>
+    <item msgid="372573326176756144">"Salle de séjour"</item>
+    <item msgid="8112576067079559786">"Salle à manger"</item>
+    <item msgid="2891751328917513846">"Bureau"</item>
+    <item msgid="7390608863950443962">"Chambre"</item>
+    <item msgid="682313511953895794">"Cuisine"</item>
+  </string-array>
+    <string name="custom_room" msgid="5972936200641815527">"Entrer un nom personnalisé..."</string>
+    <string name="settings_status_title" msgid="3280459921834269206">"Cet appareil ^1 est nommé"</string>
+    <string name="settings_status_description" msgid="4892610880616296037">"« ^1 » est le nom de cet appareil ^2. Souhaitez-vous le modifier?"</string>
+    <string name="change_setting" msgid="199354038426145612">"Modifier"</string>
+    <string name="keep_settings" msgid="549230720820096102">"Ne pas modifier"</string>
+    <string name="menu_help" msgid="2164687828212723531">"Aide"</string>
+    <string name="setup_failure_title" msgid="4408868360762577232">"Une erreur est survenue."</string>
+    <string name="setup_failure_button_retry" msgid="4917381906591779977">"Réessayer"</string>
+</resources>

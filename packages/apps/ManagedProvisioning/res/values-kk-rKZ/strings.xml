@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+/**
+ * Copyright (C) 2014 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="provisioning_error_title" msgid="6320515739861578118">"Ой!"</string>
+    <string name="setup_work_profile" msgid="9164519662954159586">"Профильді реттеу"</string>
+    <string name="company_controls_workspace" msgid="2808025277267917221">"Ұйымыңыз осы профильді басқарады және оны қауіпсіз сақтайды. Сіз құрылғыдағы барлық басқа нәрселерді басқарасыз."</string>
+    <string name="company_controls_device" msgid="8230957518758871390">"Ұйымыңыз осы құрылғыны басқарады және оны қорғайды."</string>
+    <string name="the_following_is_your_mdm" msgid="6613658218262376404">"Келесі қолданбаға осы профильге қатынасу қажет болады:"</string>
+    <string name="the_following_is_your_mdm_for_device" msgid="6717973404364414816">"Келесі қолданба құрылғыңызды басқарады:"</string>
+    <string name="set_up" msgid="7012862095553564169">"Реттеу"</string>
+    <string name="setting_up_workspace" msgid="4517537806569988620">"Жұмыс профиліңіз реттелуде…"</string>
+    <string name="admin_has_ability_to_monitor_profile" msgid="4568398182707822770">"Әкімшіңіздің параметрлерді бақылау және басқару, қолданбаларға, рұқсаттарға және профильмен байланысты деректерге, оның ішінде желі әрекетіне және құрылғыңыздың орын туралы ақпаратына корпоративтік кіру мүмкіндігі бар."</string>
+    <string name="admin_has_ability_to_monitor_device" msgid="246829528286153147">"Әкімшіңіздің параметрлерді бақылау және басқару, қолданбаларға, рұқсаттарға және осы құрылғымен байланысты деректерге, оның ішінде желі әрекетіне және құрылғыңыздың орын туралы ақпаратына корпоративтік кіру мүмкіндігі бар."</string>
+    <string name="theft_protection_disabled_warning" msgid="8132394739905501698">"Жалғастырсаңыз, ұрлаудан қорғау функциялары қосылмайды. Ұрлаудан қорғау функциясын қосу үшін қазір бас тартып, мұны жеке құрылғы ретінде реттеңіз."</string>
+    <string name="contact_your_admin_for_more_info" msgid="6870084889394621288">"Қосымша ақпарат, соның ішінде, компанияның құпиялық саясаттары туралы ақпарат алу үшін әкімшіге хабарласыңыз."</string>
+    <string name="learn_more_link" msgid="3012495805919550043">"Қосымша мәліметтер"</string>
+    <string name="cancel_setup" msgid="3295266841772028057">"БАС ТАРТУ"</string>
+    <string name="ok_setup" msgid="5148111905838329307">"Жарайды"</string>
+    <string name="default_managed_profile_name" msgid="5370257687074907055">"Жұмыс профилі"</string>
+    <string name="delete_profile_title" msgid="3097803266123463699">"Жұмыс проф. жою керек пе?"</string>
+    <string name="opening_paragraph_delete_profile_unknown_company" msgid="2139238673477554356">"Жұмыс профилі бұрыннан бар және оны басқарушы:"</string>
+    <string name="opening_paragraph_delete_profile_known_company" msgid="3126629826260821264">"Бұл жұмыс профилі %s пайдалану үшін басқарылады:"</string>
+    <string name="read_more_delete_profile" msgid="7789171620401666343">"Жалғастырудан бұрын "<a href="#read_this_link">"мынаны оқыңыз"</a>"."</string>
+    <string name="sure_you_want_to_delete_profile" msgid="1336653819166266605">"Жалғастырсаңыз, осы профильдегі барлық бағдарламалар мен деректер жойылады."</string>
+    <string name="delete_profile" msgid="8384444459432563649">"ЖОЮ"</string>
+    <string name="cancel_delete_profile" msgid="5500786140389799348">"БАС ТАРТУ"</string>
+    <string name="encrypt_device_text_for_profile_owner_setup" msgid="4325067657681168120">"Жұмыс профиліңізді реттеуді жалғастыру үшін құрылғыңызды шифрлауыңыз керек. Бұл біраз уақыт алуы мүмкін."</string>
+    <string name="encrypt_device_text_for_device_owner_setup" msgid="9206667711446040692">"Құрылғыны реттеуді жалғастыру үшін оны шифрлау керек. Бұл біраз уақыт алуы мүмкін."</string>
+    <string name="encrypt_device_cancel" msgid="5989855177432338238">"БАС ТАРТУ"</string>
+    <string name="encrypt_device_launch_settings" msgid="5421412897999811117">"ШИФРЛАУ"</string>
+    <string name="continue_provisioning_notify_title" msgid="5191449100153186648">"Шифрлау аяқталды"</string>
+    <string name="continue_provisioning_notify_text" msgid="3027317630111909095">"Жұмыс профилін орнатуды жалғастыру үшін түртіңіз"</string>
+    <string name="managed_provisioning_error_text" msgid="7063621174570680890">"Жұмыс профиліңізді реттеу мүмкін болмады. АТ бөліміне хабарласыңыз немесе әрекетті кейінірек қайталаңыз."</string>
+    <string name="managed_provisioning_not_supported" msgid="6582227325719911795">"Құрылғыңыз жұмыс профильдерін қолдамайды"</string>
+    <string name="user_is_not_owner" msgid="6193230832887977927">"Жұмыс профильдерін құрылғының негізгі пайдаланушысы реттеуі керек"</string>
+    <string name="device_owner_exists" msgid="8020080296133337023">"Жұмыс профильдері басқарылатын құрылғыда орнатылмайды"</string>
+    <string name="maximum_user_limit_reached" msgid="4821228722266114449">"Жұмыс профилін жасау мүмкін емес, өйткені құрылғыда ең көп пайдаланушылар санына жеттіңіз. Кемінде бір пайдаланушыны жойып, әрекетті қайталаңыз."</string>
+    <string name="managed_provisioning_not_supported_by_launcher" msgid="8710138269807942163">"Жұмыс профиліңізді осы қосқыш қолданба қолдамайды. Үйлесімді қосқышқа ауысу керек."</string>
+    <string name="cancel_provisioning" msgid="3753408161948407036">"БАС ТАРТУ"</string>
+    <string name="pick_launcher" msgid="4811489057826175648">"OK"</string>
+    <string name="default_owned_device_username" msgid="3915120202811807955">"Жұмыс құрылғысының пайдаланушысы"</string>
+    <string name="setup_work_device" msgid="3028145936574439146">"Құрылғыны реттеу"</string>
+    <string name="progress_data_process" msgid="1707745321954672971">"Реттеу деректері өңделуде…"</string>
+    <string name="progress_connect_to_wifi" msgid="472251154628863539">"Wi-Fi желісіне қосылу орындалуда…"</string>
+    <string name="progress_download" msgid="3522436271691064624">"Әкімші қолданбасы жүктелуде…"</string>
+    <string name="progress_install" msgid="2258045670385866183">"Әкімші қолданбасы орнатылуда…"</string>
+    <string name="progress_set_owner" msgid="8214062820093757961">"Құрылғы иесі орнатылуда…"</string>
+    <string name="device_owner_cancel_message" msgid="2529288571742712065">"Орнатуды тоқтатып, құрылғы деректерін өшіру керек пе?"</string>
+    <string name="device_owner_cancel_cancel" msgid="1398290143405142587">"БАС ТАРТУ"</string>
+    <string name="device_owner_error_ok" msgid="2556654993515978854">"Жарайды"</string>
+    <string name="device_owner_error_reset" msgid="5278392395769857412">"ЫСЫРУ"</string>
+    <string name="device_owner_error_general" msgid="5962462955470123776">"Құрылғыңызды реттеу мүмкін болмады. АТ бөліміне хабарласыңыз."</string>
+    <string name="device_owner_error_already_provisioned" msgid="49944866843771627">"Бұл құрылғы орнатылып қойған."</string>
+    <string name="device_owner_error_already_provisioned_user" msgid="5861348691161504683">"Бұл құрылғы осы пайдаланушы үшін орнатылып қойған."</string>
+    <string name="device_owner_error_wifi" msgid="4256310285761332378">"Wi-Fi желісіне қосылу мүмкін болмады"</string>
+    <string name="device_owner_error_frp" msgid="7053630342416280252">"Бұл құрылғы зауыттық қалпына келтіру қорғанысы арқылы құлыптанған. АТ бөліміне хабарласыңыз."</string>
+    <string name="frp_clear_progress_title" msgid="8628074089458234965">"Өшірілуде"</string>
+    <string name="frp_clear_progress_text" msgid="1740164332830598827">"Күте тұрыңыз…"</string>
+    <string name="device_owner_error_hash_mismatch" msgid="184518450016295596">"Бақылау сомасының қатесіне байланысты әкімші қолданбасын пайдалану мүмкін болмады. АТ бөліміне хабарласыңыз."</string>
+    <string name="device_owner_error_download_failed" msgid="4520111971592657116">"Әкімші қолданбасын жүктеу мүмкін болмады"</string>
+    <string name="device_owner_error_package_invalid" msgid="3816725179069202140">"Әкімші қолданбасын пайдалану мүмкін емес. Оның құрамдастары жетіспейді немесе ол бүлінген. АТ бөліміне хабарласыңыз."</string>
+    <string name="device_owner_error_package_name_invalid" msgid="5161432357348636936">"Әкімші қолданбасын орнату мүмкін емес. Жиынтық аты жарамсыз. АТ бөліміне хабарласыңыз."</string>
+    <string name="device_owner_error_installation_failed" msgid="684566845601079360">"Әкімші қолданбасын орнату мүмкін болмады"</string>
+    <string name="device_owner_error_package_not_installed" msgid="6095079346537408556">"Құрылғыңызда әкімші қолданбасы орнатылмаған"</string>
+    <string name="profile_owner_cancel_message" msgid="6868736915633023477">"Орнатуды тоқтату керек пе?"</string>
+    <string name="profile_owner_cancel_cancel" msgid="1035206963979858009">"ЖОҚ"</string>
+    <string name="profile_owner_cancel_ok" msgid="4915817426681209592">"ИӘ"</string>
+    <string name="profile_owner_cancelling" msgid="5679573829145112822">"Бас тартылуда…"</string>
+    <string name="work_profile_setup_later_title" msgid="9069148190226279892">"Профиль реттеуді тоқтату керек пе?"</string>
+    <string name="work_profile_setup_later_message" msgid="2446733709871989895">"Жұмыс профилінің параметрлерін кейінірек ұйымыңыз пайдаланатын құрылғыларды басқару қолданбасынан орнатуға болады."</string>
+    <string name="work_profile_setup_continue" msgid="44459981285359765">"ЖАЛҒАСТЫРУ"</string>
+    <string name="work_profile_setup_stop" msgid="5739020120488653974">"ТОҚТАТУ"</string>
+    <string name="provisioning" msgid="4512493827019163451">"Дайындау"</string>
+    <string name="copying_certs" msgid="5697938664953550881">"CA сертификаттарын реттеу"</string>
+    <string name="setup_profile_start_setup" msgid="6793984532953528297">"Профиль параметрлерін орнату. Параметрлерді орната бастау"</string>
+    <string name="setup_profile_encryption" msgid="5241291404536277038">"Профиль параметрлерін орнату. Шифрлау"</string>
+    <string name="setup_profile_progress" msgid="7742718527853325656">"Профиль параметрлерін орнату. Барысы көрсетілуде"</string>
+    <string name="setup_device_start_setup" msgid="4351340224000741826">"Құрылғы параметрлерін орнату. Орната бастау"</string>
+    <string name="setup_device_encryption" msgid="7852944465414197103">"Құрылғы параметрлерін орнату. Шифрлау"</string>
+    <string name="setup_device_progress" msgid="7035335208571175393">"Құрылғы параметрлерін орнату. Барысы көрсетілуде"</string>
+    <string name="learn_more_label" msgid="2723716758654655009">"Толығырақ мәлімет түймесі"</string>
+    <string name="mdm_icon_label" msgid="3399134595549660561">"<xliff:g id="ICON_LABEL">%1$s</xliff:g> белгішесі"</string>
+</resources>

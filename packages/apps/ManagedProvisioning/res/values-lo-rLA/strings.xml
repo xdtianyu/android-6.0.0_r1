@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+/**
+ * Copyright (C) 2014 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="provisioning_error_title" msgid="6320515739861578118">"ອຸຍ!"</string>
+    <string name="setup_work_profile" msgid="9164519662954159586">"​ຕັ້ງ​ຄ່າ​ໂປ​ຣ​ໄຟລ໌​ຂອງ​ທ່ານ"</string>
+    <string name="company_controls_workspace" msgid="2808025277267917221">"ອົງ​ກອນ​ຂອງ​ທ່ານ​ຄວບ​ຄຸມໂປຣ​ໄຟລ໌​ນີ້​ ແລະ​​ເຮັດ​ໃຫ້​ມັນ​ປອດ​ໄພ. ຢ່າງ​ອື່ນໆ​ໃນ​ອຸ​ປະ​ກອນ​ຂອງ​ທ່ານ​ແມ່ນ​ທ່ານ​​ເປັນ​ຜູ່ຄວບ​ຄຸມ​."</string>
+    <string name="company_controls_device" msgid="8230957518758871390">"ອົງ​ການ​ຂອງ​ທ່ານ​ຈະ​ຄວບ​ຄຸມ​ອຸ​ປະ​ກອນ​ນີ້ ແລະ ຮັກ​ສາ​ໃຫ້​ມັນ​ປອດ​ໄພ."</string>
+    <string name="the_following_is_your_mdm" msgid="6613658218262376404">"ແອັບຯ​ຕໍ່​ໄປ​ນີ້​ຈະຕ້ອງ​ການ​ເຂົ້າ​ເຖິງ​ໂປຣ​ໄຟລ໌​ນີ້:"</string>
+    <string name="the_following_is_your_mdm_for_device" msgid="6717973404364414816">"ແອັບຯ​ຕໍ່​ໄປ​ນີ້​ຈະຄຸ້ມ​ຄອງ​ອຸ​ປະ​ກອນ:"</string>
+    <string name="set_up" msgid="7012862095553564169">"ຕັ້ງຄ່າ"</string>
+    <string name="setting_up_workspace" msgid="4517537806569988620">"ກຳ​ລັງ​ຕັ້ງ​ຄ່າ​​ໂປ​ຣ​ໄຟ​ລ໌​ບ່ອນ​ເຮັດ​ວຽກ​ຂອງ​ທ່ານ..."</string>
+    <string name="admin_has_ability_to_monitor_profile" msgid="4568398182707822770">"ຜູ້ດູແລລະບົບຂອງທ່ານສາມາດຕິດຕາມ ແລະຈັດການການຕັ້ງຄ່າ, ການເຂົ້າເຖິງ, ແອັບ, ການອະນຸຍາດ ແລະຂໍ້ມູນທີ່ກ່ຽວຂ້ອງກັບໂປຣໄຟລ໌ນີ້ ລວມທັງກິດຈະກໍາເທິງເຄືອຂ່າຍ ແລະຂໍ້ມູນທີ່ຕັ້ງຂອງອຸປະກອນຂອງທ່ານ."</string>
+    <string name="admin_has_ability_to_monitor_device" msgid="246829528286153147">"ຜູ້ດູແລລະບົບຂອງທ່ານສາມາດຕິດຕາມ ແລະຈັດການການຕັ້ງຄ່າ, ການເຂົ້າເຖິງ, ແອັບ, ການອະນຸຍາດ ແລະຂໍ້ມູນທີ່ກ່ຽວຂ້ອງກັບອຸປະກອນນີ້ ລວມທັງກິດຈະກໍາເທິງເຄືອຂ່າຍ ແລະຂໍ້ມູນທີ່ຕັ້ງຂອງອຸປະກອນຂອງທ່ານ."</string>
+    <string name="theft_protection_disabled_warning" msgid="8132394739905501698">"ຖ້າ​ທ່ານ​ສືບ​ຕໍ່, ຄຸນສົມບັດປ້ອງກັນ​ຂະ​ໂມຍ​ຈະ​ບໍ່​ຖືກ​ເປີດ​ໃຊ້​ງານ. ເພື່ອ​ເປີດ​ການປ້ອງກັນ​ຂະ​ໂມຍ, ຍົກ​ເລີກ​ດຽວ​ນີ້ ແລະ ຕັ້ງ​ອັນ​ນີ້​ເປັນ​ອຸ​ປະ​ກອນ​ສ່ວນ​ຕົວ."</string>
+    <string name="contact_your_admin_for_more_info" msgid="6870084889394621288">"ໃຫ້​ຕິດ​ຕໍ່​ຜູ່​ເບິ່ງ​ແຍງ​ລະ​ບົບ​ຂອງ​ທ່ານ​ສຳ​ລັບ​ຂໍ້​ມູນ​ເພີ່ມ​ເຕີມ, ຮວມ​ໄປ​ເຖິງ​ນະ​ໂຍ​ບາຍ​ຄວາມ​ເປັນ​ສ່ວນ​ໂຕ​ຂອງ​ອົງ​ກອນ​ຂອງ​ທ່ານ."</string>
+    <string name="learn_more_link" msgid="3012495805919550043">"ສຶກ​ສາ​ເພີ່ມ​ເຕີມ"</string>
+    <string name="cancel_setup" msgid="3295266841772028057">"ຍົກເລີກ"</string>
+    <string name="ok_setup" msgid="5148111905838329307">"ຕົກລົງ"</string>
+    <string name="default_managed_profile_name" msgid="5370257687074907055">"​ໂປຣ​ໄຟລ໌​ບ່ອນ​ເຮັດ​ວຽກ"</string>
+    <string name="delete_profile_title" msgid="3097803266123463699">"ລຶບ​ໂປຣ​ໄຟລ໌​ບ່ອນ​ເຮັດ​ວຽກບໍ?"</string>
+    <string name="opening_paragraph_delete_profile_unknown_company" msgid="2139238673477554356">"ໂປຣໄຟລ໌ບ່ອນເຮັດວຽກມີຢູ່ແລ້ວ ແລະຖືກຄວບຄຸມໂດຍ:"</string>
+    <string name="opening_paragraph_delete_profile_known_company" msgid="3126629826260821264">"ມີການຈັດການໂປຣໄຟລບ່ອນເຮັດວຽກສໍາລັບ %s ການໃຊ້:"</string>
+    <string name="read_more_delete_profile" msgid="7789171620401666343">"ກ່ອນດຳເນີນການ, "<a href="#read_this_link">"ໃຫ້ອ່ານ"</a>" ນີ້."</string>
+    <string name="sure_you_want_to_delete_profile" msgid="1336653819166266605">"ແອັບ ແລະຂໍ້ມູນທັງໝົດໃນໂປຣໄຟລນີ້ຈະຖືກລຶບຖ້າທ່ານສືບຕໍ່."</string>
+    <string name="delete_profile" msgid="8384444459432563649">"ລຶບ"</string>
+    <string name="cancel_delete_profile" msgid="5500786140389799348">"ຍົກເລີກ"</string>
+    <string name="encrypt_device_text_for_profile_owner_setup" msgid="4325067657681168120">"​ເພື່ອ​ສືບ​ຕໍ່​ຕັ້ງ​ຄ່າ​ໂປຣ​ໄຟລ໌​ບ່ອນ​ເຮັດ​ວຽກ​ຂອງ​ທ່ານ, ທ່ານ​ຈະ​ຕ້ອງ​ເຂົ້າ​ລະ​ຫັດ​ອຸ​ປະ​ກອນ​ຂອງ​ທ່ານ​ກ່ອນ. ຂັ້ນ​ຕອນ​ນີ້​ຈະ​ໃຊ້​ເວ​ລາ​ໄລ​ຍະ​ນຶ່ງ."</string>
+    <string name="encrypt_device_text_for_device_owner_setup" msgid="9206667711446040692">"ເພື່ອສືບຕໍ່ການຕັ້ງອຸປະກອນຂອງທ່ານ, ທ່ານຈະຈຳເປັນຕ້ອງເຂົ້າລະຫັດມັນໄວ້. ນີ້ອາດຈະໃຊ້ເວລາໜ້ອຍໜຶ່ງ."</string>
+    <string name="encrypt_device_cancel" msgid="5989855177432338238">"ຍົກເລີກ"</string>
+    <string name="encrypt_device_launch_settings" msgid="5421412897999811117">"​ເຂົ້າ​ລະ​ຫັດ"</string>
+    <string name="continue_provisioning_notify_title" msgid="5191449100153186648">"ການ​ເຂົ້າ​ລະ​ຫັດ​ສຳ​ເລັດ​ແລ້ວ"</string>
+    <string name="continue_provisioning_notify_text" msgid="3027317630111909095">"ແຕະ​ເພື່ອ​ສືບ​ຕໍ່​ການ​ຕັ້ງ​ຄ່າ​ໂປຣ​ໄຟລ໌​ບ່ອນ​ເຮັດ​ວຽກ​ຂອງ​ທ່ານ."</string>
+    <string name="managed_provisioning_error_text" msgid="7063621174570680890">"ບໍ່​ສາ​ມາດ​ຕັ້ງ​ຄ່າ​ໂປຣ​ໄຟລ໌​ບ່ອນ​ເຮັດ​ວຽກ​ໄດ້. ກະ​ລຸ​ນາ​ຕິດ​ຕໍ່​ພະ​ແນກ​ໄອ​ທີ​ຂອງ​ທ່ານ ຫຼື​ລອງ​ໃໝ່​ໃນ​ພາຍຫຼັງ."</string>
+    <string name="managed_provisioning_not_supported" msgid="6582227325719911795">"ອຸ​ປະ​ກອນ​ຂອງ​ທ່ານບໍ່​ຮອງ​ຮັບ​ໂປຣ​ໄຟລ໌​ບ່ອນ​ເຮັດ​ວຽກ"</string>
+    <string name="user_is_not_owner" msgid="6193230832887977927">"ໂປ​ຣ​ໄຟ​ລ໌​ຕ້ອງ​ໄດ້​ຕັ້ງ​ຂຶ້ນ​ໂດຍ​ຜູ້​ໃຊ້​ອຸ​ປະ​ກອນ​ຕົ້ນ​ຕໍ"</string>
+    <string name="device_owner_exists" msgid="8020080296133337023">"ບໍ່​ສາ​ມາດ​ຕັ້ງ​ໂປ​ຣ​ໄຟ​ລ໌​ວຽກ​ຢູ່​ໃນ​ອຸ​ປະ​ກອນ​ທີ່​ຄຸ້ມ​ຄອງ​ແລ້ວ​ໄດ້"</string>
+    <string name="maximum_user_limit_reached" msgid="4821228722266114449">"ບໍ່ສາມາດສ້າງໂປຣໄຟລ໌ບ່ອນເຮັດວຽກໄດ້ ເພາະວ່າທ່ານໄດ້ຮອດຈຳນວນຜູ້ໃຊ້ສູງສຸດຢູ່ເທິງອຸປະກອນຂອງທ່ານແລ້ວ. ໃຫ້ເອົາອອກຢ່າງນ້ອຍໜຶ່ງຜູ້ໃຊ້ ແລະລອງໃໝ່."</string>
+    <string name="managed_provisioning_not_supported_by_launcher" msgid="8710138269807942163">"ໂປຣ​ໄຟລ໌​ບ່ອນ​ເຮັດ​ວຽກ​ຂອງ​ທ່ານບໍ່​ຮອງ​ຮັບ​ແອັບຯ Launcher ນີ້. ທ່ານ​ຈະ​ຕ້ອງ​ສະ​ລັບ​ໄປ​ໃຊ້ Launcher ທີ່​ໃຊ້​ຮ່ວມ​ກັນ​ໄດ້."</string>
+    <string name="cancel_provisioning" msgid="3753408161948407036">"ຍົກເລີກ"</string>
+    <string name="pick_launcher" msgid="4811489057826175648">"ຕົກລົງ"</string>
+    <string name="default_owned_device_username" msgid="3915120202811807955">"​​ຜູ່​ໃຊ້​ອຸ​ປະ​ກອນ​ບ່ອນ​ເຮັດ​ວຽກ"</string>
+    <string name="setup_work_device" msgid="3028145936574439146">"ຕັ້ງ​ຄ່າ​ອຸ​ປະ​ກອນ​ຂອງ​ທ່ານ"</string>
+    <string name="progress_data_process" msgid="1707745321954672971">"ກຳ​ລັງ​ປະ​ມວນ​ຜົນ​ຂໍ້​ມູນ​ການ​ຕັ້ງ​ຄ່າ..."</string>
+    <string name="progress_connect_to_wifi" msgid="472251154628863539">"ກຳ​ລັງ​ເຊື່ອມ​ຕໍ່​ກັ​ບ Wi-Fi..."</string>
+    <string name="progress_download" msgid="3522436271691064624">"ກຳ​ລັງ​ດາວ​ໂຫລດ​ແອັບຯ​ຜູ້ຄວບ​ຄຸມ​ລະ​ບົບ..."</string>
+    <string name="progress_install" msgid="2258045670385866183">"ກຳ​ລັງ​ຕິດ​ຕັ້ງ​ແອັບຯ​ຜູ້​ຄວບ​ຄຸມ​ລະ​ບົບ..."</string>
+    <string name="progress_set_owner" msgid="8214062820093757961">"ກຳ​ລັງ​ຕັ້ງ​ຄ່າ​ເຈົ້າ​ຂອງ​ອຸ​ປະ​ກອນ..."</string>
+    <string name="device_owner_cancel_message" msgid="2529288571742712065">"ຢຸດການຕັ້ງ ແລະລຶບຂໍ້ມູນຂອງອຸປະກອນຂອງທ່ານບໍ?"</string>
+    <string name="device_owner_cancel_cancel" msgid="1398290143405142587">"ຍົກເລີກ"</string>
+    <string name="device_owner_error_ok" msgid="2556654993515978854">"ຕົກລົງ"</string>
+    <string name="device_owner_error_reset" msgid="5278392395769857412">"ຕັ້ງຄືນໃໝ່"</string>
+    <string name="device_owner_error_general" msgid="5962462955470123776">"​ບໍ່​ສາ​ມາດ​ຕັ້ງ​ຄ່າ​ອຸ​ປະ​ກອນ​ຂອງ​ທ່ານ​ໄດ້. ໃຫ້​ຕິດ​ຕໍ່​​ພະ​ແນກ​ໄອ​ທີ​ຂອງ​ທ່ານ."</string>
+    <string name="device_owner_error_already_provisioned" msgid="49944866843771627">"​ອຸ​ປະ​ກອນ​ນີ້​ຖືກ​ຕັ້ງ​ຄ່າ​ໄວ້​ແລ້ວ."</string>
+    <string name="device_owner_error_already_provisioned_user" msgid="5861348691161504683">"​ອຸ​ປະ​ກອນ​ນີ້​ຖືກ​ຕັ້ງ​ຄ່າ​ໄວ້ສຳ​ລັບ​ຜູ້​ໃຊ້​ນີ້​ແລ້ວ."</string>
+    <string name="device_owner_error_wifi" msgid="4256310285761332378">"ບໍ່​ສາ​ມາດ​ເຊື່ອມ​ຕໍ່ Wi-Fi ໄດ້"</string>
+    <string name="device_owner_error_frp" msgid="7053630342416280252">"ອຸປະກອນ​ນີ້​ຖືກ​ລັອກ​ໂດຍ​ການ​ປ້ອງ​ກັນ​ການ​ຕັ້ງ​ຄ່າ​ໃໝ່​ຈາກ​ໂຮງງານ. ​ໃຫ້​ຕິດ​ຕໍ່​ຫາ​ພະ​ແນ​ກ​ໄອ​ທີ​ຂອງ​ທ່ານ."</string>
+    <string name="frp_clear_progress_title" msgid="8628074089458234965">"ກຳລັງລຶບ"</string>
+    <string name="frp_clear_progress_text" msgid="1740164332830598827">"ກະລຸນາລໍຖ້າ..."</string>
+    <string name="device_owner_error_hash_mismatch" msgid="184518450016295596">"ບໍ່​ສາ​ມາດ​​ໃຊ້​ແອັບຯ​ຜູ່​ເບິ່ງ​ແຍງ​ລະ​ບົບ​ໄດ້​ເນື່ອງ​ຈາກ checksum ຜິດ​ພາດ. ໃຫ້​ຕິດ​ຕໍ່​ພະ​ແນກ​ໄອ​ທີ​ຂອງ​ທ່ານ."</string>
+    <string name="device_owner_error_download_failed" msgid="4520111971592657116">"ບໍ່​ສາ​ມາດ​ດາວ​ໂຫລດ​ແອັບຯ​ຜູ່​ເບິ່ງ​ແຍງ​ລະ​ບົບ​ໄດ້"</string>
+    <string name="device_owner_error_package_invalid" msgid="3816725179069202140">"ບໍ່​ສາ​ມາດ​ໃຊ້​ແອັບຯ​ຜູ່​ເບິ່ງ​ແຍງ​ລະ​ບົບ​ໄດ້. ມັນ​ຂາດ​ອົງ​ປະ​ກອບທີ່​ຕ້ອງ​ໃຊ້ ຫຼື​​ໄຟລ໌​ມີ​ບັນ​ຫາ. ໃຫ້​ຕິດ​ຕໍ່​ພະ​ແນກ​ຂອງ​ທ່ານ."</string>
+    <string name="device_owner_error_package_name_invalid" msgid="5161432357348636936">"ບໍ່​ສາ​ມາດ​ຕິດ​ຕັ້ງ​ແອັບ​ບໍ​ລິ​ຫານ​ໄດ້. ຊື່​ແພັກ​ເກດ​ໃຊ້​ບໍ່​ໄດ້. ຕິດ​ຕໍ່​ຫາ​ພະ​ແນກ IT ຂອງ​ທ່ານ."</string>
+    <string name="device_owner_error_installation_failed" msgid="684566845601079360">"ບໍ່​ສາ​ມາດ​ຕິດ​ຕັ້ງ​ແອັບຯ​ຜູ່​ເບິ່ງ​ແຍງ​ລະ​ບົບ​ໄດ້"</string>
+    <string name="device_owner_error_package_not_installed" msgid="6095079346537408556">"​​ບໍ່​ມີ​ແອັບຯ​ຜູ່​ເບ​ິ່ງ​ແຍງ​ລະ​ບົບ​ຕິດ​ຕັ້ງ​ໃນ​ອຸ​ປະ​ກອນ​ຂອງ​ທ່ານ"</string>
+    <string name="profile_owner_cancel_message" msgid="6868736915633023477">"ຢຸດ​ການ​ຕິດ​ຕັ້ງ​ຫຼື​ບໍ່?"</string>
+    <string name="profile_owner_cancel_cancel" msgid="1035206963979858009">"ບໍ່ແມ່ນ"</string>
+    <string name="profile_owner_cancel_ok" msgid="4915817426681209592">"ແມ່ນ​ແລ້ວ"</string>
+    <string name="profile_owner_cancelling" msgid="5679573829145112822">"ກຳລັງຍົກເລີກ..."</string>
+    <string name="work_profile_setup_later_title" msgid="9069148190226279892">"ຢຸດ​ການ​ຕັ້ງ​ຄ່າ​ໂປ​ຣ​ໄຟ​ລ໌​ບໍ?"</string>
+    <string name="work_profile_setup_later_message" msgid="2446733709871989895">"ທ່ານ​ສາ​ມາດ​ຕັ້ງ​ໂປ​ຣ​ໄຟ​ລ໌​ເຄືອ​ຂ່າຍ​ຂອງ​ທ່ານ​ໄດ້​ພາຍ​ຫຼັງ​ຈາກ​ແອັບຯ​ການ​ຈັດ​ການ​ອຸ​ປະ​ກອນ​ທີ່​ອົງ​ການ​ຂອງ​ທ່ານ​ໃຊ້."</string>
+    <string name="work_profile_setup_continue" msgid="44459981285359765">"ສືບ​ຕໍ່"</string>
+    <string name="work_profile_setup_stop" msgid="5739020120488653974">"ຢຸດ"</string>
+    <string name="provisioning" msgid="4512493827019163451">"ກຳ​ລັງ​ຈັດ​ການ"</string>
+    <string name="copying_certs" msgid="5697938664953550881">"ການ​ຕັ້ງ​ໃບ​ຢັ້ງ​ຢືນ CA"</string>
+    <string name="setup_profile_start_setup" msgid="6793984532953528297">"ຕັ້ງ​​ຄ່າອຸ​ປະ​ກອນ​ຂອງ​ທ່ານ. ເລີ່ມ​ການ​ຕັ້ງ​ຄ່າ"</string>
+    <string name="setup_profile_encryption" msgid="5241291404536277038">"ຕັ້ງ​​ຄ່າໂປ​ຣ​ໄຟ​ລ໌ຂອງ​ທ່ານ. ການ​ເຂົ້າ​ລະ​ຫັດ"</string>
+    <string name="setup_profile_progress" msgid="7742718527853325656">"ຕັ້ງ​ຄ່າ​ການ​ໂປ​ຣ​ໄຟ​ລ໌​ຂອງ​ທ່ານ. ສະ​ແດງ​ຄວາມ​ຄືບ​ໜ້າ"</string>
+    <string name="setup_device_start_setup" msgid="4351340224000741826">"ຕັ້ງ​​ຄ່າອຸ​ປະ​ກອນ​ຂອງ​ທ່ານ. ເລີ່ມ​ການ​ຕັ້ງ​ຄ່າ"</string>
+    <string name="setup_device_encryption" msgid="7852944465414197103">"ຕັ້ງ​ອຸ​ປະ​ກອນ​ຂອງ​ທ່ານ. ການ​ເຂົ້າ​ລະ​ຫັດ"</string>
+    <string name="setup_device_progress" msgid="7035335208571175393">"ຕັ້ງ​ຄ່າ​ການ​ອຸ​ປະ​ກອນ​ຂອງ​ທ່ານ. ສະ​ແດງ​ຄວາມ​ຄືບ​ໜ້າ"</string>
+    <string name="learn_more_label" msgid="2723716758654655009">"ປຸ່ມຮຽນຮູ້ເພີ່ມ​ເຕີມ"</string>
+    <string name="mdm_icon_label" msgid="3399134595549660561">"ໄອ​ຄອນ <xliff:g id="ICON_LABEL">%1$s</xliff:g>"</string>
+</resources>

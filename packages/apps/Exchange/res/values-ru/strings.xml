@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2008 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="exchange_name_alternate" msgid="293118547772095111">"Microsoft Exchange ActiveSync"</string>
+    <string name="meeting_accepted" msgid="3212429159225789973">"Принято: <xliff:g id="SUBJECT">%s</xliff:g>"</string>
+    <string name="meeting_declined" msgid="1171426219920875691">"Отклонено: <xliff:g id="SUBJECT">%s</xliff:g>"</string>
+    <string name="meeting_tentative" msgid="5057443956630531997">"Может быть: <xliff:g id="SUBJECT">%s</xliff:g>"</string>
+    <string name="meeting_canceled" msgid="3913922862382539900">"Отменено: <xliff:g id="SUBJECT">%s</xliff:g>"</string>
+    <string name="meeting_updated" msgid="5960663236439072658">"Обновлено: <xliff:g id="SUBJECT">%s</xliff:g>"</string>
+    <string name="meeting_when" msgid="1905576664682173880">"Время: <xliff:g id="WHEN">%s</xliff:g>"</string>
+    <string name="meeting_where" msgid="6498631574145121862">"Где: <xliff:g id="WHERE">%s</xliff:g>"</string>
+    <string name="meeting_recurring" msgid="2752008481765880928">"Время: <xliff:g id="EVENTDATE">%s</xliff:g> (повторяющееся)"</string>
+    <string name="meeting_allday" msgid="7251209063071628040">"Дата: <xliff:g id="EVENTDATE">%s</xliff:g> (весь день)"</string>
+    <string name="meeting_allday_recurring" msgid="4545762363537362545">"Дата: <xliff:g id="EVENTDATE">%s</xliff:g> (весь день, повторяется)"</string>
+    <string name="app_name" msgid="1707639359526090662">"Службы Exchange"</string>
+    <string name="exception_cancel" msgid="8972887597771126871">"Это мероприятие отменено: <xliff:g id="DATE">%s</xliff:g>"</string>
+    <string name="exception_updated" msgid="329192591551400871">"Сведения об этом мероприятии были изменены: <xliff:g id="DATE">%s</xliff:g>"</string>
+    <string name="policy_dont_allow_storage_cards" msgid="1305111581282078881">"Не использовать карты памяти"</string>
+    <string name="policy_dont_allow_unsigned_apps" msgid="7663879438028397642">"Запрещать неподписанные приложения"</string>
+    <string name="policy_dont_allow_unsigned_installers" msgid="8227232531632246827">"Запрещать неподписанные установщики"</string>
+    <string name="policy_dont_allow_wifi" msgid="8501275982154914194">"Не использовать Wi-Fi"</string>
+    <string name="policy_dont_allow_text_messaging" msgid="860590081742537792">"Запрещать SMS"</string>
+    <string name="policy_dont_allow_pop_imap" msgid="5772539239469636191">"Не использовать аккаунты POP3 и IMAP"</string>
+    <string name="policy_dont_allow_irda" msgid="8230803019935893114">"Не использовать инфракрасный порт"</string>
+    <string name="policy_dont_allow_html" msgid="3909470006782362967">"Не принимать письма в формате HTML"</string>
+    <string name="policy_dont_allow_browser" msgid="241728112385525092">"Не использовать браузеры"</string>
+    <string name="policy_dont_allow_consumer_email" msgid="2473755560531860915">"Не принимать пользовательскую почту"</string>
+    <string name="policy_dont_allow_internet_sharing" msgid="8926902533477728994">"Не использовать режим модема"</string>
+    <string name="policy_require_smime" msgid="6445017199744800426">"Принимать только письма в формате SMIME"</string>
+    <string name="policy_bluetooth_restricted" msgid="2877695021606992022">"Ограничить использование Bluetooth"</string>
+    <string name="policy_app_blacklist" msgid="6955451921925210944">"Запрещать указанные приложения"</string>
+    <string name="policy_app_whitelist" msgid="73673250614393830">"Разрешать только указанные приложения"</string>
+    <string name="policy_text_truncation" msgid="2098855720139889616">"Ограничивать размер текстовых писем"</string>
+    <string name="policy_html_truncation" msgid="4913206221060438112">"Ограничивать размер писем в формате HTML"</string>
+    <string name="policy_require_sd_encryption" msgid="3911913080904633038">"Всегда шифровать SD-карты"</string>
+    <string name="policy_dont_allow_attachments" msgid="8422502533001368811">"Не загружать прикрепленные файлы"</string>
+    <string name="policy_max_attachment_size" msgid="8872049367518056209">"Ограничивать размер прикрепленных файлов"</string>
+    <string name="policy_require_manual_sync_roaming" msgid="4779633041935012627">"В роуминге только ручная синхронизация"</string>
+    <string name="policy_require_encryption" msgid="4176146021220010140">"Всегда шифровать устройство"</string>
+    <string name="account_setup_options_mail_window_auto" msgid="7407981634952005775">"Автоматически"</string>
+    <string name="account_setup_options_mail_window_1day" msgid="4169162439752592189">"Один день"</string>
+    <string name="account_setup_options_mail_window_3days" msgid="2330167870774583574">"Три дня"</string>
+    <string name="account_setup_options_mail_window_1week" msgid="5066291978475859713">"Одна неделя"</string>
+    <string name="account_setup_options_mail_window_2weeks" msgid="2127842445792663461">"Две недели"</string>
+    <string name="account_setup_options_mail_window_1month" msgid="4785039795926771180">"Один месяц"</string>
+    <string name="account_setup_options_mail_window_all" msgid="4794683936065721438">"Все"</string>
+    <string name="auth_error_notification_title" msgid="6768042010440968454">"Ошибка аутентификации"</string>
+    <string name="auth_error_notification_text" msgid="3590528965691740509">"Нажмите, чтобы изменить настройки для аккаунта <xliff:g id="ACCOUNT">%s</xliff:g>"</string>
+    <string name="email_settings_not_available" msgid="59579952494440349">"Чтобы посмотреть настройки, включите приложение Email."</string>
+</resources>

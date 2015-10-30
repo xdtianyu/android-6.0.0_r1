@@ -1,0 +1,71 @@
+/**
+ * Helper build script that reads data binding variables and sets up the projects.
+ */
+def root = ext.rootFolder
+Properties databindingProperties = new Properties()
+databindingProperties.load(new FileInputStream("${root}/databinding.properties"))
+def repoBase = databindingProperties.mavenRepoAbsolutePath == "." ? root : databindingProperties.mavenRepoAbsolutePath
+databindingProperties.mavenRepoDir = "${repoBase}/${databindingProperties.mavenRepoName}"
+databindingProperties.extraPluginsRepoDir = "${root}/${databindingProperties.extraPluginsRepoName}"
+
+databindingProperties.eapOutDir = "${root}/${databindingProperties.eapOutFolderName}"
+databindingProperties.prebuildFolder = "${root}/${databindingProperties.prebuildFolderName}" +
+        "/${databindingProperties.releaseVersion}"
+
+ext.config = databindingProperties
+ext.config.externalPrebuiltsBase = "${root}/../../prebuilts"
+databindingProperties.megaRepoDir = "${databindingProperties.externalPrebuiltsBase}/tools/common/m2/repository"
+
+println "local maven repo is ${ext.config.mavenRepoDir}."
+println "local pre-build folder is ${ext.config.prebuildFolder}."
+println "mega-repo folder is ${ext.config.megaRepoDir}."
+
+new File(ext.config.mavenRepoDir).mkdir()
+new File(ext.config.prebuildFolder).mkdir()
+
+def addRemoteRepos = !project.hasProperty('addRemoteRepos') || project.getProperty('addRemoteRepos').equals("true")
+ext.config.addRemoteRepos = addRemoteRepos
+def config = ext.config
+def localRepositories = ["${config.extraPluginsRepoDir}",
+                         "${config.megaRepoDir}",
+                         "${config.mavenRepoDir}",
+                         "${config.externalPrebuiltsBase}/maven_repo/android",
+                         "${config.externalPrebuiltsBase}/gradle-plugin",
+                         "${config.externalPrebuiltsBase}/tools/common/m2/repository"]
+ext.config.localRepositories = localRepositories
+def addRepos(RepositoryHandler handler) {
+    config.localRepositories.each { repo ->
+        handler.maven {
+            url repo
+        }
+    }
+    handler.jcenter()
+    handler.mavenCentral()
+}
+ext.addRepos = this.&addRepos
+subprojects {
+    buildscript {
+        config.localRepositories.each { repo ->
+            repositories.maven {
+                url repo
+            }
+        }
+        repositories {
+            if (config.addRemoteRepos) {
+                jcenter()
+                mavenCentral()
+            }
+        }
+    }
+    repositories {
+        config.localRepositories.each { repo ->
+            repositories.maven {
+                url repo
+            }
+        }
+        if (config.addRemoteRepos) {
+            jcenter()
+            mavenCentral()
+        }
+    }
+}

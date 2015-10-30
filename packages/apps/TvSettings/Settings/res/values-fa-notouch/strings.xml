@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2014 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="wifi_setup_input_password" msgid="4324884380214448502">"‫گذرواژه‌ای برای <xliff:g id="SSID">%1$s</xliff:g> وارد کنید"</string>
+    <string name="wifi_setup_waiting_for_join" msgid="42826539810553389">"درحال پیوستن به ^1"</string>
+    <string name="wifi_setup_connection_success" msgid="3362351168182711828">"با موفقیت وصل شد!"</string>
+    <string name="wifi_setup_save_success" msgid="2001513015933996675">"با موفقیت ذخیره شد!"</string>
+    <string name="device_apps_app_management_version" msgid="6315648665194084382">"نسخه <xliff:g id="APP_VERSION">%1$s</xliff:g>"</string>
+    <string name="device_apps_app_management_open" msgid="3326361233913951387">"باز کردن"</string>
+    <string name="device_apps_app_management_force_stop" msgid="1803832648099079651">"توقف اجباری"</string>
+    <string name="device_apps_app_management_force_stop_desc" msgid="221435219644064243">"توقف اجباری یک برنامه ممکن است باعث عملکرد نادرست آن شود."</string>
+    <string name="device_apps_app_management_uninstall" msgid="6054050725055974790">"حذف نصب"</string>
+    <string name="device_apps_app_management_uninstall_desc" msgid="3542570994262234511">"می‌خواهید این برنامه را حذف نصب کنید؟"</string>
+    <string name="device_apps_app_management_disable" msgid="1461984395121717076">"غیرفعال‌ کردن"</string>
+    <string name="device_apps_app_management_disable_desc" msgid="1362228583828208991">"آیا می‌خواهید این برنامه را غیرفعال کنید؟"</string>
+    <string name="device_apps_app_management_enable" msgid="8794752872502256633">"فعال کردن"</string>
+    <string name="device_apps_app_management_enable_desc" msgid="6449017972628203288">"آیا می‌خواهید این برنامه را فعال کنید؟"</string>
+    <string name="device_apps_app_management_clear_data" msgid="8288695583331012586">"پاک کردن داده‌ها"</string>
+    <string name="device_apps_app_management_clear_data_desc" msgid="2197842469669426232">"تمام داده‌های این برنامه برای همیشه حذف می‌شوند."</string>
+    <string name="device_apps_app_management_clear_data_what" msgid="376666756087041021">"این شامل همه فایل‌ها، تنظیمات، حساب‌ها، پایگاه داده‌، و غیره می‌شود"</string>
+    <string name="device_apps_app_management_clear_default" msgid="6654723680469212060">"پاک کردن پیش‌فرض‌ها"</string>
+    <string name="device_apps_app_management_clear_default_set" msgid="6233682647156684225">"تنظیم راه‌اندازی این برنامه برای برخی از اقدامات"</string>
+    <string name="device_apps_app_management_clear_default_none" msgid="6312021202504995474">"هیچ پیش‌فرضی تنظیم نشده است"</string>
+    <string name="device_apps_app_management_clear_cache" msgid="7878530504449821203">"پاک کردن حافظهٔ پنهان"</string>
+    <string name="device_apps_app_management_notifications" msgid="7069935222112158478">"اعلان‌ها"</string>
+    <string name="device_apps_app_management_permissions" msgid="5758303833496289673">"مجوزها"</string>
+    <string name="settings_ok" msgid="5501301223475616254">"تأیید"</string>
+    <string name="settings_cancel" msgid="1649053173330804917">"لغو"</string>
+    <string name="settings_on" msgid="1295064657786011878">"روشن"</string>
+    <string name="settings_off" msgid="4439170658516725721">"خاموش"</string>
+    <string name="device_daydreams_none" msgid="5310233518671772034">"هیچ"</string>
+    <string name="device_daydreams_select" msgid="1754678562660674925">"رویاپردازی"</string>
+    <string name="device_daydreams_test" msgid="7442554912076991502">"اکنون شروع شود"</string>
+    <string name="device_daydreams_sleep" msgid="5263432145910468025">"زمان رویاپردازی"</string>
+    <string name="device_daydreams_sleep_description" msgid="8438730889852772376">"رویاپردازی پس از این دوره عدم فعالیت آغاز می‌شود. اگر رویاپردازی انتخاب نشود، نمایشگر خاموش می‌شود."</string>
+    <string name="device_daydreams_sleep_summary" msgid="4442691086777437088">"پس از <xliff:g id="SLEEP_DESCRIPTION">%1$s</xliff:g> عدم فعالیت"</string>
+    <string name="device_daydreams_screen_off" msgid="1846621864054404830">"زمان به خواب رفتن"</string>
+    <string name="device_daydreams_screen_off_description" msgid="7699124270812914310">"بعد از این دوره عدم فعالیت، صفحه‌نمایش خاموش می‌شود."</string>
+    <string name="device_daydreams_screen_off_summary" msgid="6350806465141059041">"<xliff:g id="SLEEP_DESCRIPTION">%1$s</xliff:g> پس از رویاپردازی"</string>
+    <string name="backup_configure_account_default_summary" msgid="2013649183664358673">"هیچ حسابی در حال حاضر نسخهٔ پشتیبان داده‌ها را ذخیره نمی‌کند"</string>
+    <string name="backup_erase_dialog_title" msgid="8900389956460363471"></string>
+    <string name="backup_erase_dialog_message" msgid="448169495686297910">"پشتیبان‌گیری از گذرواژه‌های Wi-Fi، نشانک‌ها، سایر تنظیمات و داده‌های برنامه را متوقف می‌کنید، و تمام نسخه‌های موجود در سرورهای Google را پاک می‌نمایید؟"</string>
+    <string name="privacy_backup_data" msgid="3652306596140877278">"از داده‌های من نسخهٔ پشتیبان تهیه شود"</string>
+    <string name="privacy_backup_account" msgid="6127132568071889274">"پشتیبان‌گیری از حساب"</string>
+    <string name="privacy_automatic_restore" msgid="8896792578363571896">"بازیابی خودکار"</string>
+    <string name="factory_reset_device" msgid="7615350252195583106">"بازنشانی دستگاه"</string>
+    <string name="factory_reset_description" msgid="6709336495536583649">"این کار همه داده‌ها را از فضای ذخیره داخلی دستگاه شما پاک می‌کند، از جمله: حساب Google، داده‌های حساب و برنامه و تنظیمات، و برنامه‌های دانلود شده شما"</string>
+    <string name="confirm_factory_reset_description" msgid="5710644039419606428">"همه اطلاعات شخصی و برنامه‌های دانلود شده پاک شود؟ این عملکرد دیگر قابل بازگشت نیست!"</string>
+    <string name="confirm_factory_reset_device" msgid="519046408823105666">"پاک کردن همهٔ موارد"</string>
+    <string name="dismiss_all_notifications" msgid="3350731990365092847">"نادیده‌گرفتن همه"</string>
+    <string name="no_notifications" msgid="3241328952121767751">"هیچ"</string>
+    <string name="do_not_disturb_title" msgid="1050245577355301376">"مزاحم نشوید"</string>
+    <string name="do_not_disturb_desc" msgid="3186041965642361597">"وقتی فعال باشد، اعلان‌های جدید فقط در تنظیمات ظاهر می‌شوند"</string>
+    <string name="select_title" msgid="2657901623249723536">"نامی برای ^1 خودتان انتخاب کنید"</string>
+    <string name="select_description" msgid="4080602542483519716">"نام دستگاه کمک می‌کند هنگام دسترسی به ^1 خودتان از دستگاه‌های دیگر مانند تلفن، رایانه لوحی یا رایانه، آن را شناسایی کنید."</string>
+  <string-array name="rooms">
+    <item msgid="2748008285322003570">"اتاق پذیرایی"</item>
+    <item msgid="7887185726776968055">"اتاق رسانه"</item>
+    <item msgid="372573326176756144">"اتاق نشیمن"</item>
+    <item msgid="8112576067079559786">"اتاق غذاخوری"</item>
+    <item msgid="2891751328917513846">"هال"</item>
+    <item msgid="7390608863950443962">"اتاق خواب"</item>
+    <item msgid="682313511953895794">"آشپزخانه"</item>
+  </string-array>
+    <string name="custom_room" msgid="5972936200641815527">"نام سفارشی را وارد کنید..."</string>
+    <string name="settings_status_title" msgid="3280459921834269206">"این ^1 نام‌گذاری شد"</string>
+    <string name="settings_status_description" msgid="4892610880616296037">"‏«‎^1» نام این ^2 است. آیا می‌خواهید آن را تغییر دهید؟"</string>
+    <string name="change_setting" msgid="199354038426145612">"تغییر داده شود"</string>
+    <string name="keep_settings" msgid="549230720820096102">"تغییر داده نشود"</string>
+    <string name="menu_help" msgid="2164687828212723531">"راهنما"</string>
+    <string name="setup_failure_title" msgid="4408868360762577232">"خطایی روی داد"</string>
+    <string name="setup_failure_button_retry" msgid="4917381906591779977">"امتحان مجدد"</string>
+</resources>

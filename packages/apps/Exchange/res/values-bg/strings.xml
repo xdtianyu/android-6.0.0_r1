@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2008 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="exchange_name_alternate" msgid="293118547772095111">"Microsoft Exchange ActiveSync"</string>
+    <string name="meeting_accepted" msgid="3212429159225789973">"Прието: <xliff:g id="SUBJECT">%s</xliff:g>"</string>
+    <string name="meeting_declined" msgid="1171426219920875691">"Отклонено: <xliff:g id="SUBJECT">%s</xliff:g>"</string>
+    <string name="meeting_tentative" msgid="5057443956630531997">"Колебливо: <xliff:g id="SUBJECT">%s</xliff:g>"</string>
+    <string name="meeting_canceled" msgid="3913922862382539900">"Анулирано: <xliff:g id="SUBJECT">%s</xliff:g>"</string>
+    <string name="meeting_updated" msgid="5960663236439072658">"Актуализирано: <xliff:g id="SUBJECT">%s</xliff:g>"</string>
+    <string name="meeting_when" msgid="1905576664682173880">"Кога: <xliff:g id="WHEN">%s</xliff:g>"</string>
+    <string name="meeting_where" msgid="6498631574145121862">"Къде: <xliff:g id="WHERE">%s</xliff:g>"</string>
+    <string name="meeting_recurring" msgid="2752008481765880928">"Кога: <xliff:g id="EVENTDATE">%s</xliff:g> (с повторения)"</string>
+    <string name="meeting_allday" msgid="7251209063071628040">"Кога: <xliff:g id="EVENTDATE">%s</xliff:g> (цял ден)"</string>
+    <string name="meeting_allday_recurring" msgid="4545762363537362545">"Кога: <xliff:g id="EVENTDATE">%s</xliff:g> (цял ден, периодично)"</string>
+    <string name="app_name" msgid="1707639359526090662">"Услуги на Exchange"</string>
+    <string name="exception_cancel" msgid="8972887597771126871">"Това събитие от <xliff:g id="DATE">%s</xliff:g> е анулирано"</string>
+    <string name="exception_updated" msgid="329192591551400871">"Подробностите за това събитие са променени за: <xliff:g id="DATE">%s</xliff:g>"</string>
+    <string name="policy_dont_allow_storage_cards" msgid="1305111581282078881">"Забраняване на карти за съхранение"</string>
+    <string name="policy_dont_allow_unsigned_apps" msgid="7663879438028397642">"Без неподписани приложения"</string>
+    <string name="policy_dont_allow_unsigned_installers" msgid="8227232531632246827">"Без неподп. инсталатори на приложения"</string>
+    <string name="policy_dont_allow_wifi" msgid="8501275982154914194">"Без разрешаване на WiFi"</string>
+    <string name="policy_dont_allow_text_messaging" msgid="860590081742537792">"Забраняване на текстови съобщения"</string>
+    <string name="policy_dont_allow_pop_imap" msgid="5772539239469636191">"Забраняване на POP3 или IMAP профили"</string>
+    <string name="policy_dont_allow_irda" msgid="8230803019935893114">"Забраняване на инфрачервени комуникации"</string>
+    <string name="policy_dont_allow_html" msgid="3909470006782362967">"Забраняване на HTML имейли"</string>
+    <string name="policy_dont_allow_browser" msgid="241728112385525092">"Забраняване на браузъри"</string>
+    <string name="policy_dont_allow_consumer_email" msgid="2473755560531860915">"Забраняване на маркетингови имейли"</string>
+    <string name="policy_dont_allow_internet_sharing" msgid="8926902533477728994">"Без споделяне на интернет"</string>
+    <string name="policy_require_smime" msgid="6445017199744800426">"Изискване на SMIME съобщения"</string>
+    <string name="policy_bluetooth_restricted" msgid="2877695021606992022">"Ограничаване на ползването на Bluetooth"</string>
+    <string name="policy_app_blacklist" msgid="6955451921925210944">"Забраняване на посочените приложения"</string>
+    <string name="policy_app_whitelist" msgid="73673250614393830">"Разрешаване само на посочени приложения"</string>
+    <string name="policy_text_truncation" msgid="2098855720139889616">"Ограничаване на размера на текст. имейли"</string>
+    <string name="policy_html_truncation" msgid="4913206221060438112">"Ограничаване на размера на HTML имейлите"</string>
+    <string name="policy_require_sd_encryption" msgid="3911913080904633038">"Изискване за шифроване на SD картата"</string>
+    <string name="policy_dont_allow_attachments" msgid="8422502533001368811">"Забраняване на прикачени файлове"</string>
+    <string name="policy_max_attachment_size" msgid="8872049367518056209">"Огранич. на размера на прикач. файлове"</string>
+    <string name="policy_require_manual_sync_roaming" msgid="4779633041935012627">"Само ръчно синхронизиране при роуминг"</string>
+    <string name="policy_require_encryption" msgid="4176146021220010140">"Изискване за шифроване на устройството"</string>
+    <string name="account_setup_options_mail_window_auto" msgid="7407981634952005775">"Автоматично"</string>
+    <string name="account_setup_options_mail_window_1day" msgid="4169162439752592189">"Един ден"</string>
+    <string name="account_setup_options_mail_window_3days" msgid="2330167870774583574">"Три дни"</string>
+    <string name="account_setup_options_mail_window_1week" msgid="5066291978475859713">"Една седмица"</string>
+    <string name="account_setup_options_mail_window_2weeks" msgid="2127842445792663461">"Две седмици"</string>
+    <string name="account_setup_options_mail_window_1month" msgid="4785039795926771180">"Един месец"</string>
+    <string name="account_setup_options_mail_window_all" msgid="4794683936065721438">"Всички"</string>
+    <string name="auth_error_notification_title" msgid="6768042010440968454">"Грешка при удостоверяване на самоличността"</string>
+    <string name="auth_error_notification_text" msgid="3590528965691740509">"Докоснете, за да редактирате настройките за профила <xliff:g id="ACCOUNT">%s</xliff:g>"</string>
+    <string name="email_settings_not_available" msgid="59579952494440349">"Активирайте отново приложението Имейл, за да прегледате настройките."</string>
+</resources>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2008 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="exchange_name_alternate" msgid="293118547772095111">"Microsoft Exchange ActiveSync"</string>
+    <string name="meeting_accepted" msgid="3212429159225789973">"Tinanggap: <xliff:g id="SUBJECT">%s</xliff:g>"</string>
+    <string name="meeting_declined" msgid="1171426219920875691">"Tinanggihan: <xliff:g id="SUBJECT">%s</xliff:g>"</string>
+    <string name="meeting_tentative" msgid="5057443956630531997">"Pansamantala: <xliff:g id="SUBJECT">%s</xliff:g>"</string>
+    <string name="meeting_canceled" msgid="3913922862382539900">"Kinansela: <xliff:g id="SUBJECT">%s</xliff:g>"</string>
+    <string name="meeting_updated" msgid="5960663236439072658">"Na-update: <xliff:g id="SUBJECT">%s</xliff:g>"</string>
+    <string name="meeting_when" msgid="1905576664682173880">"Kailan: <xliff:g id="WHEN">%s</xliff:g>"</string>
+    <string name="meeting_where" msgid="6498631574145121862">"Saan: <xliff:g id="WHERE">%s</xliff:g>"</string>
+    <string name="meeting_recurring" msgid="2752008481765880928">"Kailan: <xliff:g id="EVENTDATE">%s</xliff:g> (paulit-ulit)"</string>
+    <string name="meeting_allday" msgid="7251209063071628040">"Kailan: <xliff:g id="EVENTDATE">%s</xliff:g> (buong araw)"</string>
+    <string name="meeting_allday_recurring" msgid="4545762363537362545">"Kailan: <xliff:g id="EVENTDATE">%s</xliff:g> (buong araw, umuulit)"</string>
+    <string name="app_name" msgid="1707639359526090662">"Mga Serbisyo ng Exchange"</string>
+    <string name="exception_cancel" msgid="8972887597771126871">"Kinansela ang kaganapang ito para sa: <xliff:g id="DATE">%s</xliff:g>"</string>
+    <string name="exception_updated" msgid="329192591551400871">"Ang mga detalye ng kaganapang ito ay binago para sa: <xliff:g id="DATE">%s</xliff:g>"</string>
+    <string name="policy_dont_allow_storage_cards" msgid="1305111581282078881">"Huwag payagan ang mga storage card"</string>
+    <string name="policy_dont_allow_unsigned_apps" msgid="7663879438028397642">"Huwag payagan ang mga di-pirmadong app"</string>
+    <string name="policy_dont_allow_unsigned_installers" msgid="8227232531632246827">"Huwag payagan di-pirmadong app installer"</string>
+    <string name="policy_dont_allow_wifi" msgid="8501275982154914194">"Huwag payagan ang Wi-Fi"</string>
+    <string name="policy_dont_allow_text_messaging" msgid="860590081742537792">"Huwag payagan pagpapadala text message"</string>
+    <string name="policy_dont_allow_pop_imap" msgid="5772539239469636191">"Huwag payagan mga POP3 o IMAP na account"</string>
+    <string name="policy_dont_allow_irda" msgid="8230803019935893114">"Wag payagan mga komunikasyon sa infrared"</string>
+    <string name="policy_dont_allow_html" msgid="3909470006782362967">"Huwag payagan ang HTML na email"</string>
+    <string name="policy_dont_allow_browser" msgid="241728112385525092">"Huwag payagan ang mga browser"</string>
+    <string name="policy_dont_allow_consumer_email" msgid="2473755560531860915">"Huwag payagan ang email ng consumer"</string>
+    <string name="policy_dont_allow_internet_sharing" msgid="8926902533477728994">"Huwag payagan pagbabahagi ng internet"</string>
+    <string name="policy_require_smime" msgid="6445017199744800426">"Hilingin ang mga SMIME na mensahe"</string>
+    <string name="policy_bluetooth_restricted" msgid="2877695021606992022">"Paghigpitan ang paggamit ng Bluetooth"</string>
+    <string name="policy_app_blacklist" msgid="6955451921925210944">"Huwag payagan ang mga tinukoy na app"</string>
+    <string name="policy_app_whitelist" msgid="73673250614393830">"Payagan lamang ang mga tinukoy na app"</string>
+    <string name="policy_text_truncation" msgid="2098855720139889616">"Paghigpitan ang laki ng tekstong email"</string>
+    <string name="policy_html_truncation" msgid="4913206221060438112">"Paghigpitan ang laki ng HTML na email"</string>
+    <string name="policy_require_sd_encryption" msgid="3911913080904633038">"Hilingin ang pag-encrypt ng SD card"</string>
+    <string name="policy_dont_allow_attachments" msgid="8422502533001368811">"Huwag payagan ang mga attachment"</string>
+    <string name="policy_max_attachment_size" msgid="8872049367518056209">"Paghigpitan ang laki ng attachment"</string>
+    <string name="policy_require_manual_sync_roaming" msgid="4779633041935012627">"Payag lang manu-mano sync kapag roaming"</string>
+    <string name="policy_require_encryption" msgid="4176146021220010140">"Hilingin ang pag-encrypt ng device"</string>
+    <string name="account_setup_options_mail_window_auto" msgid="7407981634952005775">"Awtomatiko"</string>
+    <string name="account_setup_options_mail_window_1day" msgid="4169162439752592189">"Isang araw"</string>
+    <string name="account_setup_options_mail_window_3days" msgid="2330167870774583574">"Tatlong araw"</string>
+    <string name="account_setup_options_mail_window_1week" msgid="5066291978475859713">"Isang linggo"</string>
+    <string name="account_setup_options_mail_window_2weeks" msgid="2127842445792663461">"Dalawang linggo"</string>
+    <string name="account_setup_options_mail_window_1month" msgid="4785039795926771180">"Isang buwan"</string>
+    <string name="account_setup_options_mail_window_all" msgid="4794683936065721438">"Lahat"</string>
+    <string name="auth_error_notification_title" msgid="6768042010440968454">"Error sa pagpapatotoo"</string>
+    <string name="auth_error_notification_text" msgid="3590528965691740509">"Pindutin upang i-edit ang mga setting ng account para sa <xliff:g id="ACCOUNT">%s</xliff:g>"</string>
+    <string name="email_settings_not_available" msgid="59579952494440349">"I-enable muli ang Email application upang tingnan ang mga setting."</string>
+</resources>

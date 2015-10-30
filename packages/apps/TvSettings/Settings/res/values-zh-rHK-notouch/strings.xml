@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2014 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="wifi_setup_input_password" msgid="4324884380214448502">"輸入 <xliff:g id="SSID">%1$s</xliff:g> 的密碼"</string>
+    <string name="wifi_setup_waiting_for_join" msgid="42826539810553389">"正在加入 ^1"</string>
+    <string name="wifi_setup_connection_success" msgid="3362351168182711828">"已成功建立連線！"</string>
+    <string name="wifi_setup_save_success" msgid="2001513015933996675">"已成功儲存！"</string>
+    <string name="device_apps_app_management_version" msgid="6315648665194084382">"版本 <xliff:g id="APP_VERSION">%1$s</xliff:g>"</string>
+    <string name="device_apps_app_management_open" msgid="3326361233913951387">"開啟"</string>
+    <string name="device_apps_app_management_force_stop" msgid="1803832648099079651">"強制停止"</string>
+    <string name="device_apps_app_management_force_stop_desc" msgid="221435219644064243">"如果您強制停止應用程式，應用程式或會不能正常操作。"</string>
+    <string name="device_apps_app_management_uninstall" msgid="6054050725055974790">"解除安裝"</string>
+    <string name="device_apps_app_management_uninstall_desc" msgid="3542570994262234511">"您要解除安裝這個應用程式嗎？"</string>
+    <string name="device_apps_app_management_disable" msgid="1461984395121717076">"停用"</string>
+    <string name="device_apps_app_management_disable_desc" msgid="1362228583828208991">"您想要停用這個應用程式嗎？"</string>
+    <string name="device_apps_app_management_enable" msgid="8794752872502256633">"啟用"</string>
+    <string name="device_apps_app_management_enable_desc" msgid="6449017972628203288">"您想要啟用這個應用程式嗎？"</string>
+    <string name="device_apps_app_management_clear_data" msgid="8288695583331012586">"清除資料"</string>
+    <string name="device_apps_app_management_clear_data_desc" msgid="2197842469669426232">"這個應用程序的所有數據將被永久刪除。"</string>
+    <string name="device_apps_app_management_clear_data_what" msgid="376666756087041021">"包括所有檔案、設定、帳戶、資料庫等。"</string>
+    <string name="device_apps_app_management_clear_default" msgid="6654723680469212060">"清除預設值"</string>
+    <string name="device_apps_app_management_clear_default_set" msgid="6233682647156684225">"設定執行某些操作時啟動這個應用程式"</string>
+    <string name="device_apps_app_management_clear_default_none" msgid="6312021202504995474">"未設定預設值"</string>
+    <string name="device_apps_app_management_clear_cache" msgid="7878530504449821203">"清除快取"</string>
+    <string name="device_apps_app_management_notifications" msgid="7069935222112158478">"通知"</string>
+    <string name="device_apps_app_management_permissions" msgid="5758303833496289673">"權限"</string>
+    <string name="settings_ok" msgid="5501301223475616254">"確定"</string>
+    <string name="settings_cancel" msgid="1649053173330804917">"取消"</string>
+    <string name="settings_on" msgid="1295064657786011878">"開啟"</string>
+    <string name="settings_off" msgid="4439170658516725721">"關閉"</string>
+    <string name="device_daydreams_none" msgid="5310233518671772034">"無"</string>
+    <string name="device_daydreams_select" msgid="1754678562660674925">"白日夢"</string>
+    <string name="device_daydreams_test" msgid="7442554912076991502">"立即開啟"</string>
+    <string name="device_daydreams_sleep" msgid="5263432145910468025">"Daydream 開啟時間"</string>
+    <string name="device_daydreams_sleep_description" msgid="8438730889852772376">"過了這段閒置時間後，裝置會進入「白日夢」狀態。如未選取「白日夢」，螢幕便會關閉。"</string>
+    <string name="device_daydreams_sleep_summary" msgid="4442691086777437088">"停用 <xliff:g id="SLEEP_DESCRIPTION">%1$s</xliff:g>後"</string>
+    <string name="device_daydreams_screen_off" msgid="1846621864054404830">"休眠時間"</string>
+    <string name="device_daydreams_screen_off_description" msgid="7699124270812914310">"閒置超過這段時間後關閉螢幕。"</string>
+    <string name="device_daydreams_screen_off_summary" msgid="6350806465141059041">"「白日夢」開始 <xliff:g id="SLEEP_DESCRIPTION">%1$s</xliff:g>後"</string>
+    <string name="backup_configure_account_default_summary" msgid="2013649183664358673">"目前沒有任何帳戶儲存備份資料"</string>
+    <string name="backup_erase_dialog_title" msgid="8900389956460363471"></string>
+    <string name="backup_erase_dialog_message" msgid="448169495686297910">"要停止備份您的 Wi-Fi 密碼、書籤、其他設定以及應用程式資料，並清除 Google 伺服器上儲存的所有副本嗎？"</string>
+    <string name="privacy_backup_data" msgid="3652306596140877278">"備份我的資料"</string>
+    <string name="privacy_backup_account" msgid="6127132568071889274">"備份帳戶"</string>
+    <string name="privacy_automatic_restore" msgid="8896792578363571896">"自動還原"</string>
+    <string name="factory_reset_device" msgid="7615350252195583106">"重設裝置"</string>
+    <string name="factory_reset_description" msgid="6709336495536583649">"這會將所有資料從裝置的內部儲存空間清除，包括您的 Google 帳戶、系統和應用程式資料與設定，以及已下載的應用程式"</string>
+    <string name="confirm_factory_reset_description" msgid="5710644039419606428">"您要清除所有個人資訊和已下載的應用程式嗎？您無法復原這項操作！"</string>
+    <string name="confirm_factory_reset_device" msgid="519046408823105666">"全部清除"</string>
+    <string name="dismiss_all_notifications" msgid="3350731990365092847">"全部關閉"</string>
+    <string name="no_notifications" msgid="3241328952121767751">"無"</string>
+    <string name="do_not_disturb_title" msgid="1050245577355301376">"請勿打擾"</string>
+    <string name="do_not_disturb_desc" msgid="3186041965642361597">"啟用後，新通知只會在「設定」中顯示"</string>
+    <string name="select_title" msgid="2657901623249723536">"請為您的 ^1 選擇名稱"</string>
+    <string name="select_description" msgid="4080602542483519716">"當存取您的 ^1 時，名稱將有助於您從其他裝置 (如電話、平板電腦或電腦) 中辨識此裝置。"</string>
+  <string-array name="rooms">
+    <item msgid="2748008285322003570">"客廳"</item>
+    <item msgid="7887185726776968055">"視聽室"</item>
+    <item msgid="372573326176756144">"起居室"</item>
+    <item msgid="8112576067079559786">"飯廳"</item>
+    <item msgid="2891751328917513846">"書房"</item>
+    <item msgid="7390608863950443962">"睡房"</item>
+    <item msgid="682313511953895794">"廚房"</item>
+  </string-array>
+    <string name="custom_room" msgid="5972936200641815527">"輸入自訂名稱…"</string>
+    <string name="settings_status_title" msgid="3280459921834269206">"此 ^1 已命名"</string>
+    <string name="settings_status_description" msgid="4892610880616296037">"「^1」是此 ^2 的名稱。您要變更嗎?"</string>
+    <string name="change_setting" msgid="199354038426145612">"變更"</string>
+    <string name="keep_settings" msgid="549230720820096102">"不要變更"</string>
+    <string name="menu_help" msgid="2164687828212723531">"說明"</string>
+    <string name="setup_failure_title" msgid="4408868360762577232">"發生錯誤"</string>
+    <string name="setup_failure_button_retry" msgid="4917381906591779977">"重試"</string>
+</resources>

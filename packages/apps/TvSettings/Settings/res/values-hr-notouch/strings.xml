@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2014 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="wifi_setup_input_password" msgid="4324884380214448502">"Unesite zaporku za <xliff:g id="SSID">%1$s</xliff:g>"</string>
+    <string name="wifi_setup_waiting_for_join" msgid="42826539810553389">"Pridruživanje: ^1"</string>
+    <string name="wifi_setup_connection_success" msgid="3362351168182711828">"Povezivanje je uspjelo!"</string>
+    <string name="wifi_setup_save_success" msgid="2001513015933996675">"Uspješno spremljeno!"</string>
+    <string name="device_apps_app_management_version" msgid="6315648665194084382">"verzija <xliff:g id="APP_VERSION">%1$s</xliff:g>"</string>
+    <string name="device_apps_app_management_open" msgid="3326361233913951387">"Otvori"</string>
+    <string name="device_apps_app_management_force_stop" msgid="1803832648099079651">"Prisilno zaustavi"</string>
+    <string name="device_apps_app_management_force_stop_desc" msgid="221435219644064243">"Ako prisilno zaustavite aplikaciju, možda će se ponašati nepredviđeno."</string>
+    <string name="device_apps_app_management_uninstall" msgid="6054050725055974790">"Deinstaliraj"</string>
+    <string name="device_apps_app_management_uninstall_desc" msgid="3542570994262234511">"Želite li deinstalirati ovu aplikaciju?"</string>
+    <string name="device_apps_app_management_disable" msgid="1461984395121717076">"Onemogući"</string>
+    <string name="device_apps_app_management_disable_desc" msgid="1362228583828208991">"Želite li onemogućiti tu aplikaciju?"</string>
+    <string name="device_apps_app_management_enable" msgid="8794752872502256633">"Omogući"</string>
+    <string name="device_apps_app_management_enable_desc" msgid="6449017972628203288">"Želite li omogućiti tu aplikaciju?"</string>
+    <string name="device_apps_app_management_clear_data" msgid="8288695583331012586">"Izbriši podatke"</string>
+    <string name="device_apps_app_management_clear_data_desc" msgid="2197842469669426232">"Svi podaci te aplikacije trajno će se izbrisati."</string>
+    <string name="device_apps_app_management_clear_data_what" msgid="376666756087041021">"To uključuje sve datoteke, postavke, račune, baze podataka itd."</string>
+    <string name="device_apps_app_management_clear_default" msgid="6654723680469212060">"Izbriši zadane postavke"</string>
+    <string name="device_apps_app_management_clear_default_set" msgid="6233682647156684225">"Aplikacija se pokreće za neke radnje"</string>
+    <string name="device_apps_app_management_clear_default_none" msgid="6312021202504995474">"Nema zadanih postavki"</string>
+    <string name="device_apps_app_management_clear_cache" msgid="7878530504449821203">"Izbriši predmemoriju"</string>
+    <string name="device_apps_app_management_notifications" msgid="7069935222112158478">"Obavijesti"</string>
+    <string name="device_apps_app_management_permissions" msgid="5758303833496289673">"Dozvole"</string>
+    <string name="settings_ok" msgid="5501301223475616254">"U redu"</string>
+    <string name="settings_cancel" msgid="1649053173330804917">"Odustani"</string>
+    <string name="settings_on" msgid="1295064657786011878">"Uključeno"</string>
+    <string name="settings_off" msgid="4439170658516725721">"Isključeno"</string>
+    <string name="device_daydreams_none" msgid="5310233518671772034">"Nijedno"</string>
+    <string name="device_daydreams_select" msgid="1754678562660674925">"Sanjarenje"</string>
+    <string name="device_daydreams_test" msgid="7442554912076991502">"Započnite odmah"</string>
+    <string name="device_daydreams_sleep" msgid="5263432145910468025">"Kada sanjariti"</string>
+    <string name="device_daydreams_sleep_description" msgid="8438730889852772376">"Sanjarenje počinje nakon tog razdoblja neaktivnosti. Ako nijedno sanjarenje nije odabrano, prikaz se isključuje."</string>
+    <string name="device_daydreams_sleep_summary" msgid="4442691086777437088">"Nakon <xliff:g id="SLEEP_DESCRIPTION">%1$s</xliff:g> neaktivnosti"</string>
+    <string name="device_daydreams_screen_off" msgid="1846621864054404830">"Kada mirovati"</string>
+    <string name="device_daydreams_screen_off_description" msgid="7699124270812914310">"Zaslon se isključuje nakon tog razdoblja neaktivnosti."</string>
+    <string name="device_daydreams_screen_off_summary" msgid="6350806465141059041">"<xliff:g id="SLEEP_DESCRIPTION">%1$s</xliff:g> nakon Sanjarenja"</string>
+    <string name="backup_configure_account_default_summary" msgid="2013649183664358673">"Nijedan račun trenutačno ne pohranjuje sigurnosne kopije podataka"</string>
+    <string name="backup_erase_dialog_title" msgid="8900389956460363471"></string>
+    <string name="backup_erase_dialog_message" msgid="448169495686297910">"Želite li zaustaviti stvaranje sigurnosnih kopija Wi-Fi zaporki, oznaka, drugih postavki i podataka aplikacije te izbrisati sve kopije na Googleovim poslužiteljima?"</string>
+    <string name="privacy_backup_data" msgid="3652306596140877278">"Stvori sigurnosnu kopiju mojih podataka"</string>
+    <string name="privacy_backup_account" msgid="6127132568071889274">"Stvori sigurnosnu kopiju računa"</string>
+    <string name="privacy_automatic_restore" msgid="8896792578363571896">"Automatska obnova"</string>
+    <string name="factory_reset_device" msgid="7615350252195583106">"Poništi uređaj"</string>
+    <string name="factory_reset_description" msgid="6709336495536583649">"Izbrisat će se svi podaci s interne pohrane uređaja, uključujući: vaš Google račun, podatke i postavke sustava i aplikacija te preuzete aplikacije"</string>
+    <string name="confirm_factory_reset_description" msgid="5710644039419606428">"Želite li izbrisati sve osobne podatke i preuzete aplikacije? Tu radnju ne možete poništiti!"</string>
+    <string name="confirm_factory_reset_device" msgid="519046408823105666">"Izbriši sve"</string>
+    <string name="dismiss_all_notifications" msgid="3350731990365092847">"Odbaci sve"</string>
+    <string name="no_notifications" msgid="3241328952121767751">"Ništa"</string>
+    <string name="do_not_disturb_title" msgid="1050245577355301376">"Ne ometaj"</string>
+    <string name="do_not_disturb_desc" msgid="3186041965642361597">"Kad je omogućeno, nove su obavijesti samo u Postavkama"</string>
+    <string name="select_title" msgid="2657901623249723536">"Odaberite naziv za svoj ^1"</string>
+    <string name="select_description" msgid="4080602542483519716">"Naziv će vam pomoći prepoznati ^1 kada mu budete pristupali s drugih uređaja, na primjer, s telefona, tableta ili računala."</string>
+  <string-array name="rooms">
+    <item msgid="2748008285322003570">"Dnevni boravak"</item>
+    <item msgid="7887185726776968055">"Soba za multimediju"</item>
+    <item msgid="372573326176756144">"Dnevna soba"</item>
+    <item msgid="8112576067079559786">"Blagovaonica"</item>
+    <item msgid="2891751328917513846">"Soba za opuštanje"</item>
+    <item msgid="7390608863950443962">"Spavaća soba"</item>
+    <item msgid="682313511953895794">"Kuhinja"</item>
+  </string-array>
+    <string name="custom_room" msgid="5972936200641815527">"Unesite prilagođeni naziv…"</string>
+    <string name="settings_status_title" msgid="3280459921834269206">"Ovaj ^1 dobio je naziv"</string>
+    <string name="settings_status_description" msgid="4892610880616296037">"Ovaj ^2 ima naziv \"^1\". Želite li ga promijeniti?"</string>
+    <string name="change_setting" msgid="199354038426145612">"Promijeni"</string>
+    <string name="keep_settings" msgid="549230720820096102">"Nemoj promijeniti"</string>
+    <string name="menu_help" msgid="2164687828212723531">"Pomoć"</string>
+    <string name="setup_failure_title" msgid="4408868360762577232">"Došlo je do pogreške"</string>
+    <string name="setup_failure_button_retry" msgid="4917381906591779977">"Pokušaj ponovo"</string>
+</resources>

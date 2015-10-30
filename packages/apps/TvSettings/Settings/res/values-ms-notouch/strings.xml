@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2014 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+ 
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="wifi_setup_input_password" msgid="4324884380214448502">"Masukkan kata laluan untuk <xliff:g id="SSID">%1$s</xliff:g>"</string>
+    <string name="wifi_setup_waiting_for_join" msgid="42826539810553389">"Menyertai ^1"</string>
+    <string name="wifi_setup_connection_success" msgid="3362351168182711828">"Berjaya disambungkan!"</string>
+    <string name="device_apps_app_management_version" msgid="6315648665194084382">"versi <xliff:g id="APP_VERSION">%1$s</xliff:g>"</string>
+    <string name="device_apps_app_management_force_stop" msgid="1803832648099079651">"Henti paksa"</string>
+    <string name="device_apps_app_management_force_stop_desc" msgid="221435219644064243">"Jika anda menghentikan aplikasi secara paksa, aplikasi itu mungkin tidak berfungsi dengan betul."</string>
+    <string name="device_apps_app_management_uninstall" msgid="6054050725055974790">"Nyahpasang"</string>
+    <string name="device_apps_app_management_uninstall_desc" msgid="3542570994262234511">"Adakah anda mahu menyahpasang apl ini?"</string>
+    <string name="device_apps_app_management_clear_data" msgid="8288695583331012586">"Padam bersih data"</string>
+    <string name="device_apps_app_management_clear_data_desc" msgid="2197842469669426232">"Semua data apl ini akan dipadamkan secara kekal."</string>
+    <string name="device_apps_app_management_clear_data_what" msgid="376666756087041021">"Ini termasuklah semua fail, tetapan, akaun, pangkalan data, dsb."</string>
+    <string name="device_apps_app_management_clear_cache" msgid="7878530504449821203">"Padam bersih cache"</string>
+    <string name="device_apps_app_management_notifications" msgid="7069935222112158478">"Pemberitahuan"</string>
+    <string name="device_apps_app_management_permissions" msgid="5758303833496289673">"Kebenaran"</string>
+    <string name="settings_ok" msgid="5501301223475616254">"OK"</string>
+    <string name="settings_cancel" msgid="1649053173330804917">"Batal"</string>
+    <string name="settings_on" msgid="1295064657786011878">"Hidup"</string>
+    <string name="settings_off" msgid="4439170658516725721">"Mati"</string>
+    <string name="device_daydreams_none" msgid="5310233518671772034">"Tiada"</string>
+    <string name="device_daydreams_select" msgid="1754678562660674925">"Lamunan"</string>
+    <string name="device_daydreams_test" msgid="7442554912076991502">"Mulakan sekarang"</string>
+    <string name="device_daydreams_sleep" msgid="5263432145910468025">"Bila untuk melamun"</string>
+    <string name="device_daydreams_sleep_description" msgid="8438730889852772376">"Lamunan bermula selepas tempoh ketakaktifan ini. Jika tiada lamunan dipilih, paparan akan dimatikan."</string>
+    <string name="device_daydreams_sleep_summary" msgid="4442691086777437088">"Selepas <xliff:g id="SLEEP_DESCRIPTION">%1$s</xliff:g> tiada aktiviti"</string>
+    <string name="backup_configure_account_default_summary" msgid="2013649183664358673">"Tiada akaun yang sedang menyimpan data sandaran"</string>
+    <string name="backup_erase_dialog_title" msgid="8900389956460363471"></string>
+    <string name="backup_erase_dialog_message" msgid="448169495686297910">"Berhenti membuat sandaran kata laluan Wi-Fi, penanda halaman, tetapan lain dan data aplikasi anda, serta padamkan semua salinan pada pelayan Google?"</string>
+    <string name="privacy_backup_data" msgid="3652306596140877278">"Sandarkan data saya"</string>
+    <string name="privacy_backup_account" msgid="6127132568071889274">"Akaun sandaran"</string>
+    <string name="privacy_automatic_restore" msgid="8896792578363571896">"Pemulihan automatik"</string>
+    <string name="factory_reset_device" msgid="7615350252195583106">"Tetapkan semula peranti"</string>
+    <string name="factory_reset_description" msgid="6709336495536583649">"Tindakan ini akan memadamkan semua data dari storan dalaman peranti anda, termasuk: akaun Google anda, data dan tetapan sistem serta apl dan apl yang dimuat turun"</string>
+    <string name="confirm_factory_reset_description" msgid="5710644039419606428">"Padamkan semua maklumat peribadi anda dan aplikasi yang dimuat turun? Anda tidak boleh menterbalikkan tindakan ini!"</string>
+    <string name="confirm_factory_reset_device" msgid="519046408823105666">"Padamkan kesemuanya"</string>
+    <string name="dismiss_all_notifications" msgid="3350731990365092847">"Ketepikan semua"</string>
+    <string name="no_notifications" msgid="3241328952121767751">"Tiada"</string>
+</resources>

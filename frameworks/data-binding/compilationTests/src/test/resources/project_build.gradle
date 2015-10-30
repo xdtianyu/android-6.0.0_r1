@@ -1,0 +1,23 @@
+buildscript {
+    ext.rootFolder = new File(project.projectDir, "../../..")
+    apply from: "${project.projectDir}/propLoaderClone.gradle"
+    ext.addRepos(repositories)
+    dependencies {
+        classpath "com.android.databinding:dataBinder:${config.version}"
+    }
+}
+
+subprojects {
+    apply plugin: 'maven'
+    group = config.group
+    version = config.version
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        maven {
+            url config.mavenRepoDir
+        }
+    }
+}

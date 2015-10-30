@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PerformanceLaunch</string>
+    <string name="login">Login Screen</string>
+    <string name="user">Username:</string>
+    <string name="pass">Password:</string>
+    <string name="Login">Sign In</string>
+
+</resources>

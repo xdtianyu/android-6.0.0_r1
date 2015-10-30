@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2014 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="wifi_setup_input_password" msgid="4324884380214448502">"Ievadiet tīkla <xliff:g id="SSID">%1$s</xliff:g> paroli."</string>
+    <string name="wifi_setup_waiting_for_join" msgid="42826539810553389">"Notiek pievienošana tīklam ^1..."</string>
+    <string name="wifi_setup_connection_success" msgid="3362351168182711828">"Savienojums ir izveidots!"</string>
+    <string name="wifi_setup_save_success" msgid="2001513015933996675">"Veiksmīgi saglabāts!"</string>
+    <string name="device_apps_app_management_version" msgid="6315648665194084382">"versija <xliff:g id="APP_VERSION">%1$s</xliff:g>"</string>
+    <string name="device_apps_app_management_open" msgid="3326361233913951387">"Atvērt"</string>
+    <string name="device_apps_app_management_force_stop" msgid="1803832648099079651">"Veikt piespiedu apturēšanu"</string>
+    <string name="device_apps_app_management_force_stop_desc" msgid="221435219644064243">"Piespiedu kārtā apturot lietotnes darbību, var rasties lietotnes darbības traucējumi."</string>
+    <string name="device_apps_app_management_uninstall" msgid="6054050725055974790">"Atinstalēt"</string>
+    <string name="device_apps_app_management_uninstall_desc" msgid="3542570994262234511">"Vai vēlaties atinstalēt šo lietotni?"</string>
+    <string name="device_apps_app_management_disable" msgid="1461984395121717076">"Atspējot"</string>
+    <string name="device_apps_app_management_disable_desc" msgid="1362228583828208991">"Vai vēlaties atspējot šo lietotni?"</string>
+    <string name="device_apps_app_management_enable" msgid="8794752872502256633">"Iespējot"</string>
+    <string name="device_apps_app_management_enable_desc" msgid="6449017972628203288">"Vai vēlaties iespējot šo lietotni?"</string>
+    <string name="device_apps_app_management_clear_data" msgid="8288695583331012586">"Notīrīt datus"</string>
+    <string name="device_apps_app_management_clear_data_desc" msgid="2197842469669426232">"Visi šīs lietotnes dati tiks neatgriezeniski dzēsti."</string>
+    <string name="device_apps_app_management_clear_data_what" msgid="376666756087041021">"Tas ietver visus failus, iestatījumus, kontus, datu bāzes utt."</string>
+    <string name="device_apps_app_management_clear_default" msgid="6654723680469212060">"Notīrīt noklusējuma vērtības"</string>
+    <string name="device_apps_app_management_clear_default_set" msgid="6233682647156684225">"Palaist lietotni ar noteiktām darbībām"</string>
+    <string name="device_apps_app_management_clear_default_none" msgid="6312021202504995474">"Nav iestatītas noklusējuma vērtības"</string>
+    <string name="device_apps_app_management_clear_cache" msgid="7878530504449821203">"Notīrīt kešatmiņu"</string>
+    <string name="device_apps_app_management_notifications" msgid="7069935222112158478">"Paziņojumi"</string>
+    <string name="device_apps_app_management_permissions" msgid="5758303833496289673">"Atļaujas"</string>
+    <string name="settings_ok" msgid="5501301223475616254">"Labi"</string>
+    <string name="settings_cancel" msgid="1649053173330804917">"Atcelt"</string>
+    <string name="settings_on" msgid="1295064657786011878">"Ieslēgts"</string>
+    <string name="settings_off" msgid="4439170658516725721">"Izslēgts"</string>
+    <string name="device_daydreams_none" msgid="5310233518671772034">"Neviens"</string>
+    <string name="device_daydreams_select" msgid="1754678562660674925">"Ekrānsaudzētājs"</string>
+    <string name="device_daydreams_test" msgid="7442554912076991502">"Ieslēgt tūlīt"</string>
+    <string name="device_daydreams_sleep" msgid="5263432145910468025">"Kad ieslēgt ekrānsaudzētāju"</string>
+    <string name="device_daydreams_sleep_description" msgid="8438730889852772376">"Ekrānsaudzētājs tiks aktivizēts, kad būs pagājis šis periods. Ja ekrānsaudzētājs nav atlasīts, displejs tiks izslēgts."</string>
+    <string name="device_daydreams_sleep_summary" msgid="4442691086777437088">"Pēc neaktivitātes: <xliff:g id="SLEEP_DESCRIPTION">%1$s</xliff:g>"</string>
+    <string name="device_daydreams_screen_off" msgid="1846621864054404830">"Kad ieslēgt miega režīmu"</string>
+    <string name="device_daydreams_screen_off_description" msgid="7699124270812914310">"Ja šajā laika posmā ierīce nav bijusi aktīva, ekrāns tiek izslēgts."</string>
+    <string name="device_daydreams_screen_off_summary" msgid="6350806465141059041">"<xliff:g id="SLEEP_DESCRIPTION">%1$s</xliff:g> pēc ekrānsaudzētāja aktivizēšanās"</string>
+    <string name="backup_configure_account_default_summary" msgid="2013649183664358673">"Pašlaik nevienā kontā netiek uzglabāti dublēti dati."</string>
+    <string name="backup_erase_dialog_title" msgid="8900389956460363471"></string>
+    <string name="backup_erase_dialog_message" msgid="448169495686297910">"Vai pārtraukt Wi-Fi paroļu, grāmatzīmju, lietotņu datu un citu iestatījumu dublēšanu un dzēst visas to kopijas Google serveros?"</string>
+    <string name="privacy_backup_data" msgid="3652306596140877278">"Dublēt manus datus"</string>
+    <string name="privacy_backup_account" msgid="6127132568071889274">"Rezerves konts"</string>
+    <string name="privacy_automatic_restore" msgid="8896792578363571896">"Automātiska atjaunošana"</string>
+    <string name="factory_reset_device" msgid="7615350252195583106">"Atiestatīt ierīci"</string>
+    <string name="factory_reset_description" msgid="6709336495536583649">"Tādējādi no jūsu ierīces iekšējās atmiņas tiks dzēsti visi dati, tostarp jūsu Google konta, sistēmas un lietotņu dati un iestatījumi, kā arī lejupielādētās lietotnes."</string>
+    <string name="confirm_factory_reset_description" msgid="5710644039419606428">"Vai dzēst visu jūsu personīgo informāciju un visas lejupielādētās lietotnes? Šo darbību nevar atcelt!"</string>
+    <string name="confirm_factory_reset_device" msgid="519046408823105666">"Dzēst visu"</string>
+    <string name="dismiss_all_notifications" msgid="3350731990365092847">"Nerādīt nevienu"</string>
+    <string name="no_notifications" msgid="3241328952121767751">"Nav"</string>
+    <string name="do_not_disturb_title" msgid="1050245577355301376">"Netraucēt"</string>
+    <string name="do_not_disturb_desc" msgid="3186041965642361597">"Ja iesl., paz. būs tikai: “Iestatījumi”."</string>
+    <string name="select_title" msgid="2657901623249723536">"Nosaukuma izvēlēšanās ierīcei ^1"</string>
+    <string name="select_description" msgid="4080602542483519716">"Nosaukums palīdzēs atpazīt ierīci ^1, kad piekļūsiet tai no citām ierīcēm, piemēram, no tālruņa, planšetdatora vai datora."</string>
+  <string-array name="rooms">
+    <item msgid="2748008285322003570">"Dzīvojamā istaba"</item>
+    <item msgid="7887185726776968055">"Multivides telpa"</item>
+    <item msgid="372573326176756144">"Viesistaba"</item>
+    <item msgid="8112576067079559786">"Ēdamistaba"</item>
+    <item msgid="2891751328917513846">"Kabinets"</item>
+    <item msgid="7390608863950443962">"Guļamistaba"</item>
+    <item msgid="682313511953895794">"Virtuve"</item>
+  </string-array>
+    <string name="custom_room" msgid="5972936200641815527">"Ievadīt pielāgotu nosaukumu..."</string>
+    <string name="settings_status_title" msgid="3280459921834269206">"Šai ierīcei (^1) piešķirts nosaukums"</string>
+    <string name="settings_status_description" msgid="4892610880616296037">"Šīs ierīces (^2) nosaukums ir “^1”. Vai vēlaties to mainīt?"</string>
+    <string name="change_setting" msgid="199354038426145612">"Mainīt"</string>
+    <string name="keep_settings" msgid="549230720820096102">"Nemainīt"</string>
+    <string name="menu_help" msgid="2164687828212723531">"Palīdzība"</string>
+    <string name="setup_failure_title" msgid="4408868360762577232">"Radās kļūda"</string>
+    <string name="setup_failure_button_retry" msgid="4917381906591779977">"Mēģināt vēlreiz"</string>
+</resources>

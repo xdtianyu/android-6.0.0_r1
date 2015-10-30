@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+**
+** Copyright 2008, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.wallpaper">
+
+    <original-package android:name="com.android.wallpaper" />
+
+    <uses-feature android:name="android.software.live_wallpaper" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:label="@string/wallpapers"
+        android:icon="@drawable/ic_launcher_wallpaper">
+
+        <activity
+            android:label="@string/clock_settings"
+            android:name="com.android.wallpaper.polarclock.PolarClockSettings"
+            android:theme="@android:style/Theme"
+            android:exported="true"
+            android:enabled="@bool/config_enable_polar_clock_wallpaper">
+        </activity>
+        
+        <service
+            android:label="@string/wallpaper_clock"
+            android:name="com.android.wallpaper.polarclock.PolarClockWallpaper"
+            android:permission="android.permission.BIND_WALLPAPER"
+            android:enabled="@bool/config_enable_polar_clock_wallpaper">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService" />
+            </intent-filter>
+            <meta-data android:name="android.service.wallpaper" android:resource="@xml/polar_clock" />
+        </service>
+
+        <!-- RE-ENABLE WHEN #2246948 IS FIXED -->
+        <!-- <service
+            android:label="@string/wallpaper_walkaround"
+            android:name="com.android.wallpaper.walkaround.WalkAroundWallpaper"
+            android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService" />
+            </intent-filter>
+            <meta-data android:name="android.service.wallpaper" android:resource="@xml/walkaround" />
+        </service> -->
+
+    </application>
+
+</manifest>

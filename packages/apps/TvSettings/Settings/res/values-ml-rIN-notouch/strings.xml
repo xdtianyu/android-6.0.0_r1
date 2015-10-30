@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2014 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="wifi_setup_input_password" msgid="4324884380214448502">"<xliff:g id="SSID">%1$s</xliff:g> എന്നതിന്റെ പാസ്‌വേഡ് നൽകുക"</string>
+    <string name="wifi_setup_waiting_for_join" msgid="42826539810553389">"^1 എന്നതിൽ ചേരുന്നു"</string>
+    <string name="wifi_setup_connection_success" msgid="3362351168182711828">"കണക്‌റ്റുചെയ്‌തു!"</string>
+    <string name="wifi_setup_save_success" msgid="2001513015933996675">"സംരക്ഷിച്ചു!"</string>
+    <string name="device_apps_app_management_version" msgid="6315648665194084382">"പതിപ്പ് <xliff:g id="APP_VERSION">%1$s</xliff:g>"</string>
+    <string name="device_apps_app_management_open" msgid="3326361233913951387">"തുറക്കുക"</string>
+    <string name="device_apps_app_management_force_stop" msgid="1803832648099079651">"നിർബന്ധിതമായി നിർത്തുക"</string>
+    <string name="device_apps_app_management_force_stop_desc" msgid="221435219644064243">"നിങ്ങൾ ഒരു അപ്ലിക്കേഷൻ നിർബന്ധിതമായി നിർത്തിയാൽ, അത് ശരിയായി പ്രവർത്തിക്കാനിടയില്ല."</string>
+    <string name="device_apps_app_management_uninstall" msgid="6054050725055974790">"അൺഇൻസ്റ്റാളുചെയ്യുക"</string>
+    <string name="device_apps_app_management_uninstall_desc" msgid="3542570994262234511">"ഈ അപ്ലിക്കേഷൻ അൺഇൻസ്റ്റാളുചെയ്യണോ?"</string>
+    <string name="device_apps_app_management_disable" msgid="1461984395121717076">"പ്രവർത്തനരഹിതമാക്കുക"</string>
+    <string name="device_apps_app_management_disable_desc" msgid="1362228583828208991">"നിങ്ങൾക്ക് ഈ അപ്ലിക്കേഷൻ പ്രവർത്തനരഹിതമാക്കണോ?"</string>
+    <string name="device_apps_app_management_enable" msgid="8794752872502256633">"പ്രവർത്തനക്ഷമമാക്കുക"</string>
+    <string name="device_apps_app_management_enable_desc" msgid="6449017972628203288">"നിങ്ങൾക്ക് ഈ അപ്ലിക്കേഷൻ പ്രവർത്തനക്ഷമമാക്കണോ?"</string>
+    <string name="device_apps_app_management_clear_data" msgid="8288695583331012586">"ഡാറ്റ മായ്‌ക്കുക"</string>
+    <string name="device_apps_app_management_clear_data_desc" msgid="2197842469669426232">"ഈ അപ്ലിക്കേഷന്റെ എല്ലാ ഡാറ്റയും ശാശ്വതമായി ഇല്ലാതാക്കും."</string>
+    <string name="device_apps_app_management_clear_data_what" msgid="376666756087041021">"ഫയലുകൾ, ക്രമീകരണങ്ങൾ, അക്കൗണ്ടുകൾ, ഡാറ്റാബേസുകൾ തുടങ്ങിയവയെല്ലാം ഇതിൽ ഉൾപ്പെടുന്നു."</string>
+    <string name="device_apps_app_management_clear_default" msgid="6654723680469212060">"സ്ഥിരമായവ മായ്ക്കുക"</string>
+    <string name="device_apps_app_management_clear_default_set" msgid="6233682647156684225">"ചില പ്രവർത്തനങ്ങൾക്കായി ഈ അപ്ലിക്കേഷൻ സമാരംഭിക്കാൻ സജ്ജമാക്കുക"</string>
+    <string name="device_apps_app_management_clear_default_none" msgid="6312021202504995474">"സ്ഥിരമായവയൊന്നും സജ്ജീകരിച്ചിട്ടില്ല"</string>
+    <string name="device_apps_app_management_clear_cache" msgid="7878530504449821203">"കാഷെ മായ്ക്കുക"</string>
+    <string name="device_apps_app_management_notifications" msgid="7069935222112158478">"അറിയിപ്പുകൾ"</string>
+    <string name="device_apps_app_management_permissions" msgid="5758303833496289673">"അനുമതികൾ"</string>
+    <string name="settings_ok" msgid="5501301223475616254">"ശരി"</string>
+    <string name="settings_cancel" msgid="1649053173330804917">"റദ്ദാക്കുക"</string>
+    <string name="settings_on" msgid="1295064657786011878">"ഓണാക്കുക"</string>
+    <string name="settings_off" msgid="4439170658516725721">"ഓഫാക്കുക"</string>
+    <string name="device_daydreams_none" msgid="5310233518671772034">"ഒന്നുമില്ല"</string>
+    <string name="device_daydreams_select" msgid="1754678562660674925">"ഡേഡ്രീം"</string>
+    <string name="device_daydreams_test" msgid="7442554912076991502">"ഇപ്പോൾ ആരംഭിക്കുക"</string>
+    <string name="device_daydreams_sleep" msgid="5263432145910468025">"ഡേഡ്രീമിലാകുന്നത് എപ്പോൾ"</string>
+    <string name="device_daydreams_sleep_description" msgid="8438730889852772376">"ഈ നിഷ്‌ക്രിയത്വ കാലയളവിനുശേഷം ഡേഡ്രീമിംഗ് ആരംഭിക്കുന്നു. ഡേഡ്രീമൊന്നും തിരഞ്ഞെടുത്തില്ലെങ്കിൽ, ഡിസ്‌പ്‌ലേ ഓഫാകുന്നതാണ്."</string>
+    <string name="device_daydreams_sleep_summary" msgid="4442691086777437088">"<xliff:g id="SLEEP_DESCRIPTION">%1$s</xliff:g> നിഷ്‌ക്രിയത്വത്തിന് ശേഷം"</string>
+    <string name="device_daydreams_screen_off" msgid="1846621864054404830">"സുഷുപ്‌തിയിലാകുന്നത് എപ്പോൾ"</string>
+    <string name="device_daydreams_screen_off_description" msgid="7699124270812914310">"ഈ നിഷ്‌ക്രിയ കാലയളവിന് ശേഷം സ്‌ക്രീൻ ഓഫാകുന്നു."</string>
+    <string name="device_daydreams_screen_off_summary" msgid="6350806465141059041">"ഡ്രീമിംഗിന് കഴിഞ്ഞ് <xliff:g id="SLEEP_DESCRIPTION">%1$s</xliff:g>-ന് ശേഷം"</string>
+    <string name="backup_configure_account_default_summary" msgid="2013649183664358673">"നിലവിൽ അക്കൗണ്ടുകളൊന്നും ബാക്കപ്പ് ചെയ്ത ഡാറ്റ സംഭരിക്കുന്നില്ല"</string>
+    <string name="backup_erase_dialog_title" msgid="8900389956460363471"></string>
+    <string name="backup_erase_dialog_message" msgid="448169495686297910">"Google സെർവറുകളിൽ നിങ്ങളുടെ Wi‑Fi പാസ്‌വേഡുകൾ, ബുക്ക്‌മാർക്കുകൾ, മറ്റ് ക്രമീകരണങ്ങൾ, അപ്ലിക്കേഷൻ ഡാറ്റ എന്നിവ ബാക്കപ്പുചെയ്യുന്നത് അവസാനിപ്പിച്ച് അതിലെ എല്ലാ പകർപ്പുകളും മായ്‌ക്കണോ?"</string>
+    <string name="privacy_backup_data" msgid="3652306596140877278">"എന്റെ ഡാറ്റ ബാക്കപ്പുചെയ്യുക"</string>
+    <string name="privacy_backup_account" msgid="6127132568071889274">"ബാക്കപ്പ് അക്കൗണ്ട്"</string>
+    <string name="privacy_automatic_restore" msgid="8896792578363571896">"യാന്ത്രികമായി പുനഃസ്ഥാപിക്കൽ"</string>
+    <string name="factory_reset_device" msgid="7615350252195583106">"ഉപകരണം പുനഃസജ്ജീകരിക്കുക"</string>
+    <string name="factory_reset_description" msgid="6709336495536583649">"ഇനിപ്പറയുന്നതുൾപ്പെടെ ഇത് നിങ്ങളുടെ ഉപകരണത്തിന്റെ ആന്തരിക സംഭരണത്തിൽ നിന്നുള്ള എല്ലാ ഡാറ്റയും മായ്‌ക്കും: നിങ്ങളുടെ Google അക്കൗണ്ട്, സിസ്‌റ്റത്തിന്റെയും അപ്ലിക്കേഷന്റെയും ഡാറ്റയും ക്രമീകരണങ്ങളും, ഡൗൺലോഡുചെയ്‌ത അപ്ലിക്കേഷനുകൾ എന്നിവ"</string>
+    <string name="confirm_factory_reset_description" msgid="5710644039419606428">"നിങ്ങളുടെ എല്ലാ വ്യക്തിഗത വിവരവും ഡൗൺലോഡ് ചെയ്‌ത അപ്ലിക്കേഷനുകളും മായ്ക്കണോ? നിങ്ങൾക്ക് ഈ പ്രവർത്തനം പഴയപടിയാക്കാനാകില്ല!"</string>
+    <string name="confirm_factory_reset_device" msgid="519046408823105666">"എല്ലാം മായ്ക്കുക"</string>
+    <string name="dismiss_all_notifications" msgid="3350731990365092847">"എല്ലാം നിരസിക്കുക"</string>
+    <string name="no_notifications" msgid="3241328952121767751">"ഒന്നുമില്ല"</string>
+    <string name="do_not_disturb_title" msgid="1050245577355301376">"ശല്ല്യപ്പെടുത്തരുത്"</string>
+    <string name="do_not_disturb_desc" msgid="3186041965642361597">"പ്രവർത്തനക്ഷമമാകുമ്പോൾ, പുതിയ അറിയിപ്പുകൾ മാത്രമേ ക്രമീകരണങ്ങളിൽ ദൃശ്യമാകൂ"</string>
+    <string name="select_title" msgid="2657901623249723536">"നിങ്ങളുടെ ^1 എന്നതിന് ഒരു പേര് തിരഞ്ഞെടുക്കുക"</string>
+    <string name="select_description" msgid="4080602542483519716">"നിങ്ങളുടെ ഫോണോ ടാബ്‌ലെറ്റോ കമ്പ്യൂട്ടറോ പോലുള്ള മറ്റ് ഉപകരണങ്ങളിൽ നിന്ന് ^1 ആക്‌സസ്സുചെയ്യുമ്പോൾ അത് തിരിച്ചറിയാൻ ഒരു പേര് സഹായിക്കും."</string>
+  <string-array name="rooms">
+    <item msgid="2748008285322003570">"സ്വീകരണമുറി"</item>
+    <item msgid="7887185726776968055">"മീഡിയ റൂം"</item>
+    <item msgid="372573326176756144">"ഫാമിലി റൂം"</item>
+    <item msgid="8112576067079559786">"ഡൈനിംഗ് റൂം"</item>
+    <item msgid="2891751328917513846">"ഡെൻ"</item>
+    <item msgid="7390608863950443962">"കിടപ്പുമുറി"</item>
+    <item msgid="682313511953895794">"അടുക്കള"</item>
+  </string-array>
+    <string name="custom_room" msgid="5972936200641815527">"ഇ‌ഷ്‌ടാനുസൃത പേര് നൽകുക..."</string>
+    <string name="settings_status_title" msgid="3280459921834269206">"ഈ ^1എന്നതിന് പേര് നൽകി"</string>
+    <string name="settings_status_description" msgid="4892610880616296037">"ഈ ^2 എന്നതിന്റെ പേര് \"^1\" ആണ്.നിങ്ങൾക്കിത് മാറ്റണോ?"</string>
+    <string name="change_setting" msgid="199354038426145612">"മാറ്റുക"</string>
+    <string name="keep_settings" msgid="549230720820096102">"മാറ്റരുത്"</string>
+    <string name="menu_help" msgid="2164687828212723531">"സഹായം"</string>
+    <string name="setup_failure_title" msgid="4408868360762577232">"ഒരു പിശക് സംഭവിച്ചു"</string>
+    <string name="setup_failure_button_retry" msgid="4917381906591779977">"വീണ്ടും ശ്രമിക്കുക"</string>
+</resources>

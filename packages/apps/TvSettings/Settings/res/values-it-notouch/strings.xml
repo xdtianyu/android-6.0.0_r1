@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2014 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="wifi_setup_input_password" msgid="4324884380214448502">"Inserisci la password per <xliff:g id="SSID">%1$s</xliff:g>"</string>
+    <string name="wifi_setup_waiting_for_join" msgid="42826539810553389">"Associazione a ^1"</string>
+    <string name="wifi_setup_connection_success" msgid="3362351168182711828">"Connesso correttamente."</string>
+    <string name="wifi_setup_save_success" msgid="2001513015933996675">"Salvataggio riuscito."</string>
+    <string name="device_apps_app_management_version" msgid="6315648665194084382">"versione <xliff:g id="APP_VERSION">%1$s</xliff:g>"</string>
+    <string name="device_apps_app_management_open" msgid="3326361233913951387">"Apri"</string>
+    <string name="device_apps_app_management_force_stop" msgid="1803832648099079651">"Termina"</string>
+    <string name="device_apps_app_management_force_stop_desc" msgid="221435219644064243">"Se forzi l\'interruzione di un\'applicazione, tale applicazione potrebbe funzionare in modo anomalo."</string>
+    <string name="device_apps_app_management_uninstall" msgid="6054050725055974790">"Disinstalla"</string>
+    <string name="device_apps_app_management_uninstall_desc" msgid="3542570994262234511">"Vuoi disinstallare questa applicazione?"</string>
+    <string name="device_apps_app_management_disable" msgid="1461984395121717076">"Disabilita"</string>
+    <string name="device_apps_app_management_disable_desc" msgid="1362228583828208991">"Vuoi disabilitare questa app?"</string>
+    <string name="device_apps_app_management_enable" msgid="8794752872502256633">"Abilita"</string>
+    <string name="device_apps_app_management_enable_desc" msgid="6449017972628203288">"Vuoi abilitare questa app?"</string>
+    <string name="device_apps_app_management_clear_data" msgid="8288695583331012586">"Cancella dati"</string>
+    <string name="device_apps_app_management_clear_data_desc" msgid="2197842469669426232">"Tutti i dati di questa app verranno eliminati definitivamente."</string>
+    <string name="device_apps_app_management_clear_data_what" msgid="376666756087041021">"Ciò include tutti i file, le impostazioni, gli account, i database e così via."</string>
+    <string name="device_apps_app_management_clear_default" msgid="6654723680469212060">"Cancella impostazioni predefinite"</string>
+    <string name="device_apps_app_management_clear_default_set" msgid="6233682647156684225">"Imposta avvio app per alcune azioni"</string>
+    <string name="device_apps_app_management_clear_default_none" msgid="6312021202504995474">"Nessuna impostazione predefinita"</string>
+    <string name="device_apps_app_management_clear_cache" msgid="7878530504449821203">"Cancella cache"</string>
+    <string name="device_apps_app_management_notifications" msgid="7069935222112158478">"Notifiche"</string>
+    <string name="device_apps_app_management_permissions" msgid="5758303833496289673">"Autorizzazioni"</string>
+    <string name="settings_ok" msgid="5501301223475616254">"OK"</string>
+    <string name="settings_cancel" msgid="1649053173330804917">"Annulla"</string>
+    <string name="settings_on" msgid="1295064657786011878">"Attiva"</string>
+    <string name="settings_off" msgid="4439170658516725721">"Disattiva"</string>
+    <string name="device_daydreams_none" msgid="5310233518671772034">"Nessuno"</string>
+    <string name="device_daydreams_select" msgid="1754678562660674925">"Daydream"</string>
+    <string name="device_daydreams_test" msgid="7442554912076991502">"Avvia adesso"</string>
+    <string name="device_daydreams_sleep" msgid="5263432145910468025">"Quando attivare Daydream"</string>
+    <string name="device_daydreams_sleep_description" msgid="8438730889852772376">"Daydream viene avviato dopo il periodo di inattività selezionato. Se Daydream non è selezionato, il display si spegne."</string>
+    <string name="device_daydreams_sleep_summary" msgid="4442691086777437088">"Dopo <xliff:g id="SLEEP_DESCRIPTION">%1$s</xliff:g> di inattività"</string>
+    <string name="device_daydreams_screen_off" msgid="1846621864054404830">"Quando avviare la modalità di sospensione"</string>
+    <string name="device_daydreams_screen_off_description" msgid="7699124270812914310">"Lo schermo viene spento dopo questo lasso di tempo di inattività."</string>
+    <string name="device_daydreams_screen_off_summary" msgid="6350806465141059041">"<xliff:g id="SLEEP_DESCRIPTION">%1$s</xliff:g> dopo l\'avvio di Daydream"</string>
+    <string name="backup_configure_account_default_summary" msgid="2013649183664358673">"Al momento nessun account contiene dati di backup"</string>
+    <string name="backup_erase_dialog_title" msgid="8900389956460363471"></string>
+    <string name="backup_erase_dialog_message" msgid="448169495686297910">"Interrompere il backup delle password Wi-Fi, dei segnalibri, di altre impostazioni e dei dati delle applicazioni e cancellare tutte le copie sui server di Google?"</string>
+    <string name="privacy_backup_data" msgid="3652306596140877278">"Backup dei miei dati"</string>
+    <string name="privacy_backup_account" msgid="6127132568071889274">"Account di backup"</string>
+    <string name="privacy_automatic_restore" msgid="8896792578363571896">"Ripristino automatico"</string>
+    <string name="factory_reset_device" msgid="7615350252195583106">"Reimposta dispositivo"</string>
+    <string name="factory_reset_description" msgid="6709336495536583649">"Questa operazione comporta l\'eliminazione di tutti i dati dalla memoria interna del dispositivo, tra cui: il tuo account Google, dati e impostazioni del sistema e delle app, nonché le app scaricate."</string>
+    <string name="confirm_factory_reset_description" msgid="5710644039419606428">"Cancellare tutti i dati personali e le applicazioni scaricate? Questa azione è irreversibile."</string>
+    <string name="confirm_factory_reset_device" msgid="519046408823105666">"Cancella tutto"</string>
+    <string name="dismiss_all_notifications" msgid="3350731990365092847">"Ignora tutto"</string>
+    <string name="no_notifications" msgid="3241328952121767751">"Nessuna"</string>
+    <string name="do_not_disturb_title" msgid="1050245577355301376">"Non disturbare"</string>
+    <string name="do_not_disturb_desc" msgid="3186041965642361597">"Se abilitate, puoi vedere le nuove notifiche solo in Impostazioni"</string>
+    <string name="select_title" msgid="2657901623249723536">"Scegli un nome per il tuo dispositivo ^1"</string>
+    <string name="select_description" msgid="4080602542483519716">"Se specifichi un nome sarà più semplice identificare il tuo dispositivo ^1 quando vi accederai da altri dispositivi quali telefoni, tablet o computer."</string>
+  <string-array name="rooms">
+    <item msgid="2748008285322003570">"Salotto"</item>
+    <item msgid="7887185726776968055">"Sala multimediale"</item>
+    <item msgid="372573326176756144">"Soggiorno"</item>
+    <item msgid="8112576067079559786">"Sala da pranzo"</item>
+    <item msgid="2891751328917513846">"Studio"</item>
+    <item msgid="7390608863950443962">"Camera da letto"</item>
+    <item msgid="682313511953895794">"Cucina"</item>
+  </string-array>
+    <string name="custom_room" msgid="5972936200641815527">"Inserisci nome personalizzato…"</string>
+    <string name="settings_status_title" msgid="3280459921834269206">"Questo dispositivo ^1 ha un nome"</string>
+    <string name="settings_status_description" msgid="4892610880616296037">"\"^1\" è il nome di questo dispositivo ^2. Vuoi cambiarlo?"</string>
+    <string name="change_setting" msgid="199354038426145612">"Cambia"</string>
+    <string name="keep_settings" msgid="549230720820096102">"Non cambiare"</string>
+    <string name="menu_help" msgid="2164687828212723531">"Guida"</string>
+    <string name="setup_failure_title" msgid="4408868360762577232">"Si è verificato un errore"</string>
+    <string name="setup_failure_button_retry" msgid="4917381906591779977">"Riprova"</string>
+</resources>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2014 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+ 
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- no translation found for wifi_setup_input_password (4324884380214448502) -->
+    <skip />
+    <!-- no translation found for wifi_setup_waiting_for_join (42826539810553389) -->
+    <skip />
+    <!-- no translation found for wifi_setup_connection_success (3362351168182711828) -->
+    <skip />
+    <!-- no translation found for wifi_setup_save_success (2001513015933996675) -->
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <!-- no translation found for device_apps_app_management_version (6315648665194084382) -->
+    <skip />
+    <!-- no translation found for device_apps_app_management_open (3326361233913951387) -->
+    <skip />
+    <!-- no translation found for device_apps_app_management_force_stop (1803832648099079651) -->
+    <skip />
+    <!-- no translation found for device_apps_app_management_force_stop_desc (221435219644064243) -->
+    <skip />
+    <!-- no translation found for device_apps_app_management_uninstall (6054050725055974790) -->
+    <skip />
+    <!-- no translation found for device_apps_app_management_uninstall_desc (3542570994262234511) -->
+    <skip />
+    <!-- no translation found for device_apps_app_management_clear_data (8288695583331012586) -->
+    <skip />
+    <!-- no translation found for device_apps_app_management_clear_data_desc (2197842469669426232) -->
+    <skip />
+    <!-- no translation found for device_apps_app_management_clear_data_what (376666756087041021) -->
+    <skip />
+    <!-- no translation found for device_apps_app_management_clear_cache (7878530504449821203) -->
+    <skip />
+    <!-- no translation found for device_apps_app_management_notifications (7069935222112158478) -->
+    <skip />
+    <!-- no translation found for device_apps_app_management_permissions (5758303833496289673) -->
+    <skip />
+    <!-- no translation found for settings_ok (5501301223475616254) -->
+    <skip />
+    <!-- no translation found for settings_cancel (1649053173330804917) -->
+    <skip />
+    <!-- no translation found for settings_on (1295064657786011878) -->
+    <skip />
+    <!-- no translation found for settings_off (4439170658516725721) -->
+    <skip />
+    <!-- no translation found for device_daydreams_none (5310233518671772034) -->
+    <skip />
+    <!-- no translation found for device_daydreams_select (1754678562660674925) -->
+    <skip />
+    <!-- no translation found for device_daydreams_test (7442554912076991502) -->
+    <skip />
+    <!-- no translation found for device_daydreams_sleep (5263432145910468025) -->
+    <skip />
+    <!-- no translation found for device_daydreams_sleep_description (8438730889852772376) -->
+    <skip />
+    <!-- no translation found for device_daydreams_sleep_summary (4442691086777437088) -->
+    <skip />
+    <!-- no translation found for device_daydreams_screen_off (1846621864054404830) -->
+    <skip />
+    <!-- no translation found for device_daydreams_screen_off_description (2714283422741910116) -->
+    <skip />
+    <!-- no translation found for device_daydreams_screen_off_summary (6350806465141059041) -->
+    <skip />
+    <!-- no translation found for backup_configure_account_default_summary (2013649183664358673) -->
+    <skip />
+    <string name="backup_erase_dialog_title" msgid="8900389956460363471"></string>
+    <!-- no translation found for backup_erase_dialog_message (448169495686297910) -->
+    <skip />
+    <!-- no translation found for privacy_backup_data (3652306596140877278) -->
+    <skip />
+    <!-- no translation found for privacy_backup_account (6127132568071889274) -->
+    <skip />
+    <!-- no translation found for privacy_automatic_restore (8896792578363571896) -->
+    <skip />
+    <!-- no translation found for factory_reset_device (7615350252195583106) -->
+    <skip />
+    <!-- no translation found for factory_reset_description (6709336495536583649) -->
+    <skip />
+    <!-- no translation found for confirm_factory_reset_description (5710644039419606428) -->
+    <skip />
+    <!-- no translation found for confirm_factory_reset_device (519046408823105666) -->
+    <skip />
+    <!-- no translation found for dismiss_all_notifications (3350731990365092847) -->
+    <skip />
+    <!-- no translation found for no_notifications (3241328952121767751) -->
+    <skip />
+    <!-- no translation found for do_not_disturb_title (1050245577355301376) -->
+    <skip />
+    <!-- no translation found for do_not_disturb_desc (3186041965642361597) -->
+    <skip />
+    <!-- no translation found for select_title (7198726136224025927) -->
+    <skip />
+    <!-- no translation found for select_description (5793523265011441398) -->
+    <skip />
+    <!-- no translation found for rooms:0 (2748008285322003570) -->
+    <!-- no translation found for rooms:1 (7887185726776968055) -->
+    <!-- no translation found for rooms:2 (372573326176756144) -->
+    <!-- no translation found for rooms:3 (8112576067079559786) -->
+    <!-- no translation found for rooms:4 (2891751328917513846) -->
+    <!-- no translation found for rooms:5 (7390608863950443962) -->
+    <!-- no translation found for rooms:6 (682313511953895794) -->
+    <!-- no translation found for custom_room (5972936200641815527) -->
+    <skip />
+    <!-- no translation found for settings_status_title (3614035378662654635) -->
+    <skip />
+    <!-- no translation found for settings_status_description (3927440914529717379) -->
+    <skip />
+    <!-- no translation found for change_setting (199354038426145612) -->
+    <skip />
+    <!-- no translation found for keep_settings (549230720820096102) -->
+    <skip />
+    <!-- no translation found for menu_help (2164687828212723531) -->
+    <skip />
+    <!-- no translation found for setup_failure_title (4408868360762577232) -->
+    <skip />
+    <!-- no translation found for setup_failure_button_retry (4917381906591779977) -->
+    <skip />
+</resources>

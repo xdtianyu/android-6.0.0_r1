@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2008 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="exchange_name_alternate" msgid="293118547772095111">"Microsoft Exchange ActiveSync"</string>
+    <string name="meeting_accepted" msgid="3212429159225789973">"ตกลงเข้าร่วม: <xliff:g id="SUBJECT">%s</xliff:g>"</string>
+    <string name="meeting_declined" msgid="1171426219920875691">"ปฏิเสธ: <xliff:g id="SUBJECT">%s</xliff:g>"</string>
+    <string name="meeting_tentative" msgid="5057443956630531997">"ชั่วคราว: <xliff:g id="SUBJECT">%s</xliff:g>"</string>
+    <string name="meeting_canceled" msgid="3913922862382539900">"ยกเลิกแล้ว: <xliff:g id="SUBJECT">%s</xliff:g>"</string>
+    <string name="meeting_updated" msgid="5960663236439072658">"อัปเดต: <xliff:g id="SUBJECT">%s</xliff:g>"</string>
+    <string name="meeting_when" msgid="1905576664682173880">"เวลา: <xliff:g id="WHEN">%s</xliff:g>"</string>
+    <string name="meeting_where" msgid="6498631574145121862">"สถานที่: <xliff:g id="WHERE">%s</xliff:g>"</string>
+    <string name="meeting_recurring" msgid="2752008481765880928">"เวลา: <xliff:g id="EVENTDATE">%s</xliff:g> (เกิดซ้ำ)"</string>
+    <string name="meeting_allday" msgid="7251209063071628040">"เมื่อ: <xliff:g id="EVENTDATE">%s</xliff:g> (ตลอดวัน)"</string>
+    <string name="meeting_allday_recurring" msgid="4545762363537362545">"เมื่อ: <xliff:g id="EVENTDATE">%s</xliff:g> (ตลอดวัน เกิดซ้ำ)"</string>
+    <string name="app_name" msgid="1707639359526090662">"บริการอีเมล Exchange"</string>
+    <string name="exception_cancel" msgid="8972887597771126871">"กิจกรรมถูกยกเลิกแล้วในวันที่: <xliff:g id="DATE">%s</xliff:g>"</string>
+    <string name="exception_updated" msgid="329192591551400871">"วันที่ของกิจกรรมนี้ถูกเปลี่ยนเป็น: <xliff:g id="DATE">%s</xliff:g>"</string>
+    <string name="policy_dont_allow_storage_cards" msgid="1305111581282078881">"ไม่อนุญาตให้มีการ์ดบันทึกข้อมูล"</string>
+    <string name="policy_dont_allow_unsigned_apps" msgid="7663879438028397642">"ไม่อนุญาตแอปพลิเคชันที่ไม่ได้ลงชื่อ"</string>
+    <string name="policy_dont_allow_unsigned_installers" msgid="8227232531632246827">"ไม่อนุญาตตัวติดตั้งแอปฯ ที่ไม่ได้ลงชื่อ"</string>
+    <string name="policy_dont_allow_wifi" msgid="8501275982154914194">"ไม่อนุญาตให้ใช้ WiFi"</string>
+    <string name="policy_dont_allow_text_messaging" msgid="860590081742537792">"ไม่อนุญาตการรับส่งข้อความ"</string>
+    <string name="policy_dont_allow_pop_imap" msgid="5772539239469636191">"ไม่อนุญาตให้ใช้บัญชี POP3 หรือ IMAP"</string>
+    <string name="policy_dont_allow_irda" msgid="8230803019935893114">"ไม่อนุญาตให้มีการสื่อสารอินฟราเรด"</string>
+    <string name="policy_dont_allow_html" msgid="3909470006782362967">"ไม่อนุญาตให้รับอีเมลแบบ HTML"</string>
+    <string name="policy_dont_allow_browser" msgid="241728112385525092">"ไม่อนุญาตให้ใช้เบราว์เซอร์"</string>
+    <string name="policy_dont_allow_consumer_email" msgid="2473755560531860915">"ไม่อนุญาตให้รับอีเมลลูกค้า"</string>
+    <string name="policy_dont_allow_internet_sharing" msgid="8926902533477728994">"ไม่อนุญาตการแชร์อินเทอร์เน็ต"</string>
+    <string name="policy_require_smime" msgid="6445017199744800426">"ต้องมีข้อความรูปแบบ SMIME"</string>
+    <string name="policy_bluetooth_restricted" msgid="2877695021606992022">"จำกัดการใช้บลูทูธ"</string>
+    <string name="policy_app_blacklist" msgid="6955451921925210944">"ไม่อนุญาตให้ใช้แอปพลิเคชันที่ระบุ"</string>
+    <string name="policy_app_whitelist" msgid="73673250614393830">"อนุญาตแอปพลิเคชันที่ระบุเท่านั้น"</string>
+    <string name="policy_text_truncation" msgid="2098855720139889616">"จำกัดขนาดอีเมลแบบข้อความ"</string>
+    <string name="policy_html_truncation" msgid="4913206221060438112">"จำกัดขนาดอีเมลแบบ HTML"</string>
+    <string name="policy_require_sd_encryption" msgid="3911913080904633038">"ต้องมีการเข้ารหัสการ์ด SD"</string>
+    <string name="policy_dont_allow_attachments" msgid="8422502533001368811">"ไม่อนุญาตให้ดาวน์โหลดไฟล์แนบ"</string>
+    <string name="policy_max_attachment_size" msgid="8872049367518056209">"จำกัดขนาดไฟล์แนบ"</string>
+    <string name="policy_require_manual_sync_roaming" msgid="4779633041935012627">"อนุญาตเฉพาะการซิงค์ด้วยตนเองขณะโรมมิ่ง"</string>
+    <string name="policy_require_encryption" msgid="4176146021220010140">"ต้องมีการเข้ารหัสอุปกรณ์"</string>
+    <string name="account_setup_options_mail_window_auto" msgid="7407981634952005775">"อัตโนมัติ"</string>
+    <string name="account_setup_options_mail_window_1day" msgid="4169162439752592189">"หนึ่งวัน"</string>
+    <string name="account_setup_options_mail_window_3days" msgid="2330167870774583574">"3 วัน"</string>
+    <string name="account_setup_options_mail_window_1week" msgid="5066291978475859713">"1 สัปดาห์"</string>
+    <string name="account_setup_options_mail_window_2weeks" msgid="2127842445792663461">"สองสัปดาห์"</string>
+    <string name="account_setup_options_mail_window_1month" msgid="4785039795926771180">"1 เดือน"</string>
+    <string name="account_setup_options_mail_window_all" msgid="4794683936065721438">"ทั้งหมด"</string>
+    <string name="auth_error_notification_title" msgid="6768042010440968454">"ข้อผิดพลาดในการตรวจสอบสิทธิ์"</string>
+    <string name="auth_error_notification_text" msgid="3590528965691740509">"แตะเพื่อแก้ไขการตั้งค่าบัญชีสำหรับ <xliff:g id="ACCOUNT">%s</xliff:g>"</string>
+    <string name="email_settings_not_available" msgid="59579952494440349">"เปิดใช้งานแอปพลิเคชันอีเมลเพื่อดูการตั้งค่า"</string>
+</resources>

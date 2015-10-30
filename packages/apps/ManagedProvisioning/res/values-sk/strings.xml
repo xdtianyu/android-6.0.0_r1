@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+/**
+ * Copyright (C) 2014 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="provisioning_error_title" msgid="6320515739861578118">"Ojoj!"</string>
+    <string name="setup_work_profile" msgid="9164519662954159586">"Nastavenie profilu"</string>
+    <string name="company_controls_workspace" msgid="2808025277267917221">"Tento profil riadi a zabezpečuje vaša spoločnosť. Všetko ostatné na tomto zariadení máte pod kontrolou vy."</string>
+    <string name="company_controls_device" msgid="8230957518758871390">"Vaša organizácia bude ovládať toto zariadenie a zaistí jeho bezpečnosť."</string>
+    <string name="the_following_is_your_mdm" msgid="6613658218262376404">"Nasledujúca aplikácia bude potrebovať prístup k tomuto profilu:"</string>
+    <string name="the_following_is_your_mdm_for_device" msgid="6717973404364414816">"Vaše zariadenie bude spravovať nasledujúca aplikácia:"</string>
+    <string name="set_up" msgid="7012862095553564169">"Nastaviť"</string>
+    <string name="setting_up_workspace" msgid="4517537806569988620">"Nastavuje sa pracovný profil…"</string>
+    <string name="admin_has_ability_to_monitor_profile" msgid="4568398182707822770">"Správca môže sledovať a spravovať nastavenia, firemný prístup, aplikácie a údaje priradené k tomuto profilu vrátane aktivity v sieti a informácií o polohe zariadenia."</string>
+    <string name="admin_has_ability_to_monitor_device" msgid="246829528286153147">"Správca môže sledovať a spravovať nastavenia, firemný prístup, aplikácie a údaje priradené k tomuto zariadeniu vrátane aktivity v sieti a informácií o polohe zariadenia."</string>
+    <string name="theft_protection_disabled_warning" msgid="8132394739905501698">"Ak budete pokračovať, funkcie ochrany proti krádeži nebudú aktivované. Ak chcete aktivovať ochranu proti krádeži, vráťte sa späť a nastavte toto zariadenie ako osobné."</string>
+    <string name="contact_your_admin_for_more_info" msgid="6870084889394621288">"Viac informácií (vrátane pravidiel ochrany osobných údajov vašej organizácie) vám poskytne správca."</string>
+    <string name="learn_more_link" msgid="3012495805919550043">"Viac informácií"</string>
+    <string name="cancel_setup" msgid="3295266841772028057">"ZRUŠIŤ"</string>
+    <string name="ok_setup" msgid="5148111905838329307">"OK"</string>
+    <string name="default_managed_profile_name" msgid="5370257687074907055">"Pracovný profil"</string>
+    <string name="delete_profile_title" msgid="3097803266123463699">"Odstrániť pracovný profil?"</string>
+    <string name="opening_paragraph_delete_profile_unknown_company" msgid="2139238673477554356">"Pracovný profil už existuje a spravuje ho aplikácia:"</string>
+    <string name="opening_paragraph_delete_profile_known_company" msgid="3126629826260821264">"Tento pracovný profil spravuje pre organizáciu %s aplikácia:"</string>
+    <string name="read_more_delete_profile" msgid="7789171620401666343">"Skôr ako budete pokračovať, "<a href="#read_this_link">"prečítajte si tieto informácie"</a>"."</string>
+    <string name="sure_you_want_to_delete_profile" msgid="1336653819166266605">"Ak budete pokračovať, všetky aplikácie a údaje v tomto profile budú odstránené."</string>
+    <string name="delete_profile" msgid="8384444459432563649">"ODSTRÁNIŤ"</string>
+    <string name="cancel_delete_profile" msgid="5500786140389799348">"ZRUŠIŤ"</string>
+    <string name="encrypt_device_text_for_profile_owner_setup" msgid="4325067657681168120">"Ak chcete v nastavovaní pracovného profilu pokračovať, bude potrebné zariadenie zašifrovať. To môže chvíľu trvať."</string>
+    <string name="encrypt_device_text_for_device_owner_setup" msgid="9206667711446040692">"Ak chcete pokračovať v nastavovaní zariadenia, budete ho musieť zašifrovať. Môže to chvíľu trvať."</string>
+    <string name="encrypt_device_cancel" msgid="5989855177432338238">"ZRUŠIŤ"</string>
+    <string name="encrypt_device_launch_settings" msgid="5421412897999811117">"ŠIFROVAŤ"</string>
+    <string name="continue_provisioning_notify_title" msgid="5191449100153186648">"Šifrovanie bolo dokončené"</string>
+    <string name="continue_provisioning_notify_text" msgid="3027317630111909095">"Klepnutím pokračujte v nastavení pracovného profilu."</string>
+    <string name="managed_provisioning_error_text" msgid="7063621174570680890">"Nastavenie pracovného profilu sa nepodarilo. Kontaktujte oddelenie IT alebo to skúste znova neskôr."</string>
+    <string name="managed_provisioning_not_supported" msgid="6582227325719911795">"Vaše zariadenie nepodporuje pracovné profily"</string>
+    <string name="user_is_not_owner" msgid="6193230832887977927">"Pracovné profily musí nastaviť primárny používateľ zariadenia"</string>
+    <string name="device_owner_exists" msgid="8020080296133337023">"Pracovné profily nie je možné nastaviť na spravovanom zariadení"</string>
+    <string name="maximum_user_limit_reached" msgid="4821228722266114449">"Pracovný profil nebolo možné vytvoriť, pretože ste na svojom zariadení už dosiahli maximálny počet používateľov. Odstráňte aspoň jedného používateľa a skúste to znova."</string>
+    <string name="managed_provisioning_not_supported_by_launcher" msgid="8710138269807942163">"Táto aplikácia spúšťača nepodporuje váš pracovný profil. Musíte prepnúť na spúšťač, ktorý je kompatibilný."</string>
+    <string name="cancel_provisioning" msgid="3753408161948407036">"ZRUŠIŤ"</string>
+    <string name="pick_launcher" msgid="4811489057826175648">"OK"</string>
+    <string name="default_owned_device_username" msgid="3915120202811807955">"Používateľ pracovného zariadenia"</string>
+    <string name="setup_work_device" msgid="3028145936574439146">"Nastavenie zariadenia"</string>
+    <string name="progress_data_process" msgid="1707745321954672971">"Spracovávajú sa údaje nastavenia…"</string>
+    <string name="progress_connect_to_wifi" msgid="472251154628863539">"Pripája sa k sieti Wi-Fi…"</string>
+    <string name="progress_download" msgid="3522436271691064624">"Sťahuje sa aplikácia na správu…"</string>
+    <string name="progress_install" msgid="2258045670385866183">"Inštaluje sa aplikácia na správu…"</string>
+    <string name="progress_set_owner" msgid="8214062820093757961">"Nastavuje sa vlastník zariadenia…"</string>
+    <string name="device_owner_cancel_message" msgid="2529288571742712065">"Ukončiť nastavovanie a odstrániť údaje zariadenia?"</string>
+    <string name="device_owner_cancel_cancel" msgid="1398290143405142587">"ZRUŠIŤ"</string>
+    <string name="device_owner_error_ok" msgid="2556654993515978854">"OK"</string>
+    <string name="device_owner_error_reset" msgid="5278392395769857412">"OBNOVIŤ"</string>
+    <string name="device_owner_error_general" msgid="5962462955470123776">"Nastavenie zariadenia sa nepodarilo. Kontaktujte oddelenie IT."</string>
+    <string name="device_owner_error_already_provisioned" msgid="49944866843771627">"Toto zariadenie je už nastavené"</string>
+    <string name="device_owner_error_already_provisioned_user" msgid="5861348691161504683">"Toto zariadenie je už nastavené pre tohto používateľa"</string>
+    <string name="device_owner_error_wifi" msgid="4256310285761332378">"Nepodarilo sa pripojiť k sieti Wi-Fi"</string>
+    <string name="device_owner_error_frp" msgid="7053630342416280252">"Toto zariadenie je uzamknuté ochranou proti obnoveniu továrenských nastavení. Kontaktujte oddelenie IT."</string>
+    <string name="frp_clear_progress_title" msgid="8628074089458234965">"Prebieha vymazávanie"</string>
+    <string name="frp_clear_progress_text" msgid="1740164332830598827">"Čakajte..."</string>
+    <string name="device_owner_error_hash_mismatch" msgid="184518450016295596">"Pre chybu kontrolného súčtu sa aplikácia na správu nedá použiť. Kontaktujte oddelenie IT."</string>
+    <string name="device_owner_error_download_failed" msgid="4520111971592657116">"Aplikáciu na správu sa nepodarilo stiahnuť"</string>
+    <string name="device_owner_error_package_invalid" msgid="3816725179069202140">"Aplikácia na správu sa nedá použiť. Buď v nej chýbajú niektoré komponenty, alebo je poškodená. Kontaktujte oddelenie IT."</string>
+    <string name="device_owner_error_package_name_invalid" msgid="5161432357348636936">"Aplikáciu na spravovanie nie je možné nainštalovať. Názov balíka je neplatný. Kontaktujte oddelenie IT."</string>
+    <string name="device_owner_error_installation_failed" msgid="684566845601079360">"Aplikáciu na správu sa nepodarilo nainštalovať"</string>
+    <string name="device_owner_error_package_not_installed" msgid="6095079346537408556">"Na vašom zariadení nie je nainštalovaná aplikácia na správu"</string>
+    <string name="profile_owner_cancel_message" msgid="6868736915633023477">"Zastaviť nastavovanie?"</string>
+    <string name="profile_owner_cancel_cancel" msgid="1035206963979858009">"NIE"</string>
+    <string name="profile_owner_cancel_ok" msgid="4915817426681209592">"ÁNO"</string>
+    <string name="profile_owner_cancelling" msgid="5679573829145112822">"Ruší sa…"</string>
+    <string name="work_profile_setup_later_title" msgid="9069148190226279892">"Ukončiť nastavenie profilu?"</string>
+    <string name="work_profile_setup_later_message" msgid="2446733709871989895">"Svoj pracovný profil si môžete nastaviť neskôr v aplikácii na správu zariadenia, ktorú používa vaša organizácia."</string>
+    <string name="work_profile_setup_continue" msgid="44459981285359765">"POKRAČOVAŤ"</string>
+    <string name="work_profile_setup_stop" msgid="5739020120488653974">"UKONČIŤ"</string>
+    <string name="provisioning" msgid="4512493827019163451">"Prebieha poskytovanie"</string>
+    <string name="copying_certs" msgid="5697938664953550881">"Nastavujú sa certifikáty CA"</string>
+    <string name="setup_profile_start_setup" msgid="6793984532953528297">"Nastavenie profilu. Spustenie nastavenia"</string>
+    <string name="setup_profile_encryption" msgid="5241291404536277038">"Nastavenie profilu. Šifrovanie"</string>
+    <string name="setup_profile_progress" msgid="7742718527853325656">"Nastavenie profilu. Zobrazenie priebehu"</string>
+    <string name="setup_device_start_setup" msgid="4351340224000741826">"Nastavenie zariadenia. Spustenie nastavenia"</string>
+    <string name="setup_device_encryption" msgid="7852944465414197103">"Nastavenie zariadenia. Šifrovanie"</string>
+    <string name="setup_device_progress" msgid="7035335208571175393">"Nastavenie zariadenia. Zobrazenie priebehu"</string>
+    <string name="learn_more_label" msgid="2723716758654655009">"Tlačidlo Ďalšie informácie"</string>
+    <string name="mdm_icon_label" msgid="3399134595549660561">"Ikona <xliff:g id="ICON_LABEL">%1$s</xliff:g>"</string>
+</resources>

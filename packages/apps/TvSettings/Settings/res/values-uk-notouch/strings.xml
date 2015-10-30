@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2014 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="wifi_setup_input_password" msgid="4324884380214448502">"Введіть пароль для мережі <xliff:g id="SSID">%1$s</xliff:g>"</string>
+    <string name="wifi_setup_waiting_for_join" msgid="42826539810553389">"Під’єднання до ^1"</string>
+    <string name="wifi_setup_connection_success" msgid="3362351168182711828">"З’єднано."</string>
+    <string name="wifi_setup_save_success" msgid="2001513015933996675">"Збережено."</string>
+    <string name="device_apps_app_management_version" msgid="6315648665194084382">"версія <xliff:g id="APP_VERSION">%1$s</xliff:g>"</string>
+    <string name="device_apps_app_management_open" msgid="3326361233913951387">"Відкрити"</string>
+    <string name="device_apps_app_management_force_stop" msgid="1803832648099079651">"Примусово зупинити"</string>
+    <string name="device_apps_app_management_force_stop_desc" msgid="221435219644064243">"Примусова зупинка програми може призвести до її неналежної роботи."</string>
+    <string name="device_apps_app_management_uninstall" msgid="6054050725055974790">"Видалити"</string>
+    <string name="device_apps_app_management_uninstall_desc" msgid="3542570994262234511">"Видалити цю програму?"</string>
+    <string name="device_apps_app_management_disable" msgid="1461984395121717076">"Вимкнути"</string>
+    <string name="device_apps_app_management_disable_desc" msgid="1362228583828208991">"Вимкнути додаток?"</string>
+    <string name="device_apps_app_management_enable" msgid="8794752872502256633">"Увімкнути"</string>
+    <string name="device_apps_app_management_enable_desc" msgid="6449017972628203288">"Увімкнути додаток?"</string>
+    <string name="device_apps_app_management_clear_data" msgid="8288695583331012586">"Очистити дані"</string>
+    <string name="device_apps_app_management_clear_data_desc" msgid="2197842469669426232">"Усі дані цієї програми буде видалено назавжди."</string>
+    <string name="device_apps_app_management_clear_data_what" msgid="376666756087041021">"Це стосується всіх файлів, налаштувань, облікових записів, баз даних тощо."</string>
+    <string name="device_apps_app_management_clear_default" msgid="6654723680469212060">"Очистити дії за умовчанням"</string>
+    <string name="device_apps_app_management_clear_default_set" msgid="6233682647156684225">"Налашт. запуск додатка для певних дій"</string>
+    <string name="device_apps_app_management_clear_default_none" msgid="6312021202504995474">"Не вибрано дій за умовчанням"</string>
+    <string name="device_apps_app_management_clear_cache" msgid="7878530504449821203">"Очистити кеш-пам’ять"</string>
+    <string name="device_apps_app_management_notifications" msgid="7069935222112158478">"Сповіщення"</string>
+    <string name="device_apps_app_management_permissions" msgid="5758303833496289673">"Дозволи"</string>
+    <string name="settings_ok" msgid="5501301223475616254">"OK"</string>
+    <string name="settings_cancel" msgid="1649053173330804917">"Скасувати"</string>
+    <string name="settings_on" msgid="1295064657786011878">"Увімкнено"</string>
+    <string name="settings_off" msgid="4439170658516725721">"Вимкнено"</string>
+    <string name="device_daydreams_none" msgid="5310233518671772034">"Немає"</string>
+    <string name="device_daydreams_select" msgid="1754678562660674925">"Заставка"</string>
+    <string name="device_daydreams_test" msgid="7442554912076991502">"Почати зараз"</string>
+    <string name="device_daydreams_sleep" msgid="5263432145910468025">"Коли переходити в режим заставки"</string>
+    <string name="device_daydreams_sleep_description" msgid="8438730889852772376">"Заставка ввімкнеться, коли мине вибраний час бездіяльності. Якщо заставку не налаштовано, дисплей просто вимкнеться."</string>
+    <string name="device_daydreams_sleep_summary" msgid="4442691086777437088">"Після <xliff:g id="SLEEP_DESCRIPTION">%1$s</xliff:g> бездіяльності"</string>
+    <string name="device_daydreams_screen_off" msgid="1846621864054404830">"Коли переходити в режим сну"</string>
+    <string name="device_daydreams_screen_off_description" msgid="7699124270812914310">"Після цього періоду бездіяльності екран вимикається."</string>
+    <string name="device_daydreams_screen_off_summary" msgid="6350806465141059041">"<xliff:g id="SLEEP_DESCRIPTION">%1$s</xliff:g> після запуску заставки"</string>
+    <string name="backup_configure_account_default_summary" msgid="2013649183664358673">"Наразі в жодному обліковому записі не зберігаються дані резервного копіювання"</string>
+    <string name="backup_erase_dialog_title" msgid="8900389956460363471"></string>
+    <string name="backup_erase_dialog_message" msgid="448169495686297910">"Припинити створення резервних копій паролів Wi-Fi, закладок, інших налаштувань і даних програм, а також стерти всі копії на серверах Google?"</string>
+    <string name="privacy_backup_data" msgid="3652306596140877278">"Резервне копіювання даних"</string>
+    <string name="privacy_backup_account" msgid="6127132568071889274">"Резервний обліковий запис"</string>
+    <string name="privacy_automatic_restore" msgid="8896792578363571896">"Автоматичне відновлення"</string>
+    <string name="factory_reset_device" msgid="7615350252195583106">"Скинути параметри пристрою"</string>
+    <string name="factory_reset_description" msgid="6709336495536583649">"Усі дані з внутрішньої пам’яті вашого пристрою буде стерто, зокрема: ваш обліковий запис Google, дані й налаштування системи та програм, завантажені програми"</string>
+    <string name="confirm_factory_reset_description" msgid="5710644039419606428">"Стерти всю особисту інформацію та завантажені програми? Цю дію не можна скасувати!"</string>
+    <string name="confirm_factory_reset_device" msgid="519046408823105666">"Стерти все"</string>
+    <string name="dismiss_all_notifications" msgid="3350731990365092847">"Закрити всі"</string>
+    <string name="no_notifications" msgid="3241328952121767751">"Немає"</string>
+    <string name="do_not_disturb_title" msgid="1050245577355301376">"Не турбувати"</string>
+    <string name="do_not_disturb_desc" msgid="3186041965642361597">"Якщо ввімкнути, нові сповіщення будуть лише в Налаштуваннях"</string>
+    <string name="select_title" msgid="2657901623249723536">"Виберіть назву для свого пристрою ^1"</string>
+    <string name="select_description" msgid="4080602542483519716">"Назва допоможе ідентифікувати ваш пристрій ^1 під час доступу до нього з інших пристроїв (наприклад, телефона, планшета чи комп’ютера)."</string>
+  <string-array name="rooms">
+    <item msgid="2748008285322003570">"Вітальня"</item>
+    <item msgid="7887185726776968055">"Домашній кінотеатр"</item>
+    <item msgid="372573326176756144">"Кімната відпочинку"</item>
+    <item msgid="8112576067079559786">"Їдальня"</item>
+    <item msgid="2891751328917513846">"Робоче місце"</item>
+    <item msgid="7390608863950443962">"Спальня"</item>
+    <item msgid="682313511953895794">"Кухня"</item>
+  </string-array>
+    <string name="custom_room" msgid="5972936200641815527">"Вибрати свою назву…"</string>
+    <string name="settings_status_title" msgid="3280459921834269206">"Цей пристрій ^1 уже названо"</string>
+    <string name="settings_status_description" msgid="4892610880616296037">"\"^1\" – назва цього пристрою ^2. Змінити назву?"</string>
+    <string name="change_setting" msgid="199354038426145612">"Змінити"</string>
+    <string name="keep_settings" msgid="549230720820096102">"Не змінювати"</string>
+    <string name="menu_help" msgid="2164687828212723531">"Довідка"</string>
+    <string name="setup_failure_title" msgid="4408868360762577232">"Сталася помилка"</string>
+    <string name="setup_failure_button_retry" msgid="4917381906591779977">"Повторити"</string>
+</resources>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2008 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="exchange_name_alternate" msgid="293118547772095111">"Microsoft Exchange ActiveSync"</string>
+    <string name="meeting_accepted" msgid="3212429159225789973">"ಸ್ವೀಕರಿಸಲಾಗಿದೆ: <xliff:g id="SUBJECT">%s</xliff:g>"</string>
+    <string name="meeting_declined" msgid="1171426219920875691">"ನಿರಾಕರಿಸಲಾಗಿದೆ: <xliff:g id="SUBJECT">%s</xliff:g>"</string>
+    <string name="meeting_tentative" msgid="5057443956630531997">"ಪ್ರಾಯೋಗಿಕ: <xliff:g id="SUBJECT">%s</xliff:g>"</string>
+    <string name="meeting_canceled" msgid="3913922862382539900">"ರದ್ದುಗೊಳಿಸಲಾಗಿದೆ: <xliff:g id="SUBJECT">%s</xliff:g>"</string>
+    <string name="meeting_updated" msgid="5960663236439072658">"ನವೀಕರಿಸಲಾದ: <xliff:g id="SUBJECT">%s</xliff:g>"</string>
+    <string name="meeting_when" msgid="1905576664682173880">"ಯಾವಾಗ: <xliff:g id="WHEN">%s</xliff:g>"</string>
+    <string name="meeting_where" msgid="6498631574145121862">"ಎಲ್ಲಿ: <xliff:g id="WHERE">%s</xliff:g>"</string>
+    <string name="meeting_recurring" msgid="2752008481765880928">"ಯಾವಾಗ: <xliff:g id="EVENTDATE">%s</xliff:g> (ಪುನರಾವರ್ತನೆಯಾಗುತ್ತದೆ)"</string>
+    <string name="meeting_allday" msgid="7251209063071628040">"ಯಾವಾಗ: <xliff:g id="EVENTDATE">%s</xliff:g> (ಎಲ್ಲಾ ದಿನಗಳು)"</string>
+    <string name="meeting_allday_recurring" msgid="4545762363537362545">"ಯಾವಾಗ: <xliff:g id="EVENTDATE">%s</xliff:g> (ಎಲ್ಲಾ ದಿನ, ಪುನರಾವರ್ತನೆಯಾಗುತ್ತದೆ)"</string>
+    <string name="app_name" msgid="1707639359526090662">"ವಿನಿಮಯ ಸೇವೆಗಳು"</string>
+    <string name="exception_cancel" msgid="8972887597771126871">"ಈ ದಿನಾಂಕದಲ್ಲಿ ಈ ಈವೆಂಟ್ ಅನ್ನು ರದ್ದುಗೊಳಿಸಲಾಗಿದೆ: <xliff:g id="DATE">%s</xliff:g>"</string>
+    <string name="exception_updated" msgid="329192591551400871">"ಈ ಈವೆಂಟ್‍‍ನ ವಿವರಗಳನ್ನು ಈ ದಿನಾಂಕದಲ್ಲಿ ಬದಲಿಸಲಾಗಿದೆ:<xliff:g id="DATE">%s</xliff:g>"</string>
+    <string name="policy_dont_allow_storage_cards" msgid="1305111581282078881">"ಸಂಗ್ರಹಣಾ ಕಾರ್ಡ್ ಗಳನ್ನು ಅನುಮತಿಸಬೇಡಿ"</string>
+    <string name="policy_dont_allow_unsigned_apps" msgid="7663879438028397642">"ಸೈನ್ ಮಾಡಿರದ ಅಪ್ಲಿಕೇಶನ್‍ಗಳನ್ನು ಅನುಮತಿಸಬೇಡಿ"</string>
+    <string name="policy_dont_allow_unsigned_installers" msgid="8227232531632246827">"ಸೈನ್ ಮಾಡಿರದ ಅಪ್ಲಿಕೇಶನ್ ಸ್ಥಾಪಕಗಳನ್ನು ಅನುಮತಿಸಬೇಡಿ"</string>
+    <string name="policy_dont_allow_wifi" msgid="8501275982154914194">"Wi-Fi ಅನುಮತಿಸಬೇಡಿ"</string>
+    <string name="policy_dont_allow_text_messaging" msgid="860590081742537792">"ಪಠ್ಯ ಸಂದೇಶಿಸುವಿಕೆಯನ್ನು ಅನುಮತಿಸಬೇಡ"</string>
+    <string name="policy_dont_allow_pop_imap" msgid="5772539239469636191">"POP3 ಅಥವಾ IMAP ಖಾತೆಗಳನ್ನು ಅನುಮತಿಸಬೇಡಿ"</string>
+    <string name="policy_dont_allow_irda" msgid="8230803019935893114">"ಇನ್‌ಫ್ರಾರೆಡ್ ಸಂವಹನಗಳನ್ನು ಅನುಮತಿಸಬೇಡಿ"</string>
+    <string name="policy_dont_allow_html" msgid="3909470006782362967">"HTML ಇಮೇಲ್ ಅನುಮತಿಸಬೇಡಿ"</string>
+    <string name="policy_dont_allow_browser" msgid="241728112385525092">"ಬ್ರೌಸರ್‍ಗಳನ್ನು ಅನುಮತಿಸಬೇಡ"</string>
+    <string name="policy_dont_allow_consumer_email" msgid="2473755560531860915">"ಗ್ರಾಹಕ ಇಮೇಲ್ ಅನುಮತಿಸಬೇಡಿ"</string>
+    <string name="policy_dont_allow_internet_sharing" msgid="8926902533477728994">"ಇಂಟರ್ನೆಟ್ ಹಂಚಿಕೆ ಅನುಮತಿಸಬೇಡಿ"</string>
+    <string name="policy_require_smime" msgid="6445017199744800426">"SMIME ಸಂದೇಶಗಳ ಅಗತ್ಯವಿದೆ"</string>
+    <string name="policy_bluetooth_restricted" msgid="2877695021606992022">"Bluetooth ಬಳಕೆಯನ್ನು ನಿರ್ಬಂಧಿಸಿ"</string>
+    <string name="policy_app_blacklist" msgid="6955451921925210944">"ನಿರ್ದಿಷ್ಟಪಡಿಸಿದ ಅಪ್ಲಿಕೇಶನ್‍ಗಳನ್ನು ಅನುಮತಿಸಬೇಡ"</string>
+    <string name="policy_app_whitelist" msgid="73673250614393830">"ನಿರ್ದಿಷ್ಟ ಪಡಿಸಿದ ಅಪ್ಲಿಕೇಶನ್‍ಗಳನ್ನು ಮಾತ್ರ ಅನುಮತಿಸಿ"</string>
+    <string name="policy_text_truncation" msgid="2098855720139889616">"ಪಠ್ಯ ಇಮೇಲ್ ಗಾತ್ರವನ್ನು ನಿರ್ಬಂಧಿಸಿ"</string>
+    <string name="policy_html_truncation" msgid="4913206221060438112">"HTML ಇಮೇಲ್ ಗಾತ್ರವನ್ನು ನಿರ್ಬಂಧಿಸಿ"</string>
+    <string name="policy_require_sd_encryption" msgid="3911913080904633038">"SD ಕಾರ್ಡ್ ಎನ್‌ಕ್ರಿಪ್ಶನ್‌‌ ಅಗತ್ಯವಿದೆ"</string>
+    <string name="policy_dont_allow_attachments" msgid="8422502533001368811">"ಲಗತ್ತುಗಳನ್ನು ಅನುಮತಿಸಬೇಡ"</string>
+    <string name="policy_max_attachment_size" msgid="8872049367518056209">"ಲಗತ್ತು ಗಾತ್ರವನ್ನು ನಿರ್ಬಂಧಿಸಿ"</string>
+    <string name="policy_require_manual_sync_roaming" msgid="4779633041935012627">"ರೋಮಿಂಗ್‍ನಲ್ಲಿರುವಾಗ ಹಸ್ತಚಾಲಿತ ಸಿಂಕ್ ಅನ್ನು ಮಾತ್ರ ಅನುಮತಿಸು"</string>
+    <string name="policy_require_encryption" msgid="4176146021220010140">"ಸಾಧನ ಎನ್‌ಕ್ರಿಪ್ಶನ್‌‌ ಅಗತ್ಯವಿದೆ"</string>
+    <string name="account_setup_options_mail_window_auto" msgid="7407981634952005775">"ಸ್ವಯಂಚಾಲಿತ"</string>
+    <string name="account_setup_options_mail_window_1day" msgid="4169162439752592189">"ಒಂದು ದಿನ"</string>
+    <string name="account_setup_options_mail_window_3days" msgid="2330167870774583574">"ಮೂರು ದಿನಗಳು"</string>
+    <string name="account_setup_options_mail_window_1week" msgid="5066291978475859713">"ಒಂದು ವಾರ"</string>
+    <string name="account_setup_options_mail_window_2weeks" msgid="2127842445792663461">"ಎರಡು ವಾರಗಳು"</string>
+    <string name="account_setup_options_mail_window_1month" msgid="4785039795926771180">"ಒಂದು ತಿಂಗಳು"</string>
+    <string name="account_setup_options_mail_window_all" msgid="4794683936065721438">"ಎಲ್ಲ"</string>
+    <string name="auth_error_notification_title" msgid="6768042010440968454">"ದೃಢೀಕರಣ ದೋಷ"</string>
+    <string name="auth_error_notification_text" msgid="3590528965691740509">"<xliff:g id="ACCOUNT">%s</xliff:g> ಖಾತೆ ಸೆಟ್ಟಿಂಗ್‍ಗಳನ್ನು ಸಂಪಾದಿಸಲು ಸ್ಪರ್ಶಿಸಿ"</string>
+    <string name="email_settings_not_available" msgid="59579952494440349">"ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ವೀಕ್ಷಿಸಲು ಇಮೇಲ್ ಅಪ್ಲಿಕೇಶನ್ ಅನ್ನು ಮರುಸಕ್ರಿಯಗೊಳಿಸಿ."</string>
+</resources>

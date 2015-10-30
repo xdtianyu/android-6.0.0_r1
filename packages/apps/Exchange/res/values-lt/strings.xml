@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2008 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="exchange_name_alternate" msgid="293118547772095111">"Microsoft Exchange ActiveSync"</string>
+    <string name="meeting_accepted" msgid="3212429159225789973">"Priimta: <xliff:g id="SUBJECT">%s</xliff:g>"</string>
+    <string name="meeting_declined" msgid="1171426219920875691">"Atmesta: <xliff:g id="SUBJECT">%s</xliff:g>"</string>
+    <string name="meeting_tentative" msgid="5057443956630531997">"Neapsispręsta: <xliff:g id="SUBJECT">%s</xliff:g>"</string>
+    <string name="meeting_canceled" msgid="3913922862382539900">"Atšaukta: <xliff:g id="SUBJECT">%s</xliff:g>"</string>
+    <string name="meeting_updated" msgid="5960663236439072658">"Atnaujinta: <xliff:g id="SUBJECT">%s</xliff:g>"</string>
+    <string name="meeting_when" msgid="1905576664682173880">"Kada: <xliff:g id="WHEN">%s</xliff:g>"</string>
+    <string name="meeting_where" msgid="6498631574145121862">"Kur: <xliff:g id="WHERE">%s</xliff:g>"</string>
+    <string name="meeting_recurring" msgid="2752008481765880928">"Kada: <xliff:g id="EVENTDATE">%s</xliff:g> (pasikartojantis)"</string>
+    <string name="meeting_allday" msgid="7251209063071628040">"Kada: <xliff:g id="EVENTDATE">%s</xliff:g> (visą dieną)"</string>
+    <string name="meeting_allday_recurring" msgid="4545762363537362545">"Kada: <xliff:g id="EVENTDATE">%s</xliff:g> (visą dieną, pasikartojantis)"</string>
+    <string name="app_name" msgid="1707639359526090662">"„Exchange“ paslaugos"</string>
+    <string name="exception_cancel" msgid="8972887597771126871">"Šis įvykis atšauktas: <xliff:g id="DATE">%s</xliff:g>"</string>
+    <string name="exception_updated" msgid="329192591551400871">"Išsami šio įvykio informacija buvo pakeista: <xliff:g id="DATE">%s</xliff:g>"</string>
+    <string name="policy_dont_allow_storage_cards" msgid="1305111581282078881">"Neleisti atminties kortelių"</string>
+    <string name="policy_dont_allow_unsigned_apps" msgid="7663879438028397642">"Neleisti anoniminių programų"</string>
+    <string name="policy_dont_allow_unsigned_installers" msgid="8227232531632246827">"Neleisti anon. programų diegimo progr."</string>
+    <string name="policy_dont_allow_wifi" msgid="8501275982154914194">"Neleisti „Wi-Fi“"</string>
+    <string name="policy_dont_allow_text_messaging" msgid="860590081742537792">"Neleisti teksto pranešimų"</string>
+    <string name="policy_dont_allow_pop_imap" msgid="5772539239469636191">"Neleisti POP3 ar IMAP prieigos paskyrų"</string>
+    <string name="policy_dont_allow_irda" msgid="8230803019935893114">"Neleisti infraraudonųjų spindulių ryšių"</string>
+    <string name="policy_dont_allow_html" msgid="3909470006782362967">"Neleisti HTML el. laiškų"</string>
+    <string name="policy_dont_allow_browser" msgid="241728112385525092">"Neleisti naršyklių"</string>
+    <string name="policy_dont_allow_consumer_email" msgid="2473755560531860915">"Neleisti vartotojų el. laiškų"</string>
+    <string name="policy_dont_allow_internet_sharing" msgid="8926902533477728994">"Neleisti bendrinimo internetu"</string>
+    <string name="policy_require_smime" msgid="6445017199744800426">"Reikalauti SMIME pranešimų"</string>
+    <string name="policy_bluetooth_restricted" msgid="2877695021606992022">"Apriboti „Bluetooth“ naudojimą"</string>
+    <string name="policy_app_blacklist" msgid="6955451921925210944">"Neleisti nurodytų programų"</string>
+    <string name="policy_app_whitelist" msgid="73673250614393830">"Leisti tik nurodytas programas"</string>
+    <string name="policy_text_truncation" msgid="2098855720139889616">"Riboti teksto el. laiškų dydį"</string>
+    <string name="policy_html_truncation" msgid="4913206221060438112">"Riboti HTML el. laiškų dydį"</string>
+    <string name="policy_require_sd_encryption" msgid="3911913080904633038">"Reikalauti SD kortelės šifravimo"</string>
+    <string name="policy_dont_allow_attachments" msgid="8422502533001368811">"Neleisti priedų"</string>
+    <string name="policy_max_attachment_size" msgid="8872049367518056209">"Riboti priedo dydį"</string>
+    <string name="policy_require_manual_sync_roaming" msgid="4779633041935012627">"Veikiant tarptink. r. sinch. tik pačiam"</string>
+    <string name="policy_require_encryption" msgid="4176146021220010140">"Reikalauti įrenginių šifravimo"</string>
+    <string name="account_setup_options_mail_window_auto" msgid="7407981634952005775">"Automatinis"</string>
+    <string name="account_setup_options_mail_window_1day" msgid="4169162439752592189">"Vieną dieną"</string>
+    <string name="account_setup_options_mail_window_3days" msgid="2330167870774583574">"Tris dienas"</string>
+    <string name="account_setup_options_mail_window_1week" msgid="5066291978475859713">"Viena savaitė"</string>
+    <string name="account_setup_options_mail_window_2weeks" msgid="2127842445792663461">"Dvi savaitės"</string>
+    <string name="account_setup_options_mail_window_1month" msgid="4785039795926771180">"Vienas mėnuo"</string>
+    <string name="account_setup_options_mail_window_all" msgid="4794683936065721438">"Visas"</string>
+    <string name="auth_error_notification_title" msgid="6768042010440968454">"Tapatybės nustatymo klaida"</string>
+    <string name="auth_error_notification_text" msgid="3590528965691740509">"Jei norite redaguoti paskyros <xliff:g id="ACCOUNT">%s</xliff:g> nustatymus, palieskite"</string>
+    <string name="email_settings_not_available" msgid="59579952494440349">"Iš naujo įgalinkite el. pašto programą, kad galėtumėte peržiūrėti nustatymus."</string>
+</resources>

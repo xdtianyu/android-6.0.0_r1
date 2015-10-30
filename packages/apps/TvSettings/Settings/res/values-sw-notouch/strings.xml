@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2014 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="wifi_setup_input_password" msgid="4324884380214448502">"Weka nenosiri la <xliff:g id="SSID">%1$s</xliff:g>"</string>
+    <string name="wifi_setup_waiting_for_join" msgid="42826539810553389">"Inajiunga na ^1"</string>
+    <string name="wifi_setup_connection_success" msgid="3362351168182711828">"Imeunganishwa!"</string>
+    <string name="wifi_setup_save_success" msgid="2001513015933996675">"Imehifadhiwa bila tatizo!"</string>
+    <string name="device_apps_app_management_version" msgid="6315648665194084382">"toleo la <xliff:g id="APP_VERSION">%1$s</xliff:g>"</string>
+    <string name="device_apps_app_management_open" msgid="3326361233913951387">"Fungua"</string>
+    <string name="device_apps_app_management_force_stop" msgid="1803832648099079651">"Lazimisha kuzima"</string>
+    <string name="device_apps_app_management_force_stop_desc" msgid="221435219644064243">"Ukilazimisha programu kuzima, inaweza kutofanya vizuri."</string>
+    <string name="device_apps_app_management_uninstall" msgid="6054050725055974790">"Ondoa"</string>
+    <string name="device_apps_app_management_uninstall_desc" msgid="3542570994262234511">"Unataka kusanidua programu hii?"</string>
+    <string name="device_apps_app_management_disable" msgid="1461984395121717076">"Zima"</string>
+    <string name="device_apps_app_management_disable_desc" msgid="1362228583828208991">"Je, unataka kuzima programu hii?"</string>
+    <string name="device_apps_app_management_enable" msgid="8794752872502256633">"Washa"</string>
+    <string name="device_apps_app_management_enable_desc" msgid="6449017972628203288">"Je, unataka kuwasha programu hii?"</string>
+    <string name="device_apps_app_management_clear_data" msgid="8288695583331012586">"Futa data"</string>
+    <string name="device_apps_app_management_clear_data_desc" msgid="2197842469669426232">"Data yote ya programu hii itafutwa kabisa."</string>
+    <string name="device_apps_app_management_clear_data_what" msgid="376666756087041021">"Hii ni pamoja na faili zote, mipangilio, akaunti, hifadhidata, nk."</string>
+    <string name="device_apps_app_management_clear_default" msgid="6654723680469212060">"Futa chaguo-msingi"</string>
+    <string name="device_apps_app_management_clear_default_set" msgid="6233682647156684225">"Inafungua programu hii kwa vitendo fulani"</string>
+    <string name="device_apps_app_management_clear_default_none" msgid="6312021202504995474">"Hakuna chaguo-msingi zilizowekwa"</string>
+    <string name="device_apps_app_management_clear_cache" msgid="7878530504449821203">"Futa akiba"</string>
+    <string name="device_apps_app_management_notifications" msgid="7069935222112158478">"Arifa"</string>
+    <string name="device_apps_app_management_permissions" msgid="5758303833496289673">"Idhini"</string>
+    <string name="settings_ok" msgid="5501301223475616254">"SAWA"</string>
+    <string name="settings_cancel" msgid="1649053173330804917">"Ghairi"</string>
+    <string name="settings_on" msgid="1295064657786011878">"Washa"</string>
+    <string name="settings_off" msgid="4439170658516725721">"Zima"</string>
+    <string name="device_daydreams_none" msgid="5310233518671772034">"Hakuna"</string>
+    <string name="device_daydreams_select" msgid="1754678562660674925">"Pazia ya Kuvutia"</string>
+    <string name="device_daydreams_test" msgid="7442554912076991502">"Anza sasa"</string>
+    <string name="device_daydreams_sleep" msgid="5263432145910468025">"Wakati wa kuonyesha pazia ya kuvutia"</string>
+    <string name="device_daydreams_sleep_description" msgid="8438730889852772376">"Pazia za kuvutia huanza kuonyeshwa baada ya kipindi hiki cha kutotumika. Kama hakuna pazia ya kuvutia iliyochaguliwa, onyesho hujizima."</string>
+    <string name="device_daydreams_sleep_summary" msgid="4442691086777437088">"Baada ya <xliff:g id="SLEEP_DESCRIPTION">%1$s</xliff:g> ya kutokuwa na shughuli"</string>
+    <string name="device_daydreams_screen_off" msgid="1846621864054404830">"Wakati wa kuwa katika hali tuli"</string>
+    <string name="device_daydreams_screen_off_description" msgid="7699124270812914310">"Skrini hujizima baada ya kipindi hiki cha kukaa bila shughuli."</string>
+    <string name="device_daydreams_screen_off_summary" msgid="6350806465141059041">"<xliff:g id="SLEEP_DESCRIPTION">%1$s</xliff:g> baada ya kuanza kuonyesha pazia ya kuvutia"</string>
+    <string name="backup_configure_account_default_summary" msgid="2013649183664358673">"Hakuna akaunti ambayo kwa sasa inahifadhi nakala za data"</string>
+    <string name="backup_erase_dialog_title" msgid="8900389956460363471"></string>
+    <string name="backup_erase_dialog_message" msgid="448169495686297910">"Je, ungependa kuacha kuhifadhi nakala za manenosiri ya Wi-Fi, alamisho, mipangilio mingine na data ya programu, na ufute nakala zote kwenye seva za Google?"</string>
+    <string name="privacy_backup_data" msgid="3652306596140877278">"Hifadhi nakala za data yangu"</string>
+    <string name="privacy_backup_account" msgid="6127132568071889274">"Akaunti mbadala"</string>
+    <string name="privacy_automatic_restore" msgid="8896792578363571896">"Rejesha otomatiki"</string>
+    <string name="factory_reset_device" msgid="7615350252195583106">"Rejesha mipangilio ya kiwandani"</string>
+    <string name="factory_reset_description" msgid="6709336495536583649">"Kufanya hivi kutafuta data yote iliyo kwenye hifadhi ya mfumo wa kifaa chako, pamoja na: akaunti yako ya Google, data na mipangilio ya programu na mfumo, na programu zilizopakuliwa"</string>
+    <string name="confirm_factory_reset_description" msgid="5710644039419606428">"Unataka kufuta taarifa zako zote za binafsi na programu zilizopakuliwa? Huwezi kutendua hatua hii!"</string>
+    <string name="confirm_factory_reset_device" msgid="519046408823105666">"Futa kila kitu"</string>
+    <string name="dismiss_all_notifications" msgid="3350731990365092847">"Kataa zote"</string>
+    <string name="no_notifications" msgid="3241328952121767751">"Hakuna"</string>
+    <string name="do_not_disturb_title" msgid="1050245577355301376">"Usisumbue"</string>
+    <string name="do_not_disturb_desc" msgid="3186041965642361597">"Ikiwashwa, arifa mpya zitaonekana katika Mipangilio pekee"</string>
+    <string name="select_title" msgid="2657901623249723536">"Chagua jina la ^1 yako"</string>
+    <string name="select_description" msgid="4080602542483519716">"Jina litakusaidia kutambua ^1 yako utakapokuwa unaifikia kutoka vifaa vingine kama vile simu, kompyuta kibao au kompyuta yako."</string>
+  <string-array name="rooms">
+    <item msgid="2748008285322003570">"Sebuleni"</item>
+    <item msgid="7887185726776968055">"Chumba cha Burudani"</item>
+    <item msgid="372573326176756144">"Chumba cha Familia"</item>
+    <item msgid="8112576067079559786">"Chumba cha Mankuli"</item>
+    <item msgid="2891751328917513846">"Chumba cha Faragha"</item>
+    <item msgid="7390608863950443962">"Chumba cha kulala"</item>
+    <item msgid="682313511953895794">"Jikoni"</item>
+  </string-array>
+    <string name="custom_room" msgid="5972936200641815527">"Weka Jina Maalum..."</string>
+    <string name="settings_status_title" msgid="3280459921834269206">"^1 ina jina lake"</string>
+    <string name="settings_status_description" msgid="4892610880616296037">"\"^1\" ni jina la ^2 hii. Ungependa kubadili jina hili?"</string>
+    <string name="change_setting" msgid="199354038426145612">"Badilisha"</string>
+    <string name="keep_settings" msgid="549230720820096102">"Usibadilishe"</string>
+    <string name="menu_help" msgid="2164687828212723531">"Usaidizi"</string>
+    <string name="setup_failure_title" msgid="4408868360762577232">"Hitilafu imetokea"</string>
+    <string name="setup_failure_button_retry" msgid="4917381906591779977">"Jaribu tena"</string>
+</resources>

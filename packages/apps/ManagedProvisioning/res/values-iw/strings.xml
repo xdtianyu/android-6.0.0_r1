@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+/**
+ * Copyright (C) 2014 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="provisioning_error_title" msgid="6320515739861578118">"אופס!"</string>
+    <string name="setup_work_profile" msgid="9164519662954159586">"הגדרת הפרופיל"</string>
+    <string name="company_controls_workspace" msgid="2808025277267917221">"לארגון שלך יש שליטה על הפרופיל ועל אבטחתו. אתה שולט בשאר האפשרויות במכשיר."</string>
+    <string name="company_controls_device" msgid="8230957518758871390">"הארגון שלך ישלוט במכשיר הזה וידאג לאבטחה שלו."</string>
+    <string name="the_following_is_your_mdm" msgid="6613658218262376404">"האפליקציה הבאה תצטרך לגשת לפרופיל זה:"</string>
+    <string name="the_following_is_your_mdm_for_device" msgid="6717973404364414816">"האפליקציה הבאה תנהל את המכשיר שלך:"</string>
+    <string name="set_up" msgid="7012862095553564169">"הגדר"</string>
+    <string name="setting_up_workspace" msgid="4517537806569988620">"מגדיר את פרופיל העבודה שלך…"</string>
+    <string name="admin_has_ability_to_monitor_profile" msgid="4568398182707822770">"מנהל המערכת יכול לבצע מעקב ולנהל הגדרות, גישה ארגונית, אפליקציות ונתונים המשויכים לפרופיל, כולל פעילות ברשת ומידע על מיקום המכשיר."</string>
+    <string name="admin_has_ability_to_monitor_device" msgid="246829528286153147">"מנהל המערכת יכול לבצע מעקב ולנהל הגדרות, גישה ארגונית, אפליקציות ונתונים המשויכים למכשיר הזה, כולל פעילות ברשת ומידע על מיקום המכשיר."</string>
+    <string name="theft_protection_disabled_warning" msgid="8132394739905501698">"אם תמשיך, תכונות ההגנה מפני גניבה לא יופעלו. כדי להפעיל את ההגנה מפני גניבה, בטל עכשיו את התהליך והגדר את המכשיר בתור מכשיר אישי."</string>
+    <string name="contact_your_admin_for_more_info" msgid="6870084889394621288">"פנה למנהל המערכת לקבלת מידע נוסף, כולל מדיניות הפרטיות של הארגון."</string>
+    <string name="learn_more_link" msgid="3012495805919550043">"למידע נוסף"</string>
+    <string name="cancel_setup" msgid="3295266841772028057">"ביטול"</string>
+    <string name="ok_setup" msgid="5148111905838329307">"אישור"</string>
+    <string name="default_managed_profile_name" msgid="5370257687074907055">"פרופיל עבודה"</string>
+    <string name="delete_profile_title" msgid="3097803266123463699">"האם להסיר את פרופיל העבודה?"</string>
+    <string name="opening_paragraph_delete_profile_unknown_company" msgid="2139238673477554356">"כבר קיים פרופיל עבודה, והוא מנוהל על ידי:"</string>
+    <string name="opening_paragraph_delete_profile_known_company" msgid="3126629826260821264">"‏פרופיל העבודה הזה מנוהל בשביל %s באמצעות:"</string>
+    <string name="read_more_delete_profile" msgid="7789171620401666343"><a href="#read_this_link">"קרא את המידע שכאן"</a>" לפני שתמשיך."</string>
+    <string name="sure_you_want_to_delete_profile" msgid="1336653819166266605">"אם תמשיך, כל האפליקציות והנתונים בפרופיל הזה יימחקו."</string>
+    <string name="delete_profile" msgid="8384444459432563649">"מחיקה"</string>
+    <string name="cancel_delete_profile" msgid="5500786140389799348">"ביטול"</string>
+    <string name="encrypt_device_text_for_profile_owner_setup" msgid="4325067657681168120">"כדי להמשיך בהגדרת פרופיל העבודה, יהיה עליך להצפין את המכשיר. הפעולה הזו עשויה להימשך זמן מה."</string>
+    <string name="encrypt_device_text_for_device_owner_setup" msgid="9206667711446040692">"כדי להמשיך בהגדרת המכשיר, עליך להצפין אותו. הפעולה הזו עשויה להימשך זמן מה."</string>
+    <string name="encrypt_device_cancel" msgid="5989855177432338238">"ביטול"</string>
+    <string name="encrypt_device_launch_settings" msgid="5421412897999811117">"הצפנה"</string>
+    <string name="continue_provisioning_notify_title" msgid="5191449100153186648">"ההצפנה הושלמה"</string>
+    <string name="continue_provisioning_notify_text" msgid="3027317630111909095">"גע כדי להמשיך בהגדרת פרופיל העבודה שלך"</string>
+    <string name="managed_provisioning_error_text" msgid="7063621174570680890">"‏לא ניתן להגדיר את פרופיל העבודה שלך. צור קשר עם מחלקת ה-IT או נסה שוב מאוחר יותר."</string>
+    <string name="managed_provisioning_not_supported" msgid="6582227325719911795">"המכשיר שלך אינו תומך בפרופילי עבודה"</string>
+    <string name="user_is_not_owner" msgid="6193230832887977927">"על המשתמש הראשי במכשיר להגדיר את פרופילי העבודה"</string>
+    <string name="device_owner_exists" msgid="8020080296133337023">"לא ניתן להגדיר פרופילים של עבודה במכשיר מנוהל"</string>
+    <string name="maximum_user_limit_reached" msgid="4821228722266114449">"לא ניתן ליצור פרופיל עבודה מפני שהגעת למספר המשתמשים המקסימלי במכשיר. הסר משתמש אחד לפחות ונסה שוב."</string>
+    <string name="managed_provisioning_not_supported_by_launcher" msgid="8710138269807942163">"פרופיל העבודה שלך אינו נתמך על ידי אפליקציית ההפעלה הזו. יהיה עליך לעבור למפעיל אפליקציות תואם."</string>
+    <string name="cancel_provisioning" msgid="3753408161948407036">"ביטול"</string>
+    <string name="pick_launcher" msgid="4811489057826175648">"אישור"</string>
+    <string name="default_owned_device_username" msgid="3915120202811807955">"משתמש של מכשיר עבודה"</string>
+    <string name="setup_work_device" msgid="3028145936574439146">"הגדרת המכשיר"</string>
+    <string name="progress_data_process" msgid="1707745321954672971">"מעבד נתונים להגדרה…"</string>
+    <string name="progress_connect_to_wifi" msgid="472251154628863539">"‏מתחבר ל-Wi-Fi…"</string>
+    <string name="progress_download" msgid="3522436271691064624">"מוריד את אפליקציית הניהול…"</string>
+    <string name="progress_install" msgid="2258045670385866183">"מתקין את אפליקציית הניהול…"</string>
+    <string name="progress_set_owner" msgid="8214062820093757961">"מגדיר את בעל המכשיר…"</string>
+    <string name="device_owner_cancel_message" msgid="2529288571742712065">"האם להפסיק את ההגדרה ולמחוק את נתוני המכשיר?"</string>
+    <string name="device_owner_cancel_cancel" msgid="1398290143405142587">"ביטול"</string>
+    <string name="device_owner_error_ok" msgid="2556654993515978854">"אישור"</string>
+    <string name="device_owner_error_reset" msgid="5278392395769857412">"איפוס"</string>
+    <string name="device_owner_error_general" msgid="5962462955470123776">"‏לא ניתן להגדיר את המכשיר. צור קשר עם מחלקת ה-IT שלך."</string>
+    <string name="device_owner_error_already_provisioned" msgid="49944866843771627">"המכשיר הזה כבר מוגדר."</string>
+    <string name="device_owner_error_already_provisioned_user" msgid="5861348691161504683">"המכשיר הזה כבר מוגדר בשביל המשתמש הזה."</string>
+    <string name="device_owner_error_wifi" msgid="4256310285761332378">"‏אין אפשרות להתחבר ל-Wi-Fi"</string>
+    <string name="device_owner_error_frp" msgid="7053630342416280252">"‏המכשיר הזה נעול באמצעות הגנה מפני איפוס לנתוני היצרן. פנה אל מחלקת ה-IT."</string>
+    <string name="frp_clear_progress_title" msgid="8628074089458234965">"מוחק"</string>
+    <string name="frp_clear_progress_text" msgid="1740164332830598827">"אנא המתן..."</string>
+    <string name="device_owner_error_hash_mismatch" msgid="184518450016295596">"‏לא ניתן להשתמש באפליקציית הניהול עקב שגיאה בסיכום הביקורת. צור קשר עם מחלקת ה-IT שלך."</string>
+    <string name="device_owner_error_download_failed" msgid="4520111971592657116">"לא ניתן להוריד את אפליקציית הניהול"</string>
+    <string name="device_owner_error_package_invalid" msgid="3816725179069202140">"‏לא ניתן להשתמש באפליקציית הניהול. חסרים בה מרכיבים או שהיא פגומה. צור קשר עם מחלקת ה-IT שלך."</string>
+    <string name="device_owner_error_package_name_invalid" msgid="5161432357348636936">"‏לא ניתן להתקין את אפליקציית הניהול. שם החבילה לא חוקי. צור קשר עם מחלקת ה-IT."</string>
+    <string name="device_owner_error_installation_failed" msgid="684566845601079360">"לא ניתן להתקין את אפליקציית הניהול"</string>
+    <string name="device_owner_error_package_not_installed" msgid="6095079346537408556">"אפליקציית הניהול לא מותקנת במכשיר שלך"</string>
+    <string name="profile_owner_cancel_message" msgid="6868736915633023477">"האם להפסיק את תהליך ההגדרה?"</string>
+    <string name="profile_owner_cancel_cancel" msgid="1035206963979858009">"לא"</string>
+    <string name="profile_owner_cancel_ok" msgid="4915817426681209592">"כן"</string>
+    <string name="profile_owner_cancelling" msgid="5679573829145112822">"מבטל…"</string>
+    <string name="work_profile_setup_later_title" msgid="9069148190226279892">"האם להפסיק את הגדרת הפרופיל?"</string>
+    <string name="work_profile_setup_later_message" msgid="2446733709871989895">"באפשרותך להגדיר את פרופיל העבודה מאוחר יותר באמצעות האפליקציה לניהול המכשיר שבה משתמש הארגון שלך."</string>
+    <string name="work_profile_setup_continue" msgid="44459981285359765">"המשך"</string>
+    <string name="work_profile_setup_stop" msgid="5739020120488653974">"הפסק"</string>
+    <string name="provisioning" msgid="4512493827019163451">"קובע את התצורה"</string>
+    <string name="copying_certs" msgid="5697938664953550881">"‏מגדיר אישורי CA"</string>
+    <string name="setup_profile_start_setup" msgid="6793984532953528297">"הגדר את הפרופיל. התחל בהגדרה"</string>
+    <string name="setup_profile_encryption" msgid="5241291404536277038">"הגדר את הפרופיל. הצפנה"</string>
+    <string name="setup_profile_progress" msgid="7742718527853325656">"הגדר את הפרופיל. מציג התקדמות"</string>
+    <string name="setup_device_start_setup" msgid="4351340224000741826">"הגדר את המכשיר. התחל בהגדרה"</string>
+    <string name="setup_device_encryption" msgid="7852944465414197103">"הגדר את המכשיר. הצפנה"</string>
+    <string name="setup_device_progress" msgid="7035335208571175393">"הגדר את המכשיר. מציג התקדמות"</string>
+    <string name="learn_more_label" msgid="2723716758654655009">"לחצן \'למידע נוסף\'"</string>
+    <string name="mdm_icon_label" msgid="3399134595549660561">"סמל <xliff:g id="ICON_LABEL">%1$s</xliff:g>"</string>
+</resources>

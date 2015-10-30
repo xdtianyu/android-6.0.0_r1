@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2008 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- no translation found for exchange_name_alternate (293118547772095111) -->
+    <skip />
+    <!-- no translation found for meeting_accepted (3212429159225789973) -->
+    <skip />
+    <!-- no translation found for meeting_declined (1171426219920875691) -->
+    <skip />
+    <!-- no translation found for meeting_tentative (5057443956630531997) -->
+    <skip />
+    <!-- no translation found for meeting_canceled (3913922862382539900) -->
+    <skip />
+    <!-- no translation found for meeting_updated (5960663236439072658) -->
+    <skip />
+    <!-- no translation found for meeting_when (1905576664682173880) -->
+    <skip />
+    <!-- no translation found for meeting_where (6498631574145121862) -->
+    <skip />
+    <!-- no translation found for meeting_recurring (2752008481765880928) -->
+    <skip />
+    <string name="meeting_allday" msgid="7251209063071628040">"Качан: <xliff:g id="EVENTDATE">%s</xliff:g> (бир күн бою)"</string>
+    <string name="meeting_allday_recurring" msgid="4545762363537362545">"Качан: <xliff:g id="EVENTDATE">%s</xliff:g> (бир күн бою, улам-улам кайталанып)"</string>
+    <!-- no translation found for app_name (1707639359526090662) -->
+    <skip />
+    <!-- no translation found for exception_cancel (8972887597771126871) -->
+    <skip />
+    <!-- no translation found for exception_updated (329192591551400871) -->
+    <skip />
+    <string name="policy_dont_allow_storage_cards" msgid="1305111581282078881">"Сактагыч карталарына тыюу салуу"</string>
+    <string name="policy_dont_allow_unsigned_apps" msgid="7663879438028397642">"Кол коюлбаган колдонмолорго тыюу салуу"</string>
+    <string name="policy_dont_allow_unsigned_installers" msgid="8227232531632246827">"Кол коюлбаган колдонмо орнотуучуларга тыюу салуу"</string>
+    <string name="policy_dont_allow_wifi" msgid="8501275982154914194">"Wi-Fi\'га тыюу салуу"</string>
+    <string name="policy_dont_allow_text_messaging" msgid="860590081742537792">"SMS билдирүүлөрүнө тыюу салуу"</string>
+    <string name="policy_dont_allow_pop_imap" msgid="5772539239469636191">"POP3 же IMAP каттоо эсептерине тыюу салуу"</string>
+    <string name="policy_dont_allow_irda" msgid="8230803019935893114">"Инфра-кызыл диапазонундагы байланышка тыюу салуу"</string>
+    <string name="policy_dont_allow_html" msgid="3909470006782362967">"HTML электрондук билдирүүлөрүнө тыюу салуу"</string>
+    <string name="policy_dont_allow_browser" msgid="241728112385525092">"Серепчилерге тыюу салуу"</string>
+    <string name="policy_dont_allow_consumer_email" msgid="2473755560531860915">"Керектөөчүлүк электрондук билдирүүлөргө тыюу салуу"</string>
+    <string name="policy_dont_allow_internet_sharing" msgid="8926902533477728994">"Интернет бөлүшүүлөрүнө тыюу салуу"</string>
+    <string name="policy_require_smime" msgid="6445017199744800426">"SMIME билдирүүлөрүн талап кылуу"</string>
+    <string name="policy_bluetooth_restricted" msgid="2877695021606992022">"Bluetooth\'дун колдонулушун чектөө"</string>
+    <string name="policy_app_blacklist" msgid="6955451921925210944">"Белгиленген колдонмолорго тыюу салуу"</string>
+    <string name="policy_app_whitelist" msgid="73673250614393830">"Белгиленген колдонмолорго гана уруксат берүү"</string>
+    <string name="policy_text_truncation" msgid="2098855720139889616">"Электрондук билдирүүнүн текстинин өлчөмүн чектөө"</string>
+    <string name="policy_html_truncation" msgid="4913206221060438112">"HTML электрондук почта өлчөмүн чектөө"</string>
+    <string name="policy_require_sd_encryption" msgid="3911913080904633038">"SD картанын шифрлөөсүн талап кылуу"</string>
+    <string name="policy_dont_allow_attachments" msgid="8422502533001368811">"Тиркемелерге тыюу салуу"</string>
+    <string name="policy_max_attachment_size" msgid="8872049367518056209">"Тиркеме өлчөмүн чектөө"</string>
+    <string name="policy_require_manual_sync_roaming" msgid="4779633041935012627">"Роумингде кол менен шайкештештирүүгө гана уруксат"</string>
+    <string name="policy_require_encryption" msgid="4176146021220010140">"Түзмөктүн шифрлөөсүн талап кылуу"</string>
+    <!-- no translation found for account_setup_options_mail_window_auto (7407981634952005775) -->
+    <skip />
+    <!-- no translation found for account_setup_options_mail_window_1day (4169162439752592189) -->
+    <skip />
+    <!-- no translation found for account_setup_options_mail_window_3days (2330167870774583574) -->
+    <skip />
+    <!-- no translation found for account_setup_options_mail_window_1week (5066291978475859713) -->
+    <skip />
+    <!-- no translation found for account_setup_options_mail_window_2weeks (2127842445792663461) -->
+    <skip />
+    <!-- no translation found for account_setup_options_mail_window_1month (4785039795926771180) -->
+    <skip />
+    <!-- no translation found for account_setup_options_mail_window_all (4794683936065721438) -->
+    <skip />
+    <string name="auth_error_notification_title" msgid="6768042010440968454">"Аныктыгын текшерүү катасы"</string>
+    <string name="auth_error_notification_text" msgid="3590528965691740509">"<xliff:g id="ACCOUNT">%s</xliff:g> каттоо эсебинин жөндөөлөрүн түзөтүү үчүн тийип коюңуз."</string>
+    <string name="email_settings_not_available" msgid="59579952494440349">"Жөндөөлөрдү көрүү үчүн, Электрондук почта колдонмосун өчүрүп кайра иштетиңиз."</string>
+</resources>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2014 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="wifi_setup_input_password" msgid="4324884380214448502">"<xliff:g id="SSID">%1$s</xliff:g> के लिए पासवर्ड डालें"</string>
+    <string name="wifi_setup_waiting_for_join" msgid="42826539810553389">"^1 में शामिल हो रहा है"</string>
+    <string name="wifi_setup_connection_success" msgid="3362351168182711828">"सफलतापूर्वक कनेक्ट हो गया!"</string>
+    <string name="wifi_setup_save_success" msgid="2001513015933996675">"सफलतापूर्वक सहेजा गया!"</string>
+    <string name="device_apps_app_management_version" msgid="6315648665194084382">"वर्शन <xliff:g id="APP_VERSION">%1$s</xliff:g>"</string>
+    <string name="device_apps_app_management_open" msgid="3326361233913951387">"खोलें"</string>
+    <string name="device_apps_app_management_force_stop" msgid="1803832648099079651">"बलपूर्वक रोकें"</string>
+    <string name="device_apps_app_management_force_stop_desc" msgid="221435219644064243">"अगर आप किसी ऐप्स को बलपूर्वक रोकते हैं, तो वह गलत व्यवहार कर सकता है."</string>
+    <string name="device_apps_app_management_uninstall" msgid="6054050725055974790">"अनइंस्टॉल करें"</string>
+    <string name="device_apps_app_management_uninstall_desc" msgid="3542570994262234511">"क्‍या आप इस ऐप्स  को अनइंस्‍टॉल करना चाहते हैं?"</string>
+    <string name="device_apps_app_management_disable" msgid="1461984395121717076">"अक्षम करें"</string>
+    <string name="device_apps_app_management_disable_desc" msgid="1362228583828208991">"क्या आप इस ऐप को अक्षम करना चाहते हैं?"</string>
+    <string name="device_apps_app_management_enable" msgid="8794752872502256633">"सक्षम करें"</string>
+    <string name="device_apps_app_management_enable_desc" msgid="6449017972628203288">"क्या आप इस ऐप को सक्षम करना चाहते हैं?"</string>
+    <string name="device_apps_app_management_clear_data" msgid="8288695583331012586">"डेटा साफ़ करें"</string>
+    <string name="device_apps_app_management_clear_data_desc" msgid="2197842469669426232">"इस ऐप्स  के सभी डेटा को स्थायी रूप से हटा दिया जाएगा."</string>
+    <string name="device_apps_app_management_clear_data_what" msgid="376666756087041021">"इसमें सभी फ़ाइलें, सेटिंग, खाते, डेटाबेस आदि शामिल हैं."</string>
+    <string name="device_apps_app_management_clear_default" msgid="6654723680469212060">"डिफ़ॉल्ट साफ़ करें"</string>
+    <string name="device_apps_app_management_clear_default_set" msgid="6233682647156684225">"ऐप्स कुछ कार्य के लिए लॉन्च के लिए सेट है"</string>
+    <string name="device_apps_app_management_clear_default_none" msgid="6312021202504995474">"कोई डिफ़ॉल्ट सेट नहीं किए गए हैं"</string>
+    <string name="device_apps_app_management_clear_cache" msgid="7878530504449821203">"संचय साफ़ करें"</string>
+    <string name="device_apps_app_management_notifications" msgid="7069935222112158478">"नोटिफिकेशन"</string>
+    <string name="device_apps_app_management_permissions" msgid="5758303833496289673">"अनुमतियां"</string>
+    <string name="settings_ok" msgid="5501301223475616254">"ठीक"</string>
+    <string name="settings_cancel" msgid="1649053173330804917">"रहने दें"</string>
+    <string name="settings_on" msgid="1295064657786011878">"चालू करें"</string>
+    <string name="settings_off" msgid="4439170658516725721">"बंद करें"</string>
+    <string name="device_daydreams_none" msgid="5310233518671772034">"कोई नहीं"</string>
+    <string name="device_daydreams_select" msgid="1754678562660674925">"स्क्रीनसेवर"</string>
+    <string name="device_daydreams_test" msgid="7442554912076991502">"अभी प्रारंभ करें"</string>
+    <string name="device_daydreams_sleep" msgid="5263432145910468025">"स्क्रीनसेवर कब करें"</string>
+    <string name="device_daydreams_sleep_description" msgid="8438730889852772376">"इतने समय की निष्क्रियता के बाद daydream शुरू हो जाता है. यदि कोई daydream चयनित नहीं है, तो स्क्रीन बंद हो जाती है."</string>
+    <string name="device_daydreams_sleep_summary" msgid="4442691086777437088">"निष्क्रियता के <xliff:g id="SLEEP_DESCRIPTION">%1$s</xliff:g> के बाद"</string>
+    <string name="device_daydreams_screen_off" msgid="1846621864054404830">"कब निष्क्रिय करना है"</string>
+    <string name="device_daydreams_screen_off_description" msgid="7699124270812914310">"निष्क्रियता की इस अवधि के बाद स्क्रीन बंद हो जाती है."</string>
+    <string name="device_daydreams_screen_off_summary" msgid="6350806465141059041">"ड्रीमिंग के बाद <xliff:g id="SLEEP_DESCRIPTION">%1$s</xliff:g>"</string>
+    <string name="backup_configure_account_default_summary" msgid="2013649183664358673">"वर्तमान में कोई भी खाता, बैकअप डेटा संग्रहित नहीं कर रहा है"</string>
+    <string name="backup_erase_dialog_title" msgid="8900389956460363471"></string>
+    <string name="backup_erase_dialog_message" msgid="448169495686297910">"अपने वाई-फ़ाई  पासवर्ड, बुकमार्क, अन्य सेटिंग और ऐप्स  डेटा का बैक अप लेना रोकें, और Google सर्वर से सभी प्रतिलिपियां मिटाएं?"</string>
+    <string name="privacy_backup_data" msgid="3652306596140877278">"मेरे डेटा का बैकअप लें"</string>
+    <string name="privacy_backup_account" msgid="6127132568071889274">"बैकअप खाता"</string>
+    <string name="privacy_automatic_restore" msgid="8896792578363571896">"अपने आप डेटा रिस्टोर करें"</string>
+    <string name="factory_reset_device" msgid="7615350252195583106">"डिवाइस रीसेट करें"</string>
+    <string name="factory_reset_description" msgid="6709336495536583649">"इससे आपके Google खाता, सिस्टम और ऐप्स  डेटा तथा सेटिंग, और डाउनलोड किए गए ऐप्स  सहित आपके डिवाइस के मोबाइल मेमोरी का सभी डेटा मिट जाएगा"</string>
+    <string name="confirm_factory_reset_description" msgid="5710644039419606428">"आपकी सभी निजी जानकारी और डाउनलोड किए गए ऐप्स मिटाएं? आप इस क्रिया को पूर्ववत नहीं कर सकते!"</string>
+    <string name="confirm_factory_reset_device" msgid="519046408823105666">"सब कुछ मिटाएं"</string>
+    <string name="dismiss_all_notifications" msgid="3350731990365092847">"सभी ख़ारिज करें"</string>
+    <string name="no_notifications" msgid="3241328952121767751">"कोई नहीं"</string>
+    <string name="do_not_disturb_title" msgid="1050245577355301376">"परेशान न करें"</string>
+    <string name="do_not_disturb_desc" msgid="3186041965642361597">"सक्षम होने पर, नई नोटिफिकेशन केवल सेटिंग में दिखाई देंगी"</string>
+    <string name="select_title" msgid="2657901623249723536">"अपने ^1 के लिए कोई नाम चुनें"</string>
+    <string name="select_description" msgid="4080602542483519716">"आपके ^1 को अपने फ़ोन, टेबलेट या कंप्यूटर जैसे अन्य उपकरणों से एक्सेस करते समय नाम उसे पहचानने में सहायता करेगा."</string>
+  <string-array name="rooms">
+    <item msgid="2748008285322003570">"बैठक कक्ष"</item>
+    <item msgid="7887185726776968055">"मीडिया कक्ष"</item>
+    <item msgid="372573326176756144">"पारिवारिक कक्ष"</item>
+    <item msgid="8112576067079559786">"भोजन कक्ष"</item>
+    <item msgid="2891751328917513846">"निजी कक्ष"</item>
+    <item msgid="7390608863950443962">"शयनकक्ष"</item>
+    <item msgid="682313511953895794">"रसोई"</item>
+  </string-array>
+    <string name="custom_room" msgid="5972936200641815527">"कस्टम नाम डालें…"</string>
+    <string name="settings_status_title" msgid="3280459921834269206">"इस ^1 को नाम दिया गया है"</string>
+    <string name="settings_status_description" msgid="4892610880616296037">"\"^1\" इस ^2 का नाम है. क्या आप इसे बदलना चाहते हैं?"</string>
+    <string name="change_setting" msgid="199354038426145612">"बदलें"</string>
+    <string name="keep_settings" msgid="549230720820096102">"न बदलें"</string>
+    <string name="menu_help" msgid="2164687828212723531">"सहायता"</string>
+    <string name="setup_failure_title" msgid="4408868360762577232">"एक त्रुटि हुई"</string>
+    <string name="setup_failure_button_retry" msgid="4917381906591779977">"फिर से प्रयास करें"</string>
+</resources>

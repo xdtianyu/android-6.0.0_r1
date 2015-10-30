@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+/*
+* Copyright (C) 2008 The Android Open Source Project
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*      http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="wallpapers" msgid="7890805662847963863">"Android ਲਾਈਵ ਵਾਲਪੇਪਰ"</string>
+    <string name="wallpaper_walkaround" msgid="5548084303782181478">"ਇਸ ਰਾਹੀਂ ਦੇਖੋ"</string>
+    <string name="wallpaper_walkaround_author" msgid="7292960549371044078">"Google"</string>
+    <string name="wallpaper_walkaround_desc" msgid="1714824320382778730">"ਆਪਣੇ ਫੋਨ ਰਾਹੀਂ ਦੇਖੋ ਅਤੇ ਦੁਰਘਟਨਾ ਦੇ ਜੋਖਿਮ ਤੋਂ ਬਿਨਾਂ ਸੈਰ ਕਰੋ।"</string>
+    <string name="wallpaper_clock" msgid="6555051461698958610">"ਪੋਲਰ ਕਲੌਕ"</string>
+    <string name="wallpaper_clock_author" msgid="8779094427834551330">"Google"</string>
+    <string name="wallpaper_clock_desc" msgid="6767980298898740026">"ਕਲੌਕਵਾਈਜ ਆਰਕਸ ਵਾਂਗ ਮਿਤੀ ਅਤੇ ਸਮਾਂ ਪ੍ਰਸਤੁਤ ਕਰਦਾ ਹੈ: ਮਹੀਨਾ, ਦਿਨ, ਘੰਟਾ, ਮਿੰਟ ਅਤੇ ਸਕਿੰਟ।"</string>
+    <string name="clock_settings" msgid="7837858747417927288">"ਪੋਲਰ ਕਲੌਕ ਸੈਟਿੰਗਾਂ"</string>
+    <string name="show_seconds" msgid="8525899907567218168">"ਸਕਿੰਟ ਦਿਖਾਓ"</string>
+    <string name="variable_line_width" msgid="8487094734462263605">"ਰਿੰਗ ਚੁੜਾਈ ਭਿੰਨ"</string>
+    <string name="palette" msgid="1636154448241520718">"ਰੰਗ ਪੈਲੇਟ"</string>
+    <string name="palette_gray" msgid="4575370050214496017">"ਆਇਰਨ"</string>
+    <string name="palette_violet" msgid="6124851215872884048">"ਅੱਧੀ ਰਾਤ"</string>
+    <string name="palette_matrix" msgid="2755109999115087511">"ਹਰੀ ਸਕ੍ਰੀਨ"</string>
+    <string name="palette_white_c" msgid="3846812107437715188">"ਧਰੁਵੀ ਰਿੱਛ (ਡਾਇਨਾਮਿਕ)"</string>
+    <string name="palette_black_c" msgid="1521258571661038231">"ਕਾਲਾ ਹੋਲ (ਡਾਇਨਾਮਿਕ)"</string>
+    <string name="palette_halloween" msgid="1502590278217616811">"ਪੰਪਕਿਨ ਪਾਈ"</string>
+    <string name="palette_zenburn" msgid="5537306782860767365">"ਵਿਦੇਸ਼ੀ ਫਲਾਂ ਦਾ ਸਲਾਦ"</string>
+    <string name="palette_oceanic" msgid="7336134088073550028">"ਬਲੂ ਲੇਜ਼ਰ"</string>
+</resources>

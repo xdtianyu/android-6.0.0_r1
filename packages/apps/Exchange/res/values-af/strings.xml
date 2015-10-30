@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2008 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="exchange_name_alternate" msgid="293118547772095111">"Microsoft Exchange ActiveSync"</string>
+    <string name="meeting_accepted" msgid="3212429159225789973">"Aanvaar: <xliff:g id="SUBJECT">%s</xliff:g>"</string>
+    <string name="meeting_declined" msgid="1171426219920875691">"Afgewys: <xliff:g id="SUBJECT">%s</xliff:g>"</string>
+    <string name="meeting_tentative" msgid="5057443956630531997">"Voorlopig: <xliff:g id="SUBJECT">%s</xliff:g>"</string>
+    <string name="meeting_canceled" msgid="3913922862382539900">"Gekanselleer: <xliff:g id="SUBJECT">%s</xliff:g>"</string>
+    <string name="meeting_updated" msgid="5960663236439072658">"Opgedateer: <xliff:g id="SUBJECT">%s</xliff:g>"</string>
+    <string name="meeting_when" msgid="1905576664682173880">"Wanneer: <xliff:g id="WHEN">%s</xliff:g>"</string>
+    <string name="meeting_where" msgid="6498631574145121862">"Waar: <xliff:g id="WHERE">%s</xliff:g>"</string>
+    <string name="meeting_recurring" msgid="2752008481765880928">"Wanneer: <xliff:g id="EVENTDATE">%s</xliff:g> (herhalend)"</string>
+    <string name="meeting_allday" msgid="7251209063071628040">"Wanneer: <xliff:g id="EVENTDATE">%s</xliff:g> (hele dag)"</string>
+    <string name="meeting_allday_recurring" msgid="4545762363537362545">"Wanneer: <xliff:g id="EVENTDATE">%s</xliff:g> (die hele dag, herhalend)"</string>
+    <string name="app_name" msgid="1707639359526090662">"Exchange-dienste"</string>
+    <string name="exception_cancel" msgid="8972887597771126871">"Hierdie gebeurtenis is gekanselleer vir: <xliff:g id="DATE">%s</xliff:g>"</string>
+    <string name="exception_updated" msgid="329192591551400871">"Die details van hierdie gebeurtenis het verander vir: <xliff:g id="DATE">%s</xliff:g>"</string>
+    <string name="policy_dont_allow_storage_cards" msgid="1305111581282078881">"Moenie geheuekaarte toelaat nie"</string>
+    <string name="policy_dont_allow_unsigned_apps" msgid="7663879438028397642">"Moenie ongetekende programme toelaat nie"</string>
+    <string name="policy_dont_allow_unsigned_installers" msgid="8227232531632246827">"Moenie ongetekende programinstalleerders toelaat nie"</string>
+    <string name="policy_dont_allow_wifi" msgid="8501275982154914194">"Moenie Wi-Fi toelaat nie"</string>
+    <string name="policy_dont_allow_text_messaging" msgid="860590081742537792">"Moenie teksboodskappe toelaat nie"</string>
+    <string name="policy_dont_allow_pop_imap" msgid="5772539239469636191">"Moenie POP3- of IMAP-rekeninge toelaat nie"</string>
+    <string name="policy_dont_allow_irda" msgid="8230803019935893114">"Moenie infrarooi kommunikasie toelaat nie"</string>
+    <string name="policy_dont_allow_html" msgid="3909470006782362967">"Moenie HTML-e-pos toelaat nie"</string>
+    <string name="policy_dont_allow_browser" msgid="241728112385525092">"Moenie blaaiers toelaat nie"</string>
+    <string name="policy_dont_allow_consumer_email" msgid="2473755560531860915">"Moenie verbruiker-e-pos toelaat nie"</string>
+    <string name="policy_dont_allow_internet_sharing" msgid="8926902533477728994">"Moenie internetdeling toelaat nie"</string>
+    <string name="policy_require_smime" msgid="6445017199744800426">"Vereis SMIME-boodskappe"</string>
+    <string name="policy_bluetooth_restricted" msgid="2877695021606992022">"Beperk Bluetooth-gebruik"</string>
+    <string name="policy_app_blacklist" msgid="6955451921925210944">"Weier gespesifiseerde programme"</string>
+    <string name="policy_app_whitelist" msgid="73673250614393830">"Laat net gespesifiseerde programme toe"</string>
+    <string name="policy_text_truncation" msgid="2098855720139889616">"Beperk grootte van teks-e-pos"</string>
+    <string name="policy_html_truncation" msgid="4913206221060438112">"Beperk grootte van HTML-e-pos"</string>
+    <string name="policy_require_sd_encryption" msgid="3911913080904633038">"Vereis SD-kaart-enkripsie"</string>
+    <string name="policy_dont_allow_attachments" msgid="8422502533001368811">"Moenie aanhegsels toelaat nie"</string>
+    <string name="policy_max_attachment_size" msgid="8872049367518056209">"Beperk aanhegselgrootte"</string>
+    <string name="policy_require_manual_sync_roaming" msgid="4779633041935012627">"Laat net handmatige sinkronisasie toe tydens swerwing"</string>
+    <string name="policy_require_encryption" msgid="4176146021220010140">"Vereis toestelenkripsie"</string>
+    <string name="account_setup_options_mail_window_auto" msgid="7407981634952005775">"Outomaties"</string>
+    <string name="account_setup_options_mail_window_1day" msgid="4169162439752592189">"Een dag"</string>
+    <string name="account_setup_options_mail_window_3days" msgid="2330167870774583574">"Drie dae"</string>
+    <string name="account_setup_options_mail_window_1week" msgid="5066291978475859713">"Een week"</string>
+    <string name="account_setup_options_mail_window_2weeks" msgid="2127842445792663461">"Twee weke"</string>
+    <string name="account_setup_options_mail_window_1month" msgid="4785039795926771180">"Een maand"</string>
+    <string name="account_setup_options_mail_window_all" msgid="4794683936065721438">"Alle"</string>
+    <string name="auth_error_notification_title" msgid="6768042010440968454">"Stawingsfout"</string>
+    <string name="auth_error_notification_text" msgid="3590528965691740509">"Raak om rekeninginstellings vir <xliff:g id="ACCOUNT">%s</xliff:g> te wysig"</string>
+    <string name="email_settings_not_available" msgid="59579952494440349">"Heraktiveer die e-posprogram om instellings te bekyk."</string>
+</resources>

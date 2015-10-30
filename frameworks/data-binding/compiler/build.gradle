@@ -1,0 +1,81 @@
+/*
+ * Copyright (C) 2014 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+apply plugin: 'java'
+apply plugin: "kotlin"
+apply plugin: 'com.android.databinding.bintray'
+
+
+sourceCompatibility = config.javaTargetCompatibility
+targetCompatibility = config.javaSourceCompatibility
+
+buildscript {
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:${config.kotlinVersion}"
+        classpath 'commons-io:commons-io:2.4'
+    }
+}
+
+dependencies {
+    compile project(":compilerCommon")
+    compile project(':baseLibrary')
+    compile 'org.apache.commons:commons-lang3:3.3.2'
+    compile 'commons-io:commons-io:2.4'
+    compile 'commons-codec:commons-codec:1.10'
+    compile "org.jetbrains.kotlin:kotlin-stdlib:${config.kotlinVersion}"
+
+    compile 'com.tunnelvisionlabs:antlr4:4.5'
+    testCompile files('../baseLibrary/src/main/java')
+    testCompile files('../library/src/main/java')
+    testCompile 'junit:junit:4.12'
+}
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            pom.artifactId = 'compiler'
+            pom.project {
+                licenses {
+                    license {
+                        name config.licenseName
+                        url config.licenseUrl
+                        distribution config.licenseDistribution
+                    }
+                }
+            }
+        }
+    }
+}
+
+project(':library').afterEvaluate { libProject ->
+    tasks['compileTestKotlin'].dependsOn libProject.tasks['uploadJarArchives']
+}
+
+task fatJar(type: Jar) {
+    baseName = project.name + '-all'
+    doFirst {
+        tasks.findByName("buildLicenseNoticeFor${project.name.capitalize()}").execute()
+    }
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    from new File(project.buildDir,'NOTICE.txt')
+    archiveName "databinding-studio-bundle.jar"
+    destinationDir = new File(config.prebuildFolder)
+    with jar
+}
+
+task prebuild() {
+    dependsOn fatJar
+}
+

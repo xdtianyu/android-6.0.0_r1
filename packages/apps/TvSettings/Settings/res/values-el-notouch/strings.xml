@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2014 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="wifi_setup_input_password" msgid="4324884380214448502">"Κωδικός πρόσβασης για <xliff:g id="SSID">%1$s</xliff:g>"</string>
+    <string name="wifi_setup_waiting_for_join" msgid="42826539810553389">"Σύνδεση στο δίκτυο ^ 1"</string>
+    <string name="wifi_setup_connection_success" msgid="3362351168182711828">"Συνδέθηκε επιτυχώς!"</string>
+    <string name="wifi_setup_save_success" msgid="2001513015933996675">"Επιτυχής αποθήκευση!"</string>
+    <string name="device_apps_app_management_version" msgid="6315648665194084382">"έκδοση <xliff:g id="APP_VERSION">%1$s</xliff:g>"</string>
+    <string name="device_apps_app_management_open" msgid="3326361233913951387">"Άνοιγμα"</string>
+    <string name="device_apps_app_management_force_stop" msgid="1803832648099079651">"Αναγκαστική διακοπή"</string>
+    <string name="device_apps_app_management_force_stop_desc" msgid="221435219644064243">"Αν επιβάλετε τη διακοπή μιας εφαρμογής, ενδέχεται να μη λειτουργήσει σωστά."</string>
+    <string name="device_apps_app_management_uninstall" msgid="6054050725055974790">"Κατάργηση εγκατάστασης"</string>
+    <string name="device_apps_app_management_uninstall_desc" msgid="3542570994262234511">"Θέλετε να καταργήσετε την εγκατάσταση αυτής της εφαρμογής;"</string>
+    <string name="device_apps_app_management_disable" msgid="1461984395121717076">"Απενεργοποίηση"</string>
+    <string name="device_apps_app_management_disable_desc" msgid="1362228583828208991">"Θέλετε να απενεργοποιήσετε αυτήν την εφαρμογή;"</string>
+    <string name="device_apps_app_management_enable" msgid="8794752872502256633">"Ενεργοποίηση"</string>
+    <string name="device_apps_app_management_enable_desc" msgid="6449017972628203288">"Θέλετε να ενεργοποιήσετε αυτήν την εφαρμογή;"</string>
+    <string name="device_apps_app_management_clear_data" msgid="8288695583331012586">"Εκκαθάριση δεδομένων"</string>
+    <string name="device_apps_app_management_clear_data_desc" msgid="2197842469669426232">"Όλα τα δεδομένα αυτής της εφαρμογής θα διαγραφούν οριστικά."</string>
+    <string name="device_apps_app_management_clear_data_what" msgid="376666756087041021">"Σε αυτά περιλαμβάνονται όλα τα αρχεία, οι ρυθμίσεις, οι λογαριασμοί, οι βάσεις δεδομένων, κ.λπ."</string>
+    <string name="device_apps_app_management_clear_default" msgid="6654723680469212060">"Διαγραφή προεπιλογών"</string>
+    <string name="device_apps_app_management_clear_default_set" msgid="6233682647156684225">"Εκκίνηση εφαρμογής για κάποιες ενέργειες"</string>
+    <string name="device_apps_app_management_clear_default_none" msgid="6312021202504995474">"Δεν ορίστηκαν προεπιλογές"</string>
+    <string name="device_apps_app_management_clear_cache" msgid="7878530504449821203">"Εκκαθάριση κρυφής μνήμης"</string>
+    <string name="device_apps_app_management_notifications" msgid="7069935222112158478">"Ειδοποιήσεις"</string>
+    <string name="device_apps_app_management_permissions" msgid="5758303833496289673">"Άδειες"</string>
+    <string name="settings_ok" msgid="5501301223475616254">"OK"</string>
+    <string name="settings_cancel" msgid="1649053173330804917">"Ακύρωση"</string>
+    <string name="settings_on" msgid="1295064657786011878">"Ενεργοποιημένο"</string>
+    <string name="settings_off" msgid="4439170658516725721">"Απενεργοποίηση"</string>
+    <string name="device_daydreams_none" msgid="5310233518671772034">"Κανένα"</string>
+    <string name="device_daydreams_select" msgid="1754678562660674925">"Daydream"</string>
+    <string name="device_daydreams_test" msgid="7442554912076991502">"Έναρξη τώρα"</string>
+    <string name="device_daydreams_sleep" msgid="5263432145910468025">"Πότε να χρησιμοποιείται;"</string>
+    <string name="device_daydreams_sleep_description" msgid="8438730889852772376">"Η λειτουργία daydream αρχίζει μετά από το συγκεκριμένο χρονικό διάστημα αδράνειας. Εάν δεν έχει οριστεί κάποια επιλογή daydream, η οθόνη σβήνει."</string>
+    <string name="device_daydreams_sleep_summary" msgid="4442691086777437088">"Μετά από <xliff:g id="SLEEP_DESCRIPTION">%1$s</xliff:g> αδράνειας"</string>
+    <string name="device_daydreams_screen_off" msgid="1846621864054404830">"Ρύθμιση αναστολής λειτουργίας"</string>
+    <string name="device_daydreams_screen_off_description" msgid="7699124270812914310">"Η οθόνη απενεργοποιείται μετά από αυτήν την περίοδο αδράνειας."</string>
+    <string name="device_daydreams_screen_off_summary" msgid="6350806465141059041">"<xliff:g id="SLEEP_DESCRIPTION">%1$s</xliff:g> μετά την ενεργοποίηση της λειτουργίας daydream."</string>
+    <string name="backup_configure_account_default_summary" msgid="2013649183664358673">"Κανέας λογαριασμός δεν αποθηκεύει προς το παρόν δεδομένα αντιγράφων ασφαλείας"</string>
+    <string name="backup_erase_dialog_title" msgid="8900389956460363471"></string>
+    <string name="backup_erase_dialog_message" msgid="448169495686297910">"Θέλετε να διακοπεί η δημιουργία αντιγράφων ασφαλείας για τους κωδικούς πρόσβασης Wi-Fi, τους σελιδοδείκτες, τις άλλες ρυθμίσεις και τα δεδομένα εφαρμογών, καθώς και να διαγραφούν όλα τα αντίτυπα από τους διακομιστές της Google;"</string>
+    <string name="privacy_backup_data" msgid="3652306596140877278">"Αντίγραφα ασφαλείας των δεδομένων μου"</string>
+    <string name="privacy_backup_account" msgid="6127132568071889274">"Λογαριασμός αντιγράφων ασφαλείας"</string>
+    <string name="privacy_automatic_restore" msgid="8896792578363571896">"Αυτόματη επαναφορά"</string>
+    <string name="factory_reset_device" msgid="7615350252195583106">"Επαναφορά συσκευής"</string>
+    <string name="factory_reset_description" msgid="6709336495536583649">"Με τον τρόπο αυτό θα διαγραφούν όλα τα δεδομένα από τον εσωτερικό χώρο αποθήκευσης της συσκευής σας, συμπεριλαμβανομένου του λογαριασμού σας Google, του συστήματος και των δεδομένων εφαρμογών και ρυθμίσεων, καθώς επίσης και των ληφθέντων εφαρμογών"</string>
+    <string name="confirm_factory_reset_description" msgid="5710644039419606428">"Να διαγραφούν όλα τα προσωπικά σας στοιχεία και οι ληφθείσες εφαρμογές; Δεν μπορείτε να αναστρέψετε αυτήν την ενέργεια!"</string>
+    <string name="confirm_factory_reset_device" msgid="519046408823105666">"Διαγραφή όλων"</string>
+    <string name="dismiss_all_notifications" msgid="3350731990365092847">"Παράβλεψη όλων"</string>
+    <string name="no_notifications" msgid="3241328952121767751">"Καμία"</string>
+    <string name="do_not_disturb_title" msgid="1050245577355301376">"Να μην ενοχλούμαι"</string>
+    <string name="do_not_disturb_desc" msgid="3186041965642361597">"Οι νέες ειδοπ. θα εμφαν. μόνο στις Ρυθ."</string>
+    <string name="select_title" msgid="2657901623249723536">"Επιλέξτε όνομα για τη συσκευή ^1"</string>
+    <string name="select_description" msgid="4080602542483519716">"Το όνομα θα σας βοηθήσει να ξεχωρίζετε τη συσκευή ^1 όταν αποκτάτε πρόσβαση σε αυτήν από άλλες συσκευές όπως είναι το τηλέφωνο, το tablet ή ο υπολογιστής σας."</string>
+  <string-array name="rooms">
+    <item msgid="2748008285322003570">"Σαλόνι"</item>
+    <item msgid="7887185726776968055">"Δωμάτιο προβολής"</item>
+    <item msgid="372573326176756144">"Οικογενειακό δωμάτιο"</item>
+    <item msgid="8112576067079559786">"Τραπεζαρία"</item>
+    <item msgid="2891751328917513846">"Γραφείο"</item>
+    <item msgid="7390608863950443962">"Κρεβατοκάμαρα"</item>
+    <item msgid="682313511953895794">"Κουζίνα"</item>
+  </string-array>
+    <string name="custom_room" msgid="5972936200641815527">"Εισαγάγετε προσαρμοσμένο όνομα…"</string>
+    <string name="settings_status_title" msgid="3280459921834269206">"Αυτή η συσκευή ^1 διαθέτει όνομα"</string>
+    <string name="settings_status_description" msgid="4892610880616296037">"Το όνομα της συσκευής ^2 είναι \"^1\". Θέλετε να το αλλάξετε;"</string>
+    <string name="change_setting" msgid="199354038426145612">"Αλλαγή"</string>
+    <string name="keep_settings" msgid="549230720820096102">"Να μη γίνει αλλαγή"</string>
+    <string name="menu_help" msgid="2164687828212723531">"Βοήθεια"</string>
+    <string name="setup_failure_title" msgid="4408868360762577232">"Παρουσιάστηκε σφάλμα"</string>
+    <string name="setup_failure_button_retry" msgid="4917381906591779977">"Επανάληψη"</string>
+</resources>

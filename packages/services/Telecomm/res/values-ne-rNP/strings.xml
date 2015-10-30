@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2013 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="telecommAppLabel" product="default" msgid="9166784827254469057">"फोन कल व्यवस्थापन"</string>
+    <string name="userCallActivityLabel" product="default" msgid="5415173590855187131">"फोन"</string>
+    <string name="unknown" msgid="6878797917991465859">"अज्ञात"</string>
+    <string name="notification_missedCallTitle" msgid="7554385905572364535">"छुटेका कल"</string>
+    <string name="notification_missedCallsTitle" msgid="1361677948941502522">"छुटेका कल"</string>
+    <string name="notification_missedCallsMsg" msgid="4575787816055205600">"<xliff:g id="NUM_MISSED_CALLS">%s</xliff:g> छुटेका कलहरू"</string>
+    <string name="notification_missedCallTicker" msgid="504686252427747209">"<xliff:g id="MISSED_CALL_FROM">%s</xliff:g>बाट छुटेका कल"</string>
+    <string name="notification_missedCall_call_back" msgid="2684890353590890187">"फेरि कल गर्नुहोस्"</string>
+    <string name="notification_missedCall_message" msgid="3049928912736917988">"सन्देश"</string>
+    <string name="accessibility_call_muted" msgid="2776111226185342220">"कल म्युट भयो।"</string>
+    <string name="accessibility_speakerphone_enabled" msgid="1988512040421036359">"स्पिकरफोन सक्षम भयो।"</string>
+    <string name="respond_via_sms_canned_response_1" msgid="2461606462788380215">"अहिले कुरा गर्न मिल्दैन। के भइरहेको छ?"</string>
+    <string name="respond_via_sms_canned_response_2" msgid="4074450431532859214">"मैले तपाईंलाई तुरुन्तै कल गर्ने छु।"</string>
+    <string name="respond_via_sms_canned_response_3" msgid="3496079065723960450">"म तपाईंलाई पछि कल गर्ने छु।"</string>
+    <string name="respond_via_sms_canned_response_4" msgid="1698989243040062190">"अहिले कुरा गर्न सक्नु हुन्न। मलाई पछि कल गर्नुहोस्?"</string>
+    <string name="respond_via_sms_setting_title" msgid="3754000371039709383">"द्रुत प्रतिक्रियाहरू"</string>
+    <string name="respond_via_sms_setting_title_2" msgid="6104662227299493906">"द्रुत प्रतिक्रियाहरू सम्पादन गर्नुहोस्"</string>
+    <string name="respond_via_sms_setting_summary" msgid="9150281183930613065"></string>
+    <string name="respond_via_sms_edittext_dialog_title" msgid="20379890418289778">"द्रुत प्रतिक्रिया"</string>
+    <string name="respond_via_sms_confirmation_format" msgid="7229149977515784269">"<xliff:g id="PHONE_NUMBER">%s</xliff:g> लाई सन्देश पठाइयो।"</string>
+    <string name="enable_account_preference_title" msgid="2021848090086481720">"कलिङ खाताहरू"</string>
+    <string name="outgoing_call_not_allowed_user_restriction" msgid="8504993498756056279">"यन्त्र मालिकद्वारा आपतकालीन कलहरू मात्र गर्न अनुमति दिइएको छ।"</string>
+    <string name="outgoing_call_not_allowed_no_permission" msgid="1996571596464271228">"यो अनुप्रयोगले फोनको अनुमति बिना बहिर्गमन कलहरू गर्न सक्दैन।"</string>
+    <string name="outgoing_call_error_no_phone_number_supplied" msgid="1940125199802007505">"एक कल गर्नको लागि, एक वैध नम्बर प्रविष्ट गर्नुहोस्।"</string>
+    <string name="duplicate_video_call_not_allowed" msgid="3749211605014548386">"यस समयमा कल थप गर्न सकिँदैन।"</string>
+    <string name="video_call_not_allowed_if_tty_enabled" msgid="7593649283571253283">"कृपया भिडियो कलहरू गर्न TTY मोड निष्क्रिय गर्नुहोस्।"</string>
+    <string name="no_vm_number" msgid="4164780423805688336">"भ्वाइसमेल नम्बर हराइरहेको छ"</string>
+    <string name="no_vm_number_msg" msgid="1300729501030053828">"SIM कार्डमा कुनै पनि भ्वाइसमेल नम्बर भण्डारण भएको छैन।"</string>
+    <string name="add_vm_number_str" msgid="4676479471644687453">"नम्बर थप्नुहोस्"</string>
+    <string name="change_default_dialer_dialog_title" msgid="4430590714918044425">"पूर्वनिर्धारित डायलर अनुप्रयोग फेर्ने हो?"</string>
+    <string name="change_default_dialer_with_previous_app_set_text" msgid="3213396537499337949">"<xliff:g id="CURRENT_APP">%2$s</xliff:g>को सट्टामा <xliff:g id="NEW_APP">%1$s</xliff:g>लाई पूर्वनिर्धारित डायलर अनुप्रयोगको रूपमा प्रयोग गर्ने हो?"</string>
+    <string name="change_default_dialer_no_previous_app_set_text" msgid="7608426684114545221">"<xliff:g id="NEW_APP">%s</xliff:g>लाई तपाईँको पूर्वनिर्धारित डायलर अनुप्रयोगको रूपमा प्रयोग गर्ने हो?"</string>
+</resources>

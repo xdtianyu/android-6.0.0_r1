@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2014 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="wifi_setup_input_password" msgid="4324884380214448502">"ໃສ່​ລະ​ຫັດ​ຜ່ານ​ສຳ​ລັບ <xliff:g id="SSID">%1$s</xliff:g>"</string>
+    <string name="wifi_setup_waiting_for_join" msgid="42826539810553389">"ກຳ​ລັງ​ເຂົ້າ ^1"</string>
+    <string name="wifi_setup_connection_success" msgid="3362351168182711828">"ເຊື່ອມ​ຕໍ່​ສຳ​ເລັດ​ແລ້ວ!"</string>
+    <string name="wifi_setup_save_success" msgid="2001513015933996675">"ບັນທຶກ​ສຳເລັດ​ຮຽບຮ້ອຍ​ແລ້ວ!"</string>
+    <string name="device_apps_app_management_version" msgid="6315648665194084382">"ເວີ​ຊັນ <xliff:g id="APP_VERSION">%1$s</xliff:g>"</string>
+    <string name="device_apps_app_management_open" msgid="3326361233913951387">"ເປີດ"</string>
+    <string name="device_apps_app_management_force_stop" msgid="1803832648099079651">"ບັງ​ຄັບ​ປິດ"</string>
+    <string name="device_apps_app_management_force_stop_desc" msgid="221435219644064243">"ຫານທ່ານບັງຄັບປິດແອັບຯໃດນຶ່ງ, ມັນອາດເຮັດວຽກຜິດປົກກະຕິໄດ້."</string>
+    <string name="device_apps_app_management_uninstall" msgid="6054050725055974790">"ຖອນ​ການ​ຕິດ​ຕັ້ງ"</string>
+    <string name="device_apps_app_management_uninstall_desc" msgid="3542570994262234511">"​ທ່ານ​ຕ້ອງ​ການ​ຖອນ​ການ​ຕິດ​ຕັ້ງ​ແອັບຯ​ນີ້ຫຼື​ບໍ່?"</string>
+    <string name="device_apps_app_management_disable" msgid="1461984395121717076">"ປິດໃຊ້​ງານ"</string>
+    <string name="device_apps_app_management_disable_desc" msgid="1362228583828208991">"ທ່ານ​ຕ້ອງ​ການ​ປິດ​ໃຊ້​ງານ​ແອັບ​ນີ້​ບໍ?"</string>
+    <string name="device_apps_app_management_enable" msgid="8794752872502256633">"ເປີດໃຊ້ງານ"</string>
+    <string name="device_apps_app_management_enable_desc" msgid="6449017972628203288">"ທ່ານ​ຕ້ອງ​ການ​ເປີດ​ໃຊ້​ງານ​ແອັບ​ນີ້​ບໍ?"</string>
+    <string name="device_apps_app_management_clear_data" msgid="8288695583331012586">"ລຶບຂໍ້ມູນ"</string>
+    <string name="device_apps_app_management_clear_data_desc" msgid="2197842469669426232">"​ຂໍ້​ມູນ​ທັງ​ໝົດ​ຂອງ​ແອັບຯ​ນີ້​ຈະ​ຖືກ​ລຶບ​ອອກ​ຖ​າ​ວອນ."</string>
+    <string name="device_apps_app_management_clear_data_what" msgid="376666756087041021">"ນີ້​ຮວ​ມ​ໄປ​ເຖິງ​ໄຟ​ລ໌​ທັງ​ໝົດ, ການ​ຕັ້ງ​ຄ່າ, ບັນ​ຊີ, ຖານ​ຂໍ້​ມູນ ແລະ​ອື່ນໆ."</string>
+    <string name="device_apps_app_management_clear_default" msgid="6654723680469212060">"ລຶບຄ່າເລີ່ມຕົ້ນ"</string>
+    <string name="device_apps_app_management_clear_default_set" msgid="6233682647156684225">"ຕັ້ງ​ໃຫ້​ເປີດ​ແອັບຯ​ນີ້​ສຳລັບ​ບາງ​ຄຳສັ່ງ"</string>
+    <string name="device_apps_app_management_clear_default_none" msgid="6312021202504995474">"ບໍ່​ໄດ້​ຕັ້ງ​ຄ່າ​ເລີ່ມ​ຕົ້ນ"</string>
+    <string name="device_apps_app_management_clear_cache" msgid="7878530504449821203">"ລຶບລ້າງແຄຊ"</string>
+    <string name="device_apps_app_management_notifications" msgid="7069935222112158478">"ການ​ແຈ້ງ​ເຕືອນ"</string>
+    <string name="device_apps_app_management_permissions" msgid="5758303833496289673">"​ການ​ອະ​ນຸ​ຍາດ"</string>
+    <string name="settings_ok" msgid="5501301223475616254">"ຕົກລົງ"</string>
+    <string name="settings_cancel" msgid="1649053173330804917">"​ຍົກ​ເລີກ"</string>
+    <string name="settings_on" msgid="1295064657786011878">"ເປີດ"</string>
+    <string name="settings_off" msgid="4439170658516725721">"ປິດ"</string>
+    <string name="device_daydreams_none" msgid="5310233518671772034">"ບໍ່ມີ"</string>
+    <string name="device_daydreams_select" msgid="1754678562660674925">"Daydream"</string>
+    <string name="device_daydreams_test" msgid="7442554912076991502">"ເລີ່ມດຽວນີ້"</string>
+    <string name="device_daydreams_sleep" msgid="5263432145910468025">"Daydream ຕອນໃດ"</string>
+    <string name="device_daydreams_sleep_description" msgid="8438730889852772376">"ການ Daydream ຈະ​ເລີ່ມຫຼັງ​ຈາກ​ໄລ​ຍະ​ເວ​ລາ​ນີ້​​ທີ່ບໍ່​ມີ​ການ​ນຳ​ໃຊ້. ຫາກບໍ່​ມີ​ການ​ເລືອກ daydream ໃດ​ເລີຍ, ໜ້າ​ຈ​ໍ​ກໍ​ຈະ​ມອດ​ລົງ​ຊື່ໆ."</string>
+    <string name="device_daydreams_sleep_summary" msgid="4442691086777437088">"ຫຼັງ​ຈາກ <xliff:g id="SLEEP_DESCRIPTION">%1$s</xliff:g> ທີ່ບໍ່​ມີ​ການ​ນຳ​ໃຊ້"</string>
+    <string name="device_daydreams_screen_off" msgid="1846621864054404830">"​ປິດ​ໜ້າ​ຈໍ​ຕອນ​ໃດ"</string>
+    <string name="device_daydreams_screen_off_description" msgid="7699124270812914310">"ປິດໜ້າ​ຈໍຫຼັງ​ຈາກ​ບໍ່​ມີ​ການ​ນຳ​ໃຊ້​ຕາມ​ກຳ​ນົດ​ເວ​ລາ​ນີ້."</string>
+    <string name="device_daydreams_screen_off_summary" msgid="6350806465141059041">"<xliff:g id="SLEEP_DESCRIPTION">%1$s</xliff:g> ຫຼັງ​ຈາກ Daydream"</string>
+    <string name="backup_configure_account_default_summary" msgid="2013649183664358673">"ບໍ່​ມີ​ບັນ​ຊີ​ໃດ​ໃນ​ປັດ​ຈຸ​ບັນ​ທີ່​ຈັດ​ເກັບ​ຂໍ້​ມູນ​ສຳ​ຮອງ​ໄວ້"</string>
+    <string name="backup_erase_dialog_title" msgid="8900389956460363471"></string>
+    <string name="backup_erase_dialog_message" msgid="448169495686297910">"ຢຸດ​ການ​ສຳ​ຮອງ​ຂໍ້​ມູນ​ລະ​ຫັດ​ຜ່ານ Wi-Fi, ບຸກ​ມາກ, ການ​ຕັ້ງ​ຄ່າ​ອື່ນໆ ແລະ​ຂໍ້​ມູນ​ແອັບຯ ຮວມ​ທັງ​ລຶບ​ສຳ​ເນົາ​ທຸກ​ຢ່າງ​ໃນ​ເຊີບ​ເວີ​ຂອງ Google ອອກ​ບໍ່?"</string>
+    <string name="privacy_backup_data" msgid="3652306596140877278">"​ສຳ​ຮອງ​ຂໍ້​ມູນ​ຂອງ​ຂ້ອຍ"</string>
+    <string name="privacy_backup_account" msgid="6127132568071889274">"ບັນຊີສຳຮອງ"</string>
+    <string name="privacy_automatic_restore" msgid="8896792578363571896">"ການກູ້ຂໍ້ມູນອັດຕະໂນມັດ"</string>
+    <string name="factory_reset_device" msgid="7615350252195583106">"​ຣີ​ເຊັດ​ອຸ​ປະ​ກອນ"</string>
+    <string name="factory_reset_description" msgid="6709336495536583649">"ນີ້​ຈະ​ເປັນ​ການ​ລຶບ​ຂໍ້​ມູນ​ທັງ​ໝົດ​​ອອກ​ຈາກ​ບ່ອນ​ຈັດ​ເກັບ​ຂໍ້​ມູນ​ພາຍ​ໃນ​ອຸ​ປະ​ກອນ​ຂອງ​ທ່ານ​ອອກ ຮວມ​ເຖິງ: ບັນ​ຊີ Google ຂອງ​ທ່ານ, ​ຂໍ້​ມູນ ແລະ​ການ​ຕັ້ງ​ຄ່າ​ລະ​ບົບ ແລະ​ແອັບຯ ແລະ​ແອັບຯ​ທີ່​ດາວ​ໂຫລດ​ມາ​ແລ້ວ"</string>
+    <string name="confirm_factory_reset_description" msgid="5710644039419606428">"ຕ້ອງ​ການ​ລຶບ​ຂໍ້​ມູນ​ສ່ວນ​ໂຕ ແລະ​ແອັບຯ​ທີ່​ດາວ​ໂຫລດ​ມາ​ທັງໝົດ​ບໍ່? ທ່ານ​ຈະ​ບໍ່​ສາມາດ​ເອົາ​ກັບ​ຄືນ​ມາ​ໄດ້​ອີກ!"</string>
+    <string name="confirm_factory_reset_device" msgid="519046408823105666">"ລຶບທຸກສິ່ງທຸກຢ່າງ"</string>
+    <string name="dismiss_all_notifications" msgid="3350731990365092847">"ປິດທັງໝົດ"</string>
+    <string name="no_notifications" msgid="3241328952121767751">"ບໍ່ມີ"</string>
+    <string name="do_not_disturb_title" msgid="1050245577355301376">"ຫ້າມລົບກວນ"</string>
+    <string name="do_not_disturb_desc" msgid="3186041965642361597">"​ເມື່ອ​ເປີດ​ນຳ​ໃຊ້​ແລ້ວ, ການ​ແຈ້ງ​ເຕືອນ​ຕ່າງໆ​ຈະ​ປາ​ກົດ​ຢູ່​ໃນ​ການ​ຕັ້ງ​ຄ່າ​ເທົ່າ​ນັ້ນ"</string>
+    <string name="select_title" msgid="2657901623249723536">"ເລືອກຊື່ສຳລັບ ^1 ຂອງທ່ານ"</string>
+    <string name="select_description" msgid="4080602542483519716">"ຊື່ທີ່ຈະ​ຊ່ວຍ​ລະບຸ ^1 ຂອງ​ທ່ານ​ໃນ​ເວລາ​ທີ່ເຂົ້າ​ນຳໃຊ້​ມັນຈາກ​ອຸປະກອນ​ອື່ນໆ​ ເຊັ່ນ: ໂທລະສັບ, ແທັບເລັດ ຫຼື ຄອມພິວ​ເຕີຂອງ​ທ່ານ."</string>
+  <string-array name="rooms">
+    <item msgid="2748008285322003570">"​ຫ້ອງ​​ຮັບ​ແຂກ"</item>
+    <item msgid="7887185726776968055">"​ຫ້ອງ​ເບິ່ງ​ໜັງ​ຟັງ​ເພງ"</item>
+    <item msgid="372573326176756144">"​ຫ້ອງ​ຄອບ​ຄົວ"</item>
+    <item msgid="8112576067079559786">"​ຫ້ອງ​ອ​າ​ຫານ"</item>
+    <item msgid="2891751328917513846">"ຫ້ອງ​ນັ່ງຫຼິ້ນ"</item>
+    <item msgid="7390608863950443962">"ຫ້ອງນອນ"</item>
+    <item msgid="682313511953895794">"​ຫ້ອງ​ຄົວ"</item>
+  </string-array>
+    <string name="custom_room" msgid="5972936200641815527">"ລະ​ບຸ​ຊື່​ທີ່​ກຳ​ນົດ​ເອງ…"</string>
+    <string name="settings_status_title" msgid="3280459921834269206">"^1 ຖືກຕັ້ງຊື່ແລ້ວ"</string>
+    <string name="settings_status_description" msgid="4892610880616296037">"\"^1\" ແມ່ນຊື່​ຂອງ ^2 ນີ້. ທ່ານ​ຕ້ອງການ​ປ່ຽນ​ແປງ​ມັນບໍ?"</string>
+    <string name="change_setting" msgid="199354038426145612">"ປ່ຽນ"</string>
+    <string name="keep_settings" msgid="549230720820096102">"ບໍ່ຕ້ອງປ່ຽນ"</string>
+    <string name="menu_help" msgid="2164687828212723531">"​ຊ່ວຍ​ເຫຼືອ"</string>
+    <string name="setup_failure_title" msgid="4408868360762577232">"ເກີດ​ຄວາມ​ຜິດ​ພາດ​ຂຶ້ນ"</string>
+    <string name="setup_failure_button_retry" msgid="4917381906591779977">"ລອງໃໝ່"</string>
+</resources>

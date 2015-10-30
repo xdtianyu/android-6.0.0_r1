@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2014 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="wifi_setup_input_password" msgid="4324884380214448502">"<xliff:g id="SSID">%1$s</xliff:g> құпия сөзін енгізіңіз"</string>
+    <string name="wifi_setup_waiting_for_join" msgid="42826539810553389">"^1 желісіне қосылуда"</string>
+    <string name="wifi_setup_connection_success" msgid="3362351168182711828">"Сәтті қосылдыңыз!"</string>
+    <string name="wifi_setup_save_success" msgid="2001513015933996675">"Сәтті сақталды!"</string>
+    <string name="device_apps_app_management_version" msgid="6315648665194084382">"нұсқа: <xliff:g id="APP_VERSION">%1$s</xliff:g>"</string>
+    <string name="device_apps_app_management_open" msgid="3326361233913951387">"Ашу"</string>
+    <string name="device_apps_app_management_force_stop" msgid="1803832648099079651">"Мәжбүрлеп тоқтату"</string>
+    <string name="device_apps_app_management_force_stop_desc" msgid="221435219644064243">"Егер қолданбаны мәжбүрлеп тоқтатсаңыз, күтпеген әрекет көрсетуі мүмкін."</string>
+    <string name="device_apps_app_management_uninstall" msgid="6054050725055974790">"Жою"</string>
+    <string name="device_apps_app_management_uninstall_desc" msgid="3542570994262234511">"Бұл қолданбаны жоюды қалайсыз ба?"</string>
+    <string name="device_apps_app_management_disable" msgid="1461984395121717076">"Өшіру"</string>
+    <string name="device_apps_app_management_disable_desc" msgid="1362228583828208991">"Осы қолданбаны өшіру керек пе?"</string>
+    <string name="device_apps_app_management_enable" msgid="8794752872502256633">"Қосу"</string>
+    <string name="device_apps_app_management_enable_desc" msgid="6449017972628203288">"Осы қолданбаны қосу керек пе?"</string>
+    <string name="device_apps_app_management_clear_data" msgid="8288695583331012586">"Деректерді тазалау"</string>
+    <string name="device_apps_app_management_clear_data_desc" msgid="2197842469669426232">"Осы қолданбаның барлық деректері біржола жойылады."</string>
+    <string name="device_apps_app_management_clear_data_what" msgid="376666756087041021">"Бұл барлық файлдарды, параметрлерді, есептік жазбаларды, дерекқорларды, т.б. қамтиды."</string>
+    <string name="device_apps_app_management_clear_default" msgid="6654723680469212060">"Әдепкі параметрлерді тазалау"</string>
+    <string name="device_apps_app_management_clear_default_set" msgid="6233682647156684225">"Кейбір әрекеттер үшін осы қолданбаны іске қосу үшін орнатыңыз"</string>
+    <string name="device_apps_app_management_clear_default_none" msgid="6312021202504995474">"Әдепкі параметрлер орнатылмаған"</string>
+    <string name="device_apps_app_management_clear_cache" msgid="7878530504449821203">"Кэшті тазалау"</string>
+    <string name="device_apps_app_management_notifications" msgid="7069935222112158478">"Хабарландырулар"</string>
+    <string name="device_apps_app_management_permissions" msgid="5758303833496289673">"Рұқсаттар"</string>
+    <string name="settings_ok" msgid="5501301223475616254">"Жарайды"</string>
+    <string name="settings_cancel" msgid="1649053173330804917">"Бас тарту"</string>
+    <string name="settings_on" msgid="1295064657786011878">"Қосулы"</string>
+    <string name="settings_off" msgid="4439170658516725721">"Өшірулі"</string>
+    <string name="device_daydreams_none" msgid="5310233518671772034">"Ешқандай"</string>
+    <string name="device_daydreams_select" msgid="1754678562660674925">"Экран қорғағышы"</string>
+    <string name="device_daydreams_test" msgid="7442554912076991502">"Қазір бастау"</string>
+    <string name="device_daydreams_sleep" msgid="5263432145910468025">"Экран қорғағышының уақыты"</string>
+    <string name="device_daydreams_sleep_description" msgid="8438730889852772376">"Экран қорғағышы осы әрекетсіздік кезеңінен кейін басталады. Егер экран қорғағышы таңдалмаған болса, дисплей өшеді."</string>
+    <string name="device_daydreams_sleep_summary" msgid="4442691086777437088">"<xliff:g id="SLEEP_DESCRIPTION">%1$s</xliff:g> әрекетсіздіктен кейін"</string>
+    <string name="device_daydreams_screen_off" msgid="1846621864054404830">"Ұйықтау уақыты"</string>
+    <string name="device_daydreams_screen_off_description" msgid="7699124270812914310">"Экран әрекетсіздік кезеңінен кейін өшеді."</string>
+    <string name="device_daydreams_screen_off_summary" msgid="6350806465141059041">"ұйықтаудан кейін <xliff:g id="SLEEP_DESCRIPTION">%1$s</xliff:g>"</string>
+    <string name="backup_configure_account_default_summary" msgid="2013649183664358673">"Ешқандай есептік жазба қазір сақтық көшірмесі жасалған деректерді сақтап жатқан жоқ"</string>
+    <string name="backup_erase_dialog_title" msgid="8900389956460363471"></string>
+    <string name="backup_erase_dialog_message" msgid="448169495686297910">"Wi-Fi құпия сөздерінің, бетбелгілердің, басқа параметрлердің және қолданба деректерінің сақтық көшірмесін жасауды тоқтатып, Google серверлеріндегі барлық көшірмелерді өшіру керек пе?"</string>
+    <string name="privacy_backup_data" msgid="3652306596140877278">"Деректердің сақтық көшірмесін жасау"</string>
+    <string name="privacy_backup_account" msgid="6127132568071889274">"Сақтық есептік жазба"</string>
+    <string name="privacy_automatic_restore" msgid="8896792578363571896">"Aвтоматты түрде қалпына келтіру"</string>
+    <string name="factory_reset_device" msgid="7615350252195583106">"Құрылғыны ысыру"</string>
+    <string name="factory_reset_description" msgid="6709336495536583649">"Бұл құрылғының ішкі жадынан барлық деректерді өшіреді, соның ішінде, Google есептік жазбасын, жүйе және қолданба деректерін және параметрлерін, әрі жүктелген қолданбаларды"</string>
+    <string name="confirm_factory_reset_description" msgid="5710644039419606428">"Барлық жеке ақпаратыңыз бен жүктелген қолданбаларыңыз өшірілсін бе? Бұл әрекетті кері орындау мүмкін болмайды!"</string>
+    <string name="confirm_factory_reset_device" msgid="519046408823105666">"Барлығын өшіру"</string>
+    <string name="dismiss_all_notifications" msgid="3350731990365092847">"Барлығын қабылдамау"</string>
+    <string name="no_notifications" msgid="3241328952121767751">"Ешқандай"</string>
+    <string name="do_not_disturb_title" msgid="1050245577355301376">"Мазаламау"</string>
+    <string name="do_not_disturb_desc" msgid="3186041965642361597">"Қосылған болса, жаңа хабарландырулар тек «Параметрлер» тармағында көрсетіледі"</string>
+    <string name="select_title" msgid="2657901623249723536">"^1 үшін атау таңдау"</string>
+    <string name="select_description" msgid="4080602542483519716">"Атау ^1 телефон, планшет немесе компьютер сияқты басқа құрылғылардан қатынасқанда анықтауға көмектеседі."</string>
+  <string-array name="rooms">
+    <item msgid="2748008285322003570">"Қонақжай бөлмесі"</item>
+    <item msgid="7887185726776968055">"Медиа-зал"</item>
+    <item msgid="372573326176756144">"Отбасы бөлмесі"</item>
+    <item msgid="8112576067079559786">"Ас бөлмесі"</item>
+    <item msgid="2891751328917513846">"Жұмыс кабинеті"</item>
+    <item msgid="7390608863950443962">"Жатын бөлме"</item>
+    <item msgid="682313511953895794">"Асүй"</item>
+  </string-array>
+    <string name="custom_room" msgid="5972936200641815527">"Теңшелетін атты енгізу…"</string>
+    <string name="settings_status_title" msgid="3280459921834269206">"Бұл ^1 атау берілген"</string>
+    <string name="settings_status_description" msgid="4892610880616296037">"«^1» — осы ^2 атауы. Мұны өзгерту керек пе?"</string>
+    <string name="change_setting" msgid="199354038426145612">"Өзгерту"</string>
+    <string name="keep_settings" msgid="549230720820096102">"Өзгертпеу"</string>
+    <string name="menu_help" msgid="2164687828212723531">"Анықтама"</string>
+    <string name="setup_failure_title" msgid="4408868360762577232">"Қате орын алды"</string>
+    <string name="setup_failure_button_retry" msgid="4917381906591779977">"Қайталау"</string>
+</resources>

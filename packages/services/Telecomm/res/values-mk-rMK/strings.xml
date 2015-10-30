@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2013 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="telecommAppLabel" product="default" msgid="9166784827254469057">"Управување со телефонски повици"</string>
+    <string name="userCallActivityLabel" product="default" msgid="5415173590855187131">"Телефон"</string>
+    <string name="unknown" msgid="6878797917991465859">"Непознато"</string>
+    <string name="notification_missedCallTitle" msgid="7554385905572364535">"Пропуштен повик"</string>
+    <string name="notification_missedCallsTitle" msgid="1361677948941502522">"Пропуштени повици"</string>
+    <string name="notification_missedCallsMsg" msgid="4575787816055205600">"<xliff:g id="NUM_MISSED_CALLS">%s</xliff:g> пропуштени повици"</string>
+    <string name="notification_missedCallTicker" msgid="504686252427747209">"Пропуштен повик од <xliff:g id="MISSED_CALL_FROM">%s</xliff:g>"</string>
+    <string name="notification_missedCall_call_back" msgid="2684890353590890187">"Повикува назад"</string>
+    <string name="notification_missedCall_message" msgid="3049928912736917988">"Порака"</string>
+    <string name="accessibility_call_muted" msgid="2776111226185342220">"Повикот е со исклучен звук"</string>
+    <string name="accessibility_speakerphone_enabled" msgid="1988512040421036359">"Интерфонот е овозможен."</string>
+    <string name="respond_via_sms_canned_response_1" msgid="2461606462788380215">"Не можам да зборувам сега. Што има?"</string>
+    <string name="respond_via_sms_canned_response_2" msgid="4074450431532859214">"Веднаш ќе ти се јавам."</string>
+    <string name="respond_via_sms_canned_response_3" msgid="3496079065723960450">"Ќе ти се јавам подоцна."</string>
+    <string name="respond_via_sms_canned_response_4" msgid="1698989243040062190">"Не можам да зборувам сега. Јави ми се подоцна?"</string>
+    <string name="respond_via_sms_setting_title" msgid="3754000371039709383">"Брзи одговори"</string>
+    <string name="respond_via_sms_setting_title_2" msgid="6104662227299493906">"Уреди брзи одговори"</string>
+    <string name="respond_via_sms_setting_summary" msgid="9150281183930613065"></string>
+    <string name="respond_via_sms_edittext_dialog_title" msgid="20379890418289778">"Брз одговор"</string>
+    <string name="respond_via_sms_confirmation_format" msgid="7229149977515784269">"Порака е испратена на <xliff:g id="PHONE_NUMBER">%s</xliff:g>."</string>
+    <string name="enable_account_preference_title" msgid="2021848090086481720">"Сметки за повици"</string>
+    <string name="outgoing_call_not_allowed_user_restriction" msgid="8504993498756056279">"Дозволени се само итни повици од страна на сопственикот на уредот."</string>
+    <string name="outgoing_call_not_allowed_no_permission" msgid="1996571596464271228">"Оваа апликација не може да прави појдовни повици без дозволата Телефон."</string>
+    <string name="outgoing_call_error_no_phone_number_supplied" msgid="1940125199802007505">"За да повикате, внесете важечки број."</string>
+    <string name="duplicate_video_call_not_allowed" msgid="3749211605014548386">"Повикот не може да се додаде во моментов."</string>
+    <string name="video_call_not_allowed_if_tty_enabled" msgid="7593649283571253283">"Оневозможете го режимот TTY за да остварите видеоповици."</string>
+    <string name="no_vm_number" msgid="4164780423805688336">"Недостасува број на говорна пошта"</string>
+    <string name="no_vm_number_msg" msgid="1300729501030053828">"Нема мемориран број на говорна пошта на СИМ картичката."</string>
+    <string name="add_vm_number_str" msgid="4676479471644687453">"Додај број"</string>
+    <string name="change_default_dialer_dialog_title" msgid="4430590714918044425">"Смени ја стандардната апликација Бирач?"</string>
+    <string name="change_default_dialer_with_previous_app_set_text" msgid="3213396537499337949">"Користи <xliff:g id="NEW_APP">%1$s</xliff:g> наместо <xliff:g id="CURRENT_APP">%2$s</xliff:g> како стандардна апликација за бирање?"</string>
+    <string name="change_default_dialer_no_previous_app_set_text" msgid="7608426684114545221">"Користи <xliff:g id="NEW_APP">%s</xliff:g> како стандардна апликација за бирање?"</string>
+</resources>

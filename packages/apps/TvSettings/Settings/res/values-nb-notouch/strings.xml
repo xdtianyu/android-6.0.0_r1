@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2014 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="wifi_setup_input_password" msgid="4324884380214448502">"Skriv inn passord for <xliff:g id="SSID">%1$s</xliff:g>"</string>
+    <string name="wifi_setup_waiting_for_join" msgid="42826539810553389">"Kobler til ^1"</string>
+    <string name="wifi_setup_connection_success" msgid="3362351168182711828">"Tilkoblingen var vellykket."</string>
+    <string name="wifi_setup_save_success" msgid="2001513015933996675">"Lagret"</string>
+    <string name="device_apps_app_management_version" msgid="6315648665194084382">"versjon <xliff:g id="APP_VERSION">%1$s</xliff:g>"</string>
+    <string name="device_apps_app_management_open" msgid="3326361233913951387">"Åpne"</string>
+    <string name="device_apps_app_management_force_stop" msgid="1803832648099079651">"Tving avslutning"</string>
+    <string name="device_apps_app_management_force_stop_desc" msgid="221435219644064243">"Hvis du tvinger en app til å stoppe, kan den oppføre seg uventet."</string>
+    <string name="device_apps_app_management_uninstall" msgid="6054050725055974790">"Avinstaller"</string>
+    <string name="device_apps_app_management_uninstall_desc" msgid="3542570994262234511">"Vil du avinstallere denne appen?"</string>
+    <string name="device_apps_app_management_disable" msgid="1461984395121717076">"Deaktiver"</string>
+    <string name="device_apps_app_management_disable_desc" msgid="1362228583828208991">"Ønsker du å deaktivere denne appen?"</string>
+    <string name="device_apps_app_management_enable" msgid="8794752872502256633">"Aktivér"</string>
+    <string name="device_apps_app_management_enable_desc" msgid="6449017972628203288">"Ønsker du å aktivere denne appen?"</string>
+    <string name="device_apps_app_management_clear_data" msgid="8288695583331012586">"Fjern data"</string>
+    <string name="device_apps_app_management_clear_data_desc" msgid="2197842469669426232">"Alle disse appdataene slettes permanent."</string>
+    <string name="device_apps_app_management_clear_data_what" msgid="376666756087041021">"Dette inkluderer alle filer, innstillinger, kontoer, databaser osv."</string>
+    <string name="device_apps_app_management_clear_default" msgid="6654723680469212060">"Fjern standard"</string>
+    <string name="device_apps_app_management_clear_default_set" msgid="6233682647156684225">"Angitt til å starte denne appen for visse handlinger"</string>
+    <string name="device_apps_app_management_clear_default_none" msgid="6312021202504995474">"Ingen standard er angitt"</string>
+    <string name="device_apps_app_management_clear_cache" msgid="7878530504449821203">"Tøm bufferen"</string>
+    <string name="device_apps_app_management_notifications" msgid="7069935222112158478">"Varsler"</string>
+    <string name="device_apps_app_management_permissions" msgid="5758303833496289673">"Tillatelser"</string>
+    <string name="settings_ok" msgid="5501301223475616254">"OK"</string>
+    <string name="settings_cancel" msgid="1649053173330804917">"Avbryt"</string>
+    <string name="settings_on" msgid="1295064657786011878">"På"</string>
+    <string name="settings_off" msgid="4439170658516725721">"Av"</string>
+    <string name="device_daydreams_none" msgid="5310233518671772034">"Ingen"</string>
+    <string name="device_daydreams_select" msgid="1754678562660674925">"Dagdrøm"</string>
+    <string name="device_daydreams_test" msgid="7442554912076991502">"Start nå"</string>
+    <string name="device_daydreams_sleep" msgid="5263432145910468025">"Når dagdrømmodusen skal brukes"</string>
+    <string name="device_daydreams_sleep_description" msgid="8438730889852772376">"Dagdrømming begynner etter dette tidsrommet med inaktivitet. Hvis ingen dagdrøm er valgt, slås skjermen av."</string>
+    <string name="device_daydreams_sleep_summary" msgid="4442691086777437088">"Etter <xliff:g id="SLEEP_DESCRIPTION">%1$s</xliff:g> med inaktivitet"</string>
+    <string name="device_daydreams_screen_off" msgid="1846621864054404830">"Når skal hvilemodus aktiveres?"</string>
+    <string name="device_daydreams_screen_off_description" msgid="7699124270812914310">"Skjermene slår seg av etter denne perioden uten aktivitet."</string>
+    <string name="device_daydreams_screen_off_summary" msgid="6350806465141059041">"<xliff:g id="SLEEP_DESCRIPTION">%1$s</xliff:g> etter Dagdrøm"</string>
+    <string name="backup_configure_account_default_summary" msgid="2013649183664358673">"Ingen konto lagrer for øyeblikket sikkerhetskopierte data"</string>
+    <string name="backup_erase_dialog_title" msgid="8900389956460363471"></string>
+    <string name="backup_erase_dialog_message" msgid="448169495686297910">"Vil du stoppe sikkerhetskopieringen av Wi-Fi-passord, bokmerker, andre innstillinger og appdata, samt slette alle kopier på Googles tjenere?"</string>
+    <string name="privacy_backup_data" msgid="3652306596140877278">"Sikkerhetskopier dataene mine"</string>
+    <string name="privacy_backup_account" msgid="6127132568071889274">"Sikkerhetskopikonto"</string>
+    <string name="privacy_automatic_restore" msgid="8896792578363571896">"Automatisk gjenoppretting"</string>
+    <string name="factory_reset_device" msgid="7615350252195583106">"Tilbakestill enheten"</string>
+    <string name="factory_reset_description" msgid="6709336495536583649">"Dette sletter alle dataene dine fra den interne lagringen på enheten din, blant annet: Google-kontoen din, system- og appdatainnstillinger samt nedlastede apper"</string>
+    <string name="confirm_factory_reset_description" msgid="5710644039419606428">"Vil du slette alle personlige opplysninger og nedlastede apper? Denne handlingen kan ikke angres!"</string>
+    <string name="confirm_factory_reset_device" msgid="519046408823105666">"Slett alt"</string>
+    <string name="dismiss_all_notifications" msgid="3350731990365092847">"Avvis alle"</string>
+    <string name="no_notifications" msgid="3241328952121767751">"Ingen"</string>
+    <string name="do_not_disturb_title" msgid="1050245577355301376">"Ikke forstyrr"</string>
+    <string name="do_not_disturb_desc" msgid="3186041965642361597">"Når dette er på, vises nye varsler bare i Innstillinger"</string>
+    <string name="select_title" msgid="2657901623249723536">"Velg et navn for ^1-enheten din"</string>
+    <string name="select_description" msgid="4080602542483519716">"Med et navn er det enklere å identifisere ^1-enheten når du vil ha tilgang til den fra andre enheter, for eksempel telefonen, nettbrettet eller datamaskinen."</string>
+  <string-array name="rooms">
+    <item msgid="2748008285322003570">"Stue"</item>
+    <item msgid="7887185726776968055">"TV-stue"</item>
+    <item msgid="372573326176756144">"Felles oppholdsrom"</item>
+    <item msgid="8112576067079559786">"Spisestue"</item>
+    <item msgid="2891751328917513846">"Kjellerstue"</item>
+    <item msgid="7390608863950443962">"Soverom"</item>
+    <item msgid="682313511953895794">"Kjøkken"</item>
+  </string-array>
+    <string name="custom_room" msgid="5972936200641815527">"Skriv inn et spesialtilpasset navn"</string>
+    <string name="settings_status_title" msgid="3280459921834269206">"Denne ^1-enheten har et navn"</string>
+    <string name="settings_status_description" msgid="4892610880616296037">"«^1» er navnet på denne ^2-enheten. Ønsker du å endre det?"</string>
+    <string name="change_setting" msgid="199354038426145612">"Endre"</string>
+    <string name="keep_settings" msgid="549230720820096102">"Ikke endre"</string>
+    <string name="menu_help" msgid="2164687828212723531">"Hjelp"</string>
+    <string name="setup_failure_title" msgid="4408868360762577232">"Det oppsto en feil"</string>
+    <string name="setup_failure_button_retry" msgid="4917381906591779977">"Prøv på nytt"</string>
+</resources>

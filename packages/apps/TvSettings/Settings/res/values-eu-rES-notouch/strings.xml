@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2014 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="wifi_setup_input_password" msgid="4324884380214448502">"Idatzi <xliff:g id="SSID">%1$s</xliff:g> gailuaren pasahitza"</string>
+    <string name="wifi_setup_waiting_for_join" msgid="42826539810553389">"^1 sarera konektatzen"</string>
+    <string name="wifi_setup_connection_success" msgid="3362351168182711828">"Behar bezala konektatu da!"</string>
+    <string name="wifi_setup_save_success" msgid="2001513015933996675">"Behar bezala gorde da!"</string>
+    <string name="device_apps_app_management_version" msgid="6315648665194084382">"<xliff:g id="APP_VERSION">%1$s</xliff:g>. bertsioa"</string>
+    <string name="device_apps_app_management_open" msgid="3326361233913951387">"Ireki"</string>
+    <string name="device_apps_app_management_force_stop" msgid="1803832648099079651">"Behartu gelditzera"</string>
+    <string name="device_apps_app_management_force_stop_desc" msgid="221435219644064243">"Aplikazioak gelditzera behartzen badituzu, agian portaera okerra izan dezakete."</string>
+    <string name="device_apps_app_management_uninstall" msgid="6054050725055974790">"Desinstalatu"</string>
+    <string name="device_apps_app_management_uninstall_desc" msgid="3542570994262234511">"Aplikazioa desinstalatu nahi duzu?"</string>
+    <string name="device_apps_app_management_disable" msgid="1461984395121717076">"Desgaitu"</string>
+    <string name="device_apps_app_management_disable_desc" msgid="1362228583828208991">"Aplikazioa desgaitu nahi duzu?"</string>
+    <string name="device_apps_app_management_enable" msgid="8794752872502256633">"Gaitu"</string>
+    <string name="device_apps_app_management_enable_desc" msgid="6449017972628203288">"Aplikazioa gaitu nahi duzu?"</string>
+    <string name="device_apps_app_management_clear_data" msgid="8288695583331012586">"Garbitu datuak"</string>
+    <string name="device_apps_app_management_clear_data_desc" msgid="2197842469669426232">"Aplikazioaren datu guztiak betiko ezabatuko dira;"</string>
+    <string name="device_apps_app_management_clear_data_what" msgid="376666756087041021">"besteak beste, fitxategi, ezarpen, kontu eta datu-base guztiak."</string>
+    <string name="device_apps_app_management_clear_default" msgid="6654723680469212060">"Garbitu balio lehenetsiak"</string>
+    <string name="device_apps_app_management_clear_default_set" msgid="6233682647156684225">"Konfiguratu aplikazioa zenbait ekintzatarako abiarazteko"</string>
+    <string name="device_apps_app_management_clear_default_none" msgid="6312021202504995474">"Ez da ezarri balio lehenetsirik"</string>
+    <string name="device_apps_app_management_clear_cache" msgid="7878530504449821203">"Garbitu cachea"</string>
+    <string name="device_apps_app_management_notifications" msgid="7069935222112158478">"Jakinarazpenak"</string>
+    <string name="device_apps_app_management_permissions" msgid="5758303833496289673">"Baimenak"</string>
+    <string name="settings_ok" msgid="5501301223475616254">"Ados"</string>
+    <string name="settings_cancel" msgid="1649053173330804917">"Utzi"</string>
+    <string name="settings_on" msgid="1295064657786011878">"Aktibatuta"</string>
+    <string name="settings_off" msgid="4439170658516725721">"Desaktibatuta"</string>
+    <string name="device_daydreams_none" msgid="5310233518671772034">"Bat ere ez"</string>
+    <string name="device_daydreams_select" msgid="1754678562660674925">"Pantaila-babeslea"</string>
+    <string name="device_daydreams_test" msgid="7442554912076991502">"Hasi"</string>
+    <string name="device_daydreams_sleep" msgid="5263432145910468025">"Noiz aktibatu pantaila-babeslea"</string>
+    <string name="device_daydreams_sleep_description" msgid="8438730889852772376">"Pantaila-babeslea inaktibo egon ondoren agertzen da. Pantaila-babeslerik hautatzen ez bada, bistaratzea desaktibatu egiten da."</string>
+    <string name="device_daydreams_sleep_summary" msgid="4442691086777437088">"<xliff:g id="SLEEP_DESCRIPTION">%1$s</xliff:g> inaktibo egon ondoren"</string>
+    <string name="device_daydreams_screen_off" msgid="1846621864054404830">"Noiz jarri inaktibo"</string>
+    <string name="device_daydreams_screen_off_description" msgid="7699124270812914310">"Pantaila itzali egiten da tarte hau igarotakoan."</string>
+    <string name="device_daydreams_screen_off_summary" msgid="6350806465141059041">"Pantaila-babeslea abiarazi eta <xliff:g id="SLEEP_DESCRIPTION">%1$s</xliff:g> igaro ondoren"</string>
+    <string name="backup_configure_account_default_summary" msgid="2013649183664358673">"Ez dago babeskopiak gordetzen dituen aplikaziorik"</string>
+    <string name="backup_erase_dialog_title" msgid="8900389956460363471"></string>
+    <string name="backup_erase_dialog_message" msgid="448169495686297910">"Wi-Fi pasahitzen, laster-marken, bestelako ezarpenen eta aplikazioetako datuen babeskopia egiteari utzi eta Google zerbitzarietako kopia guztiak ezabatu nahi dituzu?"</string>
+    <string name="privacy_backup_data" msgid="3652306596140877278">"Egin nire datuen babeskopia"</string>
+    <string name="privacy_backup_account" msgid="6127132568071889274">"Babeskopien kontua"</string>
+    <string name="privacy_automatic_restore" msgid="8896792578363571896">"Leheneratze automatikoa"</string>
+    <string name="factory_reset_device" msgid="7615350252195583106">"Berrezarri gailua"</string>
+    <string name="factory_reset_description" msgid="6709336495536583649">"Gailuaren barneko memoriako datu guztiak ezabatuko dira, baita Google kontuak, sistemaren eta aplikazioen datuak eta ezarpenak, eta deskargatuko aplikazioak ere."</string>
+    <string name="confirm_factory_reset_description" msgid="5710644039419606428">"Informazio pertsonal guztia eta deskargatutako aplikazioak ezabatu nahi dituzu? Ezin izango duzu ekintza hori desegin."</string>
+    <string name="confirm_factory_reset_device" msgid="519046408823105666">"Ezabatu guztia"</string>
+    <string name="dismiss_all_notifications" msgid="3350731990365092847">"Baztertu guztiak"</string>
+    <string name="no_notifications" msgid="3241328952121767751">"Bat ere ez"</string>
+    <string name="do_not_disturb_title" msgid="1050245577355301376">"Ez molestatu"</string>
+    <string name="do_not_disturb_desc" msgid="3186041965642361597">"Gaitzean, jakinarazpen berriak Ezarpenetan bakarrik agertuko dira"</string>
+    <string name="select_title" msgid="2657901623249723536">"Aukeratu ^1 gailuaren izena"</string>
+    <string name="select_description" msgid="4080602542483519716">"Izenak ^1 gailua identifikatzen lagunduko du beste gailu batzuetatik atzitzean, adibidez, telefonotik, tabletatik edo ordenagailutik."</string>
+  <string-array name="rooms">
+    <item msgid="2748008285322003570">"Egongela"</item>
+    <item msgid="7887185726776968055">"Multimedia-gela"</item>
+    <item msgid="372573326176756144">"Egongela"</item>
+    <item msgid="8112576067079559786">"Jangela"</item>
+    <item msgid="2891751328917513846">"Estudioa"</item>
+    <item msgid="7390608863950443962">"Logela"</item>
+    <item msgid="682313511953895794">"Sukaldea"</item>
+  </string-array>
+    <string name="custom_room" msgid="5972936200641815527">"Idatzi izen pertsonalizatua…"</string>
+    <string name="settings_status_title" msgid="3280459921834269206">"^1 gailuari izena ezarri zaio"</string>
+    <string name="settings_status_description" msgid="4892610880616296037">"\"^1\" du izena ^2 honek. Aldatu nahi duzu?"</string>
+    <string name="change_setting" msgid="199354038426145612">"Aldatu"</string>
+    <string name="keep_settings" msgid="549230720820096102">"Ez aldatu"</string>
+    <string name="menu_help" msgid="2164687828212723531">"Laguntza"</string>
+    <string name="setup_failure_title" msgid="4408868360762577232">"Errore bat gertatu da"</string>
+    <string name="setup_failure_button_retry" msgid="4917381906591779977">"Saiatu berriro"</string>
+</resources>

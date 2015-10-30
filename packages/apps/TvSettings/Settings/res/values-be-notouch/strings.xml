@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2014 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+ 
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="wifi_setup_input_password" msgid="4324884380214448502">"Увядзіце пароль: <xliff:g id="SSID">%1$s</xliff:g>"</string>
+    <string name="wifi_setup_waiting_for_join" msgid="42826539810553389">"Далучэнне да ^1"</string>
+    <string name="wifi_setup_connection_success" msgid="3362351168182711828">"Паспяховае злучэнне!"</string>
+    <!-- no translation found for wifi_setup_save_success (2001513015933996675) -->
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <skip />
+    <string name="device_apps_app_management_version" msgid="6315648665194084382">"версія <xliff:g id="APP_VERSION">%1$s</xliff:g>"</string>
+    <string name="device_apps_app_management_force_stop" msgid="1803832648099079651">"Прымусовае спыненне"</string>
+    <string name="device_apps_app_management_force_stop_desc" msgid="221435219644064243">"Калі вы прымусова спынiце прыкладанне, яно можа дрэнна працаваць."</string>
+    <string name="device_apps_app_management_uninstall" msgid="6054050725055974790">"Выдаліць"</string>
+    <string name="device_apps_app_management_uninstall_desc" msgid="3542570994262234511">"Выдаліць гэта прыкладанне?"</string>
+    <string name="device_apps_app_management_clear_data" msgid="8288695583331012586">"Ачысціць дадзеныя"</string>
+    <string name="device_apps_app_management_clear_data_desc" msgid="2197842469669426232">"Усе дадзеныя гэтага прыкладання будуць выдаленыя назаўсёды."</string>
+    <string name="device_apps_app_management_clear_data_what" msgid="376666756087041021">"Гэта ўключае ў сябе ўсе файлы, налады уліковых запісаў, баз дадзеных і г.д."</string>
+    <string name="device_apps_app_management_clear_cache" msgid="7878530504449821203">"Ачысціць кэш"</string>
+    <string name="device_apps_app_management_notifications" msgid="7069935222112158478">"Паведамленні"</string>
+    <string name="device_apps_app_management_permissions" msgid="5758303833496289673">"Дазволы"</string>
+    <string name="settings_ok" msgid="5501301223475616254">"OК"</string>
+    <string name="settings_cancel" msgid="1649053173330804917">"Адмена"</string>
+    <string name="settings_on" msgid="1295064657786011878">"Уключана"</string>
+    <string name="settings_off" msgid="4439170658516725721">"Адключана"</string>
+    <string name="device_daydreams_none" msgid="5310233518671772034">"Няма"</string>
+    <string name="device_daydreams_select" msgid="1754678562660674925">"Мара"</string>
+    <string name="device_daydreams_test" msgid="7442554912076991502">"Пачаць"</string>
+    <string name="device_daydreams_sleep" msgid="5263432145910468025">"Калі трэба марыць"</string>
+    <!-- no translation found for device_daydreams_sleep_description (8438730889852772376) -->
+    <skip />
+    <string name="device_daydreams_sleep_summary" msgid="4442691086777437088">"Пасля <xliff:g id="SLEEP_DESCRIPTION">%1$s</xliff:g> бяздзейнасці"</string>
+    <!-- no translation found for device_daydreams_screen_off (1846621864054404830) -->
+    <skip />
+    <!-- no translation found for device_daydreams_screen_off_description (2714283422741910116) -->
+    <skip />
+    <!-- no translation found for device_daydreams_screen_off_summary (6350806465141059041) -->
+    <skip />
+    <string name="backup_configure_account_default_summary" msgid="2013649183664358673">"Зараз рэзервовая копія дадзеных не захоўваецца ні ў адным уліковым запісе"</string>
+    <string name="backup_erase_dialog_title" msgid="8900389956460363471"></string>
+    <!-- no translation found for backup_erase_dialog_message (448169495686297910) -->
+    <skip />
+    <string name="privacy_backup_data" msgid="3652306596140877278">"Рэзервовае капіраванне дадзеных"</string>
+    <!-- no translation found for privacy_backup_account (6127132568071889274) -->
+    <skip />
+    <string name="privacy_automatic_restore" msgid="8896792578363571896">"Аўтаматычнае аднаўленне"</string>
+    <string name="factory_reset_device" msgid="7615350252195583106">"Скід прылады"</string>
+    <string name="factory_reset_description" msgid="6709336495536583649">"Гэта выдаліць усе дадзеныя з унутранай памяці прылады, у тым ліку ваш улiковы запiс Google, дадзеныя і налады сiстэмы, прыкладання і загружаных прыкладанняў"</string>
+    <string name="confirm_factory_reset_description" msgid="5710644039419606428">"Выдалiць ўсю вашу асабістую інфармацыю і спампаваныя прыкладанні? Дзеянне нельза адмянiць."</string>
+    <string name="confirm_factory_reset_device" msgid="519046408823105666">"Выдаліць усё"</string>
+    <string name="dismiss_all_notifications" msgid="3350731990365092847">"Адмяніць усё"</string>
+    <string name="no_notifications" msgid="3241328952121767751">"Няма"</string>
+    <!-- no translation found for do_not_disturb_title (1050245577355301376) -->
+    <skip />
+    <!-- no translation found for do_not_disturb_desc (3186041965642361597) -->
+    <skip />
+</resources>

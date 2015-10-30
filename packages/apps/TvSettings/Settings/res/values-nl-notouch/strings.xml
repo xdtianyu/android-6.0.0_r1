@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2014 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="wifi_setup_input_password" msgid="4324884380214448502">"Wachtwoord opgeven voor <xliff:g id="SSID">%1$s</xliff:g>"</string>
+    <string name="wifi_setup_waiting_for_join" msgid="42826539810553389">"Inloggen op ^1"</string>
+    <string name="wifi_setup_connection_success" msgid="3362351168182711828">"Verbinding maken is gelukt!"</string>
+    <string name="wifi_setup_save_success" msgid="2001513015933996675">"Opgeslagen."</string>
+    <string name="device_apps_app_management_version" msgid="6315648665194084382">"versie <xliff:g id="APP_VERSION">%1$s</xliff:g>"</string>
+    <string name="device_apps_app_management_open" msgid="3326361233913951387">"Openen"</string>
+    <string name="device_apps_app_management_force_stop" msgid="1803832648099079651">"Gedwongen stoppen"</string>
+    <string name="device_apps_app_management_force_stop_desc" msgid="221435219644064243">"Als u een app gedwongen stopt, kan deze onverwacht gedrag vertonen."</string>
+    <string name="device_apps_app_management_uninstall" msgid="6054050725055974790">"Verwijderen"</string>
+    <string name="device_apps_app_management_uninstall_desc" msgid="3542570994262234511">"Wilt u deze app verwijderen?"</string>
+    <string name="device_apps_app_management_disable" msgid="1461984395121717076">"Uitschakelen"</string>
+    <string name="device_apps_app_management_disable_desc" msgid="1362228583828208991">"Wilt u deze app uitschakelen?"</string>
+    <string name="device_apps_app_management_enable" msgid="8794752872502256633">"Inschakelen"</string>
+    <string name="device_apps_app_management_enable_desc" msgid="6449017972628203288">"Wilt u deze app inschakelen?"</string>
+    <string name="device_apps_app_management_clear_data" msgid="8288695583331012586">"Gegevens wissen"</string>
+    <string name="device_apps_app_management_clear_data_desc" msgid="2197842469669426232">"Alle gegevens van deze app worden permanent verwijderd."</string>
+    <string name="device_apps_app_management_clear_data_what" msgid="376666756087041021">"Dit geldt voor alle bestanden, instellingen, accounts, databases, enzovoort."</string>
+    <string name="device_apps_app_management_clear_default" msgid="6654723680469212060">"Standaardwaarden wissen"</string>
+    <string name="device_apps_app_management_clear_default_set" msgid="6233682647156684225">"Ingesteld dat deze app wordt gestart voor bepaalde acties"</string>
+    <string name="device_apps_app_management_clear_default_none" msgid="6312021202504995474">"Geen standaardwaarden ingesteld"</string>
+    <string name="device_apps_app_management_clear_cache" msgid="7878530504449821203">"Cachegeheugen wissen"</string>
+    <string name="device_apps_app_management_notifications" msgid="7069935222112158478">"Meldingen"</string>
+    <string name="device_apps_app_management_permissions" msgid="5758303833496289673">"Toestemmingen"</string>
+    <string name="settings_ok" msgid="5501301223475616254">"OK"</string>
+    <string name="settings_cancel" msgid="1649053173330804917">"Annuleren"</string>
+    <string name="settings_on" msgid="1295064657786011878">"Aan"</string>
+    <string name="settings_off" msgid="4439170658516725721">"Uit"</string>
+    <string name="device_daydreams_none" msgid="5310233518671772034">"Geen"</string>
+    <string name="device_daydreams_select" msgid="1754678562660674925">"Dagdroom"</string>
+    <string name="device_daydreams_test" msgid="7442554912076991502">"Nu beginnen"</string>
+    <string name="device_daydreams_sleep" msgid="5263432145910468025">"Wanneer dagdromen"</string>
+    <string name="device_daydreams_sleep_description" msgid="8438730889852772376">"Dagdroom wordt gestart na deze periode van inactiviteit. Als er geen dagdroom is geselecteerd, wordt het scherm uitgeschakeld."</string>
+    <string name="device_daydreams_sleep_summary" msgid="4442691086777437088">"Na <xliff:g id="SLEEP_DESCRIPTION">%1$s</xliff:g> inactiviteit"</string>
+    <string name="device_daydreams_screen_off" msgid="1846621864054404830">"Wanneer slapen"</string>
+    <string name="device_daydreams_screen_off_description" msgid="7699124270812914310">"Scherm wordt uitgeschakeld na deze periode van inactiviteit."</string>
+    <string name="device_daydreams_screen_off_summary" msgid="6350806465141059041">"<xliff:g id="SLEEP_DESCRIPTION">%1$s</xliff:g> na Dagdroom"</string>
+    <string name="backup_configure_account_default_summary" msgid="2013649183664358673">"Er is momenteel geen account ingesteld voor het opslaan van back-upgegevens"</string>
+    <string name="backup_erase_dialog_title" msgid="8900389956460363471"></string>
+    <string name="backup_erase_dialog_message" msgid="448169495686297910">"Het maken van back-ups van uw wifi-wachtwoorden, bladwijzers, andere instellingen en gegevens voor apps stoppen en alle kopieën op Google-servers wissen?"</string>
+    <string name="privacy_backup_data" msgid="3652306596140877278">"Back-up maken van mijn gegevens"</string>
+    <string name="privacy_backup_account" msgid="6127132568071889274">"Back-upaccount"</string>
+    <string name="privacy_automatic_restore" msgid="8896792578363571896">"Automatisch terugzetten"</string>
+    <string name="factory_reset_device" msgid="7615350252195583106">"Apparaat opnieuw instellen"</string>
+    <string name="factory_reset_description" msgid="6709336495536583649">"Hiermee worden alle gegevens in de interne opslagruimte van uw apparaat gewist, waaronder uw Google-account, gegevens en instellingen voor het systeem en de apps en gedownloade apps"</string>
+    <string name="confirm_factory_reset_description" msgid="5710644039419606428">"Wilt u al uw persoonlijke gegevens en gedownloade apps verwijderen? U kunt deze actie niet ongedaan maken."</string>
+    <string name="confirm_factory_reset_device" msgid="519046408823105666">"Alles wissen"</string>
+    <string name="dismiss_all_notifications" msgid="3350731990365092847">"Alles sluiten"</string>
+    <string name="no_notifications" msgid="3241328952121767751">"Geen"</string>
+    <string name="do_not_disturb_title" msgid="1050245577355301376">"Niet storen"</string>
+    <string name="do_not_disturb_desc" msgid="3186041965642361597">"Als dit is ingeschakeld, verschijnen nieuwe meldingen alleen in Instellingen"</string>
+    <string name="select_title" msgid="2657901623249723536">"Kies een naam voor uw ^1"</string>
+    <string name="select_description" msgid="4080602542483519716">"Als u uw ^1 een naam geeft, kunt u deze herkennen wanneer u toegang probeert te krijgen vanaf andere apparaten, zoals uw telefoon, tablet of computer."</string>
+  <string-array name="rooms">
+    <item msgid="2748008285322003570">"Woonkamer"</item>
+    <item msgid="7887185726776968055">"Mediakamer"</item>
+    <item msgid="372573326176756144">"Huiskamer"</item>
+    <item msgid="8112576067079559786">"Eetkamer"</item>
+    <item msgid="2891751328917513846">"Hobbykamer"</item>
+    <item msgid="7390608863950443962">"Slaapkamer"</item>
+    <item msgid="682313511953895794">"Keuken"</item>
+  </string-array>
+    <string name="custom_room" msgid="5972936200641815527">"Aangepaste naam opgeven…"</string>
+    <string name="settings_status_title" msgid="3280459921834269206">"De ^1 heeft een naam"</string>
+    <string name="settings_status_description" msgid="4892610880616296037">"\'^1\' is de naam van deze ^2. Wilt u deze naam wijzigen?"</string>
+    <string name="change_setting" msgid="199354038426145612">"Wijzigen"</string>
+    <string name="keep_settings" msgid="549230720820096102">"Niet wijzigen"</string>
+    <string name="menu_help" msgid="2164687828212723531">"Help"</string>
+    <string name="setup_failure_title" msgid="4408868360762577232">"Er is een fout opgetreden"</string>
+    <string name="setup_failure_button_retry" msgid="4917381906591779977">"Opnieuw"</string>
+</resources>

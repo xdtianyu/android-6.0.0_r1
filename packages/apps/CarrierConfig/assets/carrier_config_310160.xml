@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<carrier_config_list>
+<carrier_config>
+<int name="vvm_port_number_int" value="1808" />
+<string name="vvm_destination_number_string">122</string>
+<string name="carrier_vvm_package_name_string">com.tmobile.vvm.application</string>
+<boolean name="carrier_volte_available_bool" value="true" />
+<string name="vvm_type_string">vvm_type_cvvm</string>
+<boolean name="carrier_volte_tty_supported_bool" value="false" />
+<boolean name="carrier_wfc_ims_available_bool" value="true" />
+</carrier_config>
+</carrier_config_list>

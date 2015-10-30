@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2014 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="wifi_setup_input_password" msgid="4324884380214448502">"<xliff:g id="SSID">%1$s</xliff:g> ಗಾಗಿ ಪಾಸ್‌ವರ್ಡ್ ನಮೂದಿಸಿ"</string>
+    <string name="wifi_setup_waiting_for_join" msgid="42826539810553389">"^1 ಸೇರಲಾಗುತ್ತಿದೆ"</string>
+    <string name="wifi_setup_connection_success" msgid="3362351168182711828">"ಯಶಸ್ವಿಯಾಗಿ ಸಂಪರ್ಕಗೊಂಡಿದೆ!"</string>
+    <string name="wifi_setup_save_success" msgid="2001513015933996675">"ಯಶಸ್ವಿಯಾಗಿ ಉಳಿಸಲಾಗಿದೆ!"</string>
+    <string name="device_apps_app_management_version" msgid="6315648665194084382">"ಆವೃತ್ತಿ <xliff:g id="APP_VERSION">%1$s</xliff:g>"</string>
+    <string name="device_apps_app_management_open" msgid="3326361233913951387">"ತೆರೆ"</string>
+    <string name="device_apps_app_management_force_stop" msgid="1803832648099079651">"ಬಲವಂತವಾಗಿ ನಿಲ್ಲಿಸು"</string>
+    <string name="device_apps_app_management_force_stop_desc" msgid="221435219644064243">"ನೀವು ಅಪ್ಲಿಕೇಶನ್‌ ಅನ್ನು ಬಲವಂತವಾಗಿ ನಿಲ್ಲಿಸಿದರೆ, ಅದು ಸರಿಯಾಗಿ ಕಾರ್ಯನಿರ್ವಹಿಸದಿರಬಹುದು."</string>
+    <string name="device_apps_app_management_uninstall" msgid="6054050725055974790">"ಅಸ್ಥಾಪಿಸು"</string>
+    <string name="device_apps_app_management_uninstall_desc" msgid="3542570994262234511">"ನೀವು ಈ ಅಪ್ಲಿಕೇಶನ್ ಅನ್ನು ಅಸ್ಥಾಪಿಸಲು ಬಯಸುವಿರಾ?"</string>
+    <string name="device_apps_app_management_disable" msgid="1461984395121717076">"ನಿಷ್ಕ್ರಿಯಗೊಳಿಸು"</string>
+    <string name="device_apps_app_management_disable_desc" msgid="1362228583828208991">"ನೀವು ಈ ಅಪ್ಲಿಕೇಶನ್ ಅನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲು ಬಯಸುವಿರಾ?"</string>
+    <string name="device_apps_app_management_enable" msgid="8794752872502256633">"ಸಕ್ರಿಯಗೊಳಿಸು"</string>
+    <string name="device_apps_app_management_enable_desc" msgid="6449017972628203288">"ನೀವು ಈ ಅಪ್ಲಿಕೇಶನ್ ಅನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಲು ಬಯಸುವಿರಾ?"</string>
+    <string name="device_apps_app_management_clear_data" msgid="8288695583331012586">"ಡೇಟಾ ತೆರವುಗೊಳಿಸು"</string>
+    <string name="device_apps_app_management_clear_data_desc" msgid="2197842469669426232">"ಈ ಎಲ್ಲಾ ಅಪ್ಲಿಕೇಶನ್ ಡೇಟಾವನ್ನು ಶಾಶ್ವತವಾಗಿ ಅಳಿಸಲಾಗುತ್ತದೆ."</string>
+    <string name="device_apps_app_management_clear_data_what" msgid="376666756087041021">"ಇದು ಎಲ್ಲ ಫೈಲ್‌ಗಳು, ಸೆಟ್ಟಿಂಗ್‌ಗಳು, ಖಾತೆಗಳು, ಡೇಟಾಬೇಸ್‌ಗಳು, ಮುಂತಾದವುಗಳನ್ನು ಒಳಗೊಂಡಿರುತ್ತದೆ."</string>
+    <string name="device_apps_app_management_clear_default" msgid="6654723680469212060">"ಡೀಫಾಲ್ಟ್‌ಗಳನ್ನು ತೆರವುಗೊಳಿಸಿ"</string>
+    <string name="device_apps_app_management_clear_default_set" msgid="6233682647156684225">"ಕೆಲವು ಕ್ರಮಗಳಿಗಾಗಿ ಈ ಅಪ್ಲಿಕೇಶನ್ ಪ್ರಾರಂಭಿಸಲು ಹೊಂದಿಸಿ"</string>
+    <string name="device_apps_app_management_clear_default_none" msgid="6312021202504995474">"ಡೀಫಾಲ್ಟ್‌ಗಳನ್ನು ಹೊಂದಿಸಲಾಗಿಲ್ಲ"</string>
+    <string name="device_apps_app_management_clear_cache" msgid="7878530504449821203">"ಸಂಗ್ರಹವನ್ನು ತೆರವುಗೊಳಿಸಿ"</string>
+    <string name="device_apps_app_management_notifications" msgid="7069935222112158478">"ಅಧಿಸೂಚನೆಗಳು"</string>
+    <string name="device_apps_app_management_permissions" msgid="5758303833496289673">"ಅನುಮತಿಗಳು"</string>
+    <string name="settings_ok" msgid="5501301223475616254">"ಸರಿ"</string>
+    <string name="settings_cancel" msgid="1649053173330804917">"ರದ್ದುಮಾಡು"</string>
+    <string name="settings_on" msgid="1295064657786011878">"ಆನ್"</string>
+    <string name="settings_off" msgid="4439170658516725721">"ಆಫ್"</string>
+    <string name="device_daydreams_none" msgid="5310233518671772034">"ಯಾವುದೂ ಇಲ್ಲ"</string>
+    <string name="device_daydreams_select" msgid="1754678562660674925">"ಡೇಡ್ರೀಮ್"</string>
+    <string name="device_daydreams_test" msgid="7442554912076991502">"ಈಗ ಪ್ರಾರಂಭಿಸು"</string>
+    <string name="device_daydreams_sleep" msgid="5263432145910468025">"ಡೇಡ್ರೀಮ್ ಯಾವಾಗ"</string>
+    <string name="device_daydreams_sleep_description" msgid="8438730889852772376">"ಈ ನಿಷ್ಕ್ರಿಯ ಅವಧಿಯ ಬಳಿಕ ಡೇಡ್ರೀಮಿಂಗ್ ಪ್ರಾರಂಭವಾಗುತ್ತದೆ. ಯಾವುದೇ ಡೇಡ್ರೀಮ್ ಆಯ್ಕೆ ಮಾಡಿಲ್ಲದಿದ್ದರೆ, ಪ್ರದರ್ಶನ ಆಫ್ ಆಗುತ್ತದೆ."</string>
+    <string name="device_daydreams_sleep_summary" msgid="4442691086777437088">"ನಿಷ್ಕ್ರಿಯತೆಯ <xliff:g id="SLEEP_DESCRIPTION">%1$s</xliff:g> ರ ಬಳಿಕ"</string>
+    <string name="device_daydreams_screen_off" msgid="1846621864054404830">"ಯಾವಾಗ ಮಲಗುವುದು"</string>
+    <string name="device_daydreams_screen_off_description" msgid="7699124270812914310">"ನಿಷ್ಕ್ರಿಯತೆಯ ಈ ಅವಧಿಯ ನಂತರ ಪರದೆಯು ಆಫ್‌ ಆಗುತ್ತದೆ."</string>
+    <string name="device_daydreams_screen_off_summary" msgid="6350806465141059041">"<xliff:g id="SLEEP_DESCRIPTION">%1$s</xliff:g> ಕನಸಿನ ಬಳಿಕ"</string>
+    <string name="backup_configure_account_default_summary" msgid="2013649183664358673">"ಬ್ಯಾಕ್‌ ಅಪ್‌ ಆಗಿರುವ ಡೇಟಾವನ್ನು ಯಾವುದೇ ಖಾತೆಯು ಪ್ರಸ್ತುತವಾಗಿ ಸಂಗ್ರಹಿಸುತ್ತಿಲ್ಲ"</string>
+    <string name="backup_erase_dialog_title" msgid="8900389956460363471"></string>
+    <string name="backup_erase_dialog_message" msgid="448169495686297910">"ನಿಮ್ಮ Wi‑Fi ಪಾಸ್‌ವರ್ಡ್‌ಗಳು, ಬುಕ್‌ಮಾರ್ಕ್‌ಗಳು, ಇತರ ಸೆಟ್ಟಿಂಗ್‌ಗಳು, ಮತ್ತು ಅಪ್ಲಿಕೇಶನ್‌ ಡೇಟಾವನ್ನು ಬ್ಯಾಕಪ್‌‌‌ ಮಾಡುವುದನ್ನು ನಿಲ್ಲಿಸುವುದೇ ಮತ್ತು Google ಸರ್ವರ್‌ಗಳಲ್ಲಿನ ಎಲ್ಲ ಪ್ರತಿಗಳನ್ನು ಅಳಿಸುವುದೇ?"</string>
+    <string name="privacy_backup_data" msgid="3652306596140877278">"ನನ್ನ ಡೇಟಾ ಬ್ಯಾಕಪ್ ಮಾಡು"</string>
+    <string name="privacy_backup_account" msgid="6127132568071889274">"ಬ್ಯಾಕಪ್ ಖಾತೆ"</string>
+    <string name="privacy_automatic_restore" msgid="8896792578363571896">"ಸ್ವಯಂಚಾಲಿತ ಪುನಃಸ್ಥಾಪನೆ"</string>
+    <string name="factory_reset_device" msgid="7615350252195583106">"ಸಾಧನವನ್ನು ಮರುಹೊಂದಿಸಿ"</string>
+    <string name="factory_reset_description" msgid="6709336495536583649">"ಇದು ನಿಮ್ಮ ಸಾಧನದ ಆಂತರಿಕ ಸಂಗ್ರಹಣೆಯಿಂದ ಎಲ್ಲಾ ಡೇಟಾವನ್ನು ಅಳಿಸುತ್ತದೆ, ಇವುಗಳೂ ಸೇರಿದಂತೆ: ನಿಮ್ಮ Google ಖಾತೆ, ಸಿಸ್ಟಂ ಮತ್ತು ಅಪ್ಲಿಕೇಶನ್ ಡೇಟಾ ಹಾಗೂ ಸೆಟ್ಟಿಂಗ್‌ಗಳು, ಡೌನ್‌ಲೋಡ್ ಆಗಿರುವ ಅಪ್ಲಿಕೇಶನ್‌ಗಳು"</string>
+    <string name="confirm_factory_reset_description" msgid="5710644039419606428">"ನಿಮ್ಮ ಎಲ್ಲ ವೈಯಕ್ತಿಕ ಮಾಹಿತಿ ಮತ್ತು ಡೌನ್‌ಲೋಡ್ ಮಾಡಿದ ಅಪ್ಲಿಕೇಶನ್‌ಗಳನ್ನು ಅಳಿಸಬೇಕೆ? ಈ ಕ್ರಿಯೆಯನ್ನು ಹಿಮ್ಮುಖಗೊಳಿಸಲು ನಿಮಗೆ ಸಾಧ್ಯವಿಲ್ಲ!"</string>
+    <string name="confirm_factory_reset_device" msgid="519046408823105666">"ಎಲ್ಲವನ್ನೂ ಅಳಿಸು"</string>
+    <string name="dismiss_all_notifications" msgid="3350731990365092847">"ಎಲ್ಲವನ್ನು ವಜಾಗೊಳಿಸು"</string>
+    <string name="no_notifications" msgid="3241328952121767751">"ಯಾವುದೂ ಇಲ್ಲ"</string>
+    <string name="do_not_disturb_title" msgid="1050245577355301376">"ಅಡಚಣೆ ಮಾಡಬೇಡ"</string>
+    <string name="do_not_disturb_desc" msgid="3186041965642361597">"ಸಕ್ರಿಯಗೊಳಿಸಿದಾಗ, ಹೊಸ ಅಧಿಸೂಚನೆಗಳು ಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿ ಮಾತ್ರ ಗೋಚರಿಸುತ್ತವೆ"</string>
+    <string name="select_title" msgid="2657901623249723536">"ನಿಮ್ಮ ^1 ಗಾಗಿ ಹೆಸರನ್ನು ಆರಿಸಿ"</string>
+    <string name="select_description" msgid="4080602542483519716">"ನಿಮ್ಮ ಫೋನ್, ಟ್ಯಾಬ್ಲೆಟ್, ಅಥವಾ ಕಂಪ್ಯೂಟರ್‌ನಂತಹ ಬೇರೆ ಸಾಧನಗಳ ಮೂಲಕ ಬಳಸುವಾಗ ನಿಮ್ಮ ^1 ಅನ್ನು ಗುರುತಿಸಲು ಹೆಸರು ಸಹಾಯ ಮಾಡುತ್ತದೆ."</string>
+  <string-array name="rooms">
+    <item msgid="2748008285322003570">"ವಾಸದ ಕೊಠಡಿ"</item>
+    <item msgid="7887185726776968055">"ಮಾಧ್ಯಮ ಕೊಠಡಿ"</item>
+    <item msgid="372573326176756144">"ಕುಟುಂಬದ ಕೊಠಡಿ"</item>
+    <item msgid="8112576067079559786">"ಊಟದ ಮನೆ"</item>
+    <item msgid="2891751328917513846">"ಡೆನ್"</item>
+    <item msgid="7390608863950443962">"ಮಲಗುವ ಕೋಣೆ"</item>
+    <item msgid="682313511953895794">"ಅಡುಗೆಮನೆ"</item>
+  </string-array>
+    <string name="custom_room" msgid="5972936200641815527">"ಕಸ್ಟಮ್ ಹೆಸರನ್ನು ನಮೂದಿಸಿ…"</string>
+    <string name="settings_status_title" msgid="3280459921834269206">"ಈ ^1 ಅನ್ನು ಹೆಸರಿಸಲಾಗಿದೆ"</string>
+    <string name="settings_status_description" msgid="4892610880616296037">"\"^1\" ಈ ^2 ನ ಹೆಸರಾಗಿದೆ. ನೀವು ಇದನ್ನು ಬದಲಾಯಿಸಲು ಬಯಸುವಿರಾ?"</string>
+    <string name="change_setting" msgid="199354038426145612">"ಬದಲಾಯಿಸು"</string>
+    <string name="keep_settings" msgid="549230720820096102">"ಬದಲಾಯಿಸಬೇಡಿ"</string>
+    <string name="menu_help" msgid="2164687828212723531">"ಸಹಾಯ"</string>
+    <string name="setup_failure_title" msgid="4408868360762577232">"ದೋಷವೊಂದು ಕಾಣಿಸಿಕೊಂಡಿದೆ"</string>
+    <string name="setup_failure_button_retry" msgid="4917381906591779977">"ಮರುಪ್ರಯತ್ನಿಸು"</string>
+</resources>

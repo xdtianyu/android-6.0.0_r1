@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2014 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="wifi_setup_input_password" msgid="4324884380214448502">"បញ្ចូល​ពាក្យ​សម្ងាត់​សម្រាប់ <xliff:g id="SSID">%1$s</xliff:g>"</string>
+    <string name="wifi_setup_waiting_for_join" msgid="42826539810553389">"ចូលរួម ^1"</string>
+    <string name="wifi_setup_connection_success" msgid="3362351168182711828">"បាន​តភ្ជាប់​ដោយ​ជោគជ័យ​!"</string>
+    <string name="wifi_setup_save_success" msgid="2001513015933996675">"បាន​រក្សា​ទុក​ដោយ​ជោគជ័យ​!"</string>
+    <string name="device_apps_app_management_version" msgid="6315648665194084382">"កំណែ <xliff:g id="APP_VERSION">%1$s</xliff:g>"</string>
+    <string name="device_apps_app_management_open" msgid="3326361233913951387">"បើក"</string>
+    <string name="device_apps_app_management_force_stop" msgid="1803832648099079651">"បង្ខំ​ឲ្យ​ឈប់"</string>
+    <string name="device_apps_app_management_force_stop_desc" msgid="221435219644064243">"បើ​អ្នក​បង្ខំ​ឲ្យ​កម្មវិធី​ឈប់ វា​អាច​​ដំណើរ​មិន​ត្រឹមត្រូវ។"</string>
+    <string name="device_apps_app_management_uninstall" msgid="6054050725055974790">"លុប​ចេញ"</string>
+    <string name="device_apps_app_management_uninstall_desc" msgid="3542570994262234511">"តើ​អ្នក​ចង់​លុប​កម្មវិធី​នេះ​មែនទេ?"</string>
+    <string name="device_apps_app_management_disable" msgid="1461984395121717076">"បិទដំណើរការ"</string>
+    <string name="device_apps_app_management_disable_desc" msgid="1362228583828208991">"តើអ្នកចង់បិទដំណើរការកម្មវិធីនេះទេ?"</string>
+    <string name="device_apps_app_management_enable" msgid="8794752872502256633">"បើកដំណើរការ"</string>
+    <string name="device_apps_app_management_enable_desc" msgid="6449017972628203288">"តើអ្នកចង់បើកដំណើរការកម្មវិធីនេះទេ?"</string>
+    <string name="device_apps_app_management_clear_data" msgid="8288695583331012586">"សម្អាត​ទិន្នន័យ"</string>
+    <string name="device_apps_app_management_clear_data_desc" msgid="2197842469669426232">"ទិន្នន័យ​របស់​កម្មវិធី​នេះ​ទាំងអស់​នឹង​ត្រូវ​លុបចេញ​ជា​រៀង​រហូត។"</string>
+    <string name="device_apps_app_management_clear_data_what" msgid="376666756087041021">"នេះ​រួមមាន​ឯកសារ​ ការ​កំណត់ គណនី មូលដ្ឋាន​ទិន្នន័យ​ទាំងអស់។ល។"</string>
+    <string name="device_apps_app_management_clear_default" msgid="6654723680469212060">"សម្អាត​លំនាំដើម"</string>
+    <string name="device_apps_app_management_clear_default_set" msgid="6233682647156684225">"កំណត់ដើម្បីចាប់ផ្ដើមកម្មវិធីសម្រាប់សកម្មភាពផ្សេងៗ"</string>
+    <string name="device_apps_app_management_clear_default_none" msgid="6312021202504995474">"មិន​មាន​លំនាំដើម​បាន​កំណត់"</string>
+    <string name="device_apps_app_management_clear_cache" msgid="7878530504449821203">"សម្អាត​ឃ្លាំង"</string>
+    <string name="device_apps_app_management_notifications" msgid="7069935222112158478">"ការ​ជូនដំណឹង"</string>
+    <string name="device_apps_app_management_permissions" msgid="5758303833496289673">"សិទ្ធិ"</string>
+    <string name="settings_ok" msgid="5501301223475616254">"យល់ព្រម"</string>
+    <string name="settings_cancel" msgid="1649053173330804917">"បោះបង់"</string>
+    <string name="settings_on" msgid="1295064657786011878">"បើក"</string>
+    <string name="settings_off" msgid="4439170658516725721">"បិទ"</string>
+    <string name="device_daydreams_none" msgid="5310233518671772034">"គ្មាន"</string>
+    <string name="device_daydreams_select" msgid="1754678562660674925">"ស្រមើ​ស្រមៃ"</string>
+    <string name="device_daydreams_test" msgid="7442554912076991502">"ចាប់ផ្ដើម​ឥឡូវ"</string>
+    <string name="device_daydreams_sleep" msgid="5263432145910468025">"នៅ​ពេល​​ស្រមើស្រមៃ"</string>
+    <string name="device_daydreams_sleep_description" msgid="8438730889852772376">"ការ​ស្រមើស្រមៃ​ចាប់ផ្ដើម​បន្ទាប់​ពី​ភាព​អសកម្ម​មួយ​រយៈ​នេះ។ ប្រសិនបើ​ មិន​ជ្រើស​ការ​ស្រមើស្រមៃ​ណា​មួយ​ទេ ការ​បង្ហាញ​នឹង​បិទ។"</string>
+    <string name="device_daydreams_sleep_summary" msgid="4442691086777437088">"បន្ទាប់​​ពី​ភាព​អសកម្ម​នៃ <xliff:g id="SLEEP_DESCRIPTION">%1$s</xliff:g>"</string>
+    <string name="device_daydreams_screen_off" msgid="1846621864054404830">"នៅ​ពេល​ដេក"</string>
+    <string name="device_daydreams_screen_off_description" msgid="7699124270812914310">"​បិទ​អេក្រង់​បន្ទាប់ពី​រយៈ​ពេល​អសកម្ម​នេះ។"</string>
+    <string name="device_daydreams_screen_off_summary" msgid="6350806465141059041">"<xliff:g id="SLEEP_DESCRIPTION">%1$s</xliff:g> បន្ទាប់​ពី​សុបិន"</string>
+    <string name="backup_configure_account_default_summary" msgid="2013649183664358673">"បច្ចុប្បន្ន​ គ្មាន​គណនី​រក្សាទុក​ទិន្នន័យ​បម្រុង​ទុក​ទេ"</string>
+    <string name="backup_erase_dialog_title" msgid="8900389956460363471"></string>
+    <string name="backup_erase_dialog_message" msgid="448169495686297910">"ឈប់​បម្រុងទុក​ពាក្យ​សម្ងាត់​វ៉ាយហ្វាយ, ចំណាំ, ការ​កំណត់​ផ្សេងៗ និង​ទិន្នន័យ​កម្មវិធី​របស់​អ្នក រួ​ច​ហើយ​លុប​ច្បាប់​ចម្លង​ទាំងអស់​​ដែល​មាន​នៅ​លើ​ម៉ាស៊ីន​មេ Google មែន​ទេ?"</string>
+    <string name="privacy_backup_data" msgid="3652306596140877278">"បម្រុង​ទុក​ទិន្នន័យ​របស់​ខ្ញុំ"</string>
+    <string name="privacy_backup_account" msgid="6127132568071889274">"បម្រុង​ទុក​គណនី"</string>
+    <string name="privacy_automatic_restore" msgid="8896792578363571896">"ស្ដារ​ឡើង​វិញ​ស្វ័យ​ប្រវត្តិ"</string>
+    <string name="factory_reset_device" msgid="7615350252195583106">"កំណត់​ឧបករណ៍​ឡើង​វិញ"</string>
+    <string name="factory_reset_description" msgid="6709336495536583649">"នេះ​នឹង​លុប​ទិន្នន័យ​ទាំងអស់​ពី​កន្លែង​ផ្ទុក​ខាង​ក្នុង​នៃ​ឧបករណ៍​របស់​អ្នក រួម​មាន៖ គណនី Google, ប្រព័ន្ធ, ទិន្នន័យ​កម្មវិធី និង​ការ​កំណត់ ព្រមទាំង​​កម្មវិធី​ដែល​បាន​ទាញ​យក"</string>
+    <string name="confirm_factory_reset_description" msgid="5710644039419606428">"លុប​ព័ត៌មាន​ផ្ទាល់ខ្លួន​របស់​អ្នក​ទាំងអស់ និង​កម្មវិធី​ដែល​បាន​​ទាញ​យក? អ្នក​មិន​អាច​​ត្រឡប់​សកម្មភាព​នេះ​វិញ​បាន​ទេ!"</string>
+    <string name="confirm_factory_reset_device" msgid="519046408823105666">"លុប​​​ទាំងអស់"</string>
+    <string name="dismiss_all_notifications" msgid="3350731990365092847">"បោះបង់ចោល​ទាំងអស់"</string>
+    <string name="no_notifications" msgid="3241328952121767751">"គ្មាន"</string>
+    <string name="do_not_disturb_title" msgid="1050245577355301376">"កុំ​រំខាន"</string>
+    <string name="do_not_disturb_desc" msgid="3186041965642361597">"នៅ​ពេល​បាន​បើក​ដំណើរការ ការ​ជូន​ដំណឹង​ថ្មី​នឹង​​បង្ហាញ​តែ​នៅ​ក្នុង​ការ​កំណត់​ប៉ុណ្ណោះ"</string>
+    <string name="select_title" msgid="2657901623249723536">"ជ្រើស​ឈ្មោះ​សម្រាប់ ^1 របស់​អ្នក"</string>
+    <string name="select_description" msgid="4080602542483519716">"ឈ្មោះ​នឹង​ជួយ​កំណត់​អត្ត​សញ្ញាណ​របស់​អ្នក ^1 ពេល​ចូល​ដំណើរការ​វា​ពី​ឧបករណ៍​ផ្សេង​ដូច​ជា​ទូរសព្ទ, កុំព្យូទ័រ​បន្ទះ ឬ​កុំព្យូទ័រ​របស់​អ្នក។"</string>
+  <string-array name="rooms">
+    <item msgid="2748008285322003570">"បន្ទប់​ទទួល​ភ្ញៀវ"</item>
+    <item msgid="7887185726776968055">"បន្ទប់​​ព័ត៌មាន"</item>
+    <item msgid="372573326176756144">"បន្ទប់​គ្រួសារ"</item>
+    <item msgid="8112576067079559786">"បន្ទប់​​​អាហារ​ពេល​​ល្ងាច"</item>
+    <item msgid="2891751328917513846">"បន្ទប់​ធ្វើការ"</item>
+    <item msgid="7390608863950443962">"បន្ទប់​ដេក"</item>
+    <item msgid="682313511953895794">"ផ្ទះបាយ"</item>
+  </string-array>
+    <string name="custom_room" msgid="5972936200641815527">"បញ្ចូល​ឈ្មោះ​​តាម​បំណង ..."</string>
+    <string name="settings_status_title" msgid="3280459921834269206">"^1 នេះ​ត្រូវ​បាន​ដាក់ឈ្មោះ"</string>
+    <string name="settings_status_description" msgid="4892610880616296037">"\"^1\" គឺ​ជា​ឈ្មោះ​របស់ ^2 នេះ។ តើ​អ្នក​ចង់​ប្ដូរ​វា?"</string>
+    <string name="change_setting" msgid="199354038426145612">"ផ្លាស់ប្ដូរ"</string>
+    <string name="keep_settings" msgid="549230720820096102">"កុំ​ផ្លាស់ប្ដូរ"</string>
+    <string name="menu_help" msgid="2164687828212723531">"ជំនួយ"</string>
+    <string name="setup_failure_title" msgid="4408868360762577232">"កំហុស​មួយ​បាន​កើត​ឡើង"</string>
+    <string name="setup_failure_button_retry" msgid="4917381906591779977">"ព្យាយាម​ម្ដងទៀត"</string>
+</resources>

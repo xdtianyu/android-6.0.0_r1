@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2014 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="wifi_setup_input_password" msgid="4324884380214448502">"Внесете лозинка за <xliff:g id="SSID">%1$s</xliff:g>"</string>
+    <string name="wifi_setup_waiting_for_join" msgid="42826539810553389">"Поврзување со ^1"</string>
+    <string name="wifi_setup_connection_success" msgid="3362351168182711828">"Успешно поврзано!"</string>
+    <string name="wifi_setup_save_success" msgid="2001513015933996675">"Успешно зачувано!"</string>
+    <string name="device_apps_app_management_version" msgid="6315648665194084382">"верзија <xliff:g id="APP_VERSION">%1$s</xliff:g>"</string>
+    <string name="device_apps_app_management_open" msgid="3326361233913951387">"Отвори"</string>
+    <string name="device_apps_app_management_force_stop" msgid="1803832648099079651">"Исклучи присилно"</string>
+    <string name="device_apps_app_management_force_stop_desc" msgid="221435219644064243">"Ако присилно запрете апликација, таа може да не се однесува правилно."</string>
+    <string name="device_apps_app_management_uninstall" msgid="6054050725055974790">"Деинсталирај"</string>
+    <string name="device_apps_app_management_uninstall_desc" msgid="3542570994262234511">"Дали сакате да ја деинсталирате оваа апликација?"</string>
+    <string name="device_apps_app_management_disable" msgid="1461984395121717076">"Оневозможи"</string>
+    <string name="device_apps_app_management_disable_desc" msgid="1362228583828208991">"Дали сакате да ја оневозможите оваа апликација?"</string>
+    <string name="device_apps_app_management_enable" msgid="8794752872502256633">"Овозможи"</string>
+    <string name="device_apps_app_management_enable_desc" msgid="6449017972628203288">"Дали сакате да ја овозможите оваа апликација?"</string>
+    <string name="device_apps_app_management_clear_data" msgid="8288695583331012586">"Исчисти податоци"</string>
+    <string name="device_apps_app_management_clear_data_desc" msgid="2197842469669426232">"Сите податоци на оваа апликација ќе се избришат трајно."</string>
+    <string name="device_apps_app_management_clear_data_what" msgid="376666756087041021">"Ова ги вклучува сите датотеки, поставки, сметки, бази на податоци, итн."</string>
+    <string name="device_apps_app_management_clear_default" msgid="6654723680469212060">"Избриши стандардни вредности"</string>
+    <string name="device_apps_app_management_clear_default_set" msgid="6233682647156684225">"Поставете за да ја стартувате апликација за некои дејства"</string>
+    <string name="device_apps_app_management_clear_default_none" msgid="6312021202504995474">"Нема поставени стандардни вредности"</string>
+    <string name="device_apps_app_management_clear_cache" msgid="7878530504449821203">"Исчисти кеш"</string>
+    <string name="device_apps_app_management_notifications" msgid="7069935222112158478">"Известувања"</string>
+    <string name="device_apps_app_management_permissions" msgid="5758303833496289673">"Дозволи"</string>
+    <string name="settings_ok" msgid="5501301223475616254">"Во ред"</string>
+    <string name="settings_cancel" msgid="1649053173330804917">"Откажи"</string>
+    <string name="settings_on" msgid="1295064657786011878">"Вклучи"</string>
+    <string name="settings_off" msgid="4439170658516725721">"Исклучи"</string>
+    <string name="device_daydreams_none" msgid="5310233518671772034">"Ништо"</string>
+    <string name="device_daydreams_select" msgid="1754678562660674925">"Daydream"</string>
+    <string name="device_daydreams_test" msgid="7442554912076991502">"Започни сега"</string>
+    <string name="device_daydreams_sleep" msgid="5263432145910468025">"Кога е избрано Daydream"</string>
+    <string name="device_daydreams_sleep_description" msgid="8438730889852772376">"Мечтаењето започнува по овој период на неактивност. Ако не и избрано Daydream, екранот се исклучува."</string>
+    <string name="device_daydreams_sleep_summary" msgid="4442691086777437088">"По <xliff:g id="SLEEP_DESCRIPTION">%1$s</xliff:g> на неактивност"</string>
+    <string name="device_daydreams_screen_off" msgid="1846621864054404830">"Кога да се оди во режим на штедење"</string>
+    <string name="device_daydreams_screen_off_description" msgid="7699124270812914310">"Екранот се исклучува по овој период на неактивност."</string>
+    <string name="device_daydreams_screen_off_summary" msgid="6350806465141059041">"<xliff:g id="SLEEP_DESCRIPTION">%1$s</xliff:g> по мечтаење"</string>
+    <string name="backup_configure_account_default_summary" msgid="2013649183664358673">"Во моментов нема сметка каде што се складираат резервни копии на податоци"</string>
+    <string name="backup_erase_dialog_title" msgid="8900389956460363471"></string>
+    <string name="backup_erase_dialog_message" msgid="448169495686297910">"Да престане со резервни копии на вашите лозинки на Wi-Fi, обележувачи, други поставки и податоци за апликацијата и да ги избрише сите копии на серверите на Google?"</string>
+    <string name="privacy_backup_data" msgid="3652306596140877278">"Направи резервна копија на мои податоци"</string>
+    <string name="privacy_backup_account" msgid="6127132568071889274">"Резервна сметка"</string>
+    <string name="privacy_automatic_restore" msgid="8896792578363571896">"Обнови автоматски"</string>
+    <string name="factory_reset_device" msgid="7615350252195583106">"Ресетирај уред"</string>
+    <string name="factory_reset_description" msgid="6709336495536583649">"Ова ќе ги избрише сите податоци од внатрешната меморија на вашиот уред, вклучувајќи ја вашата сметка на Google, податоците на системот и апликациите, поставките и преземените апликации"</string>
+    <string name="confirm_factory_reset_description" msgid="5710644039419606428">"Избришете ги сите ваши лични податоци и преземени апликации? Ова дејство не може да се врати!"</string>
+    <string name="confirm_factory_reset_device" msgid="519046408823105666">"Избриши сè"</string>
+    <string name="dismiss_all_notifications" msgid="3350731990365092847">"Отфрли ги сите"</string>
+    <string name="no_notifications" msgid="3241328952121767751">"Ништо"</string>
+    <string name="do_not_disturb_title" msgid="1050245577355301376">"Не вознемирувај"</string>
+    <string name="do_not_disturb_desc" msgid="3186041965642361597">"Кога е овозможено, нови известувања ќе се појавуваат само во Поставки"</string>
+    <string name="select_title" msgid="2657901623249723536">"Изберете име за вашиот ^1"</string>
+    <string name="select_description" msgid="4080602542483519716">"Името ќе помогне во идентификација на ^1 кога му пристапувате од други уреди, како што се вашиот телефон, таблет или компјутер."</string>
+  <string-array name="rooms">
+    <item msgid="2748008285322003570">"Дневна соба"</item>
+    <item msgid="7887185726776968055">"Домашно кино"</item>
+    <item msgid="372573326176756144">"Семејна соба"</item>
+    <item msgid="8112576067079559786">"Трпезарија"</item>
+    <item msgid="2891751328917513846">"Работна соба"</item>
+    <item msgid="7390608863950443962">"Спална соба"</item>
+    <item msgid="682313511953895794">"Кујна"</item>
+  </string-array>
+    <string name="custom_room" msgid="5972936200641815527">"Внеси приспособено име…"</string>
+    <string name="settings_status_title" msgid="3280459921834269206">"Овој ^1 е именуван"</string>
+    <string name="settings_status_description" msgid="4892610880616296037">"„^1“ е име на овој ^2. Дали сакате да го промените ова?"</string>
+    <string name="change_setting" msgid="199354038426145612">"Промени"</string>
+    <string name="keep_settings" msgid="549230720820096102">"Не менувај"</string>
+    <string name="menu_help" msgid="2164687828212723531">"Помош"</string>
+    <string name="setup_failure_title" msgid="4408868360762577232">"Се случи грешка"</string>
+    <string name="setup_failure_button_retry" msgid="4917381906591779977">"Обиди се повторно"</string>
+</resources>

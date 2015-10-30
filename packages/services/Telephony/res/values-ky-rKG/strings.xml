@@ -1,0 +1,823 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="phoneAppLabel" product="tablet" msgid="1107073389495104784">"Уюлдук дайындар"</string>
+    <!-- no translation found for phoneAppLabel (906161039445636857) -->
+    <skip />
+    <!-- no translation found for emergencyDialerIconLabel (7812140032168171053) -->
+    <skip />
+    <!-- no translation found for phoneIconLabel (2331230813161304895) -->
+    <skip />
+    <!-- no translation found for fdnListLabel (8630418672279521003) -->
+    <skip />
+    <!-- no translation found for unknown (6878797917991465859) -->
+    <skip />
+    <!-- no translation found for private_num (6713286113000232309) -->
+    <skip />
+    <string name="payphone" msgid="4793877574636445118">"Таксофон"</string>
+    <!-- no translation found for onHold (9035493194749959955) -->
+    <skip />
+    <!-- no translation found for mmiStarted (6347869857061147003) -->
+    <skip />
+    <!-- no translation found for ussdRunning (485588686340541690) -->
+    <skip />
+    <!-- no translation found for mmiCancelled (2771923949751842276) -->
+    <skip />
+    <!-- no translation found for cancel (5044513931633602634) -->
+    <skip />
+    <string name="enter_input" msgid="1810529547726803893">"USSD билдирүүсү <xliff:g id="MIN_LEN">%d</xliff:g> - <xliff:g id="MAX_LEN">%d</xliff:g> белгиден турушу керек. Сураныч, кайрадан аракеттениңиз."</string>
+    <string name="manageConferenceLabel" msgid="4691922394301969053">"Конференц-чалууну башкаруу"</string>
+    <!-- no translation found for ok (3811371167865772377) -->
+    <skip />
+    <!-- no translation found for audio_mode_speaker (27649582100085266) -->
+    <skip />
+    <!-- no translation found for audio_mode_earpiece (4156527186373869107) -->
+    <skip />
+    <string name="audio_mode_wired_headset" msgid="1465350758489175975">"Зымдуу кулакчын"</string>
+    <!-- no translation found for audio_mode_bluetooth (3047641300848211128) -->
+    <skip />
+    <!-- no translation found for wait_prompt_str (7601815427707856238) -->
+    <skip />
+    <string name="pause_prompt_str" msgid="1789964702154314806">"Тоналдык жөнөтүү болууда \n"</string>
+    <!-- no translation found for send_button (4106860097497818751) -->
+    <skip />
+    <!-- no translation found for pause_prompt_yes (3564467212025151797) -->
+    <skip />
+    <!-- no translation found for pause_prompt_no (6686238803236884877) -->
+    <skip />
+    <string name="wild_prompt_str" msgid="5543521676355533577">"Атайын белгини муну менен алмаштыр"</string>
+    <!-- no translation found for no_vm_number (4164780423805688336) -->
+    <skip />
+    <!-- no translation found for no_vm_number_msg (1300729501030053828) -->
+    <skip />
+    <!-- no translation found for add_vm_number_str (4676479471644687453) -->
+    <skip />
+    <!-- no translation found for puk_unlocked (2284912838477558454) -->
+    <skip />
+    <!-- no translation found for label_ndp (780479633159517250) -->
+    <skip />
+    <!-- no translation found for sim_ndp_unlock_text (683628237760543009) -->
+    <skip />
+    <!-- no translation found for sim_ndp_dismiss_text (1604823375752456947) -->
+    <skip />
+    <!-- no translation found for requesting_unlock (6412629401033249351) -->
+    <skip />
+    <!-- no translation found for unlock_failed (6490531697031504225) -->
+    <skip />
+    <!-- no translation found for unlock_success (6770085622238180152) -->
+    <skip />
+    <string name="mobile_network_settings_not_available" msgid="3831911315358856062">"Уюктук тармак жөндөөлөрү бул колдонуучу үчүн жеткиликтүү эмес"</string>
+    <!-- no translation found for labelGSMMore (5930842194056092106) -->
+    <skip />
+    <string name="labelGsmMore_with_label" msgid="2674012918829238901">"GSM чалуунун жөндөөлөрү (<xliff:g id="SUBSCRIPTIONLABEL">%s</xliff:g>)"</string>
+    <!-- no translation found for labelCDMAMore (1630676740428229339) -->
+    <skip />
+    <string name="labelCdmaMore_with_label" msgid="6333588719319970399">"CDMA чалуунун жөндөөлөрү (<xliff:g id="SUBSCRIPTIONLABEL">%s</xliff:g>)"</string>
+    <!-- no translation found for apn_settings (9043423184895642077) -->
+    <skip />
+    <!-- no translation found for settings_label (3876743539816984008) -->
+    <skip />
+    <string name="phone_accounts" msgid="6376603393888116364">"Чалуучу каттоо эсептери"</string>
+    <string name="phone_accounts_make_calls_with" msgid="1969188078933152231">"Чалууларды төмөнкү менен жасоо"</string>
+    <string name="phone_accounts_make_sip_calls_with" msgid="4677789312053828493">"SIP чалууларын төмөнкү менен жасоо"</string>
+    <string name="phone_accounts_ask_every_time" msgid="4346499067149985702">"Биринчи сурасын"</string>
+    <string name="phone_accounts_settings_header" msgid="4141710640883261094">"Жөндөөлөр"</string>
+    <string name="phone_accounts_choose_accounts" msgid="5232948804226424002">"Каттоо эсептерин тандоо"</string>
+    <string name="phone_accounts_selection_header" msgid="1365215726106915865">"Телефон каттоо эсептери"</string>
+    <string name="phone_accounts_add_sip_account" msgid="2023821743341923271">"SIP каттоо эсебин кошуу"</string>
+    <string name="phone_accounts_configure_account_settings" msgid="1361715069911607109">"Каттоо эсеп жөндөөлөрүн конфигурациялоо"</string>
+    <string name="phone_accounts_all_calling_accounts" msgid="207619531589278471">"Бардык чалуу каттоо эсептери"</string>
+    <string name="phone_accounts_all_calling_accounts_summary" msgid="8594186415822657011">"Чалуулар жасала турган каттоо эсептерин тандаңыз"</string>
+    <string name="wifi_calling" msgid="739018212480165598">"Wi-Fi чалуу"</string>
+    <string name="connection_service_default_label" msgid="1498481943805913754">"Кыналган туташуу кызматы"</string>
+    <!-- no translation found for voicemail (8693759337917898954) -->
+    <skip />
+    <string name="voicemail_settings_with_label" msgid="152724978380748296">"Үн почтасы (<xliff:g id="SUBSCRIPTIONLABEL">%s</xliff:g>)"</string>
+    <!-- no translation found for voicemail_abbreviated (2215592488517217448) -->
+    <skip />
+    <!-- no translation found for networks (8873030692174541976) -->
+    <skip />
+    <string name="cell_broadcast_settings" msgid="8740238216690502563">"Шашылыш таркатмалар"</string>
+    <!-- no translation found for call_settings (6112441768261754562) -->
+    <skip />
+    <!-- no translation found for additional_gsm_call_settings (1391795981938800617) -->
+    <skip />
+    <string name="additional_gsm_call_settings_with_label" msgid="1385241520708457376">"Кошумча жөндөөлөр (<xliff:g id="SUBSCRIPTIONLABEL">%s</xliff:g>)"</string>
+    <!-- no translation found for sum_gsm_call_settings (4076647190996778012) -->
+    <skip />
+    <!-- no translation found for additional_cdma_call_settings (8628958775721886909) -->
+    <skip />
+    <!-- no translation found for sum_cdma_call_settings (284753265979035549) -->
+    <skip />
+    <!-- no translation found for labelNwService (4699970172021870983) -->
+    <skip />
+    <!-- no translation found for labelCallerId (3888899447379069198) -->
+    <skip />
+    <string name="sum_loading_settings" msgid="1826692909391168620">"Тууралоолор жүктөлүүдө…"</string>
+    <!-- no translation found for sum_hide_caller_id (1071407020290873782) -->
+    <skip />
+    <!-- no translation found for sum_show_caller_id (6768534125447290401) -->
+    <skip />
+    <!-- no translation found for sum_default_caller_id (1954518825510901365) -->
+    <skip />
+    <!-- no translation found for labelCW (6120513814915920200) -->
+    <skip />
+    <!-- no translation found for sum_cw_enabled (8083061901633671397) -->
+    <skip />
+    <!-- no translation found for sum_cw_disabled (3648693907300104575) -->
+    <skip />
+    <!-- no translation found for call_forwarding_settings (3378927671091537173) -->
+    <skip />
+    <string name="call_forwarding_settings_with_label" msgid="8569489414006897127">"Чалууну багыттоо жөндөөлөрү (<xliff:g id="SUBSCRIPTIONLABEL">%s</xliff:g>)"</string>
+    <!-- no translation found for labelCF (2574386948026924737) -->
+    <skip />
+    <!-- no translation found for labelCFU (8147177368148660600) -->
+    <skip />
+    <!-- no translation found for messageCFU (3560082430662923687) -->
+    <skip />
+    <!-- no translation found for sum_cfu_enabled_indicator (4014187342724130197) -->
+    <skip />
+    <!-- no translation found for sum_cfu_enabled (2450052502198827927) -->
+    <skip />
+    <!-- no translation found for sum_cfu_enabled_no_number (6591985777096823616) -->
+    <skip />
+    <string name="sum_cfu_disabled" msgid="8384177689501334080">"Өчүк"</string>
+    <string name="labelCFB" msgid="6139853033106283172">"Бош эмес болсо"</string>
+    <!-- no translation found for messageCFB (3711089705936187129) -->
+    <skip />
+    <!-- no translation found for sum_cfb_enabled (5984198104833116690) -->
+    <skip />
+    <string name="sum_cfb_disabled" msgid="4913145177320506827">"Өчүк"</string>
+    <string name="disable_cfb_forbidden" msgid="3506984333877998061">"Сиздин операторуңуз, телефон бош эмес болгондо чалууну багыттоону токтотууну колдобойт."</string>
+    <string name="labelCFNRy" msgid="1736067178393744351">"Жооп бербей жатса"</string>
+    <!-- no translation found for messageCFNRy (672317899884380374) -->
+    <skip />
+    <!-- no translation found for sum_cfnry_enabled (6955775691317662910) -->
+    <skip />
+    <string name="sum_cfnry_disabled" msgid="3884684060443538097">"Өчүк"</string>
+    <string name="disable_cfnry_forbidden" msgid="4308233959150658058">"Сиздин операторуңуз, телефон жооп бербесе чалууну багыттоону токтотууну колдобойт."</string>
+    <string name="labelCFNRc" msgid="2614827454402079766">"Жеткиликтүү эмес болсо"</string>
+    <!-- no translation found for messageCFNRc (6380695421020295119) -->
+    <skip />
+    <!-- no translation found for sum_cfnrc_enabled (7010898346095497421) -->
+    <skip />
+    <!-- no translation found for sum_cfnrc_disabled (7222141261321276464) -->
+    <skip />
+    <string name="disable_cfnrc_forbidden" msgid="5646361343094064333">"Сиздин операторуңуз, телефон жеткиликсиз болгондо чалууну багыттоону токтотууну колдобойт."</string>
+    <!-- no translation found for updating_title (6146755386174019046) -->
+    <skip />
+    <string name="call_settings_primary_user_only" msgid="5679923943740900965">"Чалуу жөндөөлөрүн алгачкы колдонуучу гана өзгөртө алат."</string>
+    <string name="call_settings_with_label" msgid="89359812614544532">"Чалуу жөндөөлөрү (<xliff:g id="SUBSCRIPTIONLABEL">%s</xliff:g>)"</string>
+    <!-- no translation found for error_updating_title (7970259216988931777) -->
+    <skip />
+    <!-- no translation found for reading_settings (1920291699287055284) -->
+    <skip />
+    <!-- no translation found for updating_settings (8171225533884883252) -->
+    <skip />
+    <!-- no translation found for reverting_settings (4752151682666912828) -->
+    <skip />
+    <!-- no translation found for response_error (6674110501330139405) -->
+    <skip />
+    <!-- no translation found for exception_error (7027667130619518211) -->
+    <skip />
+    <string name="fdn_check_failure" msgid="18200614306525434">"Сиздин телефонуңуздун Бекитилген Номурду Терүү колдонмосу жандырылган. Натыйжасында, чалууга байланыштуу айрым мүмкүнчүлүктөр иштебей турат."</string>
+    <string name="radio_off_error" msgid="2304459933248513376">"Бул тууралоолорду көрүш үчүн, алгач радиону иштетишиңиз керек."</string>
+    <!-- no translation found for close_dialog (2365884406356986917) -->
+    <skip />
+    <string name="enable" msgid="7248657275000173526">"Күйгүзүү"</string>
+    <string name="disable" msgid="4678348128118573672">"Өчүрүү"</string>
+    <!-- no translation found for change_num (239476305819844391) -->
+    <skip />
+    <!-- no translation found for clir_display_values:0 (5560134294467334594) -->
+    <!-- no translation found for clir_display_values:1 (7876195870037833661) -->
+    <!-- no translation found for clir_display_values:2 (1108394741608734023) -->
+    <!-- no translation found for vm_changed (380744030726254139) -->
+    <skip />
+    <string name="vm_change_failed" msgid="3352934863246208918">"Үнкат номурун алмаштыруу мүмкүн эмес.\nМаселе чечилбесе, байланыш операторуна чалыңыз."</string>
+    <string name="fw_change_failed" msgid="5298103228470214665">"Багыталуучу номурда алмаштыруу мүмкүн эмес.\nЭгер маселе чечилбесе, операторуңузга кайрылыңыз."</string>
+    <string name="fw_get_in_vm_failed" msgid="8862896836093833973">"Учурдагы багытталуучу номурду кайтаруу жана сактоо мүмкүн эмес.\nБаары бир жаңы операторго которулалыбы?"</string>
+    <!-- no translation found for no_change (3186040086622435212) -->
+    <skip />
+    <!-- no translation found for sum_voicemail_choose_provider (59911196126278922) -->
+    <skip />
+    <string name="voicemail_default" msgid="2001233554889016880">"Операторуңуз"</string>
+    <string name="mobile_networks" msgid="2843854043339307375">"Уюктук тармак жөндөөлөрү"</string>
+    <!-- no translation found for label_available (1181658289009300430) -->
+    <skip />
+    <!-- no translation found for load_networks_progress (5230707536168902952) -->
+    <skip />
+    <!-- no translation found for empty_networks_list (4249426905018815316) -->
+    <skip />
+    <!-- no translation found for search_networks (1601136049300882441) -->
+    <skip />
+    <!-- no translation found for network_query_error (6828516148953325006) -->
+    <skip />
+    <!-- no translation found for register_on_network (9055203954040805084) -->
+    <skip />
+    <string name="not_allowed" msgid="5613353860205691579">"Сиздин SIM-картаңыз бул түйүнгө кошулганга жол бербейт."</string>
+    <string name="connect_later" msgid="2308119155752343975">"Бул түйүнгө азыр кошулуу мүмкүн эмес. Бир аздан соң кайра аракеттениңиз."</string>
+    <!-- no translation found for registration_done (495135664535876612) -->
+    <skip />
+    <string name="sum_carrier_select" msgid="3494252551249882718">"Оператор тандоо"</string>
+    <!-- no translation found for sum_search_networks (2921092249873272715) -->
+    <skip />
+    <string name="select_automatically" msgid="5628402124471810174">"Автоматтык тандоо"</string>
+    <string name="sum_select_automatically" msgid="5614890115123292400">"Артыкчылыктуу түйүндү автоматтык тандоо"</string>
+    <string name="register_automatically" msgid="6017849844573519637">"Автоматтык катталуу…"</string>
+    <string name="preferred_network_mode_title" msgid="2336624679902659306">"Артыкчылыктуу желенин түрү"</string>
+    <!-- no translation found for preferred_network_mode_summary (1434820673166126609) -->
+    <skip />
+    <string name="preferred_network_mode_dialogtitle" msgid="4048082093347807230">"Артыкчылыктуу желенин түрү"</string>
+    <!-- no translation found for preferred_network_mode_wcdma_perf_summary (8521677230113533809) -->
+    <skip />
+    <!-- no translation found for preferred_network_mode_gsm_only_summary (3352445413437453511) -->
+    <skip />
+    <!-- no translation found for preferred_network_mode_wcdma_only_summary (2836897236221063413) -->
+    <skip />
+    <!-- no translation found for preferred_network_mode_gsm_wcdma_summary (3161255745326408587) -->
+    <skip />
+    <!-- no translation found for preferred_network_mode_cdma_summary (3175690187294334241) -->
+    <skip />
+    <!-- no translation found for preferred_network_mode_cdma_evdo_summary (8332063064712726618) -->
+    <skip />
+    <!-- no translation found for preferred_network_mode_cdma_only_summary (1309770926198634150) -->
+    <skip />
+    <!-- no translation found for preferred_network_mode_evdo_only_summary (8472220691721269155) -->
+    <skip />
+    <string name="preferred_network_mode_cdma_evdo_gsm_wcdma_summary" msgid="4726682079415227330">"Артыкчылыктуу желе тартиби: CDMA/EvDo/GSM/WCDMA"</string>
+    <string name="preferred_network_mode_lte_summary" msgid="574752287596469136">"Артыкчылыктуу желе тартиби: LTE"</string>
+    <string name="preferred_network_mode_lte_gsm_wcdma_summary" msgid="8455358514068283935">"Артыкчылыктуу желе тартиби: GSM/WCDMA/LTE"</string>
+    <string name="preferred_network_mode_lte_cdma_evdo_summary" msgid="228702246343742853">"Артыкчылыктуу желе тартиби: CDMA+LTE/EVDO"</string>
+    <string name="preferred_network_mode_global_summary" msgid="1633134285545730364">"Артыкчылыктуу желе тартиби: Глобалдуу"</string>
+    <string name="preferred_network_mode_lte_wcdma_summary" msgid="9180775701594742750">"Артыкчылыктуу желе тартиби: LTE / WCDMA"</string>
+    <string name="preferred_network_mode_lte_gsm_umts_summary" msgid="633315028976225026">"Жактырылган тармак режими: LTE / GSM / UMTS"</string>
+    <!-- no translation found for preferred_network_mode_lte_cdma_summary (3722647806454528426) -->
+    <skip />
+  <string-array name="preferred_network_mode_choices">
+    <item msgid="7886739962255042385">"LTE / WCDMA"</item>
+    <item msgid="577652050447385699">"LTE"</item>
+    <item msgid="6813597571293773656">"Глобалдуу"</item>
+    <item msgid="127064712132619032">"GSM/WCDMA/LTE"</item>
+    <item msgid="1126767511633425977">"CDMA + LTE/EvDo"</item>
+    <item msgid="6389676313771670660">"CDMA/EvDo/GSM/WCDMA"</item>
+    <item msgid="545430093607698090">"EvDo гана"</item>
+    <item msgid="1508557726283094448">"CDMA EvDo\'суз"</item>
+    <item msgid="4341433122263841224">"CDMA/EvDo авто"</item>
+    <item msgid="5958053792390386668">"GSM/WCDMA авто"</item>
+    <item msgid="7913148405605373434">"WCDMA гана"</item>
+    <item msgid="1524224863879435516">"GSM гана"</item>
+    <item msgid="3817924849415716259">"GSM/WCDMA артыкчылыктуу"</item>
+  </string-array>
+    <string name="enhanced_4g_lte_mode_title" msgid="522191650223239171">"Жакшыртылган 4G LTE режими"</string>
+    <string name="enhanced_4g_lte_mode_summary" msgid="2332175070522125850">"Үн жана башка байлнштрд жакшыртуу үчүн LTE кызматтарын пайдаланыңыз (сунушталат)"</string>
+    <!-- no translation found for data_enabled (5972538663568715366) -->
+    <skip />
+    <string name="data_enable_summary" msgid="2382798156640007971">"Дайындарды пайдаланууга уруксат берүү"</string>
+    <!-- no translation found for roaming (8871412572928323707) -->
+    <skip />
+    <!-- no translation found for roaming_enable (7331106985174381987) -->
+    <skip />
+    <!-- no translation found for roaming_disable (1843417228755568110) -->
+    <skip />
+    <string name="roaming_reenable_message" msgid="8913735676127858115">"Мобилдик берүү байланышын жоготтуңуз, анткени сиз мобилдик интернет роумингин иштетпестен, өзүңүздүн түйүнүңүздөн сырткары чыгып кеттиңиз."</string>
+    <string name="roaming_warning" msgid="1603164667540144353">"Бир кыйла төлөмдөргө учурашыңыз мүмкүн."</string>
+    <string name="roaming_alert_title" msgid="3654815360303826008">"Интернет-роумингге жол берилсинби?"</string>
+    <!-- no translation found for gsm_umts_options (6538311689850981686) -->
+    <skip />
+    <!-- no translation found for cdma_options (4016822858172249884) -->
+    <skip />
+    <!-- no translation found for throttle_data_usage (3715677828160555808) -->
+    <skip />
+    <!-- no translation found for throttle_current_usage (8762280193043815361) -->
+    <skip />
+    <!-- no translation found for throttle_time_frame (1915198770363734685) -->
+    <skip />
+    <!-- no translation found for throttle_rate (4710388992676803508) -->
+    <skip />
+    <!-- no translation found for throttle_help (243651091785169900) -->
+    <skip />
+    <!-- no translation found for throttle_status_subtext (1657318943142085170) -->
+    <skip />
+    <!-- no translation found for throttle_data_usage_subtext (6029276011123694701) -->
+    <skip />
+    <!-- no translation found for throttle_data_rate_reduced_subtext (7492763592720107737) -->
+    <skip />
+    <!-- no translation found for throttle_time_frame_subtext (7732763021560399960) -->
+    <skip />
+    <!-- no translation found for throttle_rate_subtext (2149102656120726855) -->
+    <skip />
+    <string name="throttle_help_subtext" msgid="3633091498168446044">"Операторуңуздун уюктук тармак дайындарын пайдалануу саясаты тууралуу көбүрөөк маалымат"</string>
+    <!-- no translation found for cell_broadcast_sms (5584192824053625842) -->
+    <skip />
+    <!-- no translation found for enable_disable_cell_bc_sms (4851147873691392255) -->
+    <skip />
+    <!-- no translation found for cell_bc_sms_enable (6441688565738921084) -->
+    <skip />
+    <!-- no translation found for cell_bc_sms_disable (3398365088309408749) -->
+    <skip />
+    <!-- no translation found for cb_sms_settings (651715019785107312) -->
+    <skip />
+    <!-- no translation found for enable_disable_emergency_broadcast (2157014609041245335) -->
+    <skip />
+    <!-- no translation found for emergency_broadcast_enable (2645980025414010211) -->
+    <skip />
+    <!-- no translation found for emergency_broadcast_disable (3665199821267569426) -->
+    <skip />
+    <!-- no translation found for enable_disable_administrative (6501582322182059412) -->
+    <skip />
+    <!-- no translation found for administrative_enable (1750086122962032235) -->
+    <skip />
+    <!-- no translation found for administrative_disable (8433273857248698539) -->
+    <skip />
+    <!-- no translation found for enable_disable_maintenance (1819693083025106678) -->
+    <skip />
+    <!-- no translation found for maintenance_enable (8566636458770971189) -->
+    <skip />
+    <!-- no translation found for maintenance_disable (7340189100885066077) -->
+    <skip />
+    <!-- no translation found for general_news_settings (4968779723948432978) -->
+    <skip />
+    <!-- no translation found for bf_news_settings (3935593091894685267) -->
+    <skip />
+    <!-- no translation found for sports_news_settings (7649399631270052835) -->
+    <skip />
+    <!-- no translation found for entertainment_news_settings (5051153952959405035) -->
+    <skip />
+    <!-- no translation found for enable_disable_local (7890281063123416120) -->
+    <skip />
+    <!-- no translation found for local_enable (6370463247609136359) -->
+    <skip />
+    <!-- no translation found for local_disable (4405691986943795798) -->
+    <skip />
+    <!-- no translation found for enable_disable_regional (4905652414535565872) -->
+    <skip />
+    <!-- no translation found for regional_enable (4434680415437834759) -->
+    <skip />
+    <!-- no translation found for regional_disable (5359325527213850077) -->
+    <skip />
+    <!-- no translation found for enable_disable_national (236278090206880734) -->
+    <skip />
+    <!-- no translation found for national_enable (1172443648912246952) -->
+    <skip />
+    <!-- no translation found for national_disable (326018148178601166) -->
+    <skip />
+    <!-- no translation found for enable_disable_international (7535348799604565592) -->
+    <skip />
+    <!-- no translation found for international_enable (5855356769925044927) -->
+    <skip />
+    <!-- no translation found for international_disable (2850648591041088931) -->
+    <skip />
+    <!-- no translation found for list_language_title (2841683501919760043) -->
+    <skip />
+    <!-- no translation found for list_language_summary (8109546531071241601) -->
+    <skip />
+    <!-- no translation found for list_language_entries:0 (6137851079727305485) -->
+    <!-- no translation found for list_language_entries:1 (1151988412809572526) -->
+    <!-- no translation found for list_language_entries:2 (577840534704312665) -->
+    <!-- no translation found for list_language_entries:3 (8385712091143148180) -->
+    <!-- no translation found for list_language_entries:4 (1858401628368130638) -->
+    <!-- no translation found for list_language_entries:5 (1933212028684529632) -->
+    <!-- no translation found for list_language_entries:6 (1908428006803639064) -->
+    <!-- no translation found for list_language_values:0 (1804908636436467150) -->
+    <!-- no translation found for list_language_values:1 (289708030346890334) -->
+    <!-- no translation found for list_language_values:2 (1121469729692402684) -->
+    <!-- no translation found for list_language_values:3 (2614093115912897722) -->
+    <!-- no translation found for list_language_values:4 (2411164639857960614) -->
+    <!-- no translation found for list_language_values:5 (5884448729274543324) -->
+    <!-- no translation found for list_language_values:6 (5511864807618312598) -->
+    <!-- no translation found for list_language_dtitle (5442908726538951934) -->
+    <skip />
+    <!-- no translation found for enable_disable_local_weather (986967454867219114) -->
+    <skip />
+    <!-- no translation found for local_weather_enable (6199315114382448922) -->
+    <skip />
+    <!-- no translation found for local_weather_disable (2510158089142626480) -->
+    <skip />
+    <!-- no translation found for enable_disable_atr (8339572391278872343) -->
+    <skip />
+    <!-- no translation found for atr_enable (5541757457789181799) -->
+    <skip />
+    <!-- no translation found for atr_disable (7085558154727596455) -->
+    <skip />
+    <!-- no translation found for enable_disable_lafs (668189073721277199) -->
+    <skip />
+    <!-- no translation found for lafs_enable (2791978667205137052) -->
+    <skip />
+    <!-- no translation found for lafs_disable (2391212397725495350) -->
+    <skip />
+    <!-- no translation found for enable_disable_restaurants (6240381945336814024) -->
+    <skip />
+    <!-- no translation found for restaurants_enable (5137657479469118847) -->
+    <skip />
+    <!-- no translation found for restaurants_disable (3678480270938424092) -->
+    <skip />
+    <!-- no translation found for enable_disable_lodgings (1822029172658551202) -->
+    <skip />
+    <!-- no translation found for lodgings_enable (3230042508992850322) -->
+    <skip />
+    <!-- no translation found for lodgings_disable (3387879742320682391) -->
+    <skip />
+    <!-- no translation found for enable_disable_retail_directory (1357809784475660303) -->
+    <skip />
+    <!-- no translation found for retail_directory_enable (3280626290436111496) -->
+    <skip />
+    <!-- no translation found for retail_directory_disable (6479739816662879027) -->
+    <skip />
+    <!-- no translation found for enable_disable_advertisements (5999495926176182128) -->
+    <skip />
+    <!-- no translation found for advertisements_enable (2050305021264683786) -->
+    <skip />
+    <!-- no translation found for advertisements_disable (8350985908788707935) -->
+    <skip />
+    <!-- no translation found for enable_disable_stock_quotes (6397810445293533603) -->
+    <skip />
+    <!-- no translation found for stock_quotes_enable (4384802470887170543) -->
+    <skip />
+    <!-- no translation found for stock_quotes_disable (4781450084565594998) -->
+    <skip />
+    <!-- no translation found for enable_disable_eo (4863043263443942494) -->
+    <skip />
+    <!-- no translation found for eo_enable (8623559062015685813) -->
+    <skip />
+    <!-- no translation found for eo_disable (3863812478090907609) -->
+    <skip />
+    <string name="enable_disable_mhh" msgid="908214593528968522">"Медициналык, Ден соолук жана Оорукана"</string>
+    <string name="mhh_enable" msgid="5544500632306446815">"Медициналык, Ден соолук жана Оорукана иштетилди"</string>
+    <string name="mhh_disable" msgid="8998210550117117437">"Медициналык, Ден соолук жана Оорукана токтотулду"</string>
+    <!-- no translation found for enable_disable_technology_news (3517184627114999149) -->
+    <skip />
+    <!-- no translation found for technology_news_enable (7995209394210455181) -->
+    <skip />
+    <!-- no translation found for technology_news_disable (5483490380561851946) -->
+    <skip />
+    <!-- no translation found for enable_disable_multi_category (626771003122899280) -->
+    <skip />
+    <!-- no translation found for multi_category_enable (1179299804641721768) -->
+    <skip />
+    <!-- no translation found for multi_category_disable (880104702904139505) -->
+    <skip />
+    <string name="network_lte" msgid="7702681952521375754">"LTE (сунушталат)"</string>
+    <string name="network_4G" msgid="2723512640529983138">"4G (сунушталат)"</string>
+    <string name="network_global" msgid="1323190488685355309">"Глобалдуу"</string>
+    <!-- no translation found for cdma_system_select_title (5757657769327732833) -->
+    <skip />
+    <string name="cdma_system_select_summary" msgid="60460043745797517">"CDMA роуминг тартибин алмаштыруу"</string>
+    <!-- no translation found for cdma_system_select_dialogtitle (6083355415165359075) -->
+    <skip />
+    <!-- no translation found for cdma_system_select_choices:0 (176474317493999285) -->
+    <!-- no translation found for cdma_system_select_choices:1 (1205664026446156265) -->
+    <string name="cdma_subscription_title" msgid="1162564010076763284">"CDMA жазылуу"</string>
+    <!-- no translation found for cdma_subscription_summary (2530890766115781140) -->
+    <skip />
+    <!-- no translation found for cdma_subscription_dialogtitle (2699527950523333110) -->
+    <skip />
+    <!-- no translation found for cdma_subscription_choices:0 (2258014151300708431) -->
+    <!-- no translation found for cdma_subscription_choices:1 (5127722015571873880) -->
+    <!-- no translation found for cdma_subscription_values:0 (7494167883478914080) -->
+    <!-- no translation found for cdma_subscription_values:1 (6043847456049107742) -->
+    <!-- no translation found for cdma_activate_device (3793805892364814518) -->
+    <skip />
+    <!-- no translation found for cdma_lte_data_service (4255018217292548962) -->
+    <skip />
+    <string name="carrier_settings_title" msgid="9028166176523012300">"Оператордун тууралоолору"</string>
+    <!-- no translation found for fdn (7878832555095183202) -->
+    <skip />
+    <string name="fdn_with_label" msgid="187084204115493366">"Туруктуу терүү номерлери (<xliff:g id="SUBSCRIPTIONLABEL">%s</xliff:g>)"</string>
+    <!-- no translation found for manage_fdn_list (8777755791892122369) -->
+    <skip />
+    <string name="fdn_list_with_label" msgid="7437232552210469217">"FDN тизмеси (<xliff:g id="SUBSCRIPTIONLABEL">%s</xliff:g>)"</string>
+    <!-- no translation found for fdn_activation (2156479741307463576) -->
+    <skip />
+    <!-- no translation found for fdn_enabled (5238109009915521240) -->
+    <skip />
+    <!-- no translation found for fdn_disabled (4700049736675368279) -->
+    <skip />
+    <!-- no translation found for enable_fdn (3740191529180493851) -->
+    <skip />
+    <!-- no translation found for disable_fdn (7944020890722540616) -->
+    <skip />
+    <!-- no translation found for change_pin2 (2153563695382176676) -->
+    <skip />
+    <!-- no translation found for enable_fdn_ok (7215588870329688132) -->
+    <skip />
+    <!-- no translation found for disable_fdn_ok (5727046928930740173) -->
+    <skip />
+    <!-- no translation found for sum_fdn (1959399454900272878) -->
+    <skip />
+    <!-- no translation found for sum_fdn_change_pin (6666549734792827932) -->
+    <skip />
+    <!-- no translation found for sum_fdn_manage_list (8431088265332628316) -->
+    <skip />
+    <string name="voice_privacy" msgid="3776841382844614716">"Үн купуялуулугу"</string>
+    <!-- no translation found for voice_privacy_summary (3159383389833516214) -->
+    <skip />
+    <!-- no translation found for tty_mode_option_title (9033098925144434669) -->
+    <skip />
+    <!-- no translation found for tty_mode_option_summary (1073835131534808732) -->
+    <skip />
+    <string name="auto_retry_mode_title" msgid="4073265511427813322">"Авто-чалуу"</string>
+    <string name="auto_retry_mode_summary" msgid="4973886004067532288">"Авто-чалуу тартибин иштетүү"</string>
+    <string name="tty_mode_not_allowed_video_call" msgid="3795846787901909176">"Видео чалуу учурунда Телетайп түзмөк режимин өзгөртүүгө уруксат жок"</string>
+    <!-- no translation found for menu_add (1882023737425114762) -->
+    <skip />
+    <!-- no translation found for menu_edit (7143003705504672374) -->
+    <skip />
+    <!-- no translation found for menu_delete (3977150783449642851) -->
+    <skip />
+    <string name="get_pin2" msgid="8204677063922225311">"PIN2 териңиз"</string>
+    <!-- no translation found for name (7329028332786872378) -->
+    <skip />
+    <!-- no translation found for number (7905950798349903858) -->
+    <skip />
+    <!-- no translation found for save (4094274636321939086) -->
+    <skip />
+    <!-- no translation found for add_fdn_contact (2481915899633353976) -->
+    <skip />
+    <!-- no translation found for adding_fdn_contact (7627379633721940991) -->
+    <skip />
+    <!-- no translation found for fdn_contact_added (7458335758501736665) -->
+    <skip />
+    <!-- no translation found for edit_fdn_contact (7976936035587081480) -->
+    <skip />
+    <!-- no translation found for updating_fdn_contact (8370929876849803600) -->
+    <skip />
+    <!-- no translation found for fdn_contact_updated (5497828782609005017) -->
+    <skip />
+    <!-- no translation found for delete_fdn_contact (6668958073074151717) -->
+    <skip />
+    <!-- no translation found for deleting_fdn_contact (5669163206349319969) -->
+    <skip />
+    <!-- no translation found for fdn_contact_deleted (7154162327112259569) -->
+    <skip />
+    <string name="pin2_invalid" msgid="5470854099230755944">"БНТ жаңыртылган жок, анткени туура эмес PIN-код киргизилди."</string>
+    <string name="fdn_invalid_number" msgid="1494755047900009147">"БНТ жаңыртылган жок, анткени номур 20 сандан ашпашы керек."</string>
+    <string name="pin2_or_fdn_invalid" msgid="6025144083384701197">"БНТ жаңыртылган жок. PIN2 туура эмес, же телефон номуру жараксыз."</string>
+    <string name="fdn_failed" msgid="540018079008319747">"БНТ иши кыйрады."</string>
+    <!-- no translation found for simContacts_emptyLoading (2203331234764498011) -->
+    <skip />
+    <!-- no translation found for simContacts_empty (5270660846489561932) -->
+    <skip />
+    <!-- no translation found for simContacts_title (1861472842524839921) -->
+    <skip />
+    <string name="simContacts_airplaneMode" msgid="5254946758982621072">"SIM картадан байланыштарды импорттоо үчүн учак режимин өчүрүңүз."</string>
+    <!-- no translation found for enable_pin (5422767284133234860) -->
+    <skip />
+    <!-- no translation found for change_pin (9174186126330785343) -->
+    <skip />
+    <!-- no translation found for enter_pin_text (8532615714751931951) -->
+    <skip />
+    <!-- no translation found for oldPinLabel (5287773661246368314) -->
+    <skip />
+    <!-- no translation found for newPinLabel (207488227285336897) -->
+    <skip />
+    <!-- no translation found for confirmPinLabel (257597715098070206) -->
+    <skip />
+    <string name="badPin" msgid="8955102849303984935">"Сиз киргизген эски PIN-кодуңуз туура эмес. Кайра аракеттениңиз."</string>
+    <string name="mismatchPin" msgid="5923253370683071889">"Сиз терген PIN\'дер дал келишпейт. Кайра аракеттениңиз."</string>
+    <!-- no translation found for invalidPin (5981171102258684792) -->
+    <skip />
+    <string name="disable_sim_pin" msgid="3419351358300716472">"SIM PIN тазалоо"</string>
+    <string name="enable_sim_pin" msgid="4845145659651484248">"SIM PIN орнотуу"</string>
+    <string name="enable_in_progress" msgid="3417917024688497010">"PIN орнотулууда…"</string>
+    <string name="enable_pin_ok" msgid="2918545971413270063">"PIN орнотулду"</string>
+    <string name="disable_pin_ok" msgid="2109571368635883688">"PIN тазаланды"</string>
+    <string name="pin_failed" msgid="5644377896213584760">"PIN туура эмес"</string>
+    <string name="pin_changed" msgid="4455736268023261662">"PIN жаңыртылды"</string>
+    <string name="puk_requested" msgid="5921393215789090200">"Сырсөз туура эмес. PIN азыр бөгөттөлдү. PUK талап кылынат."</string>
+    <!-- no translation found for enter_pin2_text (8339444124477720345) -->
+    <skip />
+    <!-- no translation found for oldPin2Label (8559146795026261502) -->
+    <skip />
+    <!-- no translation found for newPin2Label (4573956902204349054) -->
+    <skip />
+    <!-- no translation found for confirmPin2Label (8100319484454787708) -->
+    <skip />
+    <string name="badPuk2" msgid="7910064009531541708">"PUK2 туура эмес. Кайра аракет кылыңыз."</string>
+    <string name="badPin2" msgid="6646896629970023109">"Эски PIN2 туура эмес. Кайра аракет кылыңыз."</string>
+    <string name="mismatchPin2" msgid="4177967478551851117">"PIN2лер дал келбейт. Кайра аракет кылыңыз."</string>
+    <string name="invalidPin2" msgid="1757045131429105595">"4-8 сандан турган PIN2 киргизиңиз."</string>
+    <string name="invalidPuk2" msgid="7059081153334815973">"8 сандан турган PUK2 киргизиңиз."</string>
+    <string name="pin2_changed" msgid="3724522579945610956">"PIN2 жаңыртылды"</string>
+    <string name="label_puk2_code" msgid="4688069961795341948">"PUK2 кодун киргизиңиз"</string>
+    <string name="fdn_enable_puk2_requested" msgid="4991074891459554705">"Сырсөз туура эмес. PIN2 азыр бөгөттөлдү. Кайра аракет кылып, PIN 2ни өзгөртүңүз."</string>
+    <string name="puk2_requested" msgid="5831015200030161434">"Сырсөз туура эмес. SIM азыр кулпуланды. PUK2 киргизиңиз."</string>
+    <string name="puk2_blocked" msgid="3150263853077280049">"PUK2 биротоло бөгөттөлдү."</string>
+    <string name="pin2_attempts" msgid="720736232885011507">\n"Сизде <xliff:g id="NUMBER">%d</xliff:g> аракет калды."</string>
+    <string name="pin2_unblocked" msgid="7791600368153469078">"Мындан ары PIN2 бөгөттөлбөйт"</string>
+    <string name="pin2_error_exception" msgid="1088689322248996699">"Тармак же SIM карта катасы"</string>
+    <!-- no translation found for doneButton (2859593360997984240) -->
+    <skip />
+    <!-- no translation found for voicemail_settings_number_label (8524164258691887790) -->
+    <skip />
+    <!-- no translation found for card_title_dialing (5769417478498348054) -->
+    <skip />
+    <string name="card_title_redialing" msgid="8253487008234167266">"Кайра терүү"</string>
+    <!-- no translation found for card_title_conf_call (1162980346189744501) -->
+    <skip />
+    <!-- no translation found for card_title_incoming_call (7364539451234646909) -->
+    <skip />
+    <!-- no translation found for card_title_call_ended (5544730338889702298) -->
+    <skip />
+    <!-- no translation found for card_title_on_hold (821463117892339942) -->
+    <skip />
+    <!-- no translation found for card_title_hanging_up (3999101620995182450) -->
+    <skip />
+    <!-- no translation found for card_title_in_call (6346543933068225205) -->
+    <skip />
+    <!-- no translation found for notification_voicemail_title (8933468752045550523) -->
+    <skip />
+    <!-- no translation found for notification_voicemail_title_count (4366360747660929916) -->
+    <skip />
+    <!-- no translation found for notification_voicemail_text_format (4447323569453981685) -->
+    <skip />
+    <!-- no translation found for notification_voicemail_no_vm_number (760963466895609716) -->
+    <skip />
+    <!-- no translation found for notification_network_selection_title (4224455487793492772) -->
+    <skip />
+    <!-- no translation found for notification_network_selection_text (2607085729661923269) -->
+    <skip />
+    <string name="incall_error_power_off" msgid="2947938060513306698">"Чалуу үчүн учак режимин өчүрүңүз."</string>
+    <string name="incall_error_power_off_wfc" msgid="8711428920632416575">"Чалуу үчүн учак режимин өчүрүңүз же зымсыз тармакка туташыңыз."</string>
+    <!-- no translation found for incall_error_emergency_only (4678640422710818317) -->
+    <skip />
+    <string name="incall_error_out_of_service" msgid="4100065333878929223">"Уюктук тармак жеткиликтүү эмес."</string>
+    <string name="incall_error_out_of_service_wfc" msgid="323851839058697057">"Уюлдук тармак жеткиликтүү эмес. Чалуу үчүн зымсыз тармакка туташыңыз."</string>
+    <string name="incall_error_no_phone_number_supplied" msgid="1150414018684246528">"Чалуу үчүн, жарактуу номер киргизиңиз."</string>
+    <string name="incall_error_call_failed" msgid="6302746943230078197">"Чалынбай жатат."</string>
+    <!-- no translation found for incall_status_dialed_mmi (3672498861336189563) -->
+    <skip />
+    <string name="incall_error_supp_service_unknown" msgid="655570339115407698">"Кызмат колдоого алынбайт"</string>
+    <string name="incall_error_supp_service_switch" msgid="5237002176899962862">"Чалуулар которуштурулбай жатат."</string>
+    <string name="incall_error_supp_service_separate" msgid="7224393405134545246">"Чалуу бөлүнбөй жатат."</string>
+    <string name="incall_error_supp_service_transfer" msgid="7235952238189391438">"Өткөрүлбөй жатат."</string>
+    <!-- no translation found for incall_error_supp_service_conference (2505727299596357312) -->
+    <skip />
+    <string name="incall_error_supp_service_reject" msgid="8998568661508655638">"Чалуу четке кагылбай жатат."</string>
+    <string name="incall_error_supp_service_hangup" msgid="7434513517153834426">"Чалуу(лар) бошотулбай жатат."</string>
+    <string name="incall_error_wfc_only_no_wireless_network" msgid="1782466780452640089">"Чалуу үчүн зымсыз тармакка туташыңыз."</string>
+    <!-- no translation found for emergency_enable_radio_dialog_title (4627849966634578257) -->
+    <skip />
+    <!-- no translation found for emergency_enable_radio_dialog_message (207613549344420291) -->
+    <skip />
+    <string name="emergency_enable_radio_dialog_retry" msgid="5960061579996526883">"Кызмат жок. Кайра аракет кылууда…"</string>
+    <string name="dial_emergency_error" msgid="1509085166367420355">"Чалынбай жатат. <xliff:g id="NON_EMERGENCY_NUMBER">%s</xliff:g> өзгөчө кырдаал номери эмес."</string>
+    <string name="dial_emergency_empty_error" msgid="9130194953830414638">"Чалынбай жатат. Өзгөчө кырдаал номерин териңиз."</string>
+    <!-- no translation found for dialerKeyboardHintText (9192914825413747792) -->
+    <skip />
+    <!-- no translation found for onscreenHoldText (2285258239691145872) -->
+    <skip />
+    <!-- no translation found for onscreenEndCallText (4403855834875398585) -->
+    <skip />
+    <!-- no translation found for onscreenShowDialpadText (8561805492659639893) -->
+    <skip />
+    <!-- no translation found for onscreenMuteText (5011369181754261374) -->
+    <skip />
+    <!-- no translation found for onscreenAddCallText (5140385634712287403) -->
+    <skip />
+    <!-- no translation found for onscreenMergeCallsText (6640195098064538950) -->
+    <skip />
+    <!-- no translation found for onscreenSwapCallsText (1602990689244030047) -->
+    <skip />
+    <!-- no translation found for onscreenManageCallsText (5473231160123254154) -->
+    <skip />
+    <!-- no translation found for onscreenManageConferenceText (6485935856534311346) -->
+    <skip />
+    <!-- no translation found for onscreenAudioText (1710087112800041743) -->
+    <skip />
+    <string name="onscreenVideoCallText" msgid="4800924186056115442">"Видео чалуу"</string>
+    <!-- no translation found for importSimEntry (6614358325359736031) -->
+    <skip />
+    <!-- no translation found for importAllSimEntries (1503181169636198673) -->
+    <skip />
+    <!-- no translation found for importingSimContacts (7374056215462575769) -->
+    <skip />
+    <!-- no translation found for importToFDNfromContacts (2130620207013368580) -->
+    <skip />
+    <!-- no translation found for hac_mode_title (8740268574688743289) -->
+    <skip />
+    <!-- no translation found for hac_mode_summary (6833851160514929341) -->
+    <skip />
+    <!-- no translation found for tty_mode_entries:0 (512950011423868021) -->
+    <!-- no translation found for tty_mode_entries:1 (3971695875449640648) -->
+    <!-- no translation found for tty_mode_entries:2 (1937509904407445684) -->
+    <!-- no translation found for tty_mode_entries:3 (5644925873488772224) -->
+    <string name="dtmf_tones_title" msgid="5163153771291340803">"DTMF сигналдары"</string>
+    <!-- no translation found for dtmf_tones_summary (3351820372864020331) -->
+    <skip />
+    <!-- no translation found for dtmf_tone_entries:0 (899650777817315681) -->
+    <!-- no translation found for dtmf_tone_entries:1 (2883365539347850535) -->
+    <string name="network_info_message" msgid="7738596060242881930">"Түйүн билдирүүсү"</string>
+    <string name="network_error_message" msgid="3394780436230411413">"Ката жөнүндө билдирүү"</string>
+    <!-- no translation found for ota_title_activate (8616918561356194398) -->
+    <skip />
+    <!-- no translation found for ota_touch_activate (6553212803262586244) -->
+    <skip />
+    <string name="ota_hfa_activation_title" msgid="2234246934160473981">"Жандырылууда..."</string>
+    <string name="ota_hfa_activation_dialog_message" msgid="8092479227918463415">"Телефон сиздин мобилдик берүү кызматыңызды жандырууда.\n\nБул 5 мүнөткө чейин созулушу мүмкүн."</string>
+    <!-- no translation found for ota_skip_activation_dialog_title (2943366608272261306) -->
+    <skip />
+    <!-- no translation found for ota_skip_activation_dialog_message (2440770373498870550) -->
+    <skip />
+    <!-- no translation found for ota_skip_activation_dialog_skip_label (3458532775091563208) -->
+    <skip />
+    <!-- no translation found for ota_activate (1368528132525626264) -->
+    <skip />
+    <string name="ota_title_activate_success" msgid="6570240212263372046">"Телефон жандырылды."</string>
+    <!-- no translation found for ota_title_problem_with_activation (7095824491970084367) -->
+    <skip />
+    <!-- no translation found for ota_listen (162923839877584937) -->
+    <skip />
+    <!-- no translation found for ota_speaker (6904589278542719647) -->
+    <skip />
+    <string name="ota_progress" msgid="460876637828044519">"Телефонуңуз программаланууда…"</string>
+    <string name="ota_failure" msgid="7713756181204620397">"Телефонуңуз программаланбай койду"</string>
+    <!-- no translation found for ota_successful (1880780692887077407) -->
+    <skip />
+    <string name="ota_unsuccessful" msgid="8072141612635635357">"Телефонуңуз жандырылган жок.\nБалким байланышты жакшыраак кармаган орун табышыңыз керек (терезенин жаны же эшикте).\n\nКайрадан аракет кылыңыз же көбүрөөк мүмкүнчүлүк алыш үчүн, кардарларды колдоо кызматына чалыңыз."</string>
+    <!-- no translation found for ota_spc_failure (3909983542575030796) -->
+    <skip />
+    <!-- no translation found for ota_call_end (4537279738134612388) -->
+    <skip />
+    <!-- no translation found for ota_try_again (7685477206465902290) -->
+    <skip />
+    <!-- no translation found for ota_next (3904945374358235910) -->
+    <skip />
+    <!-- no translation found for ecm_exit_dialog (4448531867763097533) -->
+    <skip />
+    <!-- no translation found for phone_entered_ecm_text (6266424252578731203) -->
+    <skip />
+    <!-- no translation found for phone_in_ecm_notification_title (3226896828951687085) -->
+    <skip />
+    <!-- no translation found for phone_in_ecm_call_notification_text (4611608947314729773) -->
+    <skip />
+    <plurals name="phone_in_ecm_notification_time" formatted="false" msgid="8308381858502470919">
+      <item quantity="other"><xliff:g id="COUNT_1">%s</xliff:g> мүнөт бою маалыматтык туташуу болбойт</item>
+      <item quantity="one"><xliff:g id="COUNT_0">%s</xliff:g> мүнөт бою маалыматтык туташуу болбойт</item>
+    </plurals>
+    <plurals name="alert_dialog_exit_ecm" formatted="false" msgid="7179911675595441201">
+      <item quantity="other">Телефон Шашылыш кайра чалуу режиминде <xliff:g id="COUNT_1">%s</xliff:g> мүнөт бою болот. Бул режим күйүп турганда маалыматтык туташууну пайдаланган эч бир колдонмо иштетилбейт. Азыр чыгып кеткиңиз келеби?</item>
+      <item quantity="one">Телефон Шашылыш кайра чалуу режиминде <xliff:g id="COUNT_0">%s</xliff:g> мүнөт бою болот. Бул режим күйүп турганда маалыматтык туташууну пайдаланган эч бир колдонмо иштетилбейт. Азыр чыгып кеткиңиз келеби?</item>
+    </plurals>
+    <plurals name="alert_dialog_not_avaialble_in_ecm" formatted="false" msgid="8042973425225093895">
+      <item quantity="other">Тандалган аракет Шашылыш кайра чалуу режиминде жеткиликтүү эмес. Телефон бул режимде <xliff:g id="COUNT_1">%s</xliff:g> мүнөт бою болот. Азыр чыгып кеткиңиз келеби?</item>
+      <item quantity="one">Тандалган аракет Шашылыш кайра чалуу режиминде жеткиликтүү эмес. Телефон бул режимде <xliff:g id="COUNT_0">%s</xliff:g> мүнөт бою болот. Азыр чыгып кеткиңиз келеби?</item>
+    </plurals>
+    <string name="alert_dialog_in_ecm_call" msgid="1886723687211887104">"Куткаруучуларга чалуу учурунда, бул тандалган аракет аткарылбайт."</string>
+    <string name="progress_dialog_exiting_ecm" msgid="4835734101617817074">"Куткаруучулардын Кайра Чалуусу тартибинен чыгуу"</string>
+    <!-- no translation found for alert_dialog_yes (6674268047820703974) -->
+    <skip />
+    <!-- no translation found for alert_dialog_no (1476091437797628703) -->
+    <skip />
+    <!-- no translation found for alert_dialog_dismiss (2491494287075907171) -->
+    <skip />
+    <string name="voicemail_provider" msgid="5135942703327136909">"Кызмат"</string>
+    <string name="voicemail_settings" msgid="72448049107749316">"Орнотуу"</string>
+    <string name="voicemail_number_not_set" msgid="6724904736891087856">"&lt;Орнотулган эмес&gt;"</string>
+    <!-- no translation found for other_settings (3672912580359716394) -->
+    <skip />
+    <string name="calling_via_template" msgid="4839419581866928142">"<xliff:g id="PROVIDER_NAME">%s</xliff:g> аркылуу чалуу"</string>
+    <!-- no translation found for contactPhoto (4713193418046639466) -->
+    <skip />
+    <!-- no translation found for goPrivate (865837794424530980) -->
+    <skip />
+    <!-- no translation found for selectContact (781975788478987237) -->
+    <skip />
+    <!-- no translation found for not_voice_capable (2739898841461577811) -->
+    <skip />
+    <!-- no translation found for description_dial_button (7459705245418435351) -->
+    <skip />
+    <string name="voicemail_notification_vibrate_when_title" msgid="8361970092063604886">"Титиретүү"</string>
+    <string name="voicemail_notification_vibarte_when_dialog_title" msgid="5739583146522136440">"Титиретүү"</string>
+    <string name="voicemail_visual_voicemail_switch_title" msgid="5012622186976275457">"Визуалдык үн почтасы"</string>
+    <string name="voicemail_notification_ringtone_title" msgid="2609519527849101590">"Үнү"</string>
+    <string name="preference_category_ringtone" msgid="5197960752529332721">"Рингтон жана Титирөө"</string>
+    <string name="pstn_connection_service_label" msgid="1743245930577325900">"Кыналган SIM карталар"</string>
+    <string name="enable_video_calling_title" msgid="7237253660669000899">"Видео чалууну күйгүзүү"</string>
+    <string name="enable_video_calling_dialog_msg" msgid="8948186136957417948">"Видео чалууну күйгүзүү үчүн, тармак жөндөөлөрүнөн Жакшыртылган 4G LTE режимин иштетишиңиз керек."</string>
+    <string name="enable_video_calling_dialog_settings" msgid="576528473599603249">"Тармак жөндөөлөрү"</string>
+    <string name="enable_video_calling_dialog_close" msgid="7411471282167927991">"Жабуу"</string>
+    <string name="sim_label_emergency_calls" msgid="4847699229529306397">"Шашылыш чалуулар"</string>
+    <string name="sim_description_emergency_calls" msgid="7535215397212301562">"Шашылыш чалуу гана"</string>
+    <string name="sim_description_default" msgid="4778679519938775515">"SIM-карта, оюкча: <xliff:g id="SLOT_ID">%s</xliff:g>"</string>
+    <string name="accessibility_settings_activity_title" msgid="8562004288733103868">"Жеткиликтүүлүк"</string>
+    <string name="status_hint_label_incoming_wifi_call" msgid="8772915926382037499">"Кирүүчү Wi-Fi чалуу"</string>
+    <string name="status_hint_label_wifi_call" msgid="8900805254974653903">"Wi-Fi чалуу"</string>
+    <string name="emergency_action_launch_hint" msgid="5841511849007540970">"Ачуу үчүн кайра тийиңиз"</string>
+    <string name="message_decode_error" msgid="3456481534066924855">"Билдирүү дешифрленип жатканда ката кеткен."</string>
+    <string name="callFailed_cdma_activation" msgid="2307989779233262164">"SIM-карта кызматыңызды жандырып, телефонуңуздун роуминг мүмкүнчүлүктөрүн жаңыртты."</string>
+</resources>

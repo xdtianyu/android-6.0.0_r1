@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2014 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="wifi_setup_input_password" msgid="4324884380214448502">"<xliff:g id="SSID">%1$s</xliff:g> нууц үгээ оруулна уу"</string>
+    <string name="wifi_setup_waiting_for_join" msgid="42826539810553389">"Холбогдож байна ^1"</string>
+    <string name="wifi_setup_connection_success" msgid="3362351168182711828">"Амжилттай холбогдсон!"</string>
+    <string name="wifi_setup_save_success" msgid="2001513015933996675">"Амжилттай хадгалагдсан!"</string>
+    <string name="device_apps_app_management_version" msgid="6315648665194084382">"хувилбар <xliff:g id="APP_VERSION">%1$s</xliff:g>"</string>
+    <string name="device_apps_app_management_open" msgid="3326361233913951387">"Нээх"</string>
+    <string name="device_apps_app_management_force_stop" msgid="1803832648099079651">"Хүчээр зогсоох"</string>
+    <string name="device_apps_app_management_force_stop_desc" msgid="221435219644064243">"Хэрэв апп-г хүчээр зогсоовол буруу ажиллаж магадгүй."</string>
+    <string name="device_apps_app_management_uninstall" msgid="6054050725055974790">"Устгах"</string>
+    <string name="device_apps_app_management_uninstall_desc" msgid="3542570994262234511">"Та энэ апп-г устгамаар байна уу?"</string>
+    <string name="device_apps_app_management_disable" msgid="1461984395121717076">"Идэвхгүй болгох"</string>
+    <string name="device_apps_app_management_disable_desc" msgid="1362228583828208991">"Та энэ апликейшнийг идэвхгүй болгомоор байна уу?"</string>
+    <string name="device_apps_app_management_enable" msgid="8794752872502256633">"Идэвхжүүлэх"</string>
+    <string name="device_apps_app_management_enable_desc" msgid="6449017972628203288">"Та энэ апликейшнийг идэвхтэй болгомоор байна уу?"</string>
+    <string name="device_apps_app_management_clear_data" msgid="8288695583331012586">"Датаг арилгах"</string>
+    <string name="device_apps_app_management_clear_data_desc" msgid="2197842469669426232">"Энэ бүх апп дата бүрмөсөн устах болно."</string>
+    <string name="device_apps_app_management_clear_data_what" msgid="376666756087041021">"Үүнд бүх файл, тохиргоо, акаунт, датабааз гэх мэт орно."</string>
+    <string name="device_apps_app_management_clear_default" msgid="6654723680469212060">"Үндсэн тохиргоог арилгах"</string>
+    <string name="device_apps_app_management_clear_default_set" msgid="6233682647156684225">"Зарим үйлдэлд энэ апп-г эхлүүлэхээр тохируулсан"</string>
+    <string name="device_apps_app_management_clear_default_none" msgid="6312021202504995474">"Үндсэн тохиргоог хийгээгүй"</string>
+    <string name="device_apps_app_management_clear_cache" msgid="7878530504449821203">"Кешийг арилгах"</string>
+    <string name="device_apps_app_management_notifications" msgid="7069935222112158478">"Мэдэгдэл"</string>
+    <string name="device_apps_app_management_permissions" msgid="5758303833496289673">"Зөвшөөрөл"</string>
+    <string name="settings_ok" msgid="5501301223475616254">"Тийм"</string>
+    <string name="settings_cancel" msgid="1649053173330804917">"Цуцлах"</string>
+    <string name="settings_on" msgid="1295064657786011878">"Идэвхтэй"</string>
+    <string name="settings_off" msgid="4439170658516725721">"Идэвхгүй"</string>
+    <string name="device_daydreams_none" msgid="5310233518671772034">"Хоосон"</string>
+    <string name="device_daydreams_select" msgid="1754678562660674925">"Дэлгэц амраах"</string>
+    <string name="device_daydreams_test" msgid="7442554912076991502">"Одоо эхлүүлэх"</string>
+    <string name="device_daydreams_sleep" msgid="5263432145910468025">"Хэзээ дэлгэцийг амраах"</string>
+    <string name="device_daydreams_sleep_description" msgid="8438730889852772376">"Дэлгэц амраагчийг ийм хугацаанд идэвхгүй байсны дараа ажиллуулна. Хэрэв дэлгэц амраагч сонгоогүй бол дэлгэц унтрах болно."</string>
+    <string name="device_daydreams_sleep_summary" msgid="4442691086777437088">"Идвэхгүй <xliff:g id="SLEEP_DESCRIPTION">%1$s</xliff:g> болсны дараа"</string>
+    <string name="device_daydreams_screen_off" msgid="1846621864054404830">"Хэзээ унтах"</string>
+    <string name="device_daydreams_screen_off_description" msgid="7699124270812914310">"Идэвхгүй энэ хугацаа өнгөрсний дараа дэлгэц унтарна."</string>
+    <string name="device_daydreams_screen_off_summary" msgid="6350806465141059041">"<xliff:g id="SLEEP_DESCRIPTION">%1$s</xliff:g> дэлгэц амраасны дараа"</string>
+    <string name="backup_configure_account_default_summary" msgid="2013649183664358673">"Одоогоор  нөөшлөгдсөн датаг хадгалж байгаа акаунт байхгүй байна"</string>
+    <string name="backup_erase_dialog_title" msgid="8900389956460363471"></string>
+    <string name="backup_erase_dialog_message" msgid="448169495686297910">"Өөрийн Wi‑Fi нууц үгс, тэмдэглэгээ, бусад тохиргоонууд болон апп датаг Google серверт нөөшлөхийг зогсоож бүх хуулбарыг нь устгах уу?"</string>
+    <string name="privacy_backup_data" msgid="3652306596140877278">"Миний датаг нөөшлөх"</string>
+    <string name="privacy_backup_account" msgid="6127132568071889274">"Нөөшлөх акаунт"</string>
+    <string name="privacy_automatic_restore" msgid="8896792578363571896">"Автоматаар сэргээх"</string>
+    <string name="factory_reset_device" msgid="7615350252195583106">"Төхөөрөмжийг дахин эхлүүлэх"</string>
+    <string name="factory_reset_description" msgid="6709336495536583649">"Энэ таны Google-ийн данс, систем болон програмын өгөгдөл, тохиргоо, татаж авсан програм зэрэг бүх мэдээллийг таны төхөөрөмжийн доод санах ойгоос устгана."</string>
+    <string name="confirm_factory_reset_description" msgid="5710644039419606428">"Таны бүх хувийн мэдээлэл болон татсан апп-уудыг устгах уу? Та энэ үйлдлийг дараа буцаах боломжгүй!"</string>
+    <string name="confirm_factory_reset_device" msgid="519046408823105666">"Бүгдийг устгах"</string>
+    <string name="dismiss_all_notifications" msgid="3350731990365092847">"Бүгдийг алгасах"</string>
+    <string name="no_notifications" msgid="3241328952121767751">"Хоосон"</string>
+    <string name="do_not_disturb_title" msgid="1050245577355301376">"Бүү саад бол"</string>
+    <string name="do_not_disturb_desc" msgid="3186041965642361597">"Идэвхжүүлсэн үед шинэ мэдэгдлүүд зөвхөн Тохиргоо дотор харагдах болно"</string>
+    <string name="select_title" msgid="2657901623249723536">"Өөрийн ^1-д нэр сонгоно уу"</string>
+    <string name="select_description" msgid="4080602542483519716">"Нэр өгөх нь утас, таблет, компьютер зэрэг өөр төхөөрөмжөөс хандалт хийхэд таны ^1-г танихад туслана."</string>
+  <string-array name="rooms">
+    <item msgid="2748008285322003570">"Зочны өрөө"</item>
+    <item msgid="7887185726776968055">"Медиа өрөө"</item>
+    <item msgid="372573326176756144">"Гэр бүлийн өрөө"</item>
+    <item msgid="8112576067079559786">"Хоолны өрөө"</item>
+    <item msgid="2891751328917513846">"Ажлын өрөө"</item>
+    <item msgid="7390608863950443962">"Унтлагын өрөө"</item>
+    <item msgid="682313511953895794">"Гал тогооны өрөө"</item>
+  </string-array>
+    <string name="custom_room" msgid="5972936200641815527">"Тохируулсан нэр оруулна уу..."</string>
+    <string name="settings_status_title" msgid="3280459921834269206">"Энэ ^1 нэртэй"</string>
+    <string name="settings_status_description" msgid="4892610880616296037">"\"^1\" нь энэ ^2-н нэр. Та үүнийг өөрчлөх үү?"</string>
+    <string name="change_setting" msgid="199354038426145612">"Солих"</string>
+    <string name="keep_settings" msgid="549230720820096102">"Үл өөрчлөх"</string>
+    <string name="menu_help" msgid="2164687828212723531">"Тусламж"</string>
+    <string name="setup_failure_title" msgid="4408868360762577232">"Алдаа гарлаа"</string>
+    <string name="setup_failure_button_retry" msgid="4917381906591779977">"Дахин оролдох"</string>
+</resources>

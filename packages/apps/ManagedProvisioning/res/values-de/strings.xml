@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+/**
+ * Copyright (C) 2014 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="provisioning_error_title" msgid="6320515739861578118">"Hoppla!"</string>
+    <string name="setup_work_profile" msgid="9164519662954159586">"Profil einrichten"</string>
+    <string name="company_controls_workspace" msgid="2808025277267917221">"Ihr Unternehmen verwaltet dieses Profil und sorgt für seine Sicherheit. Sie verwalten alle anderen Aspekte Ihres Geräts."</string>
+    <string name="company_controls_device" msgid="8230957518758871390">"Ihre Organisation hat die Kontrolle über das Gerät und sorgt für den entsprechenden Schutz."</string>
+    <string name="the_following_is_your_mdm" msgid="6613658218262376404">"Die folgende App benötigt Zugriff auf dieses Profil:"</string>
+    <string name="the_following_is_your_mdm_for_device" msgid="6717973404364414816">"Ihr Gerät wird von der folgenden App verwaltet:"</string>
+    <string name="set_up" msgid="7012862095553564169">"Einrichten"</string>
+    <string name="setting_up_workspace" msgid="4517537806569988620">"Arbeitsprofil wird eingerichtet…"</string>
+    <string name="admin_has_ability_to_monitor_profile" msgid="4568398182707822770">"Ihr Administrator kann die mit diesem Profil verknüpften Einstellungen, Unternehmenszugriffsrechte, Apps, Berechtigungen und Daten überwachen und verwalten, einschließlich der Netzwerkaktivitäten und der Standortinformationen Ihres Geräts."</string>
+    <string name="admin_has_ability_to_monitor_device" msgid="246829528286153147">"Ihr Administrator kann die mit diesem Gerät verbundenen Einstellungen, Unternehmenszugriffsrechte, Apps, Berechtigungen und Daten überwachen und verwalten, einschließlich der Netzwerkaktivitäten und der Standortinformationen Ihres Geräts."</string>
+    <string name="theft_protection_disabled_warning" msgid="8132394739905501698">"Wenn Sie fortfahren, werden die Funktionen zum Schutz vor Diebstahl nicht aktiviert. Um den Diebstahlschutz zu aktivieren, brechen Sie den Vorgang jetzt ab und richten Sie das Gerät als persönliches Gerät ein."</string>
+    <string name="contact_your_admin_for_more_info" msgid="6870084889394621288">"Weitere Informationen, auch zur Datenschutzerklärung Ihrer Organisation, erhalten Sie bei Ihrem Administrator."</string>
+    <string name="learn_more_link" msgid="3012495805919550043">"Weitere Informationen"</string>
+    <string name="cancel_setup" msgid="3295266841772028057">"Abbrechen"</string>
+    <string name="ok_setup" msgid="5148111905838329307">"OK"</string>
+    <string name="default_managed_profile_name" msgid="5370257687074907055">"Arbeitsprofil"</string>
+    <string name="delete_profile_title" msgid="3097803266123463699">"Arbeitsprofil entfernen?"</string>
+    <string name="opening_paragraph_delete_profile_unknown_company" msgid="2139238673477554356">"Es ist bereits ein Arbeitsprofil vorhanden und wird verwaltet von:"</string>
+    <string name="opening_paragraph_delete_profile_known_company" msgid="3126629826260821264">"Dieses Arbeitsprofil wird für %s von der folgenden App verwaltet:"</string>
+    <string name="read_more_delete_profile" msgid="7789171620401666343">"Bevor Sie fortfahren, "<a href="#read_this_link">"lesen Sie diese Informationen"</a>"."</string>
+    <string name="sure_you_want_to_delete_profile" msgid="1336653819166266605">"Wenn Sie den Vorgang fortsetzen, werden alle Apps und Daten in diesem Profil gelöscht."</string>
+    <string name="delete_profile" msgid="8384444459432563649">"Löschen"</string>
+    <string name="cancel_delete_profile" msgid="5500786140389799348">"Abbrechen"</string>
+    <string name="encrypt_device_text_for_profile_owner_setup" msgid="4325067657681168120">"Um mit dem Einrichten Ihres Arbeitsprofils fortzufahren, müssen Sie Ihr Gerät verschlüsseln. Dies kann einige Zeit dauern."</string>
+    <string name="encrypt_device_text_for_device_owner_setup" msgid="9206667711446040692">"Um mit dem Einrichten Ihres Geräts fortzufahren, müssen Sie es verschlüsseln. Dies kann einige Zeit dauern."</string>
+    <string name="encrypt_device_cancel" msgid="5989855177432338238">"Abbrechen"</string>
+    <string name="encrypt_device_launch_settings" msgid="5421412897999811117">"Verschlüsseln"</string>
+    <string name="continue_provisioning_notify_title" msgid="5191449100153186648">"Verschlüsselung abgeschlossen"</string>
+    <string name="continue_provisioning_notify_text" msgid="3027317630111909095">"Tippen, um das Einrichten des Arbeitsprofils fortzusetzen"</string>
+    <string name="managed_provisioning_error_text" msgid="7063621174570680890">"Ihr Arbeitsprofil konnte nicht eingerichtet werden. Bitte wenden Sie sich an Ihre IT-Abteilung oder versuchen Sie es später erneut."</string>
+    <string name="managed_provisioning_not_supported" msgid="6582227325719911795">"Ihr Gerät unterstützt keine Arbeitsprofile."</string>
+    <string name="user_is_not_owner" msgid="6193230832887977927">"Arbeitsprofile müssen vom primären Nutzer des Geräts eingerichtet werden."</string>
+    <string name="device_owner_exists" msgid="8020080296133337023">"Auf verwalteten Geräten können keine Arbeitsprofile eingerichtet werden."</string>
+    <string name="maximum_user_limit_reached" msgid="4821228722266114449">"Das Arbeitsprofil kann nicht erstellt werden, da die maximale Nutzeranzahl auf diesem Gerät bereits erreicht wurde. Bitte entfernen Sie mindestens einen Nutzer und versuchen Sie es erneut."</string>
+    <string name="managed_provisioning_not_supported_by_launcher" msgid="8710138269807942163">"Ihr Arbeitsprofil wird von dieser Launcher-App nicht unterstützt. Wechseln Sie zu einem kompatiblen Launcher."</string>
+    <string name="cancel_provisioning" msgid="3753408161948407036">"Abbrechen"</string>
+    <string name="pick_launcher" msgid="4811489057826175648">"OK"</string>
+    <string name="default_owned_device_username" msgid="3915120202811807955">"Nutzer des Dienstgeräts"</string>
+    <string name="setup_work_device" msgid="3028145936574439146">"Gerät einrichten"</string>
+    <string name="progress_data_process" msgid="1707745321954672971">"Einrichtungsdaten werden verarbeitet…"</string>
+    <string name="progress_connect_to_wifi" msgid="472251154628863539">"WLAN-Verbindung wird hergestellt…"</string>
+    <string name="progress_download" msgid="3522436271691064624">"Admin-App wird heruntergeladen…"</string>
+    <string name="progress_install" msgid="2258045670385866183">"Admin-App wird installiert…"</string>
+    <string name="progress_set_owner" msgid="8214062820093757961">"Geräteeigentümer wird eingerichtet…"</string>
+    <string name="device_owner_cancel_message" msgid="2529288571742712065">"Einrichtung abbrechen und Daten von Ihrem Gerät löschen?"</string>
+    <string name="device_owner_cancel_cancel" msgid="1398290143405142587">"Abbrechen"</string>
+    <string name="device_owner_error_ok" msgid="2556654993515978854">"OK"</string>
+    <string name="device_owner_error_reset" msgid="5278392395769857412">"Zurücksetzen"</string>
+    <string name="device_owner_error_general" msgid="5962462955470123776">"Das Gerät konnte nicht eingerichtet werden. Bitte wenden Sie sich an Ihre IT-Abteilung."</string>
+    <string name="device_owner_error_already_provisioned" msgid="49944866843771627">"Dieses Gerät ist bereits eingerichtet."</string>
+    <string name="device_owner_error_already_provisioned_user" msgid="5861348691161504683">"Dieses Gerät ist bereits für diesen Nutzer eingerichtet."</string>
+    <string name="device_owner_error_wifi" msgid="4256310285761332378">"Es konnte keine WLAN-Verbindung hergestellt werden."</string>
+    <string name="device_owner_error_frp" msgid="7053630342416280252">"Dieses Gerät ist durch den Schutz vor Zurücksetzen auf die Werkseinstellungen gesperrt. Bitte wenden Sie sich an Ihre IT-Abteilung."</string>
+    <string name="frp_clear_progress_title" msgid="8628074089458234965">"Löschen"</string>
+    <string name="frp_clear_progress_text" msgid="1740164332830598827">"Bitte warten..."</string>
+    <string name="device_owner_error_hash_mismatch" msgid="184518450016295596">"Fehler bei der Prüfsumme. Die Admin-App kann nicht genutzt werden. Bitte wenden Sie sich an Ihre IT-Abteilung."</string>
+    <string name="device_owner_error_download_failed" msgid="4520111971592657116">"Die Admin-App konnte nicht heruntergeladen werden."</string>
+    <string name="device_owner_error_package_invalid" msgid="3816725179069202140">"Die Admin-App kann nicht genutzt werden. Sie wurde beschädigt oder es fehlen Komponenten. Bitte wenden Sie sich an Ihre IT-Abteilung."</string>
+    <string name="device_owner_error_package_name_invalid" msgid="5161432357348636936">"Die Admin-App kann nicht installiert werden. Der Paketname ist ungültig. Bitte wenden Sie sich an Ihre IT-Abteilung."</string>
+    <string name="device_owner_error_installation_failed" msgid="684566845601079360">"Die Admin-App konnte nicht installiert werden."</string>
+    <string name="device_owner_error_package_not_installed" msgid="6095079346537408556">"Die Admin-App ist nicht auf Ihrem Gerät installiert."</string>
+    <string name="profile_owner_cancel_message" msgid="6868736915633023477">"Einrichtung abbrechen?"</string>
+    <string name="profile_owner_cancel_cancel" msgid="1035206963979858009">"Nein"</string>
+    <string name="profile_owner_cancel_ok" msgid="4915817426681209592">"Ja"</string>
+    <string name="profile_owner_cancelling" msgid="5679573829145112822">"Vorgang wird abgebrochen…"</string>
+    <string name="work_profile_setup_later_title" msgid="9069148190226279892">"Profileinrichtung abbrechen?"</string>
+    <string name="work_profile_setup_later_message" msgid="2446733709871989895">"Sie können Ihr Arbeitsprofil später über die von Ihrer Organisation verwendete Geräteverwaltungs-App einrichten."</string>
+    <string name="work_profile_setup_continue" msgid="44459981285359765">"Weiter"</string>
+    <string name="work_profile_setup_stop" msgid="5739020120488653974">"Abbrechen"</string>
+    <string name="provisioning" msgid="4512493827019163451">"Nutzerverwaltung"</string>
+    <string name="copying_certs" msgid="5697938664953550881">"CA-Zertifikate werden eingerichtet"</string>
+    <string name="setup_profile_start_setup" msgid="6793984532953528297">"Profil einrichten. Einrichtung starten."</string>
+    <string name="setup_profile_encryption" msgid="5241291404536277038">"Profil einrichten. Verschlüsselung."</string>
+    <string name="setup_profile_progress" msgid="7742718527853325656">"Profil einrichten. Fortschritt wird angezeigt."</string>
+    <string name="setup_device_start_setup" msgid="4351340224000741826">"Gerät einrichten. Einrichtung starten."</string>
+    <string name="setup_device_encryption" msgid="7852944465414197103">"Gerät einrichten. Verschlüsselung."</string>
+    <string name="setup_device_progress" msgid="7035335208571175393">"Gerät einrichten. Fortschritt wird angezeigt."</string>
+    <string name="learn_more_label" msgid="2723716758654655009">"Schaltfläche \"Weitere Informationen\""</string>
+    <string name="mdm_icon_label" msgid="3399134595549660561">"Symbol \"<xliff:g id="ICON_LABEL">%1$s</xliff:g>\""</string>
+</resources>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2008 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="exchange_name_alternate" msgid="293118547772095111">"Microsoft Exchange ක්‍රියාකාරී සමමුහුර්තය"</string>
+    <string name="meeting_accepted" msgid="3212429159225789973">"පිළිගන්නා ලද: <xliff:g id="SUBJECT">%s</xliff:g>"</string>
+    <string name="meeting_declined" msgid="1171426219920875691">"ප්‍රතික්ෂේප කරන ලද: <xliff:g id="SUBJECT">%s</xliff:g>"</string>
+    <string name="meeting_tentative" msgid="5057443956630531997">"තාවකාලික: <xliff:g id="SUBJECT">%s</xliff:g>"</string>
+    <string name="meeting_canceled" msgid="3913922862382539900">"අවලංගුයි: <xliff:g id="SUBJECT">%s</xliff:g>"</string>
+    <string name="meeting_updated" msgid="5960663236439072658">"යාවත් කාලින කළ: <xliff:g id="SUBJECT">%s</xliff:g>"</string>
+    <string name="meeting_when" msgid="1905576664682173880">"කවදාද: <xliff:g id="WHEN">%s</xliff:g>"</string>
+    <string name="meeting_where" msgid="6498631574145121862">"කොහෙද: <xliff:g id="WHERE">%s</xliff:g>"</string>
+    <string name="meeting_recurring" msgid="2752008481765880928">"කවදාද: <xliff:g id="EVENTDATE">%s</xliff:g> (ආවර්ත වෙමින්)"</string>
+    <string name="meeting_allday" msgid="7251209063071628040">"කවදාද: <xliff:g id="EVENTDATE">%s</xliff:g> (සියලුම දින)"</string>
+    <string name="meeting_allday_recurring" msgid="4545762363537362545">"කවදාද: <xliff:g id="EVENTDATE">%s</xliff:g> (සියලු දින, ආවර්ත වෙමින්)"</string>
+    <string name="app_name" msgid="1707639359526090662">"හුවමාරු සේවාවන්"</string>
+    <string name="exception_cancel" msgid="8972887597771126871">"මෙම සිද්ධිය අවලංගු වන්නේ: <xliff:g id="DATE">%s</xliff:g>"</string>
+    <string name="exception_updated" msgid="329192591551400871">"මෙම සිද්ධියේ තොරතුරු වෙනස් වන්නේ: <xliff:g id="DATE">%s</xliff:g>"</string>
+    <string name="policy_dont_allow_storage_cards" msgid="1305111581282078881">"ආචයන කාඩ පත් සඳහා ඉඩ නොදෙන්න"</string>
+    <string name="policy_dont_allow_unsigned_apps" msgid="7663879438028397642">"සහතික නොකළ යෙදුම්වලට ඉඩ නොදෙන්න"</string>
+    <string name="policy_dont_allow_unsigned_installers" msgid="8227232531632246827">"සහතික නොකළ යෙදුම් ස්ථාපනයන්ට ඉඩ නොදෙන්න"</string>
+    <string name="policy_dont_allow_wifi" msgid="8501275982154914194">"Wi-Fi සඳහා ඉඩ නොදෙන්න"</string>
+    <string name="policy_dont_allow_text_messaging" msgid="860590081742537792">"පෙළ පණිවිඩ වලට ඉඩ නොදෙන්න"</string>
+    <string name="policy_dont_allow_pop_imap" msgid="5772539239469636191">"POP3 හෝ IMAP ගිණුම් සඳහා ඉඩ නොදෙන්න"</string>
+    <string name="policy_dont_allow_irda" msgid="8230803019935893114">"අධෝරක්ත සන්නිවේදනයට ඉඩ නොදෙන්න"</string>
+    <string name="policy_dont_allow_html" msgid="3909470006782362967">"HTML ඊ-තැපැල් වලට ඉඩ නොදෙන්න"</string>
+    <string name="policy_dont_allow_browser" msgid="241728112385525092">"බ්‍රව්සර් වලට ඉඩ නොදෙන්න"</string>
+    <string name="policy_dont_allow_consumer_email" msgid="2473755560531860915">"පරිභෝජක ඊ-තැපෑලට ඉඩ නොදෙන්න"</string>
+    <string name="policy_dont_allow_internet_sharing" msgid="8926902533477728994">"අන්තර්ජාල බෙදා ගැනීම් වලට ඉඩ නොදෙන්න"</string>
+    <string name="policy_require_smime" msgid="6445017199744800426">"SMIME පණිවිඩ අවශ්‍යය"</string>
+    <string name="policy_bluetooth_restricted" msgid="2877695021606992022">"බ්ලුටුත් භාවිතය සීමා කරන්න"</string>
+    <string name="policy_app_blacklist" msgid="6955451921925210944">"සඳහන් කළ යෙදුම් වලට ඉඩ නොදෙන්න"</string>
+    <string name="policy_app_whitelist" msgid="73673250614393830">"සඳහන් කළ යෙදුම් වලට පමණක් ඉඩ දෙන්න"</string>
+    <string name="policy_text_truncation" msgid="2098855720139889616">"පෙළ ඊ-තැපැල් ප්‍රමාණය සීමා කරන්න"</string>
+    <string name="policy_html_truncation" msgid="4913206221060438112">"HTML ඊ-තැපැල් ප්‍රමාණය සීමා කරන්න"</string>
+    <string name="policy_require_sd_encryption" msgid="3911913080904633038">"SD කාඩ් පත් සංකේතනය අවශ්‍යය"</string>
+    <string name="policy_dont_allow_attachments" msgid="8422502533001368811">"ඇමුණුම්වලට ඉඩ නොදෙන්න"</string>
+    <string name="policy_max_attachment_size" msgid="8872049367518056209">"ඇමුණුම් ප්‍රමාණය සීමා කරන්න"</string>
+    <string name="policy_require_manual_sync_roaming" msgid="4779633041935012627">"රෝමින් අතරතුර අතින් සමමුහුර්ත කිරීමට පමණක් ඉඩදෙන්න"</string>
+    <string name="policy_require_encryption" msgid="4176146021220010140">"උපාංග සංකේතනය අවශ්‍යය"</string>
+    <string name="account_setup_options_mail_window_auto" msgid="7407981634952005775">"ස්වයංක්‍රිය"</string>
+    <string name="account_setup_options_mail_window_1day" msgid="4169162439752592189">"එක් දින"</string>
+    <string name="account_setup_options_mail_window_3days" msgid="2330167870774583574">"දින තුනක්"</string>
+    <string name="account_setup_options_mail_window_1week" msgid="5066291978475859713">"සති එකකි"</string>
+    <string name="account_setup_options_mail_window_2weeks" msgid="2127842445792663461">"සති දෙකකි"</string>
+    <string name="account_setup_options_mail_window_1month" msgid="4785039795926771180">"එක් මසක්"</string>
+    <string name="account_setup_options_mail_window_all" msgid="4794683936065721438">"සියලු"</string>
+    <string name="auth_error_notification_title" msgid="6768042010440968454">"සත්‍යාපන දෝෂයකි"</string>
+    <string name="auth_error_notification_text" msgid="3590528965691740509">"<xliff:g id="ACCOUNT">%s</xliff:g> ගිණුම සඳහා සැකසීම් සංස්කරණය කිරීමට ස්පර්ශ කරන්න"</string>
+    <string name="email_settings_not_available" msgid="59579952494440349">"සැකසීම් බැලීමට ඊ-තැපැල් යෙදුම යළි සබල කරන්න."</string>
+</resources>

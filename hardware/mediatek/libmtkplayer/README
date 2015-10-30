@@ -1,0 +1,27 @@
+The dynamic library 'libmtkplayer.so' is a FM Audio Player Native implementation
+This library is pre-built by Mediatek internal
+
+WHAT IT DOES?
+=============
+libmtkplayer.so is used to control FM audio data flow.
+
+HOW IT WAS BUILT?
+==================
+It needs the following libs from AOSP:
+1.  libcutils.so
+2.  libutils.so
+3.  libbinder.so
+4.  libmedia.so
+
+and the following libs from MediaTek:
+1.  libaudiosetting.so
+
+HOW TO USE IT?
+==============
+The dynamic library 'libmtkplayer.so' is used by
+'libmediaplayerservice.so' to create FM Audio Player
+
+Source
+==============
+All the source code of the bin files were written by MediaTek Co.
+

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2014 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="wifi_setup_input_password" msgid="4324884380214448502">"Escriu la contrasenya de <xliff:g id="SSID">%1$s</xliff:g>"</string>
+    <string name="wifi_setup_waiting_for_join" msgid="42826539810553389">"S\'està unint a ^1"</string>
+    <string name="wifi_setup_connection_success" msgid="3362351168182711828">"S\'ha connectat correctament."</string>
+    <string name="wifi_setup_save_success" msgid="2001513015933996675">"La configuració s\'ha desat correctament"</string>
+    <string name="device_apps_app_management_version" msgid="6315648665194084382">"versió <xliff:g id="APP_VERSION">%1$s</xliff:g>"</string>
+    <string name="device_apps_app_management_open" msgid="3326361233913951387">"Obre"</string>
+    <string name="device_apps_app_management_force_stop" msgid="1803832648099079651">"Força l\'aturada"</string>
+    <string name="device_apps_app_management_force_stop_desc" msgid="221435219644064243">"Si forces l\'aturada d\'una aplicació, és possible que no funcioni correctament."</string>
+    <string name="device_apps_app_management_uninstall" msgid="6054050725055974790">"Desinstal·la"</string>
+    <string name="device_apps_app_management_uninstall_desc" msgid="3542570994262234511">"Vols desinstal·lar aquesta aplicació?"</string>
+    <string name="device_apps_app_management_disable" msgid="1461984395121717076">"Desactiva"</string>
+    <string name="device_apps_app_management_disable_desc" msgid="1362228583828208991">"Vols desactivar l\'aplicació?"</string>
+    <string name="device_apps_app_management_enable" msgid="8794752872502256633">"Activa"</string>
+    <string name="device_apps_app_management_enable_desc" msgid="6449017972628203288">"Vols activar l\'aplicació?"</string>
+    <string name="device_apps_app_management_clear_data" msgid="8288695583331012586">"Esborra les dades"</string>
+    <string name="device_apps_app_management_clear_data_desc" msgid="2197842469669426232">"Totes les dades d\'aquesta aplicació se suprimiran permanentment."</string>
+    <string name="device_apps_app_management_clear_data_what" msgid="376666756087041021">"Això inclou tots els fitxers, els paràmetres, els comptes, les bases de dades, etc."</string>
+    <string name="device_apps_app_management_clear_default" msgid="6654723680469212060">"Esborra els valors predeterminats"</string>
+    <string name="device_apps_app_management_clear_default_set" msgid="6233682647156684225">"S\'iniciarà per a algunes accions."</string>
+    <string name="device_apps_app_management_clear_default_none" msgid="6312021202504995474">"No s\'ha definit cap valor predeterminat."</string>
+    <string name="device_apps_app_management_clear_cache" msgid="7878530504449821203">"Esborra la memòria cau"</string>
+    <string name="device_apps_app_management_notifications" msgid="7069935222112158478">"Notificacions"</string>
+    <string name="device_apps_app_management_permissions" msgid="5758303833496289673">"Permisos"</string>
+    <string name="settings_ok" msgid="5501301223475616254">"D\'acord"</string>
+    <string name="settings_cancel" msgid="1649053173330804917">"Cancel·la"</string>
+    <string name="settings_on" msgid="1295064657786011878">"Activat"</string>
+    <string name="settings_off" msgid="4439170658516725721">"Desactivat"</string>
+    <string name="device_daydreams_none" msgid="5310233518671772034">"Cap"</string>
+    <string name="device_daydreams_select" msgid="1754678562660674925">"Estalvi de pantalla"</string>
+    <string name="device_daydreams_test" msgid="7442554912076991502">"Activa ara"</string>
+    <string name="device_daydreams_sleep" msgid="5263432145910468025">"Quan s\'activa l\'estalvi de pantalla"</string>
+    <string name="device_daydreams_sleep_description" msgid="8438730889852772376">"L\'estalvi de pantalla començarà una vegada transcorregut aquest període d\'inactivitat. Si no se selecciona cap estalvi de pantalla, la pantalla s\'apagarà."</string>
+    <string name="device_daydreams_sleep_summary" msgid="4442691086777437088">"Després de <xliff:g id="SLEEP_DESCRIPTION">%1$s</xliff:g> d\'inactivitat"</string>
+    <string name="device_daydreams_screen_off" msgid="1846621864054404830">"Quan entra en mode de repòs"</string>
+    <string name="device_daydreams_screen_off_description" msgid="7699124270812914310">"La pantalla s\'apaga després d\'aquest període d\'inactivitat."</string>
+    <string name="device_daydreams_screen_off_summary" msgid="6350806465141059041">"<xliff:g id="SLEEP_DESCRIPTION">%1$s</xliff:g> després d\'iniciar-se l\'estalvi de pantalla"</string>
+    <string name="backup_configure_account_default_summary" msgid="2013649183664358673">"Actualment no hi ha cap compte que emmagatzemi dades de còpia de seguretat"</string>
+    <string name="backup_erase_dialog_title" msgid="8900389956460363471"></string>
+    <string name="backup_erase_dialog_message" msgid="448169495686297910">"Vols deixar de crear còpies de seguretat de les contrasenyes de Wi-Fi, de les adreces d\'interès, d\'altres configuracions i dades d\'aplicacions i, a més, esborrar totes les còpies dels servidors de Google?"</string>
+    <string name="privacy_backup_data" msgid="3652306596140877278">"Fes una còpia de seguretat de les dades"</string>
+    <string name="privacy_backup_account" msgid="6127132568071889274">"Compte de còpia de seguretat"</string>
+    <string name="privacy_automatic_restore" msgid="8896792578363571896">"Restauració automàtica"</string>
+    <string name="factory_reset_device" msgid="7615350252195583106">"Restableix el dispositiu"</string>
+    <string name="factory_reset_description" msgid="6709336495536583649">"Aquesta acció esborrarà totes les dades de l\'emmagatzematge intern del dispositiu, com ara el compte de Google, les dades i la configuració del sistema i de les aplicacions, i les aplicacions baixades."</string>
+    <string name="confirm_factory_reset_description" msgid="5710644039419606428">"Vols esborrar tota la informació personal i les aplicacions baixades? Aquesta acció no es pot desfer."</string>
+    <string name="confirm_factory_reset_device" msgid="519046408823105666">"Esborra-ho tot"</string>
+    <string name="dismiss_all_notifications" msgid="3350731990365092847">"Omet-les totes"</string>
+    <string name="no_notifications" msgid="3241328952121767751">"Cap"</string>
+    <string name="do_not_disturb_title" msgid="1050245577355301376">"No molesteu"</string>
+    <string name="do_not_disturb_desc" msgid="3186041965642361597">"Quan estiguin activades, les notificacions noves només apareixeran a Configuració"</string>
+    <string name="select_title" msgid="2657901623249723536">"Assignació d\'un nom al dispositiu ^1"</string>
+    <string name="select_description" msgid="4080602542483519716">"El nom et permetrà identificar el dispositiu ^1 més fàcilment quan hi accedeixis des d\'altres dispositius com ara el telèfon, la tauleta o l\'ordinador."</string>
+  <string-array name="rooms">
+    <item msgid="2748008285322003570">"Sala d\'estar"</item>
+    <item msgid="7887185726776968055">"Sala multimèdia"</item>
+    <item msgid="372573326176756144">"Saleta"</item>
+    <item msgid="8112576067079559786">"Menjador"</item>
+    <item msgid="2891751328917513846">"Estudi"</item>
+    <item msgid="7390608863950443962">"Dormitori"</item>
+    <item msgid="682313511953895794">"Cuina"</item>
+  </string-array>
+    <string name="custom_room" msgid="5972936200641815527">"Escriu un nom personalitzat..."</string>
+    <string name="settings_status_title" msgid="3280459921834269206">"^1 té nom"</string>
+    <string name="settings_status_description" msgid="4892610880616296037">"\"^1\" és el nom d\'aquest dispositiu ^2. Vols canviar-ho?"</string>
+    <string name="change_setting" msgid="199354038426145612">"Canvia"</string>
+    <string name="keep_settings" msgid="549230720820096102">"No ho canviïs"</string>
+    <string name="menu_help" msgid="2164687828212723531">"Ajuda"</string>
+    <string name="setup_failure_title" msgid="4408868360762577232">"S\'ha produït un error"</string>
+    <string name="setup_failure_button_retry" msgid="4917381906591779977">"Torna-ho a provar"</string>
+</resources>
