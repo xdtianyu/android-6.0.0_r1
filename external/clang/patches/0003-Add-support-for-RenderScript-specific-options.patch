@@ -1,0 +1,147 @@
+From 4ad30819eb30d7c72336cc61cabd85b42a350aac Mon Sep 17 00:00:00 2001
+From: Tim Murray <timmurray@google.com>
+Date: Thu, 3 Apr 2014 13:38:15 -0700
+Subject: [PATCH 3/4] Add support for RenderScript specific options.
+
+These include __attribute((kernel)), 64-bit longs, and RGBA vector syntax.
+
+Change-Id: I592e5ea2abc86269a941e0497ac11665fb562aa0
+---
+ include/clang/AST/Type.h            |  8 ++++----
+ include/clang/Basic/Attr.td         |  5 +++++
+ include/clang/Basic/LangOptions.def |  1 +
+ lib/Basic/Targets.cpp               |  2 ++
+ lib/Sema/SemaDeclAttr.cpp           | 13 +++++++++++++
+ lib/Sema/SemaExprMember.cpp         | 17 +++++++++++++++++
+ 6 files changed, 42 insertions(+), 4 deletions(-)
+
+diff --git a/include/clang/AST/Type.h b/include/clang/AST/Type.h
+index 001a87e..7be6fcd 100644
+--- a/include/clang/AST/Type.h
++++ b/include/clang/AST/Type.h
+@@ -2593,10 +2593,10 @@ public:
+   static int getPointAccessorIdx(char c) {
+     switch (c) {
+     default: return -1;
+-    case 'x': return 0;
+-    case 'y': return 1;
+-    case 'z': return 2;
+-    case 'w': return 3;
++    case 'x': case 'r': return 0;
++    case 'y': case 'g': return 1;
++    case 'z': case 'b': return 2;
++    case 'w': case 'a': return 3;
+     }
+   }
+   static int getNumericAccessorIdx(char c) {
+diff --git a/include/clang/Basic/Attr.td b/include/clang/Basic/Attr.td
+index 12a8517..7360683 100644
+--- a/include/clang/Basic/Attr.td
++++ b/include/clang/Basic/Attr.td
+@@ -612,6 +612,11 @@ def OpenCLConstantAddressSpace : TypeAttr {
+   let Documentation = [Undocumented];
+ }
+ 
++def Kernel : Attr {
++  let Spellings = [GNU<"kernel">];
++  let Documentation = [Undocumented];
++}
++
+ def Deprecated : InheritableAttr {
+   let Spellings = [GCC<"deprecated">, Declspec<"deprecated">,
+                    CXX11<"","deprecated">];
+diff --git a/include/clang/Basic/LangOptions.def b/include/clang/Basic/LangOptions.def
+index 22662e0..7b21482 100644
+--- a/include/clang/Basic/LangOptions.def
++++ b/include/clang/Basic/LangOptions.def
+@@ -123,6 +123,7 @@ LANGOPT(OpenCLVersion     , 32, 0, "OpenCL version")
+ LANGOPT(NativeHalfType    , 1, 0, "Native half type support")
+ LANGOPT(CUDA              , 1, 0, "CUDA")
+ LANGOPT(OpenMP            , 1, 0, "OpenMP support")
++LANGOPT(Renderscript      , 1, 0, "RenderScript")
+ 
+ LANGOPT(AssumeSaneOperatorNew , 1, 1, "implicit __attribute__((malloc)) for C++'s new operators")
+ LANGOPT(SizedDeallocation , 1, 0, "enable sized deallocation functions")
+diff --git a/lib/Basic/Targets.cpp b/lib/Basic/Targets.cpp
+index 3d294ce..fd59c00 100644
+--- a/lib/Basic/Targets.cpp
++++ b/lib/Basic/Targets.cpp
+@@ -3984,6 +3984,8 @@ public:
+         FPU |= FPARMV8;
+       else if (Features[i] == "+neon")
+         FPU |= NeonFPU;
++      else if (Features[i] == "+long64")
++        LongWidth = LongAlign = 64;  // RenderScript uses a 64-bit long type
+       else if (Features[i] == "+hwdiv")
+         HWDiv |= HWDivThumb;
+       else if (Features[i] == "+hwdiv-arm")
+diff --git a/lib/Sema/SemaDeclAttr.cpp b/lib/Sema/SemaDeclAttr.cpp
+index 5f60783..38b3c45 100644
+--- a/lib/Sema/SemaDeclAttr.cpp
++++ b/lib/Sema/SemaDeclAttr.cpp
+@@ -1396,6 +1396,16 @@ static void handleTLSModelAttr(Sema &S, Decl *D,
+                           Attr.getAttributeSpellingListIndex()));
+ }
+ 
++static void handleKernelAttr(Sema &S, Decl *D, const AttributeList &Attr) {
++  if (S.LangOpts.Renderscript) {
++    D->addAttr(::new (S.Context) 
++               KernelAttr(Attr.getRange(), S.Context,
++                          Attr.getAttributeSpellingListIndex()));
++  } else {
++    S.Diag(Attr.getLoc(), diag::warn_attribute_ignored) << "kernel";
++  }
++}
++
+ static void handleMallocAttr(Sema &S, Decl *D, const AttributeList &Attr) {
+   if (const FunctionDecl *FD = dyn_cast<FunctionDecl>(D)) {
+     QualType RetTy = FD->getReturnType();
+@@ -4130,6 +4140,9 @@ static void ProcessDeclAttribute(Sema &S, Scope *scope, Decl *D,
+   case AttributeList::AT_CUDALaunchBounds:
+     handleLaunchBoundsAttr(S, D, Attr);
+     break;
++  case AttributeList::AT_Kernel:
++    handleKernelAttr(S, D, Attr);
++    break;
+   case AttributeList::AT_Malloc:
+     handleMallocAttr(S, D, Attr);
+     break;
+diff --git a/lib/Sema/SemaExprMember.cpp b/lib/Sema/SemaExprMember.cpp
+index 354dfcf..c4a1780 100644
+--- a/lib/Sema/SemaExprMember.cpp
++++ b/lib/Sema/SemaExprMember.cpp
+@@ -267,6 +267,20 @@ Sema::BuildPossibleImplicitMemberExpr(const CXXScopeSpec &SS,
+   llvm_unreachable("unexpected instance member access kind");
+ }
+ 
++/// Determine whether input char is from rgba component set.
++static bool
++IsRGBA(char c) {
++  switch (c) {
++  case 'r':
++  case 'g':
++  case 'b':
++  case 'a':
++    return true;
++  default:
++    return false;
++  }
++}
++
+ /// Check an ext-vector component access expression.
+ ///
+ /// VK should be set in advance to the value kind of the base
+@@ -306,7 +320,10 @@ CheckExtVectorComponent(Sema &S, QualType baseType, ExprValueKind &VK,
+     HalvingSwizzle = true;
+   } else if (!HexSwizzle &&
+              (Idx = vecType->getPointAccessorIdx(*compStr)) != -1) {
++    bool HasRGBA = IsRGBA(*compStr);
+     do {
++      if (HasRGBA != IsRGBA(*compStr))
++        break;
+       if (HasIndex[Idx]) HasRepeated = true;
+       HasIndex[Idx] = true;
+       compStr++;
+-- 
+1.9.1.423.g4596e3a
+

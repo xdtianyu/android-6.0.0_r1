@@ -1,0 +1,33 @@
+#!/bin/sh
+
+# Check that getdents/getdents64 syscalls are traced properly.
+
+. "${srcdir=.}/init.sh"
+
+check_prog gawk
+AWKPATH="$srcdir" gawk -f "$srcdir"/getdents.awk "$srcdir"/getdents.out ||
+	framework_skip_ 'gawk does not work properly'
+
+check_prog ls
+check_prog mkdir
+check_prog rm
+check_prog seq
+check_prog touch
+
+dir="$LOG.dir"
+rm -rf -- "$dir"
+mkdir -- "$dir" ||
+	framework_skip_ 'failed to create a directory'
+
+touch -- "$dir/$(for i in $(seq 1 127); do echo A; done; echo Z)" ||
+	framework_skip_ 'failed to create a file'
+
+ls -- "$dir" > /dev/null ||
+	framework_skip_ 'failed to list a directory'
+
+run_strace -vegetdents,getdents64 ls -- "$dir" > /dev/null
+match_awk
+
+rm -rf -- "$dir"
+
+exit 0

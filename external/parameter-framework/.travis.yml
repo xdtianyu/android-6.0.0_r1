@@ -1,0 +1,66 @@
+# Use travis docker infrastructure
+sudo: false
+language: cpp
+
+env:
+    global:
+        - PREFIX=$HOME/prefix
+
+compiler:
+    - gcc
+    - clang
+
+# Install a recent gcc and gcov,
+# it will not be necessary once travis worker is based on ubuntu > 12.04.
+# Install SWIG for bindings generation
+# Install valgrind for memcheck tests
+addons:
+    apt:
+        sources:
+            - ubuntu-toolchain-r-test
+        packages:
+            - swig
+            - valgrind
+            - g++-4.8
+
+install:
+    - pip install --user cpp-coveralls; export PATH=$HOME/.local/bin:$PATH
+    - wget --directory-prefix $PREFIX/include
+              https://raw.github.com/philsquared/Catch/master/single_include/catch.hpp
+
+before_script:
+    - if [ "$CC" = "gcc" ]; then export CC=gcc-4.8 CXX=g++-4.8; fi
+
+# how to build
+script:
+  - ( mkdir build_debug && cd build_debug &&
+        cmake -DCMAKE_PREFIX_PATH=$PREFIX -DCMAKE_BUILD_TYPE=Debug -DCOVERAGE=ON .. &&
+        make -j &&
+        CTEST_OUTPUT_ON_FAILURE=1 make ExperimentalTest ExperimentalMemCheck )
+  - ( mkdir build && cd build &&
+        cmake -DCMAKE_PREFIX_PATH=$PREFIX -DCMAKE_INSTALL_PREFIX=../install .. &&
+        make -j &&
+        CTEST_OUTPUT_ON_FAILURE=1 make test &&
+        make install)
+  - ( cd skeleton-subsystem &&
+        cmake -DCMAKE_INSTALL_PREFIX=../install . &&
+        make &&
+        make install )
+
+after_success:
+    # Push coverage info on coveralls.io.
+    # Ignore generated files, samples and tests
+    - coveralls
+          --exclude "build_debug/bindings/python"
+          --exclude "build_debug/CMakeFiles"
+          --exclude "build"
+          --exclude "skeleton-subsystem"
+          --exclude "test/test-subsystem"
+          --exclude "bindings/c/Test.cpp"
+          --exclude "test/tokenizer"
+          --gcov /usr/bin/gcov-4.8
+          --gcov-options '\--long-file-names --preserve-paths'
+
+notifications:
+  irc:
+    - "chat.freenode.net#parameter-framework"

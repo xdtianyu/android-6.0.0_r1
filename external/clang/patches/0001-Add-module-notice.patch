@@ -1,0 +1,17 @@
+From 6b733cf3f6b923db332b896c79b7ba961c2dbf70 Mon Sep 17 00:00:00 2001
+From: Tim Murray <timmurray@google.com>
+Date: Thu, 3 Apr 2014 10:52:46 -0700
+Subject: [PATCH 1/4] Add module notice.
+
+Change-Id: Ifcd825d8ccd3f5da22591075aa15e6710e61a933
+---
+ MODULE_LICENSE_BSD_LIKE | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 MODULE_LICENSE_BSD_LIKE
+
+diff --git a/MODULE_LICENSE_BSD_LIKE b/MODULE_LICENSE_BSD_LIKE
+new file mode 100644
+index 0000000..e69de29
+-- 
+1.9.1.423.g4596e3a
+

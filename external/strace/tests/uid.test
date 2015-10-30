@@ -1,0 +1,18 @@
+#!/bin/sh
+
+# Check uid decoding.
+
+. "${srcdir=.}/init.sh"
+
+s="${uid_syscall_suffix-}"
+w="${uid_t_size-}"
+
+run_prog ./uid$s$w
+
+syscalls="getuid$s,setuid$s,getresuid$s,setreuid$s,setresuid$s,fchown$s,getgroups$s"
+run_strace -e trace="$syscalls" $args
+
+AWK=gawk
+match_awk "$LOG" "$srcdir"/uid.awk "$STRACE $args output mismatch" -v suffix="$s"
+
+exit 0

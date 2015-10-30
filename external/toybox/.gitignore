@@ -1,0 +1,13 @@
+syntax: glob
+/.config.old
+change/
+/generated/build.sh
+/generated/config2help
+/generated/Config.in
+/generated/Config.probed
+/generated/mkflags
+/generated/obj
+/generated/optlibs.dat
+/kconfig
+toybox
+toybox_unstripped

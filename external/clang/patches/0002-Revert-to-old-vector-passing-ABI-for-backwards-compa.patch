@@ -1,0 +1,38 @@
+From 10a4fc6c56a4ca26b225bf912948f96e9f55c81a Mon Sep 17 00:00:00 2001
+From: Tim Murray <timmurray@google.com>
+Date: Thu, 3 Apr 2014 13:27:16 -0700
+Subject: [PATCH 2/4] Revert to old vector passing ABI for backwards
+ compatibility.
+
+Change-Id: I6d0e6db454de7090ef49001e9318eae5a1112e09
+---
+ lib/CodeGen/TargetInfo.cpp | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/lib/CodeGen/TargetInfo.cpp b/lib/CodeGen/TargetInfo.cpp
+index d2e57ac..d3ab43a 100644
+--- a/lib/CodeGen/TargetInfo.cpp
++++ b/lib/CodeGen/TargetInfo.cpp
+@@ -4403,7 +4403,7 @@ bool ARMABIInfo::isIllegalVectorType(QualType Ty) const {
+     unsigned NumElements = VT->getNumElements();
+     uint64_t Size = getContext().getTypeSize(VT);
+     // NumElements should be power of 2.
+-    if ((NumElements & (NumElements - 1)) != 0)
++    if (((NumElements & (NumElements - 1)) != 0) && NumElements != 3)
+       return true;
+     // Size should be greater than 32 bits.
+     return Size <= 32;
+@@ -4437,8 +4437,8 @@ llvm::Value *ARMABIInfo::EmitVAArg(llvm::Value *VAListAddr, QualType Ty,
+     TyAlign = std::min(std::max(TyAlign, (uint64_t)4), (uint64_t)8);
+   else
+     TyAlign = 4;
+-  // Use indirect if size of the illegal vector is bigger than 16 bytes.
+-  if (isIllegalVectorType(Ty) && Size > 16) {
++  // Use indirect if size of the illegal vector is bigger than 32 bytes.
++  if (isIllegalVectorType(Ty) && Size > 32) {
+     IsIndirect = true;
+     Size = 4;
+     TyAlign = 4;
+-- 
+1.9.1.423.g4596e3a
+

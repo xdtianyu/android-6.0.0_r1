@@ -1,0 +1,15 @@
+URL: https://code.google.com/p/noto/
+Version: 1.002
+License: OFL 1.1
+License File: NOTICE
+
+Description:
+Noto CJK fonts, for supporting Chinese, Japanese, and Korean.
+
+Local Modifications:
+This directory contains a special fallback form of the fonts, created
+for Android.
+
+Additionally, a subset of Noto Sans Japenese is included, for
+completing character coverage when Motoya fonts are used instead of
+the complete Noto Sans Japanese.

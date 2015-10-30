@@ -1,0 +1,1866 @@
+From be91378db0840d26ae20bd4d13a2aa96d3d02249 Mon Sep 17 00:00:00 2001
+From: Tim Murray <timmurray@google.com>
+Date: Thu, 3 Apr 2014 14:29:15 -0700
+Subject: [PATCH 4/4] Add Android build system.
+
+Change-Id: I9738582ea6bcede99a42fd3926ba22e81d5fff02
+---
+ Android.mk                             |  34 +++++
+ clang-host-build.mk                    |  38 ++++++
+ clang-tblgen-rules.mk                  | 237 +++++++++++++++++++++++++++++++++
+ clang-version-inc.mk                   |  36 +++++
+ clang.mk                               |   7 +
+ host_shared_clang.mk                   |  41 ++++++
+ include/clang/Config/config.h          |  25 ++++
+ lib/ARCMigrate/Android.mk              |  51 +++++++
+ lib/AST/Android.mk                     |  94 +++++++++++++
+ lib/Analysis/Android.mk                |  51 +++++++
+ lib/Basic/Android.mk                   |  57 ++++++++
+ lib/CodeGen/Android.mk                 |  75 +++++++++++
+ lib/Driver/Android.mk                  |  44 ++++++
+ lib/Edit/Android.mk                    |  32 +++++
+ lib/Format/Android.mk                  |  43 ++++++
+ lib/Frontend/Android.mk                |  66 +++++++++
+ lib/FrontendTool/Android.mk            |  24 ++++
+ lib/Headers/Android.mk                 |  11 ++
+ lib/Lex/Android.mk                     |  45 +++++++
+ lib/Parse/Android.mk                   |  47 +++++++
+ lib/Rewrite/Core/Android.mk            |  34 +++++
+ lib/Rewrite/Frontend/Android.mk        |  38 ++++++
+ lib/Sema/Android.mk                    |  84 ++++++++++++
+ lib/Serialization/Android.mk           |  46 +++++++
+ lib/StaticAnalyzer/Checkers/Android.mk | 100 ++++++++++++++
+ lib/StaticAnalyzer/Core/Android.mk     |  68 ++++++++++
+ lib/StaticAnalyzer/Frontend/Android.mk |  40 ++++++
+ tools/driver/Android.mk                | 119 +++++++++++++++++
+ utils/TableGen/Android.mk              |  35 +++++
+ 29 files changed, 1622 insertions(+)
+ create mode 100644 Android.mk
+ create mode 100644 clang-host-build.mk
+ create mode 100644 clang-tblgen-rules.mk
+ create mode 100644 clang-version-inc.mk
+ create mode 100644 clang.mk
+ create mode 100644 host_shared_clang.mk
+ create mode 100644 include/clang/Config/config.h
+ create mode 100644 lib/ARCMigrate/Android.mk
+ create mode 100644 lib/AST/Android.mk
+ create mode 100644 lib/Analysis/Android.mk
+ create mode 100644 lib/Basic/Android.mk
+ create mode 100644 lib/CodeGen/Android.mk
+ create mode 100644 lib/Driver/Android.mk
+ create mode 100644 lib/Edit/Android.mk
+ create mode 100644 lib/Format/Android.mk
+ create mode 100644 lib/Frontend/Android.mk
+ create mode 100644 lib/FrontendTool/Android.mk
+ create mode 100644 lib/Headers/Android.mk
+ create mode 100644 lib/Lex/Android.mk
+ create mode 100644 lib/Parse/Android.mk
+ create mode 100644 lib/Rewrite/Core/Android.mk
+ create mode 100644 lib/Rewrite/Frontend/Android.mk
+ create mode 100644 lib/Sema/Android.mk
+ create mode 100644 lib/Serialization/Android.mk
+ create mode 100644 lib/StaticAnalyzer/Checkers/Android.mk
+ create mode 100644 lib/StaticAnalyzer/Core/Android.mk
+ create mode 100644 lib/StaticAnalyzer/Frontend/Android.mk
+ create mode 100644 tools/driver/Android.mk
+ create mode 100644 utils/TableGen/Android.mk
+
+diff --git a/Android.mk b/Android.mk
+new file mode 100644
+index 0000000..5f62da3
+--- /dev/null
++++ b/Android.mk
+@@ -0,0 +1,34 @@
++LOCAL_PATH := $(call my-dir)
++CLANG_ROOT_PATH := $(LOCAL_PATH)
++
++include $(CLEAR_VARS)
++
++subdirs := $(addprefix $(LOCAL_PATH)/,$(addsuffix /Android.mk, \
++  lib/Analysis \
++  lib/AST \
++  lib/ARCMigrate \
++  lib/Basic \
++  lib/CodeGen \
++  lib/Driver \
++  lib/Edit \
++  lib/Format \
++  lib/Frontend \
++  lib/FrontendTool \
++  lib/Headers \
++  lib/Lex \
++  lib/Parse \
++  lib/Rewrite/Core \
++  lib/Rewrite/Frontend \
++  lib/Sema \
++  lib/Serialization \
++  lib/StaticAnalyzer/Checkers \
++  lib/StaticAnalyzer/Core \
++  lib/StaticAnalyzer/Frontend \
++  tools/driver \
++  utils/TableGen \
++  ))
++
++include $(LOCAL_PATH)/clang.mk
++include $(LOCAL_PATH)/host_shared_clang.mk
++
++include $(subdirs)
+diff --git a/clang-host-build.mk b/clang-host-build.mk
+new file mode 100644
+index 0000000..e0ba2e6
+--- /dev/null
++++ b/clang-host-build.mk
+@@ -0,0 +1,38 @@
++LOCAL_CFLAGS :=	\
++	-pedantic	\
++	-Wcast-qual	\
++	-Wno-long-long	\
++	$(LOCAL_CFLAGS)
++
++LOCAL_CPPFLAGS := \
++	-Wno-sign-promo \
++	$(LOCAL_CPPFLAGS)
++
++# Make sure bionic is first so we can include system headers.
++LOCAL_C_INCLUDES :=	\
++	$(CLANG_ROOT_PATH)/include	\
++        $(CLANG_ROOT_PATH)/lib/CodeGen    \
++	$(LOCAL_C_INCLUDES)
++
++LLVM_ROOT_PATH := external/llvm
++include $(LLVM_ROOT_PATH)/llvm.mk
++
++ifneq ($(LLVM_HOST_BUILD_MK),)
++include $(LLVM_HOST_BUILD_MK)
++endif
++
++###########################################################
++## Commands for running tblgen to compile a td file
++###########################################################
++define transform-host-clang-td-to-out
++@mkdir -p $(dir $@)
++@echo "Host Clang TableGen: $(TBLGEN_LOCAL_MODULE) (gen-$(1)) <= $<"
++$(hide) $(CLANG_TBLGEN) \
++	-I $(dir $<)	\
++	-I $(LLVM_ROOT_PATH)/include	\
++	-I $(LLVM_ROOT_PATH)/host/include	\
++	-I $(LLVM_ROOT_PATH)/lib/Target	\
++	$(if $(strip $(CLANG_ROOT_PATH)),-I $(CLANG_ROOT_PATH)/include,)	\
++	-gen-$(strip $(1))	\
++	-o $@ $<
++endef
+diff --git a/clang-tblgen-rules.mk b/clang-tblgen-rules.mk
+new file mode 100644
+index 0000000..a2ae405
+--- /dev/null
++++ b/clang-tblgen-rules.mk
+@@ -0,0 +1,237 @@
++###################################4########################
++## TableGen: Compile .td files to .inc.
++###########################################################
++ifeq ($(LOCAL_MODULE_CLASS),)
++    LOCAL_MODULE_CLASS := STATIC_LIBRARIES
++endif
++
++ifneq ($(strip $(TBLGEN_TABLES)),)
++
++intermediates := $(call local-intermediates-dir)
++
++ifneq ($(findstring AttrDump.inc,$(TBLGEN_TABLES)),)
++LOCAL_GENERATED_SOURCES += $(intermediates)/include/clang/AST/AttrDump.inc
++$(intermediates)/include/clang/AST/AttrDump.inc: TBLGEN_LOCAL_MODULE := $(LOCAL_MODULE)
++$(intermediates)/include/clang/AST/AttrDump.inc: $(CLANG_ROOT_PATH)/include/clang/Basic/Attr.td | $(CLANG_TBLGEN)
++	$(call transform-host-clang-td-to-out,clang-attr-dump)
++endif
++
++ifneq ($(findstring AttrImpl.inc,$(TBLGEN_TABLES)),)
++LOCAL_GENERATED_SOURCES += $(intermediates)/include/clang/AST/AttrImpl.inc
++$(intermediates)/include/clang/AST/AttrImpl.inc: TBLGEN_LOCAL_MODULE := $(LOCAL_MODULE)
++$(intermediates)/include/clang/AST/AttrImpl.inc: $(CLANG_ROOT_PATH)/include/clang/Basic/Attr.td | $(CLANG_TBLGEN)
++	$(call transform-host-clang-td-to-out,clang-attr-impl)
++endif
++
++ifneq ($(findstring AttrHasAttributeImpl.inc,$(TBLGEN_TABLES)),)
++LOCAL_GENERATED_SOURCES += $(intermediates)/include/clang/Basic/AttrHasAttributeImpl.inc
++$(intermediates)/include/clang/Basic/AttrHasAttributeImpl.inc: TBLGEN_LOCAL_MODULE := $(LOCAL_MODULE)
++$(intermediates)/include/clang/Basic/AttrHasAttributeImpl.inc: $(CLANG_ROOT_PATH)/include/clang/Basic/Attr.td | $(CLANG_TBLGEN)
++	$(call transform-host-clang-td-to-out,clang-attr-has-attribute-impl)
++endif
++
++ifneq ($(findstring AttrList.inc,$(TBLGEN_TABLES)),)
++LOCAL_GENERATED_SOURCES += $(intermediates)/include/clang/Basic/AttrList.inc
++$(intermediates)/include/clang/Basic/AttrList.inc: TBLGEN_LOCAL_MODULE := $(LOCAL_MODULE)
++$(intermediates)/include/clang/Basic/AttrList.inc: $(CLANG_ROOT_PATH)/include/clang/Basic/Attr.td | $(CLANG_TBLGEN)
++	$(call transform-host-clang-td-to-out,clang-attr-list)
++endif
++
++ifneq ($(findstring AttrSpellingListIndex.inc,$(TBLGEN_TABLES)),)
++LOCAL_GENERATED_SOURCES += $(intermediates)/include/clang/Sema/AttrSpellingListIndex.inc
++$(intermediates)/include/clang/Sema/AttrSpellingListIndex.inc: TBLGEN_LOCAL_MODULE := $(LOCAL_MODULE)
++$(intermediates)/include/clang/Sema/AttrSpellingListIndex.inc: $(CLANG_ROOT_PATH)/include/clang/Basic/Attr.td | $(CLANG_TBLGEN)
++	$(call transform-host-clang-td-to-out,clang-attr-spelling-index)
++endif
++
++ifneq ($(findstring AttrPCHRead.inc,$(TBLGEN_TABLES)),)
++LOCAL_GENERATED_SOURCES += $(intermediates)/include/clang/Serialization/AttrPCHRead.inc
++$(intermediates)/include/clang/Serialization/AttrPCHRead.inc: TBLGEN_LOCAL_MODULE := $(LOCAL_MODULE)
++$(intermediates)/include/clang/Serialization/AttrPCHRead.inc: $(CLANG_ROOT_PATH)/include/clang/Basic/Attr.td | $(CLANG_TBLGEN)
++	$(call transform-host-clang-td-to-out,clang-attr-pch-read)
++endif
++
++ifneq ($(findstring AttrPCHWrite.inc,$(TBLGEN_TABLES)),)
++LOCAL_GENERATED_SOURCES += $(intermediates)/include/clang/Serialization/AttrPCHWrite.inc
++$(intermediates)/include/clang/Serialization/AttrPCHWrite.inc: TBLGEN_LOCAL_MODULE := $(LOCAL_MODULE)
++$(intermediates)/include/clang/Serialization/AttrPCHWrite.inc: $(CLANG_ROOT_PATH)/include/clang/Basic/Attr.td | $(CLANG_TBLGEN)
++	$(call transform-host-clang-td-to-out,clang-attr-pch-write)
++endif
++
++ifneq ($(findstring Attrs.inc,$(TBLGEN_TABLES)),)
++LOCAL_GENERATED_SOURCES += $(intermediates)/include/clang/AST/Attrs.inc
++$(intermediates)/include/clang/AST/Attrs.inc: TBLGEN_LOCAL_MODULE := $(LOCAL_MODULE)
++$(intermediates)/include/clang/AST/Attrs.inc: $(CLANG_ROOT_PATH)/include/clang/Basic/Attr.td | $(CLANG_TBLGEN)
++	$(call transform-host-clang-td-to-out,clang-attr-classes)
++endif
++
++ifneq ($(findstring AttrParserStringSwitches.inc,$(TBLGEN_TABLES)),)
++LOCAL_GENERATED_SOURCES += $(intermediates)/include/clang/Parse/AttrParserStringSwitches.inc
++$(intermediates)/include/clang/Parse/AttrParserStringSwitches.inc: TBLGEN_LOCAL_MODULE := $(LOCAL_MODULE)
++$(intermediates)/include/clang/Parse/AttrParserStringSwitches.inc: $(CLANG_ROOT_PATH)/include/clang/Basic/Attr.td | $(CLANG_TBLGEN)
++	$(call transform-host-clang-td-to-out,clang-attr-parser-string-switches)
++endif
++
++ifneq ($(findstring AttrVisitor.inc,$(TBLGEN_TABLES)),)
++LOCAL_GENERATED_SOURCES += $(intermediates)/include/clang/AST/AttrVisitor.inc
++$(intermediates)/include/clang/AST/AttrVisitor.inc: TBLGEN_LOCAL_MODULE := $(LOCAL_MODULE)
++$(intermediates)/include/clang/AST/AttrVisitor.inc: $(CLANG_ROOT_PATH)/include/clang/Basic/Attr.td | $(CLANG_TBLGEN)
++	$(call transform-host-clang-td-to-out,clang-attr-ast-visitor)
++endif
++
++ifneq ($(findstring AttrParsedAttrKinds.inc,$(TBLGEN_TABLES)),)
++LOCAL_GENERATED_SOURCES += $(intermediates)/include/clang/Sema/AttrParsedAttrKinds.inc
++$(intermediates)/include/clang/Sema/AttrParsedAttrKinds.inc: TBLGEN_LOCAL_MODULE := $(LOCAL_MODULE)
++$(intermediates)/include/clang/Sema/AttrParsedAttrKinds.inc: $(CLANG_ROOT_PATH)/include/clang/Basic/Attr.td | $(CLANG_TBLGEN)
++	$(call transform-host-clang-td-to-out,clang-attr-parsed-attr-kinds)
++endif
++
++ifneq ($(findstring AttrParsedAttrImpl.inc,$(TBLGEN_TABLES)),)
++LOCAL_GENERATED_SOURCES += $(intermediates)/include/clang/Sema/AttrParsedAttrImpl.inc
++$(intermediates)/include/clang/Sema/AttrParsedAttrImpl.inc: TBLGEN_LOCAL_MODULE := $(LOCAL_MODULE)
++$(intermediates)/include/clang/Sema/AttrParsedAttrImpl.inc: $(CLANG_ROOT_PATH)/include/clang/Basic/Attr.td | $(CLANG_TBLGEN)
++	$(call transform-host-clang-td-to-out,clang-attr-parsed-attr-impl)
++endif
++
++ifneq ($(findstring AttrParsedAttrList.inc,$(TBLGEN_TABLES)),)
++LOCAL_GENERATED_SOURCES += $(intermediates)/include/clang/Sema/AttrParsedAttrList.inc
++$(intermediates)/include/clang/Sema/AttrParsedAttrList.inc: TBLGEN_LOCAL_MODULE := $(LOCAL_MODULE)
++$(intermediates)/include/clang/Sema/AttrParsedAttrList.inc: $(CLANG_ROOT_PATH)/include/clang/Basic/Attr.td | $(CLANG_TBLGEN)
++	$(call transform-host-clang-td-to-out,clang-attr-parsed-attr-list)
++endif
++
++ifneq ($(findstring AttrTemplateInstantiate.inc,$(TBLGEN_TABLES)),)
++LOCAL_GENERATED_SOURCES += $(intermediates)/include/clang/Sema/AttrTemplateInstantiate.inc
++$(intermediates)/include/clang/Sema/AttrTemplateInstantiate.inc: TBLGEN_LOCAL_MODULE := $(LOCAL_MODULE)
++$(intermediates)/include/clang/Sema/AttrTemplateInstantiate.inc: $(CLANG_ROOT_PATH)/include/clang/Basic/Attr.td | $(CLANG_TBLGEN)
++	$(call transform-host-clang-td-to-out,clang-attr-template-instantiate)
++endif
++
++ifneq ($(findstring Checkers.inc,$(TBLGEN_TABLES)),)
++LOCAL_GENERATED_SOURCES += $(intermediates)/Checkers.inc
++$(intermediates)/Checkers.inc: TBLGEN_LOCAL_MODULE := $(LOCAL_MODULE)
++$(intermediates)/Checkers.inc: \
++  $(CLANG_ROOT_PATH)/lib/StaticAnalyzer/Checkers/Checkers.td \
++  $(CLANG_ROOT_PATH)/include/clang/StaticAnalyzer/Checkers/CheckerBase.td \
++  | $(CLANG_TBLGEN)
++	$(call transform-host-clang-td-to-out,clang-sa-checkers)
++endif
++
++ifneq ($(findstring CommentCommandInfo.inc,$(TBLGEN_TABLES)),)
++LOCAL_GENERATED_SOURCES += $(intermediates)/include/clang/AST/CommentCommandInfo.inc
++$(intermediates)/include/clang/AST/CommentCommandInfo.inc: TBLGEN_LOCAL_MODULE := $(LOCAL_MODULE)
++$(intermediates)/include/clang/AST/CommentCommandInfo.inc: \
++  $(CLANG_ROOT_PATH)/include/clang/AST/CommentCommands.td \
++  | $(CLANG_TBLGEN)
++	$(call transform-host-clang-td-to-out,clang-comment-command-info)
++endif
++
++ifneq ($(findstring CommentCommandList.inc,$(TBLGEN_TABLES)),)
++LOCAL_GENERATED_SOURCES += $(intermediates)/include/clang/AST/CommentCommandList.inc
++$(intermediates)/include/clang/AST/CommentCommandList.inc: TBLGEN_LOCAL_MODULE := $(LOCAL_MODULE)
++$(intermediates)/include/clang/AST/CommentCommandList.inc: \
++  $(CLANG_ROOT_PATH)/include/clang/AST/CommentCommands.td \
++  | $(CLANG_TBLGEN)
++	$(call transform-host-clang-td-to-out,clang-comment-command-list)
++endif
++
++ifneq ($(findstring CommentHTMLNamedCharacterReferences.inc,$(TBLGEN_TABLES)),)
++LOCAL_GENERATED_SOURCES += $(intermediates)/include/clang/AST/CommentHTMLNamedCharacterReferences.inc
++$(intermediates)/include/clang/AST/CommentHTMLNamedCharacterReferences.inc: TBLGEN_LOCAL_MODULE := $(LOCAL_MODULE)
++$(intermediates)/include/clang/AST/CommentHTMLNamedCharacterReferences.inc: \
++  $(CLANG_ROOT_PATH)/include/clang/AST/CommentHTMLNamedCharacterReferences.td \
++  | $(CLANG_TBLGEN)
++	$(call transform-host-clang-td-to-out,clang-comment-html-named-character-references)
++endif
++
++ifneq ($(findstring CommentHTMLTagsProperties.inc,$(TBLGEN_TABLES)),)
++LOCAL_GENERATED_SOURCES += $(intermediates)/include/clang/AST/CommentHTMLTagsProperties.inc
++$(intermediates)/include/clang/AST/CommentHTMLTagsProperties.inc: TBLGEN_LOCAL_MODULE := $(LOCAL_MODULE)
++$(intermediates)/include/clang/AST/CommentHTMLTagsProperties.inc: \
++  $(CLANG_ROOT_PATH)/include/clang/AST/CommentHTMLTags.td \
++  | $(CLANG_TBLGEN)
++	$(call transform-host-clang-td-to-out,clang-comment-html-tags-properties)
++endif
++
++ifneq ($(findstring CommentHTMLTags.inc,$(TBLGEN_TABLES)),)
++LOCAL_GENERATED_SOURCES += $(intermediates)/include/clang/AST/CommentHTMLTags.inc
++$(intermediates)/include/clang/AST/CommentHTMLTags.inc: TBLGEN_LOCAL_MODULE := $(LOCAL_MODULE)
++$(intermediates)/include/clang/AST/CommentHTMLTags.inc: \
++  $(CLANG_ROOT_PATH)/include/clang/AST/CommentHTMLTags.td \
++  | $(CLANG_TBLGEN)
++	$(call transform-host-clang-td-to-out,clang-comment-html-tags)
++endif
++
++ifneq ($(findstring CommentNodes.inc,$(TBLGEN_TABLES)),)
++LOCAL_GENERATED_SOURCES += $(intermediates)/include/clang/AST/CommentNodes.inc
++$(intermediates)/include/clang/AST/CommentNodes.inc: TBLGEN_LOCAL_MODULE := $(LOCAL_MODULE)
++$(intermediates)/include/clang/AST/CommentNodes.inc: \
++  $(CLANG_ROOT_PATH)/include/clang/Basic/CommentNodes.td \
++  | $(CLANG_TBLGEN)
++	$(call transform-host-clang-td-to-out,clang-comment-nodes)
++endif
++
++ifneq ($(filter Diagnostic%Kinds.inc,$(TBLGEN_TABLES)),)
++LOCAL_GENERATED_SOURCES += $(addprefix $(intermediates)/include/clang/Basic/,$(filter Diagnostic%Kinds.inc,$(TBLGEN_TABLES)))
++$(intermediates)/include/clang/Basic/Diagnostic%Kinds.inc: TBLGEN_LOCAL_MODULE := $(LOCAL_MODULE)
++$(intermediates)/include/clang/Basic/Diagnostic%Kinds.inc: \
++  $(CLANG_ROOT_PATH)/include/clang/Basic/Diagnostic.td \
++  $(CLANG_ROOT_PATH)/include/clang/Basic/Diagnostic%Kinds.td \
++  | $(CLANG_TBLGEN)
++	$(call transform-host-clang-td-to-out,clang-diags-defs -clang-component=$(patsubst Diagnostic%Kinds.inc,%,$(@F)))
++endif
++
++ifneq ($(findstring DiagnosticGroups.inc,$(TBLGEN_TABLES)),)
++LOCAL_GENERATED_SOURCES += $(intermediates)/include/clang/Basic/DiagnosticGroups.inc
++$(intermediates)/include/clang/Basic/DiagnosticGroups.inc: TBLGEN_LOCAL_MODULE := $(LOCAL_MODULE)
++$(intermediates)/include/clang/Basic/DiagnosticGroups.inc: $(CLANG_ROOT_PATH)/include/clang/Basic/Diagnostic.td $(CLANG_ROOT_PATH)/include/clang/Basic/DiagnosticGroups.td | $(CLANG_TBLGEN)
++	$(call transform-host-clang-td-to-out,clang-diag-groups)
++endif
++
++ifneq ($(findstring DiagnosticIndexName.inc,$(TBLGEN_TABLES)),)
++LOCAL_GENERATED_SOURCES += $(intermediates)/include/clang/Basic/DiagnosticIndexName.inc
++$(intermediates)/include/clang/Basic/DiagnosticIndexName.inc: TBLGEN_LOCAL_MODULE := $(LOCAL_MODULE)
++$(intermediates)/include/clang/Basic/DiagnosticIndexName.inc: $(CLANG_ROOT_PATH)/include/clang/Basic/Diagnostic.td | $(CLANG_TBLGEN)
++	$(call transform-host-clang-td-to-out,clang-diag-groups)
++endif
++
++ifneq ($(findstring DeclNodes.inc,$(TBLGEN_TABLES)),)
++LOCAL_GENERATED_SOURCES += $(intermediates)/include/clang/AST/DeclNodes.inc
++$(intermediates)/include/clang/AST/DeclNodes.inc: TBLGEN_LOCAL_MODULE := $(LOCAL_MODULE)
++$(intermediates)/include/clang/AST/DeclNodes.inc: $(CLANG_ROOT_PATH)/include/clang/Basic/DeclNodes.td | $(CLANG_TBLGEN)
++	$(call transform-host-clang-td-to-out,clang-decl-nodes)
++endif
++
++ifneq ($(findstring StmtNodes.inc,$(TBLGEN_TABLES)),)
++LOCAL_GENERATED_SOURCES += $(intermediates)/include/clang/AST/StmtNodes.inc
++$(intermediates)/include/clang/AST/StmtNodes.inc: TBLGEN_LOCAL_MODULE := $(LOCAL_MODULE)
++$(intermediates)/include/clang/AST/StmtNodes.inc: $(CLANG_ROOT_PATH)/include/clang/Basic/StmtNodes.td | $(CLANG_TBLGEN)
++	$(call transform-host-clang-td-to-out,clang-stmt-nodes)
++endif
++
++ifneq ($(findstring arm_neon.inc,$(TBLGEN_TABLES)),)
++LOCAL_GENERATED_SOURCES += $(intermediates)/include/clang/Basic/arm_neon.inc
++$(intermediates)/include/clang/Basic/arm_neon.inc: TBLGEN_LOCAL_MODULE := $(LOCAL_MODULE)
++$(intermediates)/include/clang/Basic/arm_neon.inc: $(CLANG_ROOT_PATH)/include/clang/Basic/arm_neon.td | $(CLANG_TBLGEN)
++	$(call transform-host-clang-td-to-out,arm-neon-sema)
++endif
++
++ifneq ($(findstring Options.inc,$(TBLGEN_TABLES)),)
++LOCAL_GENERATED_SOURCES += $(intermediates)/include/clang/Driver/Options.inc
++$(intermediates)/include/clang/Driver/Options.inc: TBLGEN_LOCAL_MODULE := $(LOCAL_MODULE)
++$(intermediates)/include/clang/Driver/Options.inc: $(CLANG_ROOT_PATH)/include/clang/Driver/Options.td $(LLVM_ROOT_PATH)/include/llvm/Option/OptParser.td $(CLANG_ROOT_PATH)/include/clang/Driver/CC1Options.td \
++    | $(CLANG_TBLGEN) $(TBLGEN)
++	$(call transform-host-td-to-out,opt-parser-defs)
++endif
++
++ifneq ($(findstring CC1AsOptions.inc,$(TBLGEN_TABLES)),)
++LOCAL_GENERATED_SOURCES += $(intermediates)/include/clang/Driver/CC1AsOptions.inc
++$(intermediates)/include/clang/Driver/CC1AsOptions.inc: TBLGEN_LOCAL_MODULE := $(LOCAL_MODULE)
++$(intermediates)/include/clang/Driver/CC1AsOptions.inc: $(CLANG_ROOT_PATH)/include/clang/Driver/CC1AsOptions.td $(LLVM_ROOT_PATH)/include/llvm/Option/OptParser.td \
++    | $(CLANG_TBLGEN) $(TBLGEN)
++	$(call transform-host-td-to-out,opt-parser-defs)
++endif
++
++LOCAL_C_INCLUDES += $(intermediates)/include
++
++endif
+diff --git a/clang-version-inc.mk b/clang-version-inc.mk
+new file mode 100644
+index 0000000..5a26276
+--- /dev/null
++++ b/clang-version-inc.mk
+@@ -0,0 +1,36 @@
++###########################################################
++## Generate clang/Basic/Version.inc
++###########################################################
++ifeq ($(LOCAL_MODULE_CLASS),)
++    LOCAL_MODULE_CLASS := STATIC_LIBRARIES
++endif
++
++intermediates := $(call local-intermediates-dir)
++
++LLVMVersion := $(shell grep PACKAGE_VERSION $(LLVM_ROOT_PATH)/host/include/llvm/Config/config.h | sed -e 's/\#define PACKAGE_VERSION "\(.*\)"/\1/g')
++
++# Compute the Clang version from the LLVM version, unless specified explicitly.
++# (Copy from include/clang/Basic/Makefile)
++CLANG_VERSION := $(subst svn,,$(LLVMVersion))
++CLANG_VERSION_COMPONENTS := $(subst ., ,$(CLANG_VERSION))
++CLANG_VERSION_MAJOR := $(word 1,$(CLANG_VERSION_COMPONENTS))
++CLANG_VERSION_MINOR := $(word 2,$(CLANG_VERSION_COMPONENTS))
++CLANG_VERSION_PATCHLEVEL := $(word 3,$(CLANG_VERSION_COMPONENTS))
++ifeq ($(CLANG_VERSION_PATCHLEVEL),)
++    CLANG_HAS_VERSION_PATCHLEVEL := 0
++else
++    CLANG_HAS_VERSION_PATCHLEVEL := 1
++endif
++
++LOCAL_GENERATED_SOURCES += $(intermediates)/include/clang/Basic/Version.inc
++$(intermediates)/include/clang/Basic/Version.inc: $(CLANG_ROOT_PATH)/include/clang/Basic/Version.inc.in \
++  $(LLVM_ROOT_PATH)/host/include/llvm/Config/config.h
++	@echo "Updating Clang version info."
++	@mkdir -p $(dir $@)
++	$(hide) sed -e "s#@CLANG_VERSION@#$(CLANG_VERSION)#g" \
++	-e "s#@CLANG_VERSION_MAJOR@#$(CLANG_VERSION_MAJOR)#g" \
++	-e "s#@CLANG_VERSION_MINOR@#$(CLANG_VERSION_MINOR)#g" \
++	-e "s#@CLANG_VERSION_PATCHLEVEL@#$(CLANG_VERSION_PATCHLEVEL)#g" \
++	-e "s#@CLANG_HAS_VERSION_PATCHLEVEL@#$(CLANG_HAS_VERSION_PATCHLEVEL)#g" \
++	$< > $@
++
+diff --git a/clang.mk b/clang.mk
+new file mode 100644
+index 0000000..587a510
+--- /dev/null
++++ b/clang.mk
+@@ -0,0 +1,7 @@
++ifeq ($(CLANG_ROOT_PATH),)
++$(error Must set variable CLANG_ROOT_PATH before including this! $(LOCAL_PATH))
++endif
++
++CLANG_HOST_BUILD_MK := $(CLANG_ROOT_PATH)/clang-host-build.mk
++CLANG_TBLGEN_RULES_MK := $(CLANG_ROOT_PATH)/clang-tblgen-rules.mk
++CLANG_VERSION_INC_MK := $(CLANG_ROOT_PATH)/clang-version-inc.mk
+diff --git a/host_shared_clang.mk b/host_shared_clang.mk
+new file mode 100644
+index 0000000..f9e4181
+--- /dev/null
++++ b/host_shared_clang.mk
+@@ -0,0 +1,41 @@
++# Don't build the library unless forced to.
++ifeq (true,$(FORCE_BUILD_LLVM_COMPONENTS))
++# Don't build the library in unbundled branches.
++ifeq (,$(TARGET_BUILD_APPS))
++
++LOCAL_PATH:= $(call my-dir)
++
++LOCAL_IS_HOST_MODULE := true
++
++LOCAL_MODULE:= libclang
++
++LOCAL_MODULE_TAGS := optional
++
++LOCAL_WHOLE_STATIC_LIBRARIES := \
++	libclangDriver \
++	libclangParse \
++	libclangSema \
++	libclangAnalysis \
++	libclangCodeGen \
++	libclangAST \
++	libclangEdit \
++	libclangLex \
++	libclangFrontend \
++	libclangBasic \
++	libclangRewriteFrontend \
++	libclangRewriteCore \
++	libclangSerialization
++
++LOCAL_SHARED_LIBRARIES := libLLVM
++
++ifeq ($(HOST_OS),windows)
++  LOCAL_LDLIBS := -limagehlp -lpsapi
++else
++  LOCAL_LDLIBS := -ldl -lpthread
++endif
++
++include $(CLANG_HOST_BUILD_MK)
++include $(BUILD_HOST_SHARED_LIBRARY)
++
++endif # don't build in unbundled branches
++endif # don't build unless forced to
+diff --git a/include/clang/Config/config.h b/include/clang/Config/config.h
+new file mode 100644
+index 0000000..51ef9f9
+--- /dev/null
++++ b/include/clang/Config/config.h
+@@ -0,0 +1,25 @@
++/* tools/clang/include/clang/Config/config.h.  Generated from config.h.in by configure.  */
++/* include/clang/Config/config.h.in. */
++
++#ifndef ANDROID_CONFIG_H
++#define ANDROID_CONFIG_H
++
++/* Bug report URL. */
++#define BUG_REPORT_URL "http://llvm.org/bugs/"
++
++/* Relative directory for resource files */
++#define CLANG_RESOURCE_DIR ""
++
++/* Directories clang will search for headers */
++#define C_INCLUDE_DIRS ""
++
++/* Linker version detected at compile time. */
++#define HOST_LINK_VERSION "2.22"
++
++/* Default <path> to all compiler invocations for --sysroot=<path>. */
++#define DEFAULT_SYSROOT ""
++
++/* Directory where gcc is installed. */
++#define GCC_INSTALL_PREFIX ""
++
++#endif
+diff --git a/lib/ARCMigrate/Android.mk b/lib/ARCMigrate/Android.mk
+new file mode 100644
+index 0000000..834f573
+--- /dev/null
++++ b/lib/ARCMigrate/Android.mk
+@@ -0,0 +1,51 @@
++LOCAL_PATH := $(call my-dir)
++
++# For the host only
++# =====================================================
++include $(CLEAR_VARS)
++include $(CLEAR_TBLGEN_VARS)
++
++TBLGEN_TABLES := \
++  Attrs.inc \
++  AttrList.inc \
++  AttrParsedAttrList.inc    \
++  AttrVisitor.inc \
++  CommentCommandList.inc \
++  CommentNodes.inc \
++  DeclNodes.inc \
++  DiagnosticCommonKinds.inc \
++  DiagnosticGroups.inc \
++  DiagnosticSemaKinds.inc \
++  StmtNodes.inc
++
++clang_arc_migrate_SRC_FILES := \
++  ARCMT.cpp \
++  ARCMTActions.cpp \
++  FileRemapper.cpp \
++  ObjCMT.cpp \
++  PlistReporter.cpp \
++  TransAPIUses.cpp \
++  TransARCAssign.cpp \
++  TransAutoreleasePool.cpp \
++  TransBlockObjCVariable.cpp \
++  TransEmptyStatementsAndDealloc.cpp \
++  TransformActions.cpp \
++  Transforms.cpp \
++  TransGCAttrs.cpp \
++  TransGCCalls.cpp \
++  TransProperties.cpp \
++  TransProtectedScope.cpp \
++  TransRetainReleaseDealloc.cpp \
++  TransUnbridgedCasts.cpp \
++  TransUnusedInitDelegate.cpp \
++  TransZeroOutPropsInDealloc.cpp
++
++LOCAL_SRC_FILES := $(clang_arc_migrate_SRC_FILES)
++
++LOCAL_MODULE := libclangARCMigrate
++LOCAL_MODULE_TAGS := optional
++
++include $(CLANG_HOST_BUILD_MK)
++include $(CLANG_VERSION_INC_MK)
++include $(CLANG_TBLGEN_RULES_MK)
++include $(BUILD_HOST_STATIC_LIBRARY)
+diff --git a/lib/AST/Android.mk b/lib/AST/Android.mk
+new file mode 100644
+index 0000000..9d0c005
+--- /dev/null
++++ b/lib/AST/Android.mk
+@@ -0,0 +1,94 @@
++LOCAL_PATH:= $(call my-dir)
++
++# For the host only
++# =====================================================
++include $(CLEAR_VARS)
++include $(CLEAR_TBLGEN_VARS)
++
++TBLGEN_TABLES :=    \
++	AttrDump.inc	\
++	AttrImpl.inc	\
++	AttrList.inc	\
++	Attrs.inc	\
++        AttrVisitor.inc \
++	CommentCommandInfo.inc \
++	CommentCommandList.inc \
++	CommentHTMLNamedCharacterReferences.inc \
++	CommentHTMLTags.inc \
++	CommentHTMLTagsProperties.inc \
++	CommentNodes.inc \
++	DeclNodes.inc	\
++	DiagnosticASTKinds.inc	\
++	DiagnosticCommentKinds.inc \
++	DiagnosticCommonKinds.inc	\
++	DiagnosticSemaKinds.inc	\
++	StmtNodes.inc
++
++clang_ast_SRC_FILES :=	\
++	APValue.cpp	\
++	ASTConsumer.cpp	\
++	ASTContext.cpp	\
++	ASTDiagnostic.cpp	\
++	ASTDumper.cpp	\
++	ASTImporter.cpp	\
++	ASTTypeTraits.cpp \
++	AttrImpl.cpp	\
++	Comment.cpp \
++	CommentBriefParser.cpp \
++	CommentCommandTraits.cpp \
++	CommentLexer.cpp \
++	CommentParser.cpp \
++	CommentSema.cpp \
++	CXXInheritance.cpp	\
++	Decl.cpp	\
++	DeclarationName.cpp	\
++	DeclBase.cpp	\
++	DeclCXX.cpp	\
++	DeclFriend.cpp	\
++	DeclGroup.cpp	\
++	DeclObjC.cpp	\
++	DeclOpenMP.cpp	\
++	DeclPrinter.cpp	\
++	DeclTemplate.cpp	\
++	Expr.cpp	\
++	ExprClassification.cpp	\
++	ExprConstant.cpp	\
++	ExprCXX.cpp	\
++	ExternalASTSource.cpp	\
++	InheritViz.cpp	\
++	ItaniumCXXABI.cpp	\
++	ItaniumMangle.cpp	\
++	Mangle.cpp	\
++	MangleNumberingContext.cpp \
++	MicrosoftCXXABI.cpp	\
++	MicrosoftMangle.cpp	\
++	NestedNameSpecifier.cpp	\
++        NSAPI.cpp       \
++	ParentMap.cpp	\
++	RecordLayout.cpp	\
++	RecordLayoutBuilder.cpp	\
++	RawCommentList.cpp \
++	SelectorLocationsKind.cpp \
++	Stmt.cpp	\
++	StmtIterator.cpp	\
++	StmtPrinter.cpp	\
++	StmtProfile.cpp	\
++	StmtViz.cpp	\
++	TemplateBase.cpp	\
++	TemplateName.cpp	\
++	Type.cpp	\
++	TypeLoc.cpp	\
++	TypePrinter.cpp \
++	VTTBuilder.cpp \
++	VTableBuilder.cpp
++
++LOCAL_SRC_FILES := $(clang_ast_SRC_FILES)
++
++LOCAL_MODULE:= libclangAST
++LOCAL_MODULE_TAGS := optional
++
++LOCAL_MODULE_TAGS := optional
++
++include $(CLANG_HOST_BUILD_MK)
++include $(CLANG_TBLGEN_RULES_MK)
++include $(BUILD_HOST_STATIC_LIBRARY)
+diff --git a/lib/Analysis/Android.mk b/lib/Analysis/Android.mk
+new file mode 100644
+index 0000000..8ccbf3e
+--- /dev/null
++++ b/lib/Analysis/Android.mk
+@@ -0,0 +1,51 @@
++LOCAL_PATH:= $(call my-dir)
++
++# For the host only
++# =====================================================
++include $(CLEAR_VARS)
++include $(CLEAR_TBLGEN_VARS)
++
++TBLGEN_TABLES := \
++  AttrList.inc \
++  Attrs.inc \
++  AttrVisitor.inc \
++  CommentCommandList.inc \
++  CommentNodes.inc \
++  DeclNodes.inc \
++  DiagnosticCommonKinds.inc \
++  DiagnosticAnalysisKinds.inc \
++  StmtNodes.inc
++
++clang_analysis_SRC_FILES := \
++  AnalysisDeclContext.cpp \
++  BodyFarm.cpp \
++  CallGraph.cpp \
++  CFG.cpp \
++  CFGReachabilityAnalysis.cpp \
++  CFGStmtMap.cpp \
++  CocoaConventions.cpp \
++  Consumed.cpp \
++  Dominators.cpp \
++  FormatString.cpp \
++  LiveVariables.cpp \
++  ObjCNoReturn.cpp \
++  PostOrderCFGView.cpp \
++  PrintfFormatString.cpp \
++  ProgramPoint.cpp \
++  PseudoConstantAnalysis.cpp \
++  ReachableCode.cpp \
++  ScanfFormatString.cpp \
++  ThreadSafety.cpp \
++  UninitializedValues.cpp
++
++
++LOCAL_SRC_FILES := $(clang_analysis_SRC_FILES)
++
++LOCAL_MODULE:= libclangAnalysis
++LOCAL_MODULE_TAGS := optional
++
++LOCAL_MODULE_TAGS := optional
++
++include $(CLANG_HOST_BUILD_MK)
++include $(CLANG_TBLGEN_RULES_MK)
++include $(BUILD_HOST_STATIC_LIBRARY)
+diff --git a/lib/Basic/Android.mk b/lib/Basic/Android.mk
+new file mode 100644
+index 0000000..54e61c2
+--- /dev/null
++++ b/lib/Basic/Android.mk
+@@ -0,0 +1,57 @@
++LOCAL_PATH:= $(call my-dir)
++
++# For the host only
++# =====================================================
++include $(CLEAR_VARS)
++include $(CLEAR_TBLGEN_VARS)
++
++TBLGEN_TABLES := \
++  AttrHasAttributeImpl.inc \
++  DiagnosticASTKinds.inc \
++  DiagnosticAnalysisKinds.inc \
++  DiagnosticCommentKinds.inc \
++  DiagnosticCommonKinds.inc \
++  DiagnosticDriverKinds.inc \
++  DiagnosticFrontendKinds.inc \
++  DiagnosticGroups.inc \
++  DiagnosticIndexName.inc \
++  DiagnosticLexKinds.inc \
++  DiagnosticParseKinds.inc \
++  DiagnosticSemaKinds.inc \
++  DiagnosticSerializationKinds.inc \
++  arm_neon.inc
++
++clang_basic_SRC_FILES := \
++  Attributes.cpp \
++  Builtins.cpp \
++  CharInfo.cpp \
++  Diagnostic.cpp \
++  DiagnosticIDs.cpp \
++  FileManager.cpp \
++  FileSystemStatCache.cpp \
++  IdentifierTable.cpp \
++  LangOptions.cpp \
++  Module.cpp \
++  ObjCRuntime.cpp \
++  OpenMPKinds.cpp \
++  OperatorPrecedence.cpp \
++  SourceLocation.cpp \
++  SourceManager.cpp \
++  TargetInfo.cpp \
++  Targets.cpp \
++  TokenKinds.cpp \
++  Version.cpp \
++  VersionTuple.cpp \
++  VirtualFileSystem.cpp
++
++LOCAL_SRC_FILES := $(clang_basic_SRC_FILES)
++
++LOCAL_MODULE:= libclangBasic
++LOCAL_MODULE_TAGS := optional
++
++LOCAL_MODULE_TAGS := optional
++
++include $(CLANG_HOST_BUILD_MK)
++include $(CLANG_VERSION_INC_MK)
++include $(CLANG_TBLGEN_RULES_MK)
++include $(BUILD_HOST_STATIC_LIBRARY)
+diff --git a/lib/CodeGen/Android.mk b/lib/CodeGen/Android.mk
+new file mode 100644
+index 0000000..1c4a0b7
+--- /dev/null
++++ b/lib/CodeGen/Android.mk
+@@ -0,0 +1,75 @@
++LOCAL_PATH:= $(call my-dir)
++
++clang_codegen_TBLGEN_TABLES := \
++  AttrList.inc \
++  Attrs.inc \
++  AttrVisitor.inc \
++  CommentCommandList.inc \
++  CommentNodes.inc \
++  DeclNodes.inc \
++  DiagnosticCommonKinds.inc \
++  DiagnosticFrontendKinds.inc \
++  DiagnosticSemaKinds.inc \
++  StmtNodes.inc \
++  arm_neon.inc
++
++clang_codegen_SRC_FILES := \
++  BackendUtil.cpp \
++  CGAtomic.cpp \
++  CGBlocks.cpp \
++  CGBuiltin.cpp \
++  CGCUDANV.cpp \
++  CGCUDARuntime.cpp \
++  CGCXX.cpp \
++  CGCXXABI.cpp \
++  CGCall.cpp \
++  CGClass.cpp \
++  CGCleanup.cpp \
++  CGDebugInfo.cpp \
++  CGDecl.cpp \
++  CGDeclCXX.cpp \
++  CGException.cpp \
++  CGExpr.cpp \
++  CGExprAgg.cpp \
++  CGExprCXX.cpp \
++  CGExprComplex.cpp \
++  CGExprConstant.cpp \
++  CGExprScalar.cpp \
++  CGObjC.cpp \
++  CGObjCGNU.cpp \
++  CGObjCMac.cpp \
++  CGObjCRuntime.cpp \
++  CGOpenCLRuntime.cpp \
++  CGRTTI.cpp \
++  CGRecordLayoutBuilder.cpp \
++  CGStmt.cpp \
++  CGVTT.cpp \
++  CGVTables.cpp \
++  CodeGenABITypes.cpp \
++  CodeGenAction.cpp \
++  CodeGenFunction.cpp \
++  CodeGenModule.cpp \
++  CodeGenPGO.cpp \
++  CodeGenTBAA.cpp \
++  CodeGenTypes.cpp \
++  ItaniumCXXABI.cpp \
++  MicrosoftCXXABI.cpp \
++  ModuleBuilder.cpp \
++  TargetInfo.cpp
++
++# For the host only
++# =====================================================
++include $(CLEAR_VARS)
++include $(CLEAR_TBLGEN_VARS)
++
++LOCAL_MODULE:= libclangCodeGen
++LOCAL_MODULE_TAGS := optional
++
++LOCAL_SRC_FILES := $(clang_codegen_SRC_FILES)
++TBLGEN_TABLES := $(clang_codegen_TBLGEN_TABLES)
++
++include $(CLANG_HOST_BUILD_MK)
++include $(CLANG_VERSION_INC_MK)
++include $(CLANG_TBLGEN_RULES_MK)
++include $(LLVM_GEN_INTRINSICS_MK)
++include $(BUILD_HOST_STATIC_LIBRARY)
+diff --git a/lib/Driver/Android.mk b/lib/Driver/Android.mk
+new file mode 100644
+index 0000000..559ca83
+--- /dev/null
++++ b/lib/Driver/Android.mk
+@@ -0,0 +1,44 @@
++LOCAL_PATH:= $(call my-dir)
++
++# For the host only
++# =====================================================
++include $(CLEAR_VARS)
++include $(CLEAR_TBLGEN_VARS)
++
++TBLGEN_TABLES := \
++  AttrVisitor.inc \
++  DiagnosticCommonKinds.inc \
++  DiagnosticDriverKinds.inc \
++  DiagnosticSemaKinds.inc \
++  Options.inc \
++  CC1Options.inc \
++  CC1AsOptions.inc
++
++clang_driver_SRC_FILES := \
++  Action.cpp \
++  CC1AsOptions.cpp \
++  Compilation.cpp \
++  Driver.cpp \
++  DriverOptions.cpp \
++  Job.cpp \
++  Multilib.cpp \
++  Phases.cpp \
++  SanitizerArgs.cpp \
++  Tool.cpp \
++  ToolChain.cpp \
++  ToolChains.cpp \
++  Tools.cpp \
++  Types.cpp \
++  WindowsToolChain.cpp
++
++LOCAL_SRC_FILES := $(clang_driver_SRC_FILES)
++
++LOCAL_MODULE := libclangDriver
++LOCAL_MODULE_TAGS := optional
++
++LOCAL_MODULE_TAGS := optional
++
++include $(CLANG_HOST_BUILD_MK)
++include $(CLANG_TBLGEN_RULES_MK)
++include $(CLANG_VERSION_INC_MK)
++include $(BUILD_HOST_STATIC_LIBRARY)
+diff --git a/lib/Edit/Android.mk b/lib/Edit/Android.mk
+new file mode 100644
+index 0000000..87f4e25
+--- /dev/null
++++ b/lib/Edit/Android.mk
+@@ -0,0 +1,32 @@
++LOCAL_PATH:= $(call my-dir)
++
++clang_edit_SRC_FILES := \
++  Commit.cpp \
++  EditedSource.cpp \
++  RewriteObjCFoundationAPI.cpp
++
++
++# For the host only
++# =====================================================
++include $(CLEAR_VARS)
++include $(CLEAR_TBLGEN_VARS)
++
++TBLGEN_TABLES := \
++  Attrs.inc \
++  AttrList.inc \
++  CommentCommandList.inc \
++  CommentNodes.inc \
++  DeclNodes.inc \
++  DiagnosticCommonKinds.inc \
++  StmtNodes.inc
++
++LOCAL_SRC_FILES := $(clang_edit_SRC_FILES)
++
++LOCAL_MODULE:= libclangEdit
++
++LOCAL_MODULE_TAGS := optional
++
++include $(CLANG_HOST_BUILD_MK)
++include $(CLANG_VERSION_INC_MK)
++include $(CLANG_TBLGEN_RULES_MK)
++include $(BUILD_HOST_STATIC_LIBRARY)
+diff --git a/lib/Format/Android.mk b/lib/Format/Android.mk
+new file mode 100644
+index 0000000..302f28f
+--- /dev/null
++++ b/lib/Format/Android.mk
+@@ -0,0 +1,43 @@
++LOCAL_PATH:= $(call my-dir)
++
++# For the host only
++# =====================================================
++include $(CLEAR_VARS)
++include $(CLEAR_TBLGEN_VARS)
++
++TBLGEN_TABLES := \
++  AttrHasAttributeImpl.inc \
++  DiagnosticASTKinds.inc \
++  DiagnosticAnalysisKinds.inc \
++  DiagnosticCommentKinds.inc \
++  DiagnosticCommonKinds.inc \
++  DiagnosticDriverKinds.inc \
++  DiagnosticFrontendKinds.inc \
++  DiagnosticGroups.inc \
++  DiagnosticIndexName.inc \
++  DiagnosticLexKinds.inc \
++  DiagnosticParseKinds.inc \
++  DiagnosticSemaKinds.inc \
++  DiagnosticSerializationKinds.inc \
++  arm_neon.inc
++
++clang_format_SRC_FILES := \
++  BreakableToken.cpp \
++  ContinuationIndenter.cpp \
++  Format.cpp \
++  FormatToken.cpp \
++  TokenAnnotator.cpp \
++  UnwrappedLineParser.cpp \
++  WhitespaceManager.cpp
++
++LOCAL_SRC_FILES := $(clang_format_SRC_FILES)
++
++LOCAL_MODULE:= libclangFormat
++LOCAL_MODULE_TAGS := optional
++
++LOCAL_MODULE_TAGS := optional
++
++include $(CLANG_HOST_BUILD_MK)
++include $(CLANG_VERSION_INC_MK)
++include $(CLANG_TBLGEN_RULES_MK)
++include $(BUILD_HOST_STATIC_LIBRARY)
+diff --git a/lib/Frontend/Android.mk b/lib/Frontend/Android.mk
+new file mode 100644
+index 0000000..c3c42c3
+--- /dev/null
++++ b/lib/Frontend/Android.mk
+@@ -0,0 +1,66 @@
++LOCAL_PATH:= $(call my-dir)
++
++# For the host only
++# =====================================================
++include $(CLEAR_VARS)
++include $(CLEAR_TBLGEN_VARS)
++
++TBLGEN_TABLES := \
++  AttrList.inc \
++  Attrs.inc \
++  AttrParsedAttrList.inc \
++  AttrVisitor.inc \
++  CC1Options.inc \
++  CommentCommandList.inc \
++  CommentNodes.inc \
++  DiagnosticASTKinds.inc \
++  DiagnosticCommonKinds.inc \
++  DiagnosticDriverKinds.inc \
++  DiagnosticFrontendKinds.inc \
++  DiagnosticLexKinds.inc \
++  DiagnosticSemaKinds.inc \
++  DeclNodes.inc \
++  StmtNodes.inc
++
++clang_frontend_SRC_FILES := \
++  ASTConsumers.cpp \
++  ASTMerge.cpp \
++  ASTUnit.cpp \
++  CacheTokens.cpp \
++  ChainedDiagnosticConsumer.cpp \
++  ChainedIncludesSource.cpp \
++  CompilerInstance.cpp \
++  CompilerInvocation.cpp \
++  CreateInvocationFromCommandLine.cpp \
++  DependencyFile.cpp \
++  DependencyGraph.cpp \
++  DiagnosticRenderer.cpp \
++  FrontendAction.cpp \
++  FrontendActions.cpp \
++  FrontendOptions.cpp \
++  HeaderIncludeGen.cpp \
++  InitHeaderSearch.cpp \
++  InitPreprocessor.cpp \
++  LangStandards.cpp \
++  LayoutOverrideSource.cpp \
++  LogDiagnosticPrinter.cpp \
++  MultiplexConsumer.cpp \
++  PrintPreprocessedOutput.cpp \
++  SerializedDiagnosticPrinter.cpp \
++  TextDiagnostic.cpp \
++  TextDiagnosticBuffer.cpp \
++  TextDiagnosticPrinter.cpp \
++  Warnings.cpp \
++  VerifyDiagnosticConsumer.cpp
++
++LOCAL_SRC_FILES := $(clang_frontend_SRC_FILES)
++
++LOCAL_MODULE:= libclangFrontend
++LOCAL_MODULE_TAGS:= optional
++
++LOCAL_MODULE_TAGS := optional
++
++include $(CLANG_HOST_BUILD_MK)
++include $(CLANG_TBLGEN_RULES_MK)
++include $(CLANG_VERSION_INC_MK)
++include $(BUILD_HOST_STATIC_LIBRARY)
+diff --git a/lib/FrontendTool/Android.mk b/lib/FrontendTool/Android.mk
+new file mode 100644
+index 0000000..2496f6b
+--- /dev/null
++++ b/lib/FrontendTool/Android.mk
+@@ -0,0 +1,24 @@
++LOCAL_PATH:= $(call my-dir)
++
++# For the host only
++# =====================================================
++include $(CLEAR_VARS)
++include $(CLEAR_TBLGEN_VARS)
++
++LOCAL_MODULE:= libclangFrontendTool
++
++LOCAL_MODULE_TAGS := optional
++
++TBLGEN_TABLES := \
++  DiagnosticCommonKinds.inc \
++  DiagnosticFrontendKinds.inc \
++  CC1Options.inc
++
++clang_frontend_tool_SRC_FILES := \
++  ExecuteCompilerInvocation.cpp
++
++LOCAL_SRC_FILES := $(clang_frontend_tool_SRC_FILES)
++
++include $(CLANG_HOST_BUILD_MK)
++include $(CLANG_TBLGEN_RULES_MK)
++include $(BUILD_HOST_STATIC_LIBRARY)
+diff --git a/lib/Headers/Android.mk b/lib/Headers/Android.mk
+new file mode 100644
+index 0000000..117129e
+--- /dev/null
++++ b/lib/Headers/Android.mk
+@@ -0,0 +1,11 @@
++LOCAL_PATH:= $(call my-dir)
++
++include $(CLEAR_VARS)
++
++$(TARGET_OUT_HEADERS)/clang/arm_neon.h: TBLGEN_LOCAL_MODULE := arm_neon.h
++$(TARGET_OUT_HEADERS)/clang/arm_neon.h: $(CLANG_ROOT_PATH)/include/clang/Basic/arm_neon.td \
++    | $(CLANG_TBLGEN)
++	$(call transform-host-clang-td-to-out,arm-neon)
++
++# Make sure when clang is used, arm_neon.h does exist.
++$(CLANG): | $(TARGET_OUT_HEADERS)/clang/arm_neon.h
+diff --git a/lib/Lex/Android.mk b/lib/Lex/Android.mk
+new file mode 100644
+index 0000000..a5e9661
+--- /dev/null
++++ b/lib/Lex/Android.mk
+@@ -0,0 +1,45 @@
++LOCAL_PATH:= $(call my-dir)
++
++# For the host only
++# =====================================================
++include $(CLEAR_VARS)
++include $(CLEAR_TBLGEN_VARS)
++
++TBLGEN_TABLES := \
++  DiagnosticLexKinds.inc \
++  DiagnosticCommonKinds.inc
++
++clang_lex_SRC_FILES := \
++  HeaderMap.cpp \
++  HeaderSearch.cpp \
++  Lexer.cpp \
++  LiteralSupport.cpp \
++  MacroArgs.cpp \
++  MacroInfo.cpp \
++  ModuleMap.cpp \
++  PPCaching.cpp \
++  PPCallbacks.cpp \
++  PPConditionalDirectiveRecord.cpp \
++  PPDirectives.cpp \
++  PPExpressions.cpp \
++  PPLexerChange.cpp \
++  PPMacroExpansion.cpp \
++  PTHLexer.cpp \
++  Pragma.cpp \
++  PreprocessingRecord.cpp \
++  Preprocessor.cpp \
++  PreprocessorLexer.cpp \
++  ScratchBuffer.cpp \
++  TokenConcatenation.cpp \
++  TokenLexer.cpp
++
++LOCAL_SRC_FILES := $(clang_lex_SRC_FILES)
++
++LOCAL_MODULE:= libclangLex
++LOCAL_MODULE_TAGS := optional
++
++LOCAL_MODULE_TAGS := optional
++
++include $(CLANG_HOST_BUILD_MK)
++include $(CLANG_TBLGEN_RULES_MK)
++include $(BUILD_HOST_STATIC_LIBRARY)
+diff --git a/lib/Parse/Android.mk b/lib/Parse/Android.mk
+new file mode 100644
+index 0000000..5bc2200
+--- /dev/null
++++ b/lib/Parse/Android.mk
+@@ -0,0 +1,47 @@
++LOCAL_PATH:= $(call my-dir)
++
++# For the host only
++# =====================================================
++include $(CLEAR_VARS)
++include $(CLEAR_TBLGEN_VARS)
++
++TBLGEN_TABLES :=  \
++	AttrList.inc  \
++	AttrParsedAttrList.inc  \
++	Attrs.inc  \
++        AttrVisitor.inc \
++        AttrParserStringSwitches.inc \
++	CommentCommandList.inc \
++	CommentNodes.inc \
++	DeclNodes.inc  \
++	DiagnosticParseKinds.inc  \
++        DiagnosticCommonKinds.inc  \
++	DiagnosticSemaKinds.inc	\
++	StmtNodes.inc
++
++clang_parse_SRC_FILES :=  \
++	ParseAST.cpp  \
++	ParseCXXInlineMethods.cpp  \
++	ParseDecl.cpp  \
++	ParseDeclCXX.cpp  \
++	ParseExpr.cpp  \
++	ParseExprCXX.cpp  \
++	ParseInit.cpp  \
++	ParseObjc.cpp  \
++	ParseOpenMP.cpp  \
++	ParsePragma.cpp  \
++	ParseStmt.cpp  \
++	ParseTemplate.cpp  \
++	ParseTentative.cpp  \
++	Parser.cpp
++
++LOCAL_SRC_FILES := $(clang_parse_SRC_FILES)
++
++LOCAL_MODULE:= libclangParse
++LOCAL_MODULE_TAGS := optional
++
++LOCAL_MODULE_TAGS := optional
++
++include $(CLANG_HOST_BUILD_MK)
++include $(CLANG_TBLGEN_RULES_MK)
++include $(BUILD_HOST_STATIC_LIBRARY)
+diff --git a/lib/Rewrite/Core/Android.mk b/lib/Rewrite/Core/Android.mk
+new file mode 100644
+index 0000000..546fc04
+--- /dev/null
++++ b/lib/Rewrite/Core/Android.mk
+@@ -0,0 +1,34 @@
++LOCAL_PATH:= $(call my-dir)
++
++# For the host only
++# =====================================================
++include $(CLEAR_VARS)
++include $(CLEAR_TBLGEN_VARS)
++
++LOCAL_MODULE:= libclangRewriteCore
++
++LOCAL_MODULE_TAGS := optional
++
++TBLGEN_TABLES := \
++  AttrList.inc \
++  Attrs.inc \
++  AttrParsedAttrList.inc \
++  CommentNodes.inc \
++  DeclNodes.inc \
++  DiagnosticCommonKinds.inc \
++  DiagnosticFrontendKinds.inc \
++  StmtNodes.inc
++
++clang_rewrite_core_SRC_FILES := \
++  DeltaTree.cpp \
++  HTMLRewrite.cpp \
++  RewriteRope.cpp \
++  Rewriter.cpp \
++  TokenRewriter.cpp
++
++LOCAL_SRC_FILES := $(clang_rewrite_core_SRC_FILES)
++
++
++include $(CLANG_HOST_BUILD_MK)
++include $(CLANG_TBLGEN_RULES_MK)
++include $(BUILD_HOST_STATIC_LIBRARY)
+diff --git a/lib/Rewrite/Frontend/Android.mk b/lib/Rewrite/Frontend/Android.mk
+new file mode 100644
+index 0000000..2bbf311
+--- /dev/null
++++ b/lib/Rewrite/Frontend/Android.mk
+@@ -0,0 +1,38 @@
++LOCAL_PATH:= $(call my-dir)
++
++# For the host only
++# =====================================================
++include $(CLEAR_VARS)
++include $(CLEAR_TBLGEN_VARS)
++
++LOCAL_MODULE:= libclangRewriteFrontend
++
++LOCAL_MODULE_TAGS := optional
++
++TBLGEN_TABLES := \
++  AttrList.inc \
++  Attrs.inc \
++  AttrParsedAttrList.inc \
++  CommentCommandList.inc \
++  CommentNodes.inc \
++  DeclNodes.inc \
++  DiagnosticCommonKinds.inc \
++  DiagnosticFrontendKinds.inc \
++  StmtNodes.inc
++
++clang_rewrite_frontend_SRC_FILES := \
++  FixItRewriter.cpp \
++  FrontendActions.cpp \
++  HTMLPrint.cpp \
++  InclusionRewriter.cpp \
++  RewriteMacros.cpp \
++  RewriteModernObjC.cpp \
++  RewriteObjC.cpp \
++  RewriteTest.cpp
++
++LOCAL_SRC_FILES := $(clang_rewrite_frontend_SRC_FILES)
++
++
++include $(CLANG_HOST_BUILD_MK)
++include $(CLANG_TBLGEN_RULES_MK)
++include $(BUILD_HOST_STATIC_LIBRARY)
+diff --git a/lib/Sema/Android.mk b/lib/Sema/Android.mk
+new file mode 100644
+index 0000000..77a2e93
+--- /dev/null
++++ b/lib/Sema/Android.mk
+@@ -0,0 +1,84 @@
++LOCAL_PATH:= $(call my-dir)
++
++# For the host only
++# =====================================================
++include $(CLEAR_VARS)
++include $(CLEAR_TBLGEN_VARS)
++
++TBLGEN_TABLES :=    \
++	AttrList.inc	\
++	Attrs.inc	\
++	AttrParsedAttrKinds.inc    \
++	AttrParsedAttrImpl.inc    \
++	AttrParsedAttrList.inc    \
++	AttrSpellingListIndex.inc \
++	AttrTemplateInstantiate.inc	\
++        AttrVisitor.inc \
++	CommentCommandList.inc \
++	CommentNodes.inc \
++	DeclNodes.inc	\
++	DiagnosticASTKinds.inc	\
++	DiagnosticSemaKinds.inc	\
++	DiagnosticParseKinds.inc	\
++	DiagnosticCommentKinds.inc \
++	DiagnosticCommonKinds.inc	\
++	StmtNodes.inc	\
++	arm_neon.inc
++
++clang_sema_SRC_FILES :=	\
++	AnalysisBasedWarnings.cpp	\
++	AttributeList.cpp	\
++	CodeCompleteConsumer.cpp	\
++	DeclSpec.cpp	\
++	IdentifierResolver.cpp	\
++	DelayedDiagnostic.cpp \
++	JumpDiagnostics.cpp	\
++	MultiplexExternalSemaSource.cpp \
++	Scope.cpp \
++	ScopeInfo.cpp \
++	Sema.cpp	\
++	SemaAccess.cpp	\
++	SemaAttr.cpp	\
++	SemaCXXScopeSpec.cpp	\
++	SemaCast.cpp \
++	SemaChecking.cpp	\
++	SemaCodeComplete.cpp	\
++	SemaConsumer.cpp	\
++	SemaDecl.cpp	\
++	SemaDeclAttr.cpp	\
++	SemaDeclCXX.cpp	\
++	SemaDeclObjC.cpp	\
++	SemaExceptionSpec.cpp	\
++	SemaExpr.cpp	\
++	SemaExprCXX.cpp	\
++	SemaExprMember.cpp \
++	SemaExprObjC.cpp	\
++	SemaFixItUtils.cpp \
++	SemaInit.cpp	\
++	SemaLambda.cpp	\
++	SemaLookup.cpp	\
++	SemaObjCProperty.cpp	\
++	SemaOpenMP.cpp	\
++	SemaOverload.cpp	\
++	SemaPseudoObject.cpp	\
++	SemaStmt.cpp	\
++        SemaStmtAsm.cpp \
++        SemaStmtAttr.cpp \
++	SemaTemplate.cpp	\
++	SemaTemplateDeduction.cpp	\
++	SemaTemplateInstantiate.cpp	\
++	SemaTemplateInstantiateDecl.cpp	\
++	SemaTemplateVariadic.cpp	\
++	SemaType.cpp	\
++	TypeLocBuilder.cpp
++
++LOCAL_SRC_FILES := $(clang_sema_SRC_FILES)
++
++LOCAL_MODULE:= libclangSema
++LOCAL_MODULE_TAGS := optional
++
++LOCAL_MODULE_TAGS := optional
++
++include $(CLANG_HOST_BUILD_MK)
++include $(CLANG_TBLGEN_RULES_MK)
++include $(BUILD_HOST_STATIC_LIBRARY)
+diff --git a/lib/Serialization/Android.mk b/lib/Serialization/Android.mk
+new file mode 100644
+index 0000000..751e306
+--- /dev/null
++++ b/lib/Serialization/Android.mk
+@@ -0,0 +1,46 @@
++LOCAL_PATH:= $(call my-dir)
++
++# For the host only
++# =====================================================
++include $(CLEAR_VARS)
++include $(CLEAR_TBLGEN_VARS)
++
++LOCAL_MODULE:= libclangSerialization
++
++LOCAL_MODULE_TAGS := optional
++
++TBLGEN_TABLES := \
++  AttrList.inc \
++  AttrParsedAttrList.inc \
++  AttrPCHRead.inc \
++  AttrPCHWrite.inc \
++  Attrs.inc \
++  CommentCommandList.inc \
++  CommentNodes.inc \
++  DeclNodes.inc \
++  DiagnosticCommonKinds.inc \
++  DiagnosticFrontendKinds.inc \
++  DiagnosticSemaKinds.inc \
++  DiagnosticSerializationKinds.inc \
++  StmtNodes.inc
++
++clang_serialization_SRC_FILES :=\
++  ASTCommon.cpp \
++  ASTReader.cpp \
++  ASTReaderDecl.cpp \
++  ASTReaderStmt.cpp \
++  ASTWriter.cpp \
++  ASTWriterDecl.cpp \
++  ASTWriterStmt.cpp \
++  GeneratePCH.cpp \
++  GlobalModuleIndex.cpp \
++  Module.cpp \
++  ModuleManager.cpp
++
++LOCAL_SRC_FILES := $(clang_serialization_SRC_FILES)
++
++
++include $(CLANG_HOST_BUILD_MK)
++include $(CLANG_TBLGEN_RULES_MK)
++include $(CLANG_VERSION_INC_MK)
++include $(BUILD_HOST_STATIC_LIBRARY)
+diff --git a/lib/StaticAnalyzer/Checkers/Android.mk b/lib/StaticAnalyzer/Checkers/Android.mk
+new file mode 100644
+index 0000000..bb2a539
+--- /dev/null
++++ b/lib/StaticAnalyzer/Checkers/Android.mk
+@@ -0,0 +1,100 @@
++LOCAL_PATH:= $(call my-dir)
++
++clang_static_analyzer_checkers_TBLGEN_TABLES := \
++  AttrKinds.inc \
++  AttrList.inc \
++  AttrParsedAttrList.inc \
++  Attrs.inc \
++  AttrVisitor.inc \
++  Checkers.inc \
++  CommentCommandList.inc \
++  CommentNodes.inc \
++  DeclNodes.inc \
++  DiagnosticCommonKinds.inc \
++  StmtNodes.inc
++
++clang_static_analyzer_checkers_SRC_FILES := \
++  AllocationDiagnostics.cpp \
++  AnalyzerStatsChecker.cpp \
++  ArrayBoundChecker.cpp \
++  ArrayBoundCheckerV2.cpp \
++  BasicObjCFoundationChecks.cpp \
++  BoolAssignmentChecker.cpp \
++  BuiltinFunctionChecker.cpp \
++  CStringChecker.cpp \
++  CStringSyntaxChecker.cpp \
++  CallAndMessageChecker.cpp \
++  CastSizeChecker.cpp \
++  CastToStructChecker.cpp \
++  CheckObjCDealloc.cpp \
++  CheckObjCInstMethSignature.cpp \
++  CheckSecuritySyntaxOnly.cpp \
++  CheckSizeofPointer.cpp \
++  CheckerDocumentation.cpp \
++  ChrootChecker.cpp \
++  ClangCheckers.cpp \
++  DeadStoresChecker.cpp \
++  DebugCheckers.cpp \
++  DereferenceChecker.cpp \
++  DirectIvarAssignment.cpp \
++  DivZeroChecker.cpp \
++  DynamicTypePropagation.cpp \
++  ExprInspectionChecker.cpp \
++  FixedAddressChecker.cpp \
++  GenericTaintChecker.cpp \
++  IdenticalExprChecker.cpp \
++  IvarInvalidationChecker.cpp \
++  LLVMConventionsChecker.cpp \
++  MacOSKeychainAPIChecker.cpp \
++  MacOSXAPIChecker.cpp \
++  MallocChecker.cpp \
++  MallocOverflowSecurityChecker.cpp \
++  MallocSizeofChecker.cpp \
++  NSAutoreleasePoolChecker.cpp \
++  NSErrorChecker.cpp \
++  NoReturnFunctionChecker.cpp \
++  NonNullParamChecker.cpp \
++  ObjCAtSyncChecker.cpp \
++  ObjCContainersASTChecker.cpp \
++  ObjCContainersChecker.cpp \
++  ObjCMissingSuperCallChecker.cpp \
++  ObjCSelfInitChecker.cpp \
++  ObjCUnusedIVarsChecker.cpp \
++  PointerArithChecker.cpp \
++  PointerSubChecker.cpp \
++  PthreadLockChecker.cpp \
++  RetainCountChecker.cpp \
++  ReturnPointerRangeChecker.cpp \
++  ReturnUndefChecker.cpp \
++  SimpleStreamChecker.cpp \
++  StackAddrEscapeChecker.cpp \
++  StreamChecker.cpp \
++  TaintTesterChecker.cpp \
++  TraversalChecker.cpp \
++  UndefBranchChecker.cpp \
++  UndefCapturedBlockVarChecker.cpp \
++  UndefResultChecker.cpp \
++  UndefinedArraySubscriptChecker.cpp \
++  UndefinedAssignmentChecker.cpp \
++  UnixAPIChecker.cpp \
++  UnreachableCodeChecker.cpp \
++  VirtualCallChecker.cpp \
++  VLASizeChecker.cpp
++
++# For the host only
++# =====================================================
++include $(CLEAR_VARS)
++include $(CLEAR_TBLGEN_VARS)
++
++TBLGEN_TABLES := $(clang_static_analyzer_checkers_TBLGEN_TABLES)
++
++LOCAL_SRC_FILES := $(clang_static_analyzer_checkers_SRC_FILES)
++
++LOCAL_MODULE:= libclangStaticAnalyzerCheckers
++
++LOCAL_MODULE_TAGS := optional
++
++include $(CLANG_HOST_BUILD_MK)
++include $(CLANG_TBLGEN_RULES_MK)
++include $(CLANG_VERSION_INC_MK)
++include $(BUILD_HOST_STATIC_LIBRARY)
+diff --git a/lib/StaticAnalyzer/Core/Android.mk b/lib/StaticAnalyzer/Core/Android.mk
+new file mode 100644
+index 0000000..68d2c36
+--- /dev/null
++++ b/lib/StaticAnalyzer/Core/Android.mk
+@@ -0,0 +1,68 @@
++LOCAL_PATH:= $(call my-dir)
++
++clang_static_analyzer_core_TBLGEN_TABLES := \
++  AttrList.inc \
++  Attrs.inc \
++  CommentCommandList.inc \
++  CommentNodes.inc \
++  DeclNodes.inc \
++  DiagnosticCommonKinds.inc \
++  StmtNodes.inc
++
++clang_static_analyzer_core_SRC_FILES := \
++  AnalysisManager.cpp \
++  AnalyzerOptions.cpp \
++  APSIntType.cpp \
++  BasicValueFactory.cpp \
++  BlockCounter.cpp \
++  BugReporter.cpp \
++  BugReporterVisitors.cpp \
++  CallEvent.cpp \
++  Checker.cpp \
++  CheckerContext.cpp \
++  CheckerHelpers.cpp \
++  CheckerManager.cpp \
++  CheckerRegistry.cpp \
++  CommonBugCategories.cpp \
++  ConstraintManager.cpp \
++  CoreEngine.cpp \
++  Environment.cpp \
++  ExplodedGraph.cpp \
++  ExprEngine.cpp \
++  ExprEngineC.cpp \
++  ExprEngineCXX.cpp \
++  ExprEngineCallAndReturn.cpp \
++  ExprEngineObjC.cpp \
++  FunctionSummary.cpp \
++  HTMLDiagnostics.cpp \
++  MemRegion.cpp \
++  PathDiagnostic.cpp \
++  PlistDiagnostics.cpp \
++  ProgramState.cpp \
++  RangeConstraintManager.cpp \
++  RegionStore.cpp \
++  SValBuilder.cpp \
++  SVals.cpp \
++  SimpleConstraintManager.cpp \
++  SimpleSValBuilder.cpp \
++  Store.cpp \
++  SubEngine.cpp \
++  SymbolManager.cpp
++
++# For the host only
++# =====================================================
++include $(CLEAR_VARS)
++include $(CLEAR_TBLGEN_VARS)
++
++TBLGEN_TABLES := $(clang_static_analyzer_core_TBLGEN_TABLES)
++
++LOCAL_SRC_FILES := $(clang_static_analyzer_core_SRC_FILES)
++
++LOCAL_MODULE:= libclangStaticAnalyzerCore
++
++LOCAL_MODULE_TAGS := optional
++
++include $(CLANG_HOST_BUILD_MK)
++include $(CLANG_TBLGEN_RULES_MK)
++include $(CLANG_VERSION_INC_MK)
++include $(BUILD_HOST_STATIC_LIBRARY)
+diff --git a/lib/StaticAnalyzer/Frontend/Android.mk b/lib/StaticAnalyzer/Frontend/Android.mk
+new file mode 100644
+index 0000000..ccffdad
+--- /dev/null
++++ b/lib/StaticAnalyzer/Frontend/Android.mk
+@@ -0,0 +1,40 @@
++LOCAL_PATH:= $(call my-dir)
++
++clang_static_analyzer_frontend_C_INCLUDES := \
++  $(CLANG_ROOT_PATH)/lib/StaticAnalyzer/Checkers
++
++clang_static_analyzer_frontend_TBLGEN_TABLES := \
++  AttrList.inc \
++  Attrs.inc \
++  AttrVisitor.inc \
++  CommentCommandList.inc \
++  CommentNodes.inc \
++  DeclNodes.inc \
++  DiagnosticCommonKinds.inc \
++  DiagnosticFrontendKinds.inc \
++  StmtNodes.inc
++
++clang_static_analyzer_frontend_SRC_FILES := \
++  AnalysisConsumer.cpp \
++  CheckerRegistration.cpp \
++  FrontendActions.cpp
++
++# For the host only
++# =====================================================
++include $(CLEAR_VARS)
++include $(CLEAR_TBLGEN_VARS)
++
++TBLGEN_TABLES := $(clang_static_analyzer_frontend_TBLGEN_TABLES)
++
++LOCAL_SRC_FILES := $(clang_static_analyzer_frontend_SRC_FILES)
++
++LOCAL_C_INCLUDES := $(clang_static_analyzer_frontend_C_INCLUDES)
++
++LOCAL_MODULE:= libclangStaticAnalyzerFrontend
++
++LOCAL_MODULE_TAGS := optional
++
++include $(CLANG_HOST_BUILD_MK)
++include $(CLANG_TBLGEN_RULES_MK)
++include $(CLANG_VERSION_INC_MK)
++include $(BUILD_HOST_STATIC_LIBRARY)
+diff --git a/tools/driver/Android.mk b/tools/driver/Android.mk
+new file mode 100644
+index 0000000..e7af560
+--- /dev/null
++++ b/tools/driver/Android.mk
+@@ -0,0 +1,119 @@
++LOCAL_PATH:= $(call my-dir)
++
++# For the host only
++# =====================================================
++include $(CLEAR_VARS)
++include $(CLEAR_TBLGEN_VARS)
++
++LOCAL_MODULE := clang
++
++LOCAL_MODULE_CLASS := EXECUTABLES
++
++TBLGEN_TABLES := \
++  DiagnosticCommonKinds.inc \
++  DiagnosticDriverKinds.inc \
++  DiagnosticFrontendKinds.inc \
++  CC1Options.inc \
++  CC1AsOptions.inc
++
++clang_SRC_FILES := \
++  cc1_main.cpp \
++  cc1as_main.cpp \
++  driver.cpp
++
++LOCAL_SRC_FILES := $(clang_SRC_FILES)
++
++LOCAL_STATIC_LIBRARIES := \
++  libclangFrontendTool \
++  libclangFrontend \
++  libclangARCMigrate \
++  libclangDriver \
++  libclangSerialization \
++  libclangCodeGen \
++  libclangRewriteFrontend \
++  libclangRewriteCore \
++  libclangParse \
++  libclangSema \
++  libclangStaticAnalyzerFrontend \
++  libclangStaticAnalyzerCheckers \
++  libclangStaticAnalyzerCore \
++  libclangAnalysis \
++  libclangEdit \
++  libclangAST \
++  libclangLex \
++  libclangBasic \
++  libLLVMARMAsmParser \
++  libLLVMARMCodeGen \
++  libLLVMARMAsmPrinter \
++  libLLVMARMDisassembler \
++  libLLVMARMDesc \
++  libLLVMARMInfo \
++  libLLVMMipsAsmParser \
++  libLLVMMipsCodeGen \
++  libLLVMMipsDisassembler \
++  libLLVMMipsAsmPrinter \
++  libLLVMMipsDesc \
++  libLLVMMipsInfo \
++  libLLVMX86Info \
++  libLLVMX86AsmParser \
++  libLLVMX86CodeGen \
++  libLLVMX86Disassembler \
++  libLLVMX86Desc \
++  libLLVMX86AsmPrinter \
++  libLLVMX86Utils \
++  libLLVMARM64Info \
++  libLLVMARM64AsmParser \
++  libLLVMARM64CodeGen \
++  libLLVMARM64Disassembler \
++  libLLVMARM64Desc \
++  libLLVMARM64AsmPrinter \
++  libLLVMARM64Utils \
++  libLLVMIRReader \
++  libLLVMAsmParser \
++  libLLVMAsmPrinter \
++  libLLVMBitReader \
++  libLLVMBitWriter \
++  libLLVMSelectionDAG \
++  libLLVMipo \
++  libLLVMipa \
++  libLLVMInstCombine \
++  libLLVMInstrumentation \
++  libLLVMCodeGen \
++  libLLVMObject \
++  libLLVMLinker \
++  libLLVMMC \
++  libLLVMMCParser \
++  libLLVMScalarOpts \
++  libLLVMTransformObjCARC \
++  libLLVMTransformUtils \
++  libLLVMVectorize \
++  libLLVMAnalysis \
++  libLLVMCore \
++  libLLVMOption \
++  libLLVMSupport \
++  libLLVMTarget
++
++LOCAL_LDLIBS += -lm
++ifdef USE_MINGW
++LOCAL_LDLIBS += -limagehlp
++else
++LOCAL_LDLIBS += -lpthread -ldl
++endif
++
++include $(CLANG_HOST_BUILD_MK)
++include $(CLANG_TBLGEN_RULES_MK)
++include $(BUILD_HOST_EXECUTABLE)
++
++ifeq (true,$(FORCE_BUILD_LLVM_COMPONENTS))
++# Make sure if clang (i.e. $(LOCAL_MODULE)) get installed,
++# clang++ will get installed as well.
++ALL_MODULES.$(LOCAL_MODULE).INSTALLED := \
++    $(ALL_MODULES.$(LOCAL_MODULE).INSTALLED) $(CLANG_CXX)
++# the additional dependency is needed when you run mm/mmm.
++$(LOCAL_MODULE) : $(CLANG_CXX)
++
++# Symlink for clang++
++$(CLANG_CXX) : $(LOCAL_INSTALLED_MODULE)
++	@echo "Symlink $@ -> $<"
++	$(hide) ln -sf $(notdir $<) $@
++endif
+diff --git a/utils/TableGen/Android.mk b/utils/TableGen/Android.mk
+new file mode 100644
+index 0000000..4a40dc8
+--- /dev/null
++++ b/utils/TableGen/Android.mk
+@@ -0,0 +1,35 @@
++LOCAL_PATH:= $(call my-dir)
++
++clang_tablegen_SRC_FILES := \
++  ClangASTNodesEmitter.cpp \
++  ClangAttrEmitter.cpp \
++  ClangCommentCommandInfoEmitter.cpp \
++  ClangCommentHTMLNamedCharacterReferenceEmitter.cpp \
++  ClangCommentHTMLTagsEmitter.cpp \
++  ClangDiagnosticsEmitter.cpp \
++  ClangSACheckersEmitter.cpp \
++  NeonEmitter.cpp \
++  TableGen.cpp
++
++include $(CLEAR_VARS)
++
++LOCAL_MODULE := clang-tblgen
++LOCAL_MODULE_TAGS := optional
++LOCAL_SRC_FILES := $(clang_tablegen_SRC_FILES)
++
++REQUIRES_EH := 1
++REQUIRES_RTTI := 1
++
++LOCAL_STATIC_LIBRARIES := \
++  libLLVMTableGen \
++  libLLVMSupport
++
++LOCAL_LDLIBS += -lm
++ifeq ($(HOST_OS),windows)
++  LOCAL_LDLIBS += -limagehlp -lpsapi
++else
++  LOCAL_LDLIBS += -lpthread -ldl
++endif
++
++include $(LLVM_HOST_BUILD_MK)
++include $(BUILD_HOST_EXECUTABLE)
+-- 
+1.9.1.423.g4596e3a
+

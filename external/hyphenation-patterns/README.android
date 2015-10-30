@@ -1,0 +1,22 @@
+URL: svn://tug.org/texhyphen/trunk/hyph-utf8/tex/generic/hyph-utf8/patterns/txt/@689
+Version: r689
+License: various
+License File: NOTICE
+
+Description:
+Hyphenation patterns for automatic hyphenation from TeX hyphenation
+patterns project at http://tug.org/tex-hyphen/.
+
+Local Modifications:
+Only the following patterns are included:
+* Armenian (hy)
+* Basque (eu)
+* Ethiopic script (und-Ethi)
+* Hungarian (hu)
+* Norwegian Bokmål (nb)
+* Norwegian Nynorsk (nn) 
+* Sanskrit (sa)
+* US English (en-US)
+
+The Ethiopic script pattern files have been renamed from mul-ethi to
+und-ethi, to properly follow BCP 47 naming.
