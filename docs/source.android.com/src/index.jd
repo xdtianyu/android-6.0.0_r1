@@ -1,0 +1,137 @@
+fullpage=true
+no_footer_links=true
+landing.page=true
+page.metaDescription=The official site for the Android Open Source Project.
+header.hide=1
+@jd:body
+
+<!--
+    Copyright 2015 The Android Open Source Project
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<div class="wrap">
+
+  <div class="landing-banner">
+      <h1 itemprop="name" style="margin-bottom:0;">Welcome to the Android Open Source Project!</h1>
+
+      <p>
+      Android is an open-source software stack for a wide range of mobile devices and a corresponding open-source project led by 
+      Google. Here you can find the information and source code you need to learn more about the Android platform. From there you can
+      create custom variants of the Android software stack, port devices and accessories to the Android platform,
+      and ensure your devices are compatible with the Android compatibility definition.
+      </p>
+
+  </div>
+
+</div>
+
+<div class="wrap">
+
+  <div class="landing-docs">
+    <div class="col-8">
+    <h3>What's New</h3>
+<a href="{@docRoot}devices/tech/debug/dumpsys.html">
+        <h4>Example Dumpsys Diagnostic Output</h4></a>
+        <p>In addition to the aforementioned <strong><a
+        href="{@docRoot}devices/input/diagnostics.html">Input
+        Diagnostics</a></strong>, you can now find Dumpsys examples of usage
+        data for <strong><a href="{@docRoot}devices/tech/ram/procstats.html">RAM
+        (procstats)</a></strong>, <strong><a
+        href="{@docRoot}devices/tech/netstats.html">network (netstats)</a></strong>,
+        and <strong><a
+        href="{@docRoot}devices/tech/power/batterystats.html">battery (batterystats)</a></strong>.</p>
+
+<a href="{@docRoot}devices/audio/latency_measurements.html">
+        <h4>Audio Latency Measurements</h4></a>
+        <p>The Android audio team has published <strong><a
+        href="{@docRoot}devices/audio/latency_measurements.html">round-trip audio latency
+        measurements</a></strong> for select Nexus devices to help partners compare their
+        own devices and reduce latency further.</p>
+
+<a href="{@docRoot}devices/tech/power/index.html">
+        <h4>Power Profile Details</h4></a>
+        <p><strong><a
+        href="{@docRoot}devices/tech/power/index.html">Power</a></strong>
+        information has been moved and expanded to include details on
+        <code>cpu.awake</code> and <code>cpu.active</code>. The need to create a
+        <code>power_profile.xml</code> file is also emphasized throughout.</p>
+
+<a href="{@docRoot}source/initializing.html">
+        <h4>Initializing Improvements</h4></a>
+        <p>Build environment <strong><a
+        href="{@docRoot}source/initializing.html#setting-up-a-mac-os-x-build-environment">Initializing</a></strong>
+        instructions now explain how to resize and unmount Mac OS sparse
+        images. And the ccache section has been moved to an optional <strong><a
+        href="{@docRoot}source/initializing.html#optimizing-a-build-environment">Optimizing
+        a build environment</a></strong> section.</p>
+
+<a href="{@docRoot}devices/tech/security/selinux/index.html">
+        <h4>SELinux Permissive Declarations</h4></a>
+        <p>SELinux <strong><a
+        href="{@docRoot}devices/tech/security/selinux/customize.html">Customizing</a></strong>
+        and <strong><a
+        href="{@docRoot}devices/tech/security/selinux/implement.html">Implementing</a></strong>
+        instructions have been updated to recommend using permissive declarations
+        directly as <code>permissive_or_unconfined()</code> has been deprecated.
+        Similarly, <code>BOARD_SEPOLICY_UNION</code> has been removed, so
+        <code>BOARD_SEPOLICY_*</code> variables are suggested insead.</p>
+
+<a href="{@docRoot}devices/bluetooth.html">
+        <h4>Android 5.0 Bluetooth HCI Requirements</h4></a>
+        <p><strong><a
+        href="{@docRoot}devices/Android-5.0-Bluetooth-HCI-Reqs.pdf">Bluetooth
+        Host Controller Interface (HCI) requirements</a></strong> to leverage
+        the Bluetooth Low Energy APIs in Android 5.0 have
+        been published and linked from the <strong><a
+        href="{@docRoot}devices/bluetooth.html">Bluetooth</a></strong> introduction.</p>
+    </div>
+
+    <div class="col-8">
+      <h3>Getting Started</h3>
+      <a href="{@docRoot}source/index.html">
+        <h4>Explore the Source</h4></a>
+        <p>Get the complete Android platform and modify and build it to suit your needs. You can
+        also <strong><a
+        href="https://android-review.googlesource.com/#/q/status:open">contribute
+        to</a></strong> the <strong><a
+        href="https://android.googlesource.com/">Android Open Source Project (AOSP)
+        repository</a></strong> to make your changes available to everyone else
+        in the Android ecosystem.</p>
+<a href="{@docRoot}source/index.html"><img border="0" src="images/android_framework_small.png" alt="Android framework summary" style="display:inline;float:left;margin:5px 10px"></a>
+      <a href="{@docRoot}devices/index.html">
+        <h4>Port Android to Devices</h4></a>
+        <p>Port the latest Android platform and
+        create compelling devices that your customers want.</p>
+
+      <a href="{@docRoot}accessories/index.html">
+        <h4>Build Accessories</h4></a>
+        <p>Sometimes, a device can't do it all. Tap into Android's open accessory standard and build accessories to complement the wide variety of Android-powered devices.</p>
+
+      <a href="{@docRoot}compatibility/index.html">
+        <h4>Get Compatible</h4></a>
+        <p>Being Android-compatible lets you offer custom features but still give users and developers a consistent
+          and standard experience across all Android-powered devices. Android provides guidance
+          and a test suite to verify your Android compatibility.</p>
+
+      <a href="https://android.googlesource.com/platform/docs/source.android.com/">
+        <h4>Help this Site</h4></a>
+        <p>Please note, source.android.com is maintained in the Android Open Source Project. See the <strong><a
+        href="https://android.googlesource.com/platform/docs/source.android.com/+log/master">docs/source.android.com
+        project log in AOSP</a></strong> for the complete list of changes to this site.
+        Contribute your own updates to that same project and help maintain source.android.com.</p>
+    </div>
+
+  </div>
+
+</div>

@@ -1,0 +1,13 @@
+This is the kernel unittest for seccomp-bpf sandboxing.
+
+URL: https://github.com/redpig/seccomp
+Revision: e65c79a14dc2bbb6d8dbf12ebf71905e2253a4b2
+License: BSD
+
+Local modifications:
+- Remove usage of pthread_cancel()
+- Use __android_log_print() instead of fprintf()
+- Rename main() to seccomp_test_main()
+- Add get_seccomp_test_list()
+
+The diff of modifications can be found in local-modifications-android.diff.

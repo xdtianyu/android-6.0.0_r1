@@ -1,0 +1,29 @@
+-keepclasseswithmembernames class * {
+    native <methods>;
+}
+
+-keepclassmembers class com.android.cts.verifier.os.FileUtils$FileStatus {
+    private <fields>;
+}
+
+# ensure we keep public sensor test methods, these are needed at runtime
+-keepclassmembers class * extends com.android.cts.verifier.sensors.base.BaseSensorTestActivity {
+    public <methods>;
+}
+-keepclassmembers class * extends android.hardware.cts.SensorTestCase {
+    public <methods>;
+}
+
+-keepclasseswithmembers class * extends com.android.cts.verifier.location.LocationModeTestActivity
+
+# keep mockito methods
+-keep class org.mockito.** { *; }
+-keep interface org.mockito.** { *; }
+-keep class com.google.dexmaker.** { *; }
+-keep interface com.google.dexmaker.** { *; }
+
+-dontwarn android.hardware.Sensor
+-dontwarn android.test.AndroidTestRunner
+-dontwarn java.util.concurrent.ConcurrentLinkedDeque
+-dontwarn android.cts.util.**
+-dontwarn junit.**

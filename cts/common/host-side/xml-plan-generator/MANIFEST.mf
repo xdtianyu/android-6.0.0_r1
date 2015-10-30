@@ -1,0 +1,3 @@
+Manifest-Version: 1.0
+Main-Class: com.android.compatibility.common.xmlgenerator.XmlPlanGenerator
+Class-Path: compatibility-common-util-hostsidelib_v2.jar

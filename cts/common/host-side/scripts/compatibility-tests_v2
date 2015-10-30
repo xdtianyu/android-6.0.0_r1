@@ -1,0 +1,61 @@
+#!/bin/bash
+#
+# Copyright (C) 2014 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+# http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+checkFile() {
+    if [ ! -f "$1" ]; then
+        echo "Unable to locate $1"
+        exit
+    fi;
+}
+
+HOST_JAR_DIR=${ANDROID_HOST_OUT}/framework
+HOST_JARS="ddmlib-prebuilt tradefed-prebuilt hosttestlib\
+    compatibility-tradefed_v2 compatibility-tradefed-tests_v2\
+    compatibility-java-scanner_v2 compatibility-java-scanner-tests_v2\
+    compatibility-native-scanner_v2 compatibility-native-scanner-tests_v2\
+    compatibility-xml-plan-generator_v2 compatibility-xml-plan-generator-tests_v2\
+    compatibility-device-util-tests_v2 compatibility-device-setup-tests_v2\
+    compatibility-common-util-hostsidelib_v2 compatibility-common-util-tests_v2"
+
+for JAR in ${HOST_JARS}; do
+    checkFile ${HOST_JAR_DIR}/${JAR}.jar
+    JAR_PATH=${JAR_PATH}:${HOST_JAR_DIR}/${JAR}.jar
+done
+
+DEVICE_LIBS_DIR=${ANDROID_PRODUCT_OUT}/obj/JAVA_LIBRARIES
+DEVICE_LIBS="compatibility-common-util-devicesidelib_v2 compatibility-device-util_v2\
+    compatibility-device-setup_v2"
+
+for LIB in ${DEVICE_LIBS}; do
+    checkFile ${DEVICE_LIBS_DIR}/${LIB}_intermediates/javalib.jar
+    JAR_PATH=${JAR_PATH}:${DEVICE_LIBS_DIR}/${LIB}_intermediates/javalib.jar
+done
+
+# TODO(stuartscott): Currently the test classes are explicitly set here, but
+# once our wrappers for tradefed are in place we can make it scan and generate
+# the list of test at runtime.
+TEST_CLASSES="com.android.compatibility.common.devicesetup.DeviceSetupTest\
+    com.android.compatibility.common.scanner.JavaScannerTest\
+    com.android.compatibility.common.scanner.NativeScannerTest\
+    com.android.compatibility.common.tradefed.TradefedTest\
+    com.android.compatibility.common.util.DeviceUtilTest\
+    com.android.compatibility.common.util.CommonUtilTest\
+    com.android.compatibility.common.xmlgenerator.XmlPlanGeneratorTest"
+
+for CLASS in ${TEST_CLASSES}; do
+    java $RDBG_FLAG -cp ${JAR_PATH} com.android.compatibility.common.tradefed.command.CompatibilityConsole run\
+            singleCommand host -n --class ${CLASS} "$@"
+done

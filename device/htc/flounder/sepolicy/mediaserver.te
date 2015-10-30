@@ -1,0 +1,3 @@
+allow mediaserver system_server:unix_stream_socket { read write };
+allow mediaserver self:netlink_kobject_uevent_socket create_socket_perms;
+allow mediaserver sensorservice_service:service_manager find;

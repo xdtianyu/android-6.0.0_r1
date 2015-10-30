@@ -1,0 +1,4 @@
+# TODO: investigate cause of this
+allow mediaserver graphics_device:dir search;
+
+allow mediaserver remote_control_service:service_manager find;

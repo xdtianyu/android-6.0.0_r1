@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ Copyright 2013 The Android Open Source Project
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+<sample>
+    <name>ActiveNotification</name>
+    <group>Notification</group>  <!-- This field will be deprecated in the future
+                            and replaced with the "categories" tags below. -->
+    <package>com.example.android.activenotifications</package>
+
+    <minSdk>23</minSdk>
+
+    <!-- Include additional dependencies here.-->
+    <!-- dependency>com.google.android.gms:play-services:5.0.+</dependency -->
+
+    <strings>
+        <intro>
+            <![CDATA[
+The NotificationManager can tell you how many notifications your application is currently showing.
+This sample demonstrates how to use this API that has been introduced with Android M.
+To get started, press the "add a notification" button.
+When a notification is being canceled, the count gets updated via a PendingIntent.
+            ]]>
+        </intro>
+    </strings>
+
+    <!-- The basic templates have already been enabled. Uncomment more as desired. -->
+    <template src="base" />
+    <template src="FragmentView" />
+    <common src="activities" />
+    <common src="logger" />
+
+    <metadata>
+        <!-- Values: {DRAFT | PUBLISHED | INTERNAL | DEPRECATED | SUPERCEDED} -->
+        <status>DRAFT</status>
+        <!-- See http://go/sample-categories for details on the next 4 fields. -->
+        <!-- Most samples just need to udpate the Categories field. This is a comma-
+             seperated list of topic tags. Unlike the old category system, samples
+             may have multiple categories, so feel free to add extras. Try to avoid
+             simply tagging everything with "UI". :)-->
+        <categories>Getting Started, Notification</categories>
+        <technologies>Android</technologies>
+        <languages>Java</languages>
+        <solutions>Mobile</solutions>
+        <!-- Values: {BEGINNER | INTERMEDIATE | ADVANCED | EXPERT} -->
+        <!-- Beginner is for "getting started" type content, or essential content.
+             (e.g. "Hello World", activities, intents)
+
+             Intermediate is for content that covers material a beginner doesn't need
+             to know, but that a skilled developer is expected to know.
+             (e.g. services, basic styles and theming, sync adapters)
+
+             Advanced is for highly technical content geared towards experienced developers.
+             (e.g. performance optimizations, custom views, bluetooth)
+
+             Expert is reserved for highly technical or specialized content, and should
+             be used sparingly. (e.g. VPN clients, SELinux, custom instrumentation runners) -->
+        <level>INTERMEDIATE</level>
+        <icon>screenshots/icon-web.png</icon>
+        <screenshots>
+            <img>screenshots/screenshot01.png</img>
+            <img>screenshots/screenshot02.png</img>
+            <img>screenshots/screenshot03.png</img>
+        </screenshots>
+        <api_refs>
+            <android>android.app.NotificationManager</android>
+        </api_refs>
+        <description>
+            The NotificationManager can tell you how many notifications your application is
+            currently showing. This sample demonstrates how to use this API that has been
+            introduced with Android M.
+         </description>
+        <intro>
+            The [NotificationManager][1] has become more powerful.
+            Starting with Android M, you can query it for the active notifications that
+            your app sent using the [notify][2] methods.
+
+            This sample demonstrates simple use of this newly added functionality by
+            allowing a user to add notifications and then querying how many notifications
+            are currently being displayed via the [getActiveNotifications()][3] method.
+
+            [1]: https://developer.android.com/reference/android/app/NotificationManager.html
+            [2]: https://developer.android.com/reference/android/app/NotificationManager.html#notify(int, android.app.Notification)
+            [2]: https://developer.android.com/reference/android/app/NotificationManager.html#getActiveNotifications()
+        </intro>
+    </metadata>
+</sample>
