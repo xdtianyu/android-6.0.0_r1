@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.android.tools.jill</groupId>
+  <artifactId>jill-api</artifactId>
+  <version>0.9.0</version>
+  <versioning>
+    <versions>
+      <version>0.9.0</version>
+    </versions>
+    <lastUpdated>20150813191910</lastUpdated>
+  </versioning>
+</metadata>

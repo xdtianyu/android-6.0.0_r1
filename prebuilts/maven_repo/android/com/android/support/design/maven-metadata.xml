@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.android.support</groupId>
+  <artifactId>design</artifactId>
+  <version>22.2.0</version>
+  <versioning>
+    <versions>
+      <version>22.2.0</version>
+      <version>22.2.1</version>
+    </versions>
+    <lastUpdated>20150717031700</lastUpdated>
+  </versioning>
+</metadata>
